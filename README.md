@@ -1,1 +1,51 @@
-# zipchelin
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="keywords" content="레시피, 혼밥, 요리">
+    <meta name="description" content="요리에 관한 모든 정보를 한 번에 보세요">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="집슐랭">
+    <meta property="og:description" content="요리에 관한 모든 정보를 한 번에 보세요">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- favicon-->
+    <link rel="shortcut icon" type="text/css" href="">
+    <link rel="icon"  type="text/css" href="">
+
+    <!-- basic CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <!-- page CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- plugin CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/front/js/html5shiv.js"></script>
+    <script type="text/javascript" src="/assets/front/js/respond.min.js"></script>
+    <script type="text/javascript" src="/assets/front/js/IE9.js"></script>
+    <![endif]-->
+    <!--[if IE 9]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
+
+    <title>집슐랭</title>
+</head>
+<body>
+    
+
+    <!-- js -->
+    <script src="js/plugins/swiper-bundle.min.js"></script>
+</body>
+</html>
