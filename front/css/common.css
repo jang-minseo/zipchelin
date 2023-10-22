@@ -36,4 +36,14 @@
     font-display: swap;
 }
 
+
 /* components */
+.textGreen{color:  #4FA72F;}
+
+/* button */
+.btnGroup{display: flex;}
+.btnBd{border: 1px solid #4FA72F; background-color: #fff; color: #4FA72F;}
+.btnBg{background-color: #4FA72F; color: #fff;}
+.btnGroup button{flex-basis: 120px; padding: 12px 0; border-radius: 4px;}
+.btnGroup button:first-child{margin-right: 8px;}
+.btnGroup.lg button{flex-basis: 160px; padding: 14px 0; border-radius: 4px;}
