@@ -1,51 +1,43 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="keywords" content="레시피, 혼밥, 요리">
-    <meta name="description" content="요리에 관한 모든 정보를 한 번에 보세요">
+# ** 집슐랭 **
+2023 이젠아카데미 팀 프로젝트<br><br>
+2023-09-18 ~ 2023-12-28<br><br>
+팀장 : 장민서<br>
+팀원 : 이승학, 장유정, 변희원, 이한비, 정해지, 조수빈
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="집슐랭">
-    <meta property="og:description" content="요리에 관한 모든 정보를 한 번에 보세요">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+## **집슐랭(zipchelin)이란?**
+집슐랭은 <b>요리 레시피</b>를 한 곳에 모아 <b>이용자</b>가 쉽게 요리 레시피를 검색, 공유를 할 수 있는 사이트입니다. 
+<br><br>
 
-    <!-- favicon-->
-    <link rel="shortcut icon" type="text/css" href="">
-    <link rel="icon"  type="text/css" href="">
+## <b>사용기술</b>
+<span>
+<img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=Java&logoColor=white">
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white">
+<img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white">
+<img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=Jquery&logoColor=White">
+<img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"></span>
 
-    <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
+- Design - XD
+- Frontend - Jqeury, HTML, CSS, JavaScript 
+- Backend - Spring, JAVA
+- Database - Oracle
+- WAS - Apache Tomcat
 
-    <!-- page CSS -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+## <b>주요기능</b>
 
-    <!-- plugin CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+### [사용자 기능]
+ex)
+- 회원가입 및 로그인 기능
+- 레시피 찜 기능
+- 회원 정보 수정 기능
+- 게시판 글 작성 및 삭제 기능
 
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="/assets/front/js/html5shiv.js"></script>
-    <script type="text/javascript" src="/assets/front/js/respond.min.js"></script>
-    <script type="text/javascript" src="/assets/front/js/IE9.js"></script>
-    <![endif]-->
-    <!--[if IE 9]>
-    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
-    <![endif]-->
-    <!--[if lte IE 8]>
-    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
-    <![endif]-->
-
-    <title>집슐랭</title>
-</head>
-<body>
-    
-
-    <!-- js -->
-    <script src="js/plugins/swiper-bundle.min.js"></script>
-</body>
-</html>
+### [관리자 기능]
+ex)
+- 회원가입 및 로그인 기능
+- 회원 관리 기능
+- 레시피 등록 기능
+- 게시판 관리 기능
