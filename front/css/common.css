@@ -40,6 +40,12 @@
 /* components */
 .textGreen{color:  #4FA72F;}
 
+/* input checkBox, radio */
+input[type="checkbox"].chkBox+label:before,input[type="radio"].chkRadio+label:before{display: inline-block; content: ''; width: 24px; height: 24px; margin-right: 8px; background-color: #ececec; border-radius: 4px; box-sizing: border-box; vertical-align: middle;}
+input[type="checkbox"].chkBox:checked+label:before{background-color: #8acc39; font-family: "Material Symbols Outlined"; content: "check"; color: #ffffff; font-size: 20px; line-height: 24px; text-align: center;}
+input[type="radio"].chkRadio+label:before{border-radius: 300px; vertical-align: sub;}
+input[type="radio"].chkRadio:checked+label:before{background-color: #ffffff; border: 8px solid #8acc39;}
+
 /* button */
 .btnGroup{display: flex;}
 .btnBd{border: 1px solid #4FA72F; background-color: #fff; color: #4FA72F;}

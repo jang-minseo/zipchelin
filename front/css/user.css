@@ -7,12 +7,17 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .w1080{padding: 0 100px;}
 
 /* 회원탈퇴 */
-.leaveWrap{padding: 60px; margin-bottom: 100px; border: 1px solid #c1c1c1; border-radius: 6px;}
-.leaveSec{margin-bottom: 60px;}
-/* .leaveSec:first-of-type{padding-top: 60px;} */
+.leaveWrap, .leaveDoneWrap{padding: 60px; margin-bottom: 100px; border: 1px solid #c1c1c1; border-radius: 6px;}
+.leaveSec{margin-bottom: 80px;}
 .leaveSec h6{margin-bottom: 24px; font-size: 22px;}
 .leaveSec p{ color: #4a4a4a; line-height: 28px;}
+.leaveSec .guideCont{margin-bottom: 16px;}
 .leaveSec .chkAsk{display: block; padding: 16px 0; font-size: 17px;}
 .chkList li{padding: 6px 0; color: #4a4a4a;}
 .chkList textarea{display: block; margin-top: 8px; padding: 12px; border: 1px solid #c1c1c1; border-radius: 4px; font-size: 13px;}
 .leaveWrap .btnGroup{justify-content: center;}
+
+/* 회원탈퇴 - 완료 */
+.leaveDoneWrap{text-align: center;}
+.leaveDoneWrap .leaveSec{margin-bottom: 40px;}
+.leaveDoneWrap .btnGroup{justify-content: center;}
