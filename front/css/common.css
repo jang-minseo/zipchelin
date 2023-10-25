@@ -53,3 +53,17 @@ input[type="radio"].chkRadio:checked+label:before{background-color: #ffffff; bor
 .btnGroup button{flex-basis: 120px; padding: 12px 0; border-radius: 4px;}
 .btnGroup button:first-child{margin-right: 8px;}
 .btnGroup.lg button{flex-basis: 160px; padding: 14px 0; border-radius: 4px;}
+
+/* footer */
+#footer { padding: 15px 0; margin: 0 300px;}
+#footerInner { position: relative; }
+.footerLogo { position: absolute; width: 100px; height: 100px; left: 50px;}
+.guide, address, .copyright { margin-left: 200px; margin-right: 100px; }
+.guide { width: 45%; background-color: #8acc39; border-radius: 5px; padding-left: 65px; margin-bottom: 10px; text-transform: uppercase; }
+.guide li { display: inline-block;}
+.guide a { display: inline-block; color: #fff; padding: 15px 15px 10px 0; margin-right: 5px;}
+.guide a::after { content: "|"; padding-left: 20px; }
+.guide li:last-child a::after { content: ""; }
+address > span { margin-right: 10px; display: inline-block; margin-bottom: 5px;}
+.sns { position: absolute; right: 5px; top: 20px; }
+.sns > img { width: 55px; padding-left: 15px;}
