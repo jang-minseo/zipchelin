@@ -55,12 +55,11 @@ input[type="radio"].chkRadio:checked+label:before{background-color: #ffffff; bor
 .btnGroup.lg button{flex-basis: 160px; padding: 14px 0; border-radius: 4px;}
 
 /* footer */
-#wrap { min-height: 100vh; position: relative; width: 100%; font-size: 12px;}
-#footer { padding: 15px 0; bottom: 0px; width: 100%; position: absolute; height: 130px;}
-#footerInner { position: relative;  margin: 0 300px; }
+#footer { padding: 15px 0; bottom: 0px; position: relative; width: 100%; font-size: 12px;}
+#footerInner { position: relative;  margin: 40px 300px; }
 .footerLogo { position: absolute; width: 100px; height: 100px; left: 50px;}
 .guide, address, .copyright { margin-left: 200px; margin-right: 100px; }
-.guide { width: 38%; background-color: #8acc39; border-radius: 5px; padding-left: 65px; margin-bottom: 10px; text-transform: uppercase; }
+.guide { width: 38%; background-color: #8acc39; border-radius: 5px; padding-left: 65px; margin-bottom: 10px;}
 .guide li { display: inline-block;}
 .guide a { display: inline-block; color: #fff; padding: 15px 15px 10px 0; margin-right: 5px;}
 .guide a::after { content: "|"; padding-left: 20px; }
