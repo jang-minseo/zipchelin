@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+main{display: block; margin: auto; padding: 0 20px; width: 1320px;}
+header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee}
+footer{height: 180px; background-color: #ffffff; border-top: 1px solid #eee;}
+
+.myBox{
+    margin: 50px;
+    width: 250px;
+    height: 350px;
+    border: 2px solid #8acc39;
+    text-align: center;
+}
+
+.myBox > img{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+#btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 20px;
+    border: 1px solid #8acc39;
+    background-color: #8acc39;
+    border-radius: 5px;
+}
+
+ul > span{
+    display: inline-block;
+}
+
+ul > li{
+    display: flex;
+    margin: 5px;
+    margin-left: 80px;
+}
+
+ul > li > p{
+    margin: 4px;
+}
