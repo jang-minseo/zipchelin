@@ -37,54 +37,239 @@
     <!--[if lte IE 8]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
     <![endif]-->
+ 
 
     <title>집슐랭</title>
-</head>
-<body>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 나만의 레시피/ -->
-
-<!-- 푸터 -->
-    <footer id="footer">
-        <div id="footerInner">
-            <a href="index.html" class="footerLogo">
-                <img src="images/logo/logo.png" alt="zipchelin">
-            </a>
-            <section class="guide">
-                <ul>
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">개인정보보호정책</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">공지사항</a></li>
-                </ul>
-            </section>
-            <address>
-                <span>회사명 : 주식회사 집슐랭 (서울시 종로구 종로78 (종로2가, 미려빌딩 3,5,6층)</span><br>
-                <span> 전화 : 02-1111-1111</span>
-                <span> 팩스 : 02-2222-2222 </span>
-                <span> E-MAIL : zipcheiln@zipc.co.kr</span>
-            </address>
-            <p class="copyright">Copyright &copy; 집슐랭, All Rights Reserved.</p>
-            <div class="sns">
-                <img src="images/icon/facebook.png" alt="facebook">
-                <img src="images/icon/instagram.png" alt="instagram">
-                <img src="images/icon/youtube.png" alt="youtube">
-            </div>    
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="/front/images/logo/logo.png"
+      />
+      <div class="menu">
+        <a href="">레시피</a>
+        <a href="">가이드</a>
+        <a href="">커뮤니티</a>
+        <a href="">공지사항</a>
+      </div>
+      <div class="right_menu">
+        <img class="icon" src="" />
+        <a href="">로그인</a>
+        <a href="">회원가입</a>
+      </div>
+    </header>
+    <div class="main_page">
+      <div class="main_banner">
+        <img class="next_icon" src="" />
+        <!-- 베너 이미지 -->
+        <img class="banner_img" src="" />
+        <img class="before_icon" src="" />
+      </div>
+      <div class="recipe_container">
+        <div>최신 레시피</div>
+        <br />
+        <a href="" class="more_recipe">더보기></a>
+        <div class="recipe_item_container">
+          <div class="recipe_item">
+            <img class="recipe_heart" src="" />
+            <img class="recipe_img" src="/front/images/recipe/je.jpg" />
+            <p class="sub_title">입 안에 들어가면 사르르 녹는</p>
+            <p class="title">순두부 찌개</p>
+          </div>
+          <div class="recipe_item">
+            <img class="recipe_heart" src="" />
+            <img class="recipe_img" src="" />
+            <p class="sub_title">생일 날 즐겨먹는</p>
+            <p class="title">미역국</p>
+          </div>
+          <div class="recipe_item">
+            <img class="recipe_heart" src="" />
+            <img class="recipe_img" src="" />
+            <p class="sub_title">한국인의 근본 그 자체</p>
+            <p class="title">삼겹살</p>
+          </div>
+          <div class="recipe_item">
+            <img class="recipe_heart" src="" />
+            <img class="recipe_img" src="" />
+            <p class="sub_title">남녀노소 호불호 없는 그 음식</p>
+            <p class="title">제육볶음</p>
+          </div>
         </div>
-    </footer>
+      </div>
+
+      <div class="rank">
+        <p>랭킹</p>
+        <div class="rank_row">
+          <div class="rank_item">
+            <h1>1</h1>
+            <img class="rank_img" src=""/>
+            <div>
+              <p class="sub_title">부제목</p>
+              <p class="title">요리이름</p>
+            </div>
+          </div>
+
+          <div class="rank_item">
+            <h1>2</h1>
+            <img class="rank_img" src=""/>
+            <div>
+              <p class="sub_title">부제목</p>
+              <p class="title">요리이름</p>
+            </div>
+          </div>
+
+          <div class="rank_item">
+            <h1>3</h1>
+            <img class="rank_img" src=""/>
+            <div>
+              <p class="sub_title">부제목</p>
+              <p class="title">요리이름</p>
+            </div>
+          </div>
+        </div>
+        <div class="rank_row">
+          <div class="rank_item">
+            <h1>4</h1>
+            <img class="rank_img" src=""/>
+            <div>
+              <p class="sub_title">부제목</p>
+              <p class="title">요리이름</p>
+            </div>
+          </div>
+
+          <div class="rank_item">
+            <h1>5</h1>
+            <img class="rank_img" src=""/>
+            <div>
+              <p class="sub_title">부제목</p>
+              <p class="title">요리이름</p>
+            </div>
+          </div>
+
+          <div class="rank_item">
+            <h1>6</h1>
+            <img class="rank_img" src=""/>
+            <div>
+              <p class="sub_title">부제목</p>
+              <p class="title">요리이름</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="plusRank">
+        <a href="">+더보기</a>
+      </div>
+    </div>
+  
+    <div class="category">
+      <div class="categoryBox">
+          <ul class="categoryName">
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_rice.png" alt="">
+                      <p>밥요리</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_soup.png" alt="">
+                      <p>국&탕</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_chan.png" alt="">
+                      <p>밑반찬</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_boiled.png" alt="">
+                      <p>찜&조림</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_salad.png" alt="">
+                      <p>샐러드</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_box.png" alt="">
+                      <p>도시락</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_fried.png" alt="">
+                      <p>튀김</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_dessert.png" alt="">
+                      <p>간식&분식</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_dessert2.png" alt="">
+                      <p>디저트</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="/front/images/icon/cm_etc.png" alt="">
+                      <p>기타요리</p>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  
+  
+  <!-- 나만의 레시피/ -->
+  <div id="list">
+      
+  </div>
+  
+  <aside id="sidebar">
+      <div class="sidebarInner">
+          <img src="images/icon/cm_boiled.png" alt="">
+          <p>찜한 레시피</p>
+      </div>
+  </aside>
+  <!-- footer -->
+      <footer id="footer">
+          <div class="contain">
+              <div id="footerMenu">
+                  <a href="index.html" class="footerLogo">
+                      <img src="images/logo/logo.png" alt="zipchelin">
+                  </a>
+                      <ul class="fmenu">
+                          <li><a href="#">회사소개</a></li>
+                          <li><a href="#">개인정보보호정책</a></li>
+                          <li><a href="#">이용약관</a></li>
+                          <li><a href="#">공지사항</a></li>
+                      </ul>
+                      <ul class="sns">
+                          <li><a href="#"><img src="images/icon/facebook.png" alt="facebook"></a></li>
+                          <li><a href="#"><img src="images/icon/instagram.png" alt="instagram"></a></li>
+                          <li><a href="#"><img src="images/icon/youtube.png" alt="youtube"></a></li>
+                      </ul>  
+              </div>
+                  <address>
+                      <span>회사명 : 주식회사 집슐랭 (서울시 종로구 종로78 (종로2가, 미려빌딩 3,5,6층)</span><br>
+                      <span> 전화 : 02-1111-1111</span>
+                      <span> 팩스 : 02-2222-2222 </span>
+                      <span> E-MAIL : zipcheiln@zipc.co.kr</span>
+                  </address>
+                  <p class="copyright">Copyright &copy; 집슐랭, All Rights Reserved.</p>  
+              </div>
+          </div>
+      </footer>
     <!-- js -->
     <script src="/front/js/plugins/swiper-bundle.min.js"></script>
 </body>
