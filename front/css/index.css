@@ -1,0 +1,183 @@
+body {
+  width: 100vw;
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: 60px;
+  background: gray;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+.main_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 100px 0px 100px;
+}
+.logo {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 20%;
+}
+.menu {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+  align-items: center;
+  text-decoration: none;
+
+ 
+}
+
+.menu > a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.right_menu {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 20px;
+  right: 10%;
+}
+
+.right_menu > a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.main_banner {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  height: 350px;
+}
+
+.banner_img {
+  width: 100%;
+  height: 350px;
+}
+.before_icon {
+  position: absolute;
+  left: 2%;
+  top: 40%;
+  width: 40px;
+  height: 80px;
+  transform: rotate(180deg);
+}
+
+.next_icon {
+  position: absolute;
+  right: 2%;
+  top: 40%;
+  width: 40px;
+  height: 90px;
+}
+
+.recipe_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+.recipe_item_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.more_recipe {
+  position: absolute;
+  right: 0%;
+  bottom: 85%;
+}
+
+.more_recipe {
+  text-decoration: none;
+  color: black;
+
+}
+
+.recipe_item {
+  position: relative;
+  width: 250px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+}
+.recipe_heart {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 15px;
+  height: 15px;
+}
+.recipe_img {
+  width: 100%;
+  height: 180px;
+}
+.sub_title {
+  margin: 0px;
+}
+.title {
+  margin: 0px;
+  font-size: 20px;
+}
+.rank {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rank > p {
+  font-size: 18px;
+}
+.rank_row {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.rank_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.rank_img {
+  width: 150px;
+  height: 100px;
+}
+.plusRank {
+  width: 90%;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 25px;
+ 
+}
+
+
+.plusRank > a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
