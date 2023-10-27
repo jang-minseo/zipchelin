@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="keywords" content="레시피, 혼밥, 요리">
+    <meta name="description" content="요리에 관한 모든 정보를 한 번에 보세요">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="집슐랭">
+    <meta property="og:description" content="요리에 관한 모든 정보를 한 번에 보세요">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- favicon-->
+    <link rel="shortcut icon" type="text/css" href="">
+    <link rel="icon"  type="text/css" href="">
+
+    <!-- google icon CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    
+    <!-- basic CSS -->
+    <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+
+    <!-- page CSS -->
+    <link rel="stylesheet" type="text/css" href="/front/css/mypage.css">
+
+    <!-- plugin CSS -->
+    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+
+    <!--[if IE 9]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
+
+    <title>집슐랭</title>
+</head>
+<body>
+    <header></header>
+    <main class="w1080 clearfix">
+        <aside class="myMenu"></aside>
+        <div class="pwdConfirmWrap">
+            <form action="" method="post" id="confirmForm">
+                <div class="confirmInfo">
+                    <h6>비밀번호 확인</h6>
+                    <p>개인 정보를 안전하게 보호하기 위하여</p>
+                    <p>비밀번호를 다시 입력해 주세요.</p>
+                </div>
+                <div class="inputBox">
+                    <div class="inputField">
+                        <label for="pwdCheck">비밀번호</label>
+                        <input type="password" name="pwdCheck" id="pwdCheck" placeholder="비밀번호">
+                        <span class="pwdToggle material-symbols-outlined">visibility_off</span>
+                    </div>
+                    <span class="inputError">비밀번호 일치하지 않습니다. 다시 입력해주세요</span>
+                </div>
+                <div class="btnGroup lg">
+                    <button type="button" class="btnBd" onclick="location.href='/front/index.html'">취소</button>
+                    <button type="button" class="btnBg">확인</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- 푸터 -->
+    <footer id="footer">
+        <div class="contain">
+            <div id="footerMenu">
+                <a href="index.html" class="footerLogo">
+                    <img src="images/logo/logo.png" alt="zipchelin">
+                </a>
+                    <ul class="fmenu">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">개인정보보호정책</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="#"><img src="images/icon/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/icon/instagram.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="images/icon/youtube.png" alt="youtube"></a></li>
+                    </ul>  
+            </div>
+                <address>
+                    <span>회사명 : 주식회사 집슐랭 (서울시 종로구 종로78 (종로2가, 미려빌딩 3,5,6층)</span><br>
+                    <span> 전화 : 02-1111-1111</span>
+                    <span> 팩스 : 02-2222-2222 </span>
+                    <span> E-MAIL : zipcheiln@zipc.co.kr</span>
+                </address>
+                <p class="copyright">Copyright &copy; 집슐랭, All Rights Reserved.</p>  
+            </div>
+        </div>
+    </footer>
+    
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/front/js/mypage.js"></script>
+</body>
+</html>
