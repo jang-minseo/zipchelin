@@ -3,9 +3,6 @@
 
 
 
-
-
-
 /* 카테고리 */
 .category { border: 1px solid #e9e9e9; width: 1280px; height: 100px; background-color: #eee; margin: 0 auto;}
 .categoryBox {width: 1280px; margin: 0 auto;}
@@ -18,17 +15,6 @@
 .sidebarInner { display: flex; padding-left: 25px;}
 .sidebarInner p {padding-left: 10px; padding-top: 5px;}
 .sidebarInner img {width: 20px;}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
