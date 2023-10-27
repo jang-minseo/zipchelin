@@ -42,12 +42,12 @@
 </head>
 <body>
     <header></header>
-    <main>
-        <!--마이페이지 박스-->
+    <main class="clearfix">
+        <!--마이페이지 (left)박스-->
        <div class="myBox">
         <img src="images/profile.jpg" alt="profile">
         <h1>USER_ID</h1>
-        <input type="button" value="정보수정" id="btn" onclick="loaction.href='#'"> 
+        <input type="button" value="정보수정" class="btn" onclick="loaction.href='#'"> 
         <ul>
             <li class="myBox_count">
                 <span class="material-symbols-outlined">favorite</span>
@@ -63,6 +63,71 @@
             </li>
         </ul>
        </div>
+
+       <!--mypage main-->
+       <div class="main">
+            <div class="heart">
+                <span id="left" class="material-symbols-outlined">favorite</span>
+                <p id="left">찜</p>
+                <input type="button" value="더보기" class="btn" id="more" onclick="loaction.href='#'">
+                <hr>
+                <ul>
+                    <li class="haert_img">
+                        <a class="heartLink" href="#">
+                            <img class="heart_img" src="images/미라소세지.png" alt="#">
+                            <p class="subtitle">부제목</p>
+                            <strong class="title">제목</strong>
+                        </a>
+                        <a class="writeLink" href="#">
+                            <img class="heart_img" src="images/미라소세지.png" alt="#">
+                            <p class="subtitle">부제목</p>
+                            <strong class="title">제목</strong>
+                        </a>
+                        <a class="writeLink" href="#">
+                            <img class="heart_img" src="images/미라소세지.png" alt="#">
+                            <p class="subtitle">부제목</p>
+                            <strong class="title">제목</strong>
+                        </a>
+                        <a class="heartLink" href="#">
+                            <img class="heart_img" src="images/미라소세지.png" alt="#">
+                            <p class="subtitle">부제목</p>
+                            <strong class="title">제목</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="write">
+       </div>
+        <span class="material-symbols-outlined">density_small</span>
+        <p id="left">내 글</p>
+        <input type="button" value="더보기" class="btn" id="more" onclick="loaction.href='#'">
+        <hr>
+        <ul>
+            <li>
+                <a class="writeLink" href="#">
+                    <img class="write_img" src="images/단호박스콘.png" alt="#">
+                    <p class="subtitle">부제목</p>
+                    <strong class="title">제목</strong>
+                </a>
+                <a class="writeLink" href="#">
+                    <img class="write_img" src="images/단호박스콘.png" alt="#">
+                    <p class="subtitle">부제목</p>
+                    <strong class="title">제목</strong>
+                </a>
+                <a class="writeLink" href="#">
+                    <img class="write_img" src="images/단호박스콘.png" alt="#">
+                    <p class="subtitle">부제목</p>
+                    <strong class="title">제목</strong>
+                </a>
+                <a class="writeLink" href="#">
+                    <img class="write_img" src="images/단호박스콘.png" alt="#">
+                    <p class="subtitle">부제목</p>
+                    <strong class="title">제목</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
     </main>
     <footer></footer>
     

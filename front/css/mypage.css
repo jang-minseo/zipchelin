@@ -10,6 +10,7 @@ footer{height: 180px; background-color: #ffffff; border-top: 1px solid #eee;}
     height: 350px;
     border: 2px solid #8acc39;
     text-align: center;
+    float: left;
 }
 
 .myBox > img{
@@ -20,11 +21,12 @@ footer{height: 180px; background-color: #ffffff; border-top: 1px solid #eee;}
     height: 130px;
 }
 
-#btn{
+.btn{
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 60px;
-    height: 20px;
+    width: 65px;
+    height: 25px;
+    color: #ffffff;
     border: 1px solid #8acc39;
     background-color: #8acc39;
     border-radius: 5px;
@@ -42,4 +44,34 @@ ul > li{
 
 ul > li > p{
     margin: 4px;
+}
+
+#left{
+    display: inline-block;
+
+}
+
+.heart_img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+#more{
+    float: right;
+}
+
+ul > li > img{
+    width: 200px;
+    height: 200px;
+}
+
+.write_img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.main{
+    float: left;
 }
