@@ -131,7 +131,7 @@ input[type="radio"].chkRadio:checked+label:before{background-color: #ffffff; bor
 .arrow button span{vertical-align: middle;}
 
 /* footer */
-#footer{ border-top: 1px solid #eee; position: relative; min-width: 1280px; margin: 0 auto; padding: 15px 0 ;font-size: 14px; height: 188px;}
+#footer{ border-top: 1px solid #eee; position: relative; min-width: 1280px; margin: 0 auto; padding: 50px 0 ;font-size: 14px; height: 188px; margin-top: 10px;}
 .contain {width: 1280px; margin: 0 auto;}
 .footerLogo { float: left; width: 100px; height: 100px; margin-right: 30px;}
 .fmenu { display: inline-block; background-color: #8acc39; border-radius: 5px; margin-bottom: 10px;}
