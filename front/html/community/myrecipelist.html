@@ -26,10 +26,10 @@
     <link rel="stylesheet" type="text/css" href="/front/css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/index.scss">
+    <link rel="stylesheet" type="text/css" href="/front/css/index.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="/assets/front/js/html5shiv.js"></script>
@@ -44,136 +44,169 @@
     <![endif]-->
 
     <!-- myrecipelist CSS -->
-    <link rel="stylesheet" type="text/css" href="library/Users/apple/Documents/zipchelin/front/css/myrecipelist.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/myrecipelist.css">
 
 <title>나만의 레시피 리스트</title>
 </head>
 <body>
     <header></header>
     <main>
-        <h1 class="pageTitle">오늘의 인기글</h1>
-        <div class="best-list">
-            <div class="best">
-                <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                <span class="date">2023.10.26</span>
-                <h6 class="title">맛있는 음식을 봐라</h6>
+        <section>
+            <h1 class="pageTitle">오늘의 인기글</h1>
+            <div class="best-list">
+                <div class="best">
+                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    <span class="date">2023.10.26</span>
+                    <h6 class="title">맛있는 음식을 봐라</h6>
+                </div>
+                <div class="best">
+                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    <span class="date">2023.10.26</span>
+                    <h6 class="title">맛있는 음식을 봐라</h6>
+                </div>
+                <div class="best">
+                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    <span class="date">2023.10.26</span>
+                    <h6 class="title">맛있는 음식을 봐라</h6>
+                </div>
+                <div class="best">
+                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    <span class="date">2023.10.26</span>
+                    <h6 class="title">맛있는 음식을 봐라</h6>
+                </div>
             </div>
-            <div class="best">
-                <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                <span class="date">2023.10.26</span>
-                <h6 class="title">맛있는 음식을 봐라</h6>
-            </div>
-            <div class="best">
-                <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                <span class="date">2023.10.26</span>
-                <h6 class="title">맛있는 음식을 봐라</h6>
-            </div>
-            <div class="best">
-                <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                <span class="date">2023.10.26</span>
-                <h6 class="title">맛있는 음식을 봐라</h6>
-            </div>
-        </div>
+        </section>
+
         <hr>
 
-        <h1 class="pageTitle">나만의 레시피</h1>
-        <select name="" id="">
-            <option value="#" selected>최신순</option>
-            <option value="#">오래된순</option>
-        </select>
-        <button class="write">작성하기</button>
-        <hr>
-        <div class="allwrite">
-            <div class="twoWrite">
-                <div class="write_date 1">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-                <div class="write_date 2">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
+        <section>
+            <h1 class="pageTitle">나만의 레시피</h1>
+            <select name="" id="listBox">
+                <option value="#" selected>최신순</option>
+                <option value="#">오래된순</option>
+            </select>
+            <button class="btn_write">작성하기</button>
+            
+            <ul class="allwrite clearfix">
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="twoWrite">
+                    <div class="write_date">
+                        <div>
+                            <span class="date">2023.10.26</span>
+                            <h6 class="title">맛있는 음식을 봐라</h6>
+                            <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
+                        </div>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                    </div>
+                </li>
+                
+                </ul>
+                
             </div>
-            <hr>
-            <div class="twoWrite">
-                <div class="write_date 3">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-                <div class="write_date 4">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-            </div>
-            <hr>
-            <div class="twoWrite">
-                <div class="write_date 5">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-                <div class="write_date 6">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-            </div>
-            <hr>
-            <div class="twoWrite">
-                <div class="write_date 7">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-                <div class="write_date 8">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-            </div>
-            <hr>
-            <div class="twoWrite">
-                <div class="write_date 9">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-                <div class="write_date 10">
-                    <span class="date">2023.10.26</span>
-                    <h6 class="title">맛있는 음식을 봐라</h6>
-                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                </div>
-            </div>
-            <hr>
-        </div>
-       
+        
 
-        <div class="paging">
-            <ul>
-                <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
-                <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
-                <li class="active"><a href="javascript:">1</a></li>
-                <li><a href="javascript:">2</a></li>
-                <li><a href="javascript:">3</a></li>
-                <li><a href="javascript:">4</a></li>
-                <li><a href="javascript:">5</a></li>
-                <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
-            </ul>
-        </div>
+            <div class="paging">
+                <ul>
+                    <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
+                    <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
+                    <li class="active"><a href="javascript:">1</a></li>
+                    <li><a href="javascript:">2</a></li>
+                    <li><a href="javascript:">3</a></li>
+                    <li><a href="javascript:">4</a></li>
+                    <li><a href="javascript:">5</a></li>
+                    <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
