@@ -3,7 +3,6 @@
 main{display: block; margin: auto; padding: 0 20px; width: 1320px;}
 .pageTitle{padding: 60px 0; font-size: 32px; text-align: center;}
 header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee}
-footer{height: 180px; background-color: #ffffff; border-top: 1px solid #eee;}
 body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 .noticeList{margin: 0 100px 60px; border-top: 2px solid #222222; font-family: 'S-CoreDream'; cursor: pointer;}
