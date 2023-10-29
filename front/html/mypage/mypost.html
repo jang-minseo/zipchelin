@@ -71,9 +71,9 @@
             <h3 class="pageTitle">내가 쓴 글</h3>
             <div class="componentWrap">
                 <ul class="tabGroup">
-                    <li><a href="#" class="tab active">전체</a></li>
-                    <li><a href="#" class="tab">나만의레시피</a></li>
-                    <li><a href="#" class="tab">요리상담소</a></li>
+                    <li><a href="#" class="tab active" data-tab="tabAll">전체</a></li>
+                    <li><a href="#" class="tab" data-tab="tab01">나만의레시피</a></li>
+                    <li><a href="#" class="tab" data-tab="tab02">요리상담소</a></li>
                 </ul>
                 <div class="btnGroup bdBtnGroup">
                     <button class="btn btnBdGray" id="allChk">전체선택</button>
@@ -82,7 +82,143 @@
                 </div>
             </div>
             <div class="tabContWrap">
-                <div class="tabCont01">
+                <div id="tabAll" class="tabCont show">
+                    <ul class="myLists mypostList">
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk01">
+                                <label for="listChk01"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을 영락과 부패 뿐이다 영락과 부패 뿐이다 </p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk02">
+                                <label for="listChk02"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample2.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk03">
+                                <label for="listChk03"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk04">
+                                <label for="listChk04"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk05">
+                                <label for="listChk05"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample2.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk06">
+                                <label for="listChk06"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/none.png" alt="이미지 없음"></div>
+                        </li>
+                    </ul>
+                    <div class="paging">
+                        <ul>
+                            <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
+                            <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
+                            <li class="active"><a href="javascript:">1</a></li>
+                            <li><a href="javascript:">2</a></li>
+                            <li><a href="javascript:">3</a></li>
+                            <li><a href="javascript:">4</a></li>
+                            <li><a href="javascript:">5</a></li>
+                            <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tab01" class="tabCont">
                     <ul class="myLists mypostList">
                         <li class="myItem mypostItem">
                             <div class="chkWrap">
@@ -183,6 +319,142 @@
                                 </ul>
                             </div>
                             <div class="imgBox"><img src="/front/images/food/sample.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk06">
+                                <label for="listChk06"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/none.png" alt="이미지 없음"></div>
+                        </li>
+                    </ul>
+                    <div class="paging">
+                        <ul>
+                            <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
+                            <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
+                            <li class="active"><a href="javascript:">1</a></li>
+                            <li><a href="javascript:">2</a></li>
+                            <li><a href="javascript:">3</a></li>
+                            <li><a href="javascript:">4</a></li>
+                            <li><a href="javascript:">5</a></li>
+                            <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tab02" class="tabCont">
+                    <ul class="myLists mypostList">
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk01">
+                                <label for="listChk01"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을 영락과 부패 뿐이다 영락과 부패 뿐이다 </p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample2.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk02">
+                                <label for="listChk02"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample2.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk03">
+                                <label for="listChk03"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample2.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk04">
+                                <label for="listChk04"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample2.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk05">
+                                <label for="listChk05"></label>
+                            </div>
+                            <div class="contBox">
+                                <span class="postDate">2023.10.17 00:00</span>
+                                <h6>생명을 불어 넣는</h6>
+                                <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을</p>
+                                <ul class="accList">
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">visibility</span>268
+                                    </li>
+                                    <li class="accItem">
+                                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample2.jpg" alt="샘플 이미지"></div>
                         </li>
                         <li class="myItem mypostItem">
                             <div class="chkWrap">
