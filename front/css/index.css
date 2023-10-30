@@ -1,21 +1,43 @@
+/* 집슐랭픽 */
+.zipPick {margin: 100px 0;}
+.zipPick h1 { text-align: center; margin-bottom: 50px; font-size: 30px;}
+.zipPickInner {width: 1280px; margin: 0 auto;}
+.zipPickInner ul {display: flex; justify-content: center;}
+.subImg {margin-top: 25px;}
+.zipPickInner img { width: 150px; height: 150px; border-radius: 100px;  margin: 0 20px;}
+.mainImg img {width: 200px; height: 200px;}
+.pickButton { font-size: 30px; margin-top: 95px;}
+.pickButton:nth-child(1) { margin-right: 30px;}
+.pickButton:nth-child(7) { margin-left: 30px;}
+.pickButton:hover {color: #8acc39;}
 
-
-
-
+/* 커뮤니티 */
+.contentList {width: 1280px; margin: 0 auto; height: 400px; margin-bottom: 100px;}
+.cont_title1, .cont_title2 {font-size: 20px; margin-bottom: 15px; line-height: 20px;}
+.contentList .more {float: right; font-size: 16px; font-weight: normal;}
+.contentList img { width: 100px; height: 100px;}
+.myRecipe {width: 600px; float: left; }
+.myRecipe .textBox {float: left;}
+.myRecipe .textBox .title {margin-bottom: 10px;}
+.myRecipe .imgBox {float: right;}
+.myRecipe li {margin-bottom: 120px; border-top: 1px solid #e9e9e9; padding-top: 20px;}
+.cookConsulting {width: 600px; float: right;}
+.cookConsulting .textBox {float: left;}
+.cookConsulting .textBox .title {margin-bottom: 10px;}
+.cookConsulting .imgBox {float: right;}
+.cookConsulting li {margin-bottom: 120px; border-top: 1px solid #e9e9e9; padding-top: 20px;}
 
 /* 카테고리 */
-.category { border: 1px solid #e9e9e9; width: 1280px; height: 100px; background-color: #eee; margin: 0 auto;}
+.category { width: 1280px; height: 100px; background-color: #eee; margin: 100px auto;}
 .categoryBox {width: 1280px; margin: 0 auto;}
 .categoryBox ul li{ position: relative; float: left; padding-left: 70px;}
 .categoryBox ul li p { font-size: 12px; margin-top: 5px; text-align: center;}
 .categoryName img {width: 50px; height: 50px; margin-top: 15px; overflow: hidden;}
 
 /* 사이드 바 */
-#sidebar {border: 1px solid #e9e9e9; width: 150px; height: 300px; float: right; margin-right: 50px; z-index: 1px;}
-.sidebarInner { display: flex; padding-left: 25px;}
-.sidebarInner p {padding-left: 10px; padding-top: 5px;}
-.sidebarInner img {width: 20px;}
-
+.sideBanner { border: 1px solid #e9e9e9; width: 150px; height: 400px; font-size: 15px; text-align: center;} 
+.sideBanner li { padding-top: 20px;}
+.sideBanner .btn_top {}
 
 
 
