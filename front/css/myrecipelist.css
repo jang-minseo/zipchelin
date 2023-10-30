@@ -10,21 +10,24 @@ main{display: block; margin: auto; padding: 0 20px; width: 1320px;}
 .best-list {
     display: flex;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 .best{
-    margin: 0 auto;
+    margin: 20px 20px;
 }
 img {
-    width: 190px;
-    height: 190px;
-    
-    margin: 13px 0;
+    width: 200px;
+    height: 200px;
 }
 .title{
     font-size: 16px;
 }
 
 /* 나만의 레시피 */
+.btn_container{
+    
+}
 .allWrite {
     display: flex;
     justify-content: space-between;
@@ -33,12 +36,18 @@ img {
 .twoWrite {
     float: left;
     width: 50%;
-    padding: 24px;
+    padding: 0 0 24px 0;
 }
 .write_date { /*게시글한개*/
     justify-content: space-between;
     display: flex;
     margin-bottom: 10px; /*행 간격*/
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.write_section {
+    margin-right: 60px;
 }
 .write_date img {
     width: 100px;
