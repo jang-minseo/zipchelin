@@ -40,47 +40,55 @@
         
         <style>
             * {
-                box-sizing: border-box;
-            } 
-            .wrap {
-                margin: auto;
-                width: 912px;
-                height: 890px;
-                border: 1px solid black;   
+            box-sizing: border-box;
+        } 
+        .wrap {
+            margin: auto;
+            width: 954px;
+            height: auto;
+            /*
+            border: 1px solid black;   
+            */
+        }
+        .mainTitle{
+            font-size: 2.5em;
+            text-align: center;
+            line-height: 280%;
+        }
+        .innerWrap1 {
+            padding: 30px 0 0 30px;
+        }
+            .innerWrap1:nth-child(2n) {
+                background-color: aqua;
             }
-            .mainTitle{
-                font-size: 2.5em;
-                text-align: center;
-                line-height: 280%;
-            }
-            .innerWrap1 {
-                padding: 30px 0 30px 30px;
-            }
-            .recipeList {
-                position: relative;
-                float: left;
-                padding-right: 30px;
-                padding-bottom: 52px;
-                z-index: 0;
-            }
-            .heart-button{
-                position: absolute;
-                background: url("heart_test.png") no-repeat ;
-                background-size: cover;
-                top: 10px;
-                left: 145px;
-                width: 35px;
-                height: 35px;
-                border: 0px solid black; 
-            }
-            .recipePic {
-                width: 190px;
-                height: 190px;
-                border: 1px solid black;
-                margin-bottom: 13px; 
-                border-radius: 3px;
-            }
-            
+
+        .recipeList {
+            position: relative;
+            float: left;
+            padding-right: 40px;
+            padding-bottom: 45px;
+            z-index: 0;
+        }
+        .heart-button{
+            position: absolute;
+            background: url("heart_test.png") no-repeat ;
+            background-size: cover;
+            top: 20px;
+            left: 148px;
+            width: 35px;
+            height: 35px; 
+            border: 0px solid black; 
+        }
+                .heart-button:hover {
+                    background-color: #8acc39;
+                }
+        .recipePic {
+            width: 190px;
+            height: 190px;
+            border: 1px solid black;
+            margin-bottom: 13px; 
+            border-radius: 3px;
+        }
         
     </style>
     <title>집슐랭</title>
