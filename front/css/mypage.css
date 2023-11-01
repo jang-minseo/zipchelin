@@ -4,16 +4,16 @@ main{display: block; margin: auto; padding: 0 20px; width: 1320px;}
 header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee}
 footer{height: 180px; background-color: #ffffff; border-top: 1px solid #eee;}
 
-.myBox{
+.mypage_leftBox{
     margin: 50px;
     width: 250px;
     height: 350px;
-    border: 2px solid #8acc39;
+    border: 2px solid #f7f7f7;
     text-align: center;
     float: left;
 }
 
-.myBox > img{
+.profile_img{
     margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 50%;
@@ -21,60 +21,17 @@ footer{height: 180px; background-color: #ffffff; border-top: 1px solid #eee;}
     height: 130px;
 }
 
-.btn{
+.edit_btn{
+    border: 1px solid #4FA72F; 
+    background-color: #fff; 
+    color: #4FA72F;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 65px;
     height: 25px;
-    color: #ffffff;
-    border: 1px solid #8acc39;
-    background-color: #8acc39;
     border-radius: 5px;
 }
 
-ul > span{
-    display: inline-block;
-}
-
-ul > li{
-    display: flex;
-    margin: 5px;
-    margin-left: 80px;
-}
-
-ul > li > p{
-    margin: 4px;
-}
-
-#left{
-    display: inline-block;
-
-}
-
-.heart_img {
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-#more{
-    float: right;
-}
-
-ul > li > img{
-    width: 200px;
-    height: 200px;
-}
-
-.write_img{
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-.main{
-    float: left;
-}
 .pageTitle{padding: 60px 0; font-size: 32px; text-align: center;}
 header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #e9e9e9}
 footer{height: 180px; background-color: #ffffff; border-top: 1px solid #e9e9e9;}

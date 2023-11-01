@@ -43,33 +43,35 @@
 <body>
     <header></header>
     <main class="clearfix">
-        <!--마이페이지 (left)박스-->
-       <div class="myBox">
-        <img src="images/profile.jpg" alt="profile">
-        <h1>USER_ID</h1>
-        <input type="button" value="정보수정" class="btn" onclick="loaction.href='#'"> 
-        <ul>
-            <li class="myBox_count">
-                <span class="material-symbols-outlined">favorite</span>
-                <p>찜 0개</p>
-            </li>
-            <li class="myBox_count">
-                <span class="material-symbols-outlined">density_small</span>
-                <p>내 글 0개</p>
-            </li>
-            <li class="myBox_count">
-                <span class="material-symbols-outlined">stylus</span>
-                <p>내 댓글 0개</p>
-            </li>
-        </ul>
+        <!--마이페이지 left박스-->
+       <div class="mypage_leftBox">
+            <img class="profile_img" src="images/profile.jpg" alt="profile">
+            <h1>USER_ID</h1>
+            <input type="button" value="정보수정" class="edit_btn" onclick="loaction.href='#'"> 
+            <ul class="leftBox_icon">
+                <li class="myBox_count">
+                    <span class="material-symbols-outlined">favorite</span>
+                    <p>찜 0개</p>
+                </li>
+                <li class="myBox_count">
+                    <span class="material-symbols-outlined">density_small</span>
+                    <p>내 글 0개</p>
+                </li>
+                <li class="myBox_count">
+                    <span class="material-symbols-outlined">stylus</span>
+                    <p>내 댓글 0개</p>
+                </li>
+            </ul>
        </div>
 
        <!--mypage main-->
-       <div class="main">
+       <div class="mypage_main">
+
+            <!--찜-->
             <div class="heart">
-                <span id="left" class="material-symbols-outlined">favorite</span>
+                <span class="material-symbols-outlined">favorite</span>
                 <p id="left">찜</p>
-                <input type="button" value="더보기" class="btn" id="more" onclick="loaction.href='#'">
+                <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
                 <hr>
                 <ul>
                     <li class="haert_img">
@@ -78,7 +80,7 @@
                             <p class="subtitle">부제목</p>
                             <strong class="title">제목</strong>
                         </a>
-                        <a class="writeLink" href="#">
+                        <a class="heartLink" href="#">
                             <img class="heart_img" src="images/미라소세지.png" alt="#">
                             <p class="subtitle">부제목</p>
                             <strong class="title">제목</strong>
@@ -96,37 +98,82 @@
                     </li>
                 </ul>
             </div>
+
+            <!--내 글-->
             <div class="write">
-       </div>
-        <span class="material-symbols-outlined">density_small</span>
-        <p id="left">내 글</p>
-        <input type="button" value="더보기" class="btn" id="more" onclick="loaction.href='#'">
-        <hr>
-        <ul>
-            <li>
-                <a class="writeLink" href="#">
-                    <img class="write_img" src="images/단호박스콘.png" alt="#">
-                    <p class="subtitle">부제목</p>
-                    <strong class="title">제목</strong>
-                </a>
-                <a class="writeLink" href="#">
-                    <img class="write_img" src="images/단호박스콘.png" alt="#">
-                    <p class="subtitle">부제목</p>
-                    <strong class="title">제목</strong>
-                </a>
-                <a class="writeLink" href="#">
-                    <img class="write_img" src="images/단호박스콘.png" alt="#">
-                    <p class="subtitle">부제목</p>
-                    <strong class="title">제목</strong>
-                </a>
-                <a class="writeLink" href="#">
-                    <img class="write_img" src="images/단호박스콘.png" alt="#">
-                    <p class="subtitle">부제목</p>
-                    <strong class="title">제목</strong>
-                </a>
-            </li>
-        </ul>
-    </div>
+            <span class="material-symbols-outlined">density_small</span>
+            <p id="left">내 글</p>
+            <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
+            <hr>
+            <ul>
+                <li>
+                    <a class="writeLink" href="#">
+                        <img class="write_img" src="images/단호박스콘.png" alt="#">
+                        <p class="subtitle">부제목</p>
+                        <strong class="title">제목</strong>
+                    </a>
+                    <a class="writeLink" href="#">
+                        <img class="write_img" src="images/단호박스콘.png" alt="#">
+                        <p class="subtitle">부제목</p>
+                        <strong class="title">제목</strong>
+                    </a>
+                    <a class="writeLink" href="#">
+                        <img class="write_img" src="images/단호박스콘.png" alt="#">
+                        <p class="subtitle">부제목</p>
+                        <strong class="title">제목</strong>
+                    </a>
+                    <a class="writeLink" href="#">
+                        <img class="write_img" src="images/단호박스콘.png" alt="#">
+                        <p class="subtitle">부제목</p>
+                        <strong class="title">제목</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--댓글-->
+        <div class="comment">
+            <span class="material-symbols-outlined">stylus</span>
+            <p>내 댓글</p>
+            <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
+            <hr>  
+            <div class="mypage_comment">
+                <span class="mypage_postDate">2023.10.17 00:00</span>
+                <h6>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원?? 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원</h6>
+                <div class="mypage_replyPage">
+                    <strong class="mypage_category">요리 상담소</strong><p class="mypage_linkTitle">모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃</p><span class="mypage_material-symbols-outlined">chevron_right</span>
+                </div>
+                <ul class="mypage_accList">
+                    <li class="mypage_accItem">
+                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage_comment">
+                <span class="mypage_postDate">2023.10.17 00:00</span>
+                <h6>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원?? 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원</h6>
+                <div class="mypage_replyPage">
+                    <strong class="mypage_category">요리 상담소</strong><p class="mypage_linkTitle">모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃</p><span class="mypage_material-symbols-outlined">chevron_right</span>
+                </div>
+                <ul class="mypage_accList">
+                    <li class="mypage_accItem">
+                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage_comment">
+                <span class="mypage_postDate">2023.10.17 00:00</span>
+                <h6>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원?? 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원</h6>
+                <div class="mypage_replyPage">
+                    <strong class="mypage_category">요리 상담소</strong><p class="mypage_linkTitle">모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃</p><span class="mypage_material-symbols-outlined">chevron_right</span>
+                </div>
+                <ul class="mypage_accList">
+                    <li class="mypage_accItem">
+                        <span class="icon material-symbols-outlined">thumb_up</span>80
+                    </li>
+                </ul>
+            </div>
+        </div>
 </div>
     </main>
     <footer></footer>
