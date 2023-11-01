@@ -16,6 +16,19 @@ main{display: block; margin: auto; padding: 0 20px; width: 1320px;}
 .best{
     margin: 20px 20px;
 }
+span.date{
+    margin-right: 8px;
+}
+ul.accList{
+    display: flex;
+    align-items: center;
+}
+li.accItem{
+    margin-right: 8px;
+}
+.material-symbols-outlined{
+    margin-right: 4px;
+}
 img {
     width: 200px;
     height: 200px;
@@ -26,7 +39,8 @@ img {
 
 /* 나만의 레시피 */
 .btn_container{
-    
+    display: flex;
+    justify-content: space-around;
 }
 .allWrite {
     display: flex;
