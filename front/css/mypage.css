@@ -1,8 +1,12 @@
 @charset "utf-8";
 
 main{display: block; margin: auto; padding: 0 20px; width: 1320px;}
+.pageTitle{padding: 60px 0; font-size: 32px; text-align: center;}
 header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee}
-footer{height: 180px; background-color: #ffffff; border-top: 1px solid #eee;}
+body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
+
+/* 마이페이지 레프트 */
+.myMenu{float: left; width: 24%; /* padding-top: 40%;  */margin-right: 24px; /* background-color: #f7f7f7; */}
 
 .mypage_leftBox{
     margin: 50px;
@@ -10,7 +14,6 @@ footer{height: 180px; background-color: #ffffff; border-top: 1px solid #eee;}
     height: 350px;
     border: 2px solid #f7f7f7;
     text-align: center;
-    float: left;
 }
 
 .profile_img{
@@ -66,7 +69,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 /* *** 쓴 글,댓글 리스트 *** */
 /* 공통 */
-.myLists{margin: 24px 0 60px; font-family: 'S-CoreDream';}
+.myLists{margin-bottom: 60px; font-family: 'S-CoreDream';}
 .myLists .myItem{display: flex; justify-content: space-between; padding: 24px 32px; border-bottom: 1px solid #e9e9e9; cursor: pointer;}
 .myItem .chkWrap {display: none; align-self: center;}
 .myItem .contBox .postDate{color: #999; font-size: 12px; font-weight: 300;}
@@ -74,12 +77,14 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .myItem .accList{display: flex; color: #999; font-size: 11px;}
 .myItem .accItem:first-child{margin-right: 8px;}
 .myItem .icon{display: inline-block; margin-right: 4px; color: #c1c1c1; font-size: 18px; vertical-align: text-bottom;}
+.tabCont{display: none;}
+.tabCont.show{display: block;}
 
 /* 쓴 글 */
 .mypostItem .contBox{width: 80%;}
 .mypostItem .contBox h6{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .mypostItem .contBox p{width: 100%; margin-bottom: 16px; font-size: 15px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
-.mypostItem .imgBox{flex: 0 0 100px; border-radius: 4px; overflow: hidden;}
+.mypostItem .imgBox{flex: 0 0 100px; max-height: 114px; border-radius: 4px; overflow: hidden;}
 .mypostItem .imgBox img{width: 100%; height: 100%; object-fit: cover;}
 .mypostItem:hover img{transform: scale(1.2); transition-duration: 0.5s;}
 

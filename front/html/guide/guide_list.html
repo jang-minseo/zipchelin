@@ -26,69 +26,68 @@
     <link rel="stylesheet" type="text/css" href="/front/css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/notice.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/index.css">
 
     <!-- plugin CSS -->
     <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
 
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/front/js/html5shiv.js"></script>
+    <script type="text/javascript" src="/assets/front/js/respond.min.js"></script>
+    <script type="text/javascript" src="/assets/front/js/IE9.js"></script>
+    <![endif]-->
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
     <![endif]-->
     <!--[if lte IE 8]>
-        <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
-        <![endif]-->
-        
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
+
+    <!-- myrecipelist CSS -->
+    <link rel="stylesheet" type="text/css" href="/front/css/myrecipelist.css">  
         <style>
             * {
-            box-sizing: border-box;
-        } 
-        .wrap {
-            margin: auto;
-            width: 954px;
-            height: auto;
-            /*
-            border: 1px solid black;   
-            */
-        }
-        .mainTitle{
-            font-size: 2.5em;
-            text-align: center;
-            line-height: 280%;
-        }
-        .innerWrap1 {
-            padding: 30px 0 0 30px;
-        }
-            .innerWrap1:nth-child(2n) {
-                background-color: aqua;
+                box-sizing: border-box;
+            } 
+            .wrap {
+                margin: auto;
+                width: 912px;
+                height: 890px;
+                border: 1px solid black;   
             }
-
-        .recipeList {
-            position: relative;
-            float: left;
-            padding-right: 40px;
-            padding-bottom: 45px;
-            z-index: 0;
-        }
-        .heart-button{
-            position: absolute;
-            background: url("heart_test.png") no-repeat ;
-            background-size: cover;
-            top: 20px;
-            left: 148px;
-            width: 35px;
-            height: 35px; 
-            border: 0px solid black; 
-        }
-                .heart-button:hover {
-                    background-color: #8acc39;
-                }
-        .recipePic {
-            width: 190px;
-            height: 190px;
-            border: 1px solid black;
-            margin-bottom: 13px; 
-            border-radius: 3px;
-        }
+            .mainTitle{
+                font-size: 2.5em;
+                text-align: center;
+                line-height: 280%;
+            }
+            .innerWrap1 {
+                padding: 30px 0 30px 30px;
+            }
+            .recipeList {
+                position: relative;
+                float: left;
+                padding-right: 30px;
+                padding-bottom: 52px;
+                z-index: 0;
+            }
+            .heart-button{
+                position: absolute;
+                background: url("heart_test.png") no-repeat ;
+                background-size: cover;
+                top: 10px;
+                left: 145px;
+                width: 35px;
+                height: 35px;
+                border: 0px solid black; 
+            }
+            .recipePic {
+                width: 190px;
+                height: 190px;
+                border: 1px solid black;
+                margin-bottom: 13px; 
+                border-radius: 3px;
+            }
+            
         
     </style>
     <title>집슐랭</title>
@@ -96,11 +95,12 @@
 <body>
 <!--==============헤더================-->   
     <header></header>
-<!--==============카테고리================-->    
-    
-<!--==============레시피 메인================-->   
+<!--==============카테고리================-->
+
+<!--==============가이드 메인================-->
+   
     <main class="listMain">
-        <h1 class="mainTitle">집슐랭 레시피</h1>
+        <h1 class="mainTitle">집슐랭 가이드</h1>
         <div class="wrap">
             <div class="innerWrap1">
                 <ul class="clearfix">
@@ -203,8 +203,7 @@
                 </ul>
             </div>
         </div>
-    
-        
+
 <!--==============페이징 단락================-->
         <div class="paging">
             <ul class="clearfix">
@@ -219,6 +218,7 @@
             </ul>
         </div>
     </main>
+    
 <!--==============푸터================-->    
     <footer></footer>
 
