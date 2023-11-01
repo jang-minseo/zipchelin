@@ -37,7 +37,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 .pageTitle{padding: 60px 0; font-size: 32px; text-align: center;}
 header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #e9e9e9}
-footer{height: 180px; background-color: #ffffff; border-top: 1px solid #e9e9e9;}
 body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 /* 마이페이지 레프트 */
@@ -63,9 +62,12 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .AllList{float: right; width: calc(76% - 24px);}
 .componentWrap{display: flex; justify-content: space-between; border-bottom: 1px solid #e9e9e9;}
 .componentWrap .btnGroup{flex: 1 0 auto; justify-content: flex-end; margin-bottom: 6px;}
-.bdBtnGroup .btn:not(:last-child){display: none;}
+.btnGroup.hide{display: none;}
+/* .bdBtnGroup .btn:not(:last-child){display: none;} */
 .bdBtnGroup button{margin-right: 6px;}
 .bdBtnGroup button:last-child{ margin-right: 0;}
+.bdBtnGroup .btn{position: relative;}
+.bdBtnGroup label{position: absolute; left: 0; top: 0; width: 100%; height: 100%; line-height: 39px;}
 
 /* *** 쓴 글,댓글 리스트 *** */
 /* 공통 */
