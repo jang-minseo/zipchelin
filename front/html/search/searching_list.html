@@ -26,33 +26,59 @@
     <link rel="stylesheet" type="text/css" href="/front/css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/notice.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/index.css">
 
     <!-- plugin CSS -->
     <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
 
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/front/js/html5shiv.js"></script>
+    <script type="text/javascript" src="/assets/front/js/respond.min.js"></script>
+    <script type="text/javascript" src="/assets/front/js/IE9.js"></script>
+    <![endif]-->
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
     <![endif]-->
     <!--[if lte IE 8]>
-        <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
-        <![endif]-->
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
+
+    <!-- myrecipelist CSS -->
+    <link rel="stylesheet" type="text/css" href="/front/css/myrecipelist.css">
+    <title>집슐랭</title>
     <style>
         .searchSection {
-            position: relative;
+            display: flex;
+            justify-content: center;
             border: 1px solid black;
-            margin: auto;
-            width: 100%;
-            height: 140px;
+            margin: 0%;
+            width: auto;
+            height: 250px;
         }
         .searchBox {
-            position: relative;
+            position: absolute;
             width: 340px;
-            top: 45px;
-            left: 480px;
+            top: 120px;
             border: 2px solid #8acc39 ;
-            overflow: hidden;
             border-radius:40px;
+        }
+        .recomBox {
+            position: absolute;
+            width: 370px;
+            top: 178px;
+            height: 33px;
+            overflow: hidden;
+        }
+        .recomBut {
+            float: left;
+            display: block;
+            padding: 9px 9px 7px 9px;
+            margin: 1px 6px 1px 0px ;
+            border-radius:40px;
+            background-color: #e8ffc9;
+        }
+        .recomBut:hover {
+            background-color: #f9fff1;
         }
         .searchText {
             position: relative;
@@ -69,20 +95,20 @@
             background: url("search.png") no-repeat ;
             background-size: cover;
             border: 0px;
-
         }
-        
         */
     </style>
     <style>      
-        * {
+       * {
             box-sizing: border-box;
         } 
         .wrap {
             margin: auto;
-            width: 912px;
+            width: 954px;
             height: auto;
+            /*
             border: 1px solid black;   
+            */
         }
         .mainTitle{
             font-size: 2.5em;
@@ -99,20 +125,23 @@
         .recipeList {
             position: relative;
             float: left;
-            padding-right: 30px;
-            padding-bottom: 52px;
+            padding-right: 40px;
+            padding-bottom: 45px;
             z-index: 0;
         }
         .heart-button{
             position: absolute;
             background: url("heart_test.png") no-repeat ;
             background-size: cover;
-            top: 10px;
-            left: 145px;
+            top: 20px;
+            left: 148px;
             width: 35px;
-            height: 35px;
+            height: 35px; 
             border: 0px solid black; 
         }
+                .heart-button:hover {
+                    background-color: #8acc39;
+                }
         .recipePic {
             width: 190px;
             height: 190px;
@@ -150,11 +179,7 @@
         
         */
 
-        function onclick() {
-            alert("외, 눌러바..? 나않헤");
-        }
     </script>
-    <title>집슐랭</title>
 </head>
 <body>
 <!--==============헤더================-->   
@@ -167,225 +192,247 @@
             <input class="searchText" type="text" title="검색어 입력 창" placeholder="검색어를 입력해주세요" maxlength="50">
             <input class="searchButton" type="submit" id="search" name="submit" alt="search" value=""> 
         </div>
-    </div>   
-<!--==============레시피 메인================-->   
-    <main class="listMain">
-        <h1 class="mainTitle">집슐랭 레시피</h1>
-        <div class="wrap">
-            <div class="innerWrap1">
-                <ul class="clearfix">
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">    
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button" onclick="alert('클릭!')">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button" onclick="alert('클릭!')">    
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="innerWrap1">
-                <ul class="clearfix">
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">    
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button" onclick="alert('클릭!')">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button" onclick="alert('클릭!')">    
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button" onclick="alert('클릭!')">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="recomBox clearfix">
+            <ul>
+                <li class="recomList">
+                    <button class="recomBut" type="button">제철 과일</button>
+                </li>
+                <li class="recomList">
+                    <button class="recomBut" type="button">생선 구이</button>
+                </li>
+                <li class="recomList">
+                    <button class="recomBut" type="button">인성손질법</button>
+                </li>
+                <li class="recomList">
+                    <button class="recomBut" type="button">감자손질법</button>
+                </li>
+                <li class="recomList">
+                    <button class="recomBut" type="button">디저트</button>
+                </li>
+                
+            </ul>
         </div>
-    </main>    
-    
-        
-<!--==============페이징 단락================-->
-        
-    
+    </div>   
+<!--==============레시피 서칭 결과================-->   
+    <main class="listMain">
+        <section>
+            <h1 class="mainTitle">집슐랭 레시피</h1>
+            <div class="wrap">
+                <div class="innerWrap1">
+                    <ul class="clearfix">
+                        <li class="recipeList">
+                            <input type="button" class="heart-button">
+                            <a class="recipeLink" href="#">
+                                <img class="recipePic" src="fakecog_test.png" alt="#">
+                                <p class="subTitle">소제목입니다 소제목과 같이</p>
+                                <strong class="Title">큰제목의 필요성</strong>
+                            </a>
+                        </li>
+                        <li class="recipeList">
+                            <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <a class="recipeLink" href="#">
+                            <input type="button" class="heart-button">    
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <a class="recipeLink" href="#">
+                            <input type="button" class="heart-button">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <a class="recipeLink" href="#">
+                            <input type="button" class="heart-button">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <a class="recipeLink" href="#">
+                            <input type="button" class="heart-button">    
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+<!--==============가이드 서칭 결과================-->   
+        <section>
+            <h1 class="mainTitle">가이드 레시피</h1>
+            <div class="wrap">
+                <div class="innerWrap1">
+                    <ul class="clearfix">
+                        <li class="recipeList">
+                            <input type="button" class="heart-button">
+                            <a class="recipeLink" href="#">
+                                <img class="recipePic" src="fakecog_test.png" alt="#">
+                                <p class="subTitle">소제목입니다 소제목과 같이</p>
+                                <strong class="Title">큰제목의 필요성</strong>
+                            </a>
+                        </li>
+                        <li class="recipeList">
+                            <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <a class="recipeLink" href="#">
+                            <input type="button" class="heart-button">    
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <a class="recipeLink" href="#">
+                            <input type="button" class="heart-button">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <a class="recipeLink" href="#">
+                            <input type="button" class="heart-button">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <a class="recipeLink" href="#">
+                            <input type="button" class="heart-button">    
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                    <li class="recipeList">
+                        <input type="button" class="heart-button">
+                        <a class="recipeLink" href="#">
+                            <img class="recipePic" src="fakecog_test.png" alt="#">
+                            <p class="subTitle">소제목입니다 소제목과 같이</p>
+                            <strong class="Title">큰제목의 필요성</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>   
+
+    </main>
 <!--==============푸터================-->    
     <footer>
-
+        
     </footer>
 
-        <!-- js -->
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="/front/js/notice.js"></script>
+<!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/front/js/notice.js"></script>
 </body>
 </html>
