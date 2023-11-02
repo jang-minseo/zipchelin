@@ -130,6 +130,15 @@ input[type="radio"].chkRadio:checked+label:before{background-color: #ffffff; bor
 .arrow button{background: transparent;}
 .arrow button span{vertical-align: middle;}
 
+/* header */
+header { position: fixed; width: 100%; padding: 10px 0; background-color: #fff;  z-index: 1; border-bottom: 1px solid #eee;}
+.headerContainer { display: flex; justify-content: space-between; width: 1280px; margin: auto; }
+.logo { width: 70px; }
+.menu { display: flex; gap: 100px; align-items: center;}
+.menu a { font-size: 18px; }
+.right_menu { display: flex; align-items: center; gap: 20px; right: 10%; font-size: 14px; }
+
+
 /* footer */
 #footer{ border-top: 1px solid #eee; position: relative; min-width: 1280px; margin: 0 auto; padding: 50px 0 ;font-size: 14px; height: 188px; margin-top: 10px;}
 .contain {width: 1280px; margin: 0 auto;}
