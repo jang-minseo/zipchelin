@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="keywords" content="레시피, 혼밥, 요리">
+    <meta name="description" content="요리에 관한 모든 정보를 한 번에 보세요">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="집슐랭">
+    <meta property="og:description" content="요리에 관한 모든 정보를 한 번에 보세요">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- favicon-->
+    <link rel="shortcut icon" type="text/css" href="">
+    <link rel="icon"  type="text/css" href="">
+
+    <!-- google icon CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    
+    <!-- basic CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <!-- page CSS -->
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/list.css">
+
+    <!-- plugin CSS -->
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+
+    <!--[if IE 9]>
+        <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+        <![endif]-->
+    <!--[if lte IE 8]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
+
+    <title>레시피 리스트</title>
+</head>
+<body>
+    <!--헤더-->   
+    <header class="header">
+        <div class="headerContainer">
+            <img class="logo" src="../../images/logo/logo.png" />
+            <div class="menu">
+                <a href="">레시피</a>
+                <a href="">가이드</a>
+                <a href="">커뮤니티</a>
+                <a href="">공지사항</a>
+            </div>
+            <div class="right_menu">
+                <!-- <img class="icon" src="../../images/icon2/search.png" /> -->
+                <a href="">
+                    <span class="material-symbols-outlined">search</span>
+                </a>
+                <a href="">로그인</a>
+                <a href="">회원가입</a>
+            </div>
+        </div>
+    </header>
+    <!--리스트 메인-->
+    <main>
+        <div id="main">        
+            <!--리스트 타이틀-->
+            <div class="title_box">
+                <h2 class="list_title">레시피.ZIP</h2>
+            </div>   
+            <!--카테고리-->         
+            <div class="category">
+                <ul class="categoryName clearfix">
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_rice.png" alt="rice">
+                            <p>밥요리</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_soup.png" alt="soup">
+                            <p>국&탕</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_chan.png" alt="chan">
+                            <p>밑반찬</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_boiled.png" alt="boiled">
+                            <p>찜&조림</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_salad.png" alt="salad">
+                            <p>샐러드</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_box.png" alt="box">
+                            <p>도시락</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_fried.png" alt="fried">
+                            <p>튀김</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_dessert.png" alt="dessert">
+                            <p>간식&분식</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_dessert2.png" alt="dessert2">
+                            <p>디저트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryBox">
+                            <img src="/front/images/icon/cm_etc.png" alt="etc">
+                            <p>기타요리</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <!--레시피 리스트--> 
+            <div class="list_container">
+                <ul class="list_ul">
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                    
+                    
+                </ul>
+            </div>
+            
+            
+            <!--페이징 단락-->
+            <div class="paging">
+                <ul class="clearfix">
+                    <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
+                    <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
+                    <li class="active"><a href="javascript:">1</a></li>
+                    <li><a href="javascript:">2</a></li>
+                    <li><a href="javascript:">3</a></li>
+                    <li><a href="javascript:">4</a></li>
+                    <li><a href="javascript:">5</a></li>
+                    <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <!--푸터-->    
+    <footer id="footer">
+        <div class="contain">
+            <div id="footerMenu">
+                <a href="index.html" class="footerLogo">
+                    <img src="../../images/logo/logo.png" alt="zipchelin">
+                </a>
+                <ul class="fmenu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="#"><img src="../../images/icon/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="../../images/icon/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="../../images/icon/youtube.png" alt="youtube"></a></li>
+                </ul>
+                    <address>
+                        <span>회사명 : 주식회사 집슐랭 (서울시 종로구 종로78 (종로2가, 미려빌딩 3,5,6층))</span><br>
+                        <span> 전화 : 02-1111-1111</span>
+                        <span> 팩스 : 02-2222-2222 </span>
+                        <span> E-MAIL : zipcheiln@zipc.co.kr</span>
+                    </address>
+                <p class="copyright">Copyright &copy; 집슐랭, All Rights Reserved.a</p>  
+            </div>
+        </div>
+    </footer>
+    
+    <!-- js -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="/front/js/notice.js"></script>
+</body>
+</html>
