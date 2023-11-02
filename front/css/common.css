@@ -101,6 +101,12 @@ input[type="checkbox"].chkBox:checked+label:before{background-color: #8acc39; fo
 input[type="radio"].chkRadio+label:before{border-radius: 300px; vertical-align: sub;}
 input[type="radio"].chkRadio:checked+label:before{background-color: #ffffff; border: 8px solid #8acc39;}
 
+/* 비밀번호 숨기기,보이기 */
+.inputField{position: relative;}
+.inputField label{display: block; width: 0; height: 0; text-indent: -999px; overflow: hidden;}
+.inputField .pwdToggle{position: absolute; right: 16px; top: 10px; cursor: pointer;}
+.inputBox .inputError{display: block; font-size: 12px; text-align: left;}
+
 /* button */
 .btnGroup{display: flex;}
 .btnBd{border: 1px solid #4FA72F; background-color: #fff; color: #4FA72F;}
