@@ -50,15 +50,15 @@
             <input type="button" value="정보수정" class="edit_btn" onclick="loaction.href='#'"> 
             <ul class="leftBox_icon">
                 <li class="myBox_count">
-                    <span class="material-symbols-outlined">favorite</span>
+                    <span id="myBox_icon" class="material-symbols-outlined">favorite</span>
                     <p>찜 0개</p>
                 </li>
                 <li class="myBox_count">
-                    <span class="material-symbols-outlined">density_small</span>
+                    <span id="myBox_icon" class="material-symbols-outlined">density_small</span>
                     <p>내 글 0개</p>
                 </li>
                 <li class="myBox_count">
-                    <span class="material-symbols-outlined">stylus</span>
+                    <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
                     <p>내 댓글 0개</p>
                 </li>
             </ul>
@@ -69,27 +69,33 @@
 
             <!--찜-->
             <div class="heart">
-                <span class="material-symbols-outlined">favorite</span>
+                <span id="main_icon" class="material-symbols-outlined">favorite</span>
                 <p id="left">찜</p>
                 <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
                 <hr>
                 <ul>
-                    <li class="haert_img">
+                    <li class="haert_li">
                         <a class="heartLink" href="#">
                             <img class="heart_img" src="images/미라소세지.png" alt="#">
                             <p class="subtitle">부제목</p>
                             <strong class="title">제목</strong>
                         </a>
+                    </li>
+                    <li class="haert_li">
                         <a class="heartLink" href="#">
                             <img class="heart_img" src="images/미라소세지.png" alt="#">
                             <p class="subtitle">부제목</p>
                             <strong class="title">제목</strong>
                         </a>
-                        <a class="writeLink" href="#">
+                    </li>
+                    <li class="haert_li">
+                        <a class="heartLink" href="#">
                             <img class="heart_img" src="images/미라소세지.png" alt="#">
                             <p class="subtitle">부제목</p>
                             <strong class="title">제목</strong>
                         </a>
+                    </li>
+                    <li class="haert_li"></li>
                         <a class="heartLink" href="#">
                             <img class="heart_img" src="images/미라소세지.png" alt="#">
                             <p class="subtitle">부제목</p>
@@ -101,27 +107,33 @@
 
             <!--내 글-->
             <div class="write">
-            <span class="material-symbols-outlined">density_small</span>
+            <span id="main_icon" class="material-symbols-outlined">density_small</span>
             <p id="left">내 글</p>
             <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
             <hr>
             <ul>
-                <li>
+                <li class="write_li">
                     <a class="writeLink" href="#">
                         <img class="write_img" src="images/단호박스콘.png" alt="#">
                         <p class="subtitle">부제목</p>
                         <strong class="title">제목</strong>
                     </a>
+                </li>
+                <li class="write_li">
                     <a class="writeLink" href="#">
                         <img class="write_img" src="images/단호박스콘.png" alt="#">
                         <p class="subtitle">부제목</p>
                         <strong class="title">제목</strong>
                     </a>
+                </li>
+                <li class="write_li">
                     <a class="writeLink" href="#">
                         <img class="write_img" src="images/단호박스콘.png" alt="#">
                         <p class="subtitle">부제목</p>
                         <strong class="title">제목</strong>
                     </a>
+                </li>
+                <li class="write_li">
                     <a class="writeLink" href="#">
                         <img class="write_img" src="images/단호박스콘.png" alt="#">
                         <p class="subtitle">부제목</p>
@@ -133,8 +145,8 @@
 
         <!--댓글-->
         <div class="comment">
-            <span class="material-symbols-outlined">stylus</span>
-            <p>내 댓글</p>
+            <span id="main_icon" class="material-symbols-outlined">stylus</span>
+            <p id="left">내 댓글</p>
             <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
             <hr>  
             <div class="mypage_comment">
