@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="keywords" content="레시피, 혼밥, 요리">
+    <meta name="description" content="요리에 관한 모든 정보를 한 번에 보세요">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="집슐랭">
+    <meta property="og:description" content="요리에 관한 모든 정보를 한 번에 보세요">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- favicon-->
+    <link rel="shortcut icon" type="text/css" href="">
+    <link rel="icon"  type="text/css" href="">
+
+    <!-- google icon CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    
+    <!-- basic CSS -->
+    <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+
+    <!-- page CSS -->
+    <link rel="stylesheet" href="/front/css/user.css">
+
+    <!-- plugin CSS -->
+    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+
+    <!--[if IE 9]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
+    <title>로그인</title>
+</head>
+<body id="body">
+    <section id="section">
+        <h1 id="title">로그인</h1>
+        <form action="#">
+            <div class="input_left input_div">
+                <label for="id">아이디</label>
+                <input type="text" name="id" placeholder="아이디" required>
+            </div>
+            <div class="input_right input_div id_save">
+                <label for="id_save" class="small">아이디 저장</label>
+                <input id="id_save" type="checkbox" class="small" name="id_save">
+            </div>
+            <div class="input_left input_div">
+                <label for="pwd">비밀번호</label>
+                <input type="password" name="pwd" placeholder="비밀번호" required>
+            </div>
+            <div class="input_right input_div">
+                <a href="#" class="small find">아이디/비밀번호 찾기</a>
+            </div>
+            <div>
+                <input class="login" type="submit" value="로그인">
+            </div>
+        </form>
+        <div>
+            <h2>이메일 로그인</h2>
+        </div>
+        <div>
+            <a href="#"><div class="email"></div></a>
+            <a href="#"><div class="email"></div></a>
+            <a href="#"><div class="email"></div></a>
+        </div>
+    </section>
+    
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/front/js/user.js"></script>
+</body>
+</html>
