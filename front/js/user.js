@@ -146,6 +146,6 @@ function sign_form_submit() {
     }
     //모두 체크 되어있을 시 제출
     if (sign_check_count == 8) {
-        $('#sign_sign_up_form').attr('action', '#').submit();
+        $('#sign_up_form').attr('action', '#').submit();
     }
 }
