@@ -23,111 +23,107 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 /* 한비 */
 /* 아이디/비밀번호 찾기 */
-
-#body #section,#target,#find_id,#find_pwd,#find_box,#find_id_button,#find_pwd_button,#input_area,.id_label,.pwd_label,#email_box,#email_box>input,select,#email_box>span,#name,#name_box,.warning,#do_find{
+#find_body *{
     box-sizing: border-box;
-    white-space: nowrap;
-}
-#section{
-    margin: 200px auto 0;
-    width: 40%;
-    position: relative;
-}
-#target{
-    text-align: center;
-    font-size: 3em;
-}
-#find_id,#find_pwd{
-    display: none;
-}
-#find_box{
-    position: relative;
-    height: 10px;
-    margin-bottom: 20px;
-}
-#find_id_button{
-    position: absolute;
-    left: 10px;
-    cursor: pointer;
-}
-#find_pwd_button{
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-}
-#input_area{
-    width: 75%;
-    margin: 0 auto;
-}
-.id_label,.pwd_label{
-    display: block;
-    margin-bottom: 6px;
-}
-#email_box{
-    width: 100%;
-}
-#email_box>input,select{
-    width: 30%;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 0 3px;
-    text-align: center;
-}
-#email_box>span{
-    margin: 0 3px;
-}
-#name{
-    width: 100%;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px 20px;
-}
-#name_box{
-    width: 74%;
-    margin: 0 auto;
-}
-.warning{
-    color: red;
-    font-size: 0.8em;
-    margin-top: 3px;
-    margin-left: 4px;
-    visibility: hidden;
-}
-
-#do_find{
-    text-align: center;
-    font-size: 0.7em;
-    width: 100%;
-    margin-top: 20px;
-    color: white;
-    font-size: 1em;
-    background-color: #8acc39;
-    border: 1px solid #80bb37;
-    border-radius: 5px;
-    height: 46px;
-    cursor: pointer;
-}
-
-/* 로그인 영역 */
-#body #section,#title,.input_left,.input_left>input,.input_right,.small,.find,.input_div,.login,.email{
     overflow: hidden;
     white-space: nowrap;
-    box-sizing: border-box;
 }
-#section{
+#find_section{
+margin: 200px auto 0;
+width: 40%;
+position: relative;
+}
+#find_target{
+text-align: center;
+font-size: 3em;
+}
+#find_id,#find_pwd{
+display: none;
+}
+#find_box{
+position: relative;
+height: 10px;
+margin-bottom: 20px;
+}
+#find_id_button{
+position: absolute;
+left: 10px;
+cursor: pointer;
+}
+#find_pwd_button{
+position: absolute;
+right: 10px;
+cursor: pointer;
+}
+#find_input_area{
+width: 75%;
+margin: 0 auto;
+}
+.find_id_label,.find_pwd_label{
+display: block;
+margin-bottom: 6px;
+}
+#find_email_box{
+width: 100%;
+}
+#find_email_box>input,select{
+width: 30%;
+height: 40px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin: 0 3px;
+text-align: center;
+}
+#find_email_box>span{
+margin: 0 3px;
+}
+#find_name{
+width: 100%;
+height: 40px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 5px 20px;
+}
+#find_name_box{
+width: 74%;
+margin: 0 auto;
+}
+.find_warning{
+color: red;
+font-size: 0.8em;
+margin-top: 3px;
+margin-left: 4px;
+visibility: hidden;
+}
+
+#find_do_find{
+text-align: center;
+font-size: 0.7em;
+width: 100%;
+margin-top: 20px;
+color: white;
+font-size: 1em;
+background-color: #8acc39;
+border: 1px solid #80bb37;
+border-radius: 5px;
+height: 46px;
+cursor: pointer;
+}
+
+
+/* 로그인 영역 */
+#login_section{
     width: 22%;
     margin: 100px auto 0;
     text-align: center;
 }
-#title{
+#login_title{
     font-size: 3.5em;
 }
-.input_left{
+.login_input_left{
     text-align: left;
 }
-.input_left>input{
+.login_input_left>input{
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -138,20 +134,20 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     border-radius: 4px;
     border:1px solid #ccc;
 }
-.input_right{
+.login_input_right{
     text-align: right;
 }
-.small{
+.login_small{
     font-size: 0.9em;
 }
-.find{
+.login_find{
     text-decoration: none;
     color: black;
 }
-.input_div{
+.login_input_div{
     font-size: 1.1em;
 }
-.login{
+.login_login{
     width: 100%;
     height: 48px;
     background-color: #8acc39;
@@ -163,39 +159,51 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     font-weight: bold;
     border: none;
 }
-.email{
+.login_email{
     display: inline-block;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     margin: 20px;
     background-color: #ccc;
 }
+.login_email>a{
+    height: 100%;
+    width: 100%;
+}
+#login_id_save{
+    border: 1px red solid;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
 
 /* 회원가입 */
-
-body{
+#sign_body{
     height: 1000px;
 }
-body *{
+#sign_body *{
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
+    margin-top: 3px;
 }
-#title{
+#sign_title{
     font-size: 3.5em;
 }
-section{
+#sign_section{
     width: 28%;
     margin: 60px auto 0;
     text-align: center;
 }
-.left_label{
+.sign_left_label{
     display: block;
     text-align: left;
     font-size: 1.2em;
 }
-.info_input{
+.sign_info_input{
     display: inline-block;
     height: 40px;
     width: 84%;
@@ -204,7 +212,7 @@ section{
     box-sizing: border-box;
     border: 1px solid #ccc;
 }
-.email_input{
+.sign_email_input{
     display: inline-block;
     text-align: center;
     height: 40px;
@@ -214,7 +222,7 @@ section{
     box-sizing: border-box;
     border: 1px solid #ccc;
 }
-#email_input_choose{
+#sign_email_input_choose{
     display: inline-block;
     text-align: center;
     height: 40px;
@@ -225,12 +233,12 @@ section{
     box-sizing: border-box;
     border: 1px solid #ccc;
 }
-.input_box{
+.sign_input_box{
     text-align: left;
     padding: 0px;
     position: relative;
 }
-.input_button{
+.sign_input_button{
     width: 12%;
     height: 100%;
     position: absolute;
@@ -242,7 +250,7 @@ section{
     background-color: #444;
     color: white;
 } 
-.warning{
+.sign_warning{
     color: red;
     width: 100%;
     margin-top: 0;
@@ -250,14 +258,14 @@ section{
     font-size: 0.8em;
     visibility: hidden;
 }
-.agreement{
+.sign_agreement{
     text-decoration: none;
     color: #5d7e34;
 }
-#warning_agree{
+#sign_warning_agree{
     text-align: center;
 }
-#submit_button{
+#sign_submit_button{
     width: 100%;
     height: 46px;
     border: 1px solid #80bb37;
@@ -267,10 +275,10 @@ section{
     font-size: 0.95em;
     text-align: center;
 }
-#id_warning_box{
+#sign_id_warning_box{
     position: relative;
     height: 22px;
 }
-#id_warning_box p{
+#sign_id_warning_box p{
     position: absolute;
 }
