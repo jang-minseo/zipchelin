@@ -126,8 +126,11 @@ cursor: pointer;
 
 
 /* 로그인 영역 */
-#login_section *{
+/* #login_section *{
     white-space: nowrap;
+} */
+#login_form .login_input_div{
+    margin-bottom: 12px;
 }
 #login_section{
     max-width: 340px;
@@ -144,7 +147,7 @@ cursor: pointer;
     box-sizing: border-box;
     display: block;
     width: 100%;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     border-radius: 4px;
 }
 .login_acc{
@@ -193,6 +196,50 @@ cursor: pointer;
     height: 100%;
     width: 100%;
 }
+.login_email.circle_bd{
+    border: 1px solid #e9e9e9;
+}
+.login_warning{
+    display: none;
+    margin: 8px 0;
+    color: red;
+    font-size: 0.8em;
+}
+
+/* 모달 */
+#login_fail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 99;
+}
+#login_fail_box{
+    position: relative;
+    background-color: white;
+    margin: 200px auto;
+    width: 30%;
+    height: 20%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+#login_fail_out{
+    position: absolute;
+    bottom: 28px;
+    left: 42%;
+    background-color: #4FA72F;
+    color: white;
+    border-radius: 5px;
+    width: 16%;
+    height: 40px;
+}
+#login_fail_msg{
+    margin-top: 45px;
+}
+
 
 /* 회원가입 */
 #sign_body{
