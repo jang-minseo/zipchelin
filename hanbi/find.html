@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디/비밀번호 찾기</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<style>
+    
+</style>
+<script>
+$(function () {
+    //아이디찾기/비밀번호찾기 클릭시 효과
+    $('#find_id_button').add('#find_pwd_button').on('click', function () {
+        let act = $(this).html();
+        $('#target').html(act);
+
+    })
+    $('.id_label').css('font-weight', 'bold');
+    $('.id_label').on('click', function () {
+        $('.id_label').css('font-weight', 'bold');
+        $('.pwd_label').css('font-weight', 'normal');
+    })
+    $('.pwd_label').on('click', function () {
+        $('.pwd_label').css('font-weight', 'bold');
+        $('.id_label').css('font-weight', 'normal');
+    })
+    $('#email_input_choose').click(function () {
+        let email_sec = $(this).val();
+        if (email_sec == '직접입력') {
+            $('#email_2').val('');
+            $('#email_2').attr('disabled', false);
+        } else {
+            $('#email_2').attr('disabled', true);
+            $('#email_2').val(email_sec);
+        }
+    })
+    $('input[name=find]').css('color', 'red')
+})
+
+function form_submit() {//제출 메서드
+    let email_1 = $('#email_1').val();
+    let email_2 = $('#email_2').val();
+    let name = $('#name').val();
+
+    //이메일 공백 확인
+    if (email_1 == '' || email_2 == '') {
+        $('#warning_email').css('visibility', 'visible');
+        return false;
+    } else {
+        $('#warning_email').css('visibility', 'hidden');
+    }
+
+    //이름 공백 확인
+    if (name == '') {
+        $('#warning_name').css('visibility', 'visible');
+        return false;
+    } else {
+        $('#warning_name').css('visibility', 'hidden');
+    }
+
+    //무엇을 찾는지 확인 후 action 설정 후 submit
+    $('#email').val(email_1 + '@' + email_2);
+    if ($("input[name='find']:checked").val() == 'finding_id') {
+        $('#sign_up_form').attr('action', 'finding_id');
+    } else if ($("input[name='find']:checked").val() == 'finding_pwd') {
+        $('#sign_up_form').attr('action', 'finding_pwd');
+    }
+    $('#sign_up_form').submit();
+}
+</script>
+</head>
+<body>
+    <section>
+    <h1>아이디찾기</h1>
+    <form id="sign_up_form">
+        <div id="find_box">
+            <label id="find_id_button" for="find_id">아이디찾기</label>
+            <input type="radio" id="find_id" name="find" value="finding_id" checked>
+            <label id="find_pwd_button" for="find_pwd">비밀번호찾기</label>
+            <input type="radio" id="find_pwd" name="find" value="finding_pwd">
+        </div>
+        <hr>
+        <div id="input_area">
+            <div>
+                <label for="email" class="">이메일</label>
+                <div id="email_box">
+                    <input type="text" id="email_1" placeholder="이메일" required>
+                    <span>@</span>
+                    <input type="text" id="email_2" value="gmail.com" disabled>
+                    <input type="hidden" id="email" name="email">
+                    <select id="email_input_choose">
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="kakao.com">kakao.com</option>
+                        <option>직접입력</option>
+                    </select>
+                </div>
+                <p class="warning" id="warning_email">이메일은 필수입력사항 입니다.</p>
+            </div>
+            <div id="name_box">
+                <label for="name" >이름</label>
+                <div>
+                    <input type="text" id="name" name="name" placeholder="이름" required>
+                </div>
+                <p class="warning" id="warning_name">이름은 필수입력사항 입니다.</p>
+            </div>
+            <div>
+                <input value="찾기" id="do_find" onclick="form_submit()"><!--구성 요소중 누락된 요소 있을 시 거절-->
+            </div>
+        </div>
+    </form>
+    </section>
+</body>
+</html>
