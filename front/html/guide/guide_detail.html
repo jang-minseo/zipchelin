@@ -41,32 +41,70 @@
 
     <title>가이드 상세페이지</title>
     <style>
-        .guide_detail {border: 1px solid black; padding: 50px 0; height: 100%; }
-        .guide_first_container {border: 1px solid red; width: 800px; height: 100%; background-color: aqua;}
-        .guide_first_container .title_box {border: 1px solid black; height: 100%; background-color: beige;}
-        .guide_first_container .title {}
-        .guide_first_container .social_box {border: 1px solid black; width: 200px; height: 100%; background-color:forestgreen;}
-        .guide_first_container .view_count {}
-        .guide_first_container .heart_count {}
-        .guide_first_container .social_link {}
+        .guide_detail {
+            padding: 90px 0; 
+            min-height: 1000px;
+        }
+        .guide_first_container {
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .title_box {
+            display: inline-block;
+            border: 1px solid black;
+        }
+        .g_title {
+            display: inline-block;
+        }
+        .social_box {
+            width: 300px;
+            height: 60px;
+            border: 1px solid black ;
+        }
+        .view_count {
 
-        .guide_first_container .heart_img {}
-        
-        .guide_container .guide_image {}
-        .guide_container .description_box {}
-        .guide_container .sub_title {}
+        }
+        .heart_count {
 
-        .space_sep {}
+        }
+        .social_link {
+
+        }
+
+        .heart_img {
+
+        }
         
-        .guide_container
-        .guide_image
-        .description_box
-        .description
-        
+        .guide_pic {
+            object-fit: cover; 
+            
+
+        }
+        .description_box {
+
+        }
+        .sub_title {
+
+        }
         /*
-        .recommend
-        .recommend .recom_box
+        .guide_container {
+            margin: 0 auto; 
+            width: 880px; 
+            height: 450PX;
+            background-color: teal;
+        }
         */
+        .guide_image {
+
+        }
+        .description_box {
+
+        }
+        .description {
+
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -94,24 +132,34 @@
     <main>
         <div id="main">
             <section class="guide_detail">
-                <div class="guide_first_container guide_container">
+                <div class="guide_first_container">
                     <div class="title_box">
-                        <h1 class="title"></h1>
+                        <div class="title g_title">
+                            연어필레 볶음밥과 그린가니쉬
+                        </div>
                         <div class="social_box">
-                            <a href="" class="view_count"><img src="" alt=""></a>
-                            <a href="" class="heart_count"><img src="" alt=""></a>
-                            <a href="" class="social_link"><img src="" alt=""></a>
+                            <div class="view_box">
+                                <span class="icon material-symbols-outlined">visibility</span>
+                                <p class="view_count">234</p>
+                            </div>
+                            <div class="heart_box">
+                                <span class="icon material-symbols-outlined">Favorite</span>
+                                <p class="heart_count">56</p>
+                            </div>
+                            <a class="social_link" href="">
+                                <div class="social_box">
+                                    <span class="icon material-symbols-outlined">share</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <img src="" alt="" class="heart_img">
-                    <img src="" alt="" class="guide_image">
+                    <img class="guide_pic" src="../../images/food/sample.jpg" alt="" >
                     <div class="description_box">
                         <p class="sub_title"></p>
                     </div>
                 </div>
-
-                    <hr class="space_sep">
-
+                <!--반복 컨테이너-->
                 <div class="guide_container">
                     <img src="" alt="" class="guide_image">
                     <div class="description_box">

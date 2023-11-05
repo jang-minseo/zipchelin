@@ -21,15 +21,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
     <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" href="/front/css/user.css">
+    <link rel="stylesheet" href="../../css/user.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
 
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -39,41 +39,41 @@
     <![endif]-->
     <title>로그인</title>
 </head>
-<body id="body">
-    <section id="section">
-        <h1 id="title">로그인</h1>
+<body>
+    <section id="login_section">
+        <h1 id="login_title">로그인</h1>
         <form action="#">
-            <div class="input_left input_div">
-                <label for="id">아이디</label>
-                <input type="text" name="id" placeholder="아이디" required>
+            <div class="login_input_left login_input_div">
+                <label for="login_id">아이디</label>
+                <input type="text" id="login_id" name="id" placeholder="아이디" required>
             </div>
-            <div class="input_right input_div id_save">
-                <label for="id_save" class="small">아이디 저장</label>
-                <input id="id_save" type="checkbox" class="small" name="id_save">
+            <div class="login_input_right login_input_div">
+                <label for="login_id_save" class="small">아이디 저장</label>
+                <input id="login_id_save" type="checkbox" class="login_small" name="id_save">
             </div>
-            <div class="input_left input_div">
-                <label for="pwd">비밀번호</label>
-                <input type="password" name="pwd" placeholder="비밀번호" required>
+            <div class="login_input_left login_input_div">
+                <label for="login_password">비밀번호</label>
+                <input type="password" id="login_password" name="pwd" placeholder="비밀번호" required>
             </div>
-            <div class="input_right input_div">
-                <a href="#" class="small find">아이디/비밀번호 찾기</a>
+            <div class="login_input_right login_input_div">
+                <a href="#" class="login_small login_find">아이디/비밀번호 찾기</a>
             </div>
             <div>
-                <input class="login" type="submit" value="로그인">
+                <input class="login_login" type="submit" value="로그인">
             </div>
         </form>
         <div>
-            <h2>이메일 로그인</h2>
+            <h2>소셜 로그인</h2>
         </div>
-        <div>
-            <a href="#"><div class="email"></div></a>
-            <a href="#"><div class="email"></div></a>
-            <a href="#"><div class="email"></div></a>
+        <div id="login_email_box">
+            <div class="login_email"><a href="#"></a></div>
+            <div class="login_email"><a href="#"></a></div>
+            <div class="login_email"><a href="#"></a></div>
         </div>
     </section>
     
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/front/js/user.js"></script>
+    <script src="../../js/user.js"></script>
 </body>
 </html>

@@ -116,6 +116,16 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     margin: 16px;
 }
 
+#myPage_comment{
+    border-bottom: 1px solid #bbb;
+    padding: 20px;
+}
+
+
+
+
+
+
 .pageTitle{padding: 80px 0 60px; font-size: 32px; text-align: center;}
 body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
