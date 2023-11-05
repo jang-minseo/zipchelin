@@ -23,9 +23,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 /* 한비 */
 /* 아이디/비밀번호 찾기 */
-#find_body *{
-    box-sizing: border-box;
-    overflow: hidden;
+#find_section *{
     white-space: nowrap;
 }
 #find_section{
@@ -36,32 +34,48 @@ position: relative;
 #find_target{
 text-align: center;
 font-size: 3em;
+padding: 10px;
+margin: 50px;
 }
 #find_id,#find_pwd{
 display: none;
 }
-#find_box{
-position: relative;
-height: 10px;
-margin-bottom: 20px;
+#find_box_id{
+    display: inline-block;
+}
+#find_box_pwd{
+    display: inline-block;
+}
+.find_box{
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    height: 40px;
+    border: 2px solid #E9E9E9;
+    color: #c1c1c1;
+    border-radius: 5px 5px 0 0;
+    background-color: white;
+}
+#find_box_box{
+    text-align: center;
+}
+.selected_find_box{
+    border: 2px solid #4FA72F;
+    border-bottom: none;
+    color: #4FA72F;
 }
 #find_id_button{
-position: absolute;
-left: 10px;
 cursor: pointer;
 }
 #find_pwd_button{
-position: absolute;
-right: 10px;
 cursor: pointer;
 }
 #find_input_area{
-width: 75%;
-margin: 0 auto;
-}
-.find_id_label,.find_pwd_label{
-display: block;
-margin-bottom: 6px;
+width: 100%;
+margin-top: -1px;
+padding: 20px;
+padding-top: 30px;
+border-top: 1px solid #E9E9E9;
 }
 #find_email_box{
 width: 100%;
@@ -86,14 +100,14 @@ padding: 5px 20px;
 }
 #find_name_box{
 width: 74%;
-margin: 0 auto;
+margin: 18px auto;
 }
 .find_warning{
 color: red;
 font-size: 0.8em;
 margin-top: 3px;
 margin-left: 4px;
-visibility: hidden;
+display: none;
 }
 
 #find_do_find{
@@ -112,6 +126,9 @@ cursor: pointer;
 
 
 /* 로그인 영역 */
+#login_section *{
+    white-space: nowrap;
+}
 #login_section{
     max-width: 340px;
     margin: 0 auto;
@@ -160,12 +177,16 @@ cursor: pointer;
     font-size: 1.2em;
     border: none;
 }
+#login_email_box{
+    width: 74%;
+    margin: 10px auto;
+}
 .login_email{
     display: inline-block;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    margin: 20px;
+    margin: 16px;
     background-color: #ccc;
 }
 .login_email>a{
@@ -209,6 +230,9 @@ cursor: pointer;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+}
+#sign_pwd2{
+    display: block;
 }
 .sign_email_input{
     width: 130px;
