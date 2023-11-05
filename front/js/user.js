@@ -87,9 +87,9 @@ function sign_form_submit() {
     var id_rule = /^[A-Za-z0-9]{6,12}$/;
     //id 체크
     if ($('#sign_id').val() == '' || !id_rule.test($('#sign_id').val())) {
-        $('#sign_warning_id').css('visibility', 'visible');
+        $('#sign_warning_id').css('display', 'block');
     } else {
-        $('#sign_warning_id').css('visibility', 'hidden');
+        $('#sign_warning_id').css('display', 'hidden');
         sign_check_count++;
     }
 
@@ -100,30 +100,30 @@ function sign_form_submit() {
     var password_rule = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
     //비밀번호 체크
     if ($('#sign_pwd').val() == '' || !password_rule.test($('#sign_pwd').val())) {
-        $('#sign_warning_pwd').css('visibility', 'visible');
+        $('#sign_warning_pwd').css('display', 'block');
     } else {
-        $('#sign_warning_pwd').css('visibility', 'hidden');
+        $('#sign_warning_pwd').css('display', 'hidden');
         sign_check_count++;
     }
     //비밀번호확인 체크
     if ($('#sign_pwd2').val() != $('#sign_pwd').val()) {
-        $('#sign_warning_pwd2').css('visibility', 'visible');
+        $('#sign_warning_pwd2').css('display', 'block');
     } else {
-        $('#sign_warning_pwd2').css('visibility', 'hidden');
+        $('#sign_warning_pwd2').css('display', 'hidden');
         sign_check_count++;
     }
     //이름 체크
     if ($('#sign_name').val() == '') {
-        $('#sign_warning_name').css('visibility', 'visible');
+        $('#sign_warning_name').css('display', 'block');
     } else {
-        $('#sign_warning_name').css('visibility', 'hidden');
+        $('#sign_warning_name').css('display', 'hidden');
         sign_check_count++;
     }
     //이메일 체크
     if ($('#sign_email_1').val() == '' || $('#sign_email_2').val() == '') {
-        $('#sign_warning_email').css('visibility', 'visible');
+        $('#sign_warning_email').css('display', 'block');
     } else {
-        $('#sign_warning_email').css('visibility', 'hidden');
+        $('#sign_warning_email').css('display', 'hidden');
         let email = $('#sign_email_1').val() + '@' + $('#sign_email_2').val();
         $('#sign_email').val(email);
         sign_check_count++;
@@ -132,17 +132,17 @@ function sign_form_submit() {
     var tel_rule = /^\d{3}-\d{3,4}-\d{4}$/;
     //전화번호 체크
     if ($('#sign_tel').val() == '' || !tel_rule.test($('#sign_tel').val())) {
-        $('#sign_warning_tel').css('visibility', 'visible');
+        $('#sign_warning_tel').css('display', 'block');
     } else {
-        $('#sign_warning_tel').css('visibility', 'hidden');
+        $('#sign_warning_tel').css('display', 'hidden');
         sign_check_count++;
     }
     //약관동의여부 체크
     if ($('input[id=sign_agree]').is(':checked')) {
-        $('#sign_warning_agree').css('visibility', 'hidden');
+        $('#sign_warning_agree').css('display', 'hidden');
         sign_check_count++;
     } else {
-        $('#sign_warning_agree').css('visibility', 'visible');
+        $('#sign_warning_agree').css('display', 'block');
     }
     //모두 체크 되어있을 시 제출
     if (sign_check_count == 8) {

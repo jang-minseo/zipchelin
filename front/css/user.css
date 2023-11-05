@@ -1,7 +1,7 @@
 @charset "utf-8";
-main{display: block; margin: auto; padding: 0 20px; width: 1320px;}
+main{display: block; margin: 0 auto; padding: 100px 20px 0; width: 1320px;}
 .pageTitle{padding: 60px 0; font-size: 32px; text-align: center;}
-header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee}
+/* header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee} */
 body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .w1080{padding: 0 100px;}
 
@@ -29,7 +29,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     white-space: nowrap;
 }
 #find_section{
-margin: 200px auto 0;
+margin: 0 auto;
 width: 40%;
 position: relative;
 }
@@ -66,7 +66,7 @@ margin-bottom: 6px;
 #find_email_box{
 width: 100%;
 }
-#find_email_box>input,select{
+#find_email_box>input{
 width: 30%;
 height: 40px;
 border: 1px solid #ccc;
@@ -113,29 +113,36 @@ cursor: pointer;
 
 /* 로그인 영역 */
 #login_section{
-    width: 22%;
-    margin: 100px auto 0;
-    text-align: center;
+    max-width: 340px;
+    margin: 0 auto;
 }
-#login_title{
-    font-size: 3.5em;
-}
-.login_input_left{
-    text-align: left;
+.login_input_left>label{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -999px;
 }
 .login_input_left>input{
     box-sizing: border-box;
     display: block;
     width: 100%;
-    margin: 15px auto;
-    height: 40px;
-    padding: 8px;
-    font-size: 0.8em;
+    margin-bottom: 16px;
     border-radius: 4px;
-    border:1px solid #ccc;
 }
-.login_input_right{
-    text-align: right;
+.login_acc{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+}
+.login_sns{
+    margin: 40px 0;
+    text-align: center;
+}
+.login_sns h2{
+    color: #c1c1c1;
+    font-weight: 400;
 }
 .login_small{
     font-size: 0.9em;
@@ -144,19 +151,13 @@ cursor: pointer;
     text-decoration: none;
     color: black;
 }
-.login_input_div{
-    font-size: 1.1em;
-}
 .login_login{
     width: 100%;
     height: 48px;
-    background-color: #8acc39;
-    border: 1px solid #80bb37;
     border-radius: 4px;
     margin: 18px 0;
     color: white;
     font-size: 1.2em;
-    font-weight: bold;
     border: none;
 }
 .login_email{
@@ -171,114 +172,94 @@ cursor: pointer;
     height: 100%;
     width: 100%;
 }
-#login_id_save{
-    border: 1px red solid;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: relative;
-    top: 2px;
-}
 
 /* 회원가입 */
 #sign_body{
     height: 1000px;
 }
-#sign_body *{
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    margin-top: 3px;
-}
-#sign_title{
-    font-size: 3.5em;
-}
 #sign_section{
-    width: 28%;
-    margin: 60px auto 0;
-    text-align: center;
+    max-width: 440px;
+    margin: 0 auto;
+}
+.form_item{
+    margin-bottom: 32px;
+}
+.form_item .sign_info_input.inputField:first-of-type{
+    margin-bottom: 8px;
 }
 .sign_left_label{
     display: block;
-    text-align: left;
-    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-size: 0.9em;
 }
 .sign_info_input{
     display: inline-block;
-    height: 40px;
-    width: 84%;
-    border-radius: 5px;
-    padding: 10px;
+    width: 100%;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+}
+.sign_info_input input{
+    width: 100%;
+}
+.sign_info_input2{
+    width: 76%;
+}
+
+.form_email .sign_input_box{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
 }
 .sign_email_input{
-    display: inline-block;
-    text-align: center;
-    height: 40px;
     width: 130px;
-    border-radius: 5px;
-    padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
 }
 #sign_email_input_choose{
-    display: inline-block;
     text-align: center;
-    height: 40px;
     width: 130px;
-    border-radius: 5px;
-    padding: 10px;
-    margin-left: 5px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    appearance: auto;
 }
 .sign_input_box{
-    text-align: left;
-    padding: 0px;
     position: relative;
 }
 .sign_input_button{
-    width: 12%;
+    width: 22%;
     height: 100%;
     position: absolute;
-    right: 15px;
-    border: none;
-    border-radius: 5px;
+    right: 0;
+    border-radius: 4px;
     line-height: 1.2em;
     padding: 2px;
-    background-color: #444;
-    color: white;
 } 
 .sign_warning{
+    display: none;
     color: red;
     width: 100%;
-    margin-top: 0;
+    margin: 8px 0;
     text-align: left;
     font-size: 0.8em;
-    visibility: hidden;
 }
 .sign_agreement{
-    text-decoration: none;
-    color: #5d7e34;
+    display: inline-block;
+    text-decoration: underline;
+    color: #4FA72F;
 }
-#sign_warning_agree{
-    text-align: center;
+.sign_agreement:hover{
+    text-decoration: underline;
+}
+.sign_agreement:visited{
+    color: #1A5C2C;
 }
 #sign_submit_button{
     width: 100%;
-    height: 46px;
-    border: 1px solid #80bb37;
-    border-radius: 5px;
-    background-color: #8acc39;
+    height: 48px;
+    margin-bottom: 60px;
+    border-radius: 4px;
     color: white;
-    font-size: 0.95em;
+    font-size: 1.2em;
     text-align: center;
 }
 #sign_id_warning_box{
     position: relative;
-    height: 22px;
-}
-#sign_id_warning_box p{
-    position: absolute;
 }
