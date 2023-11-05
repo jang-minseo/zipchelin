@@ -46,16 +46,4 @@ $(function(){
 
         return false;
     });
-
-
-    //비밀번호 보기/숨기기
-    $('.pwdToggle').on('click',function(){
-        if($('#pwdCheck').attr("type") == "password"){
-            $('#pwdCheck').attr("type", "text");
-            $(this).html('visibility');
-        }else{
-            $('#pwdCheck').attr("type", "password");
-            $(this).html('visibility_off');
-        }
-    });
 });
