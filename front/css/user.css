@@ -25,7 +25,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 /* 아이디/비밀번호 찾기 */
 #find_body *{
     box-sizing: border-box;
-    overflow: hidden;
     white-space: nowrap;
 }
 #find_section{
@@ -36,14 +35,16 @@ position: relative;
 #find_target{
 text-align: center;
 font-size: 3em;
+padding: 10px;
 }
 #find_id,#find_pwd{
 display: none;
 }
 #find_box{
 position: relative;
-height: 10px;
-margin-bottom: 20px;
+height: 30px;
+margin-bottom: 8px;
+padding: 8px 0;
 }
 #find_id_button{
 position: absolute;
@@ -112,6 +113,9 @@ cursor: pointer;
 
 
 /* 로그인 영역 */
+#login_section *{
+    white-space: nowrap;
+}
 #login_section{
     width: 22%;
     margin: 100px auto 0;
@@ -159,25 +163,21 @@ cursor: pointer;
     font-weight: bold;
     border: none;
 }
+#login_email_box{
+    width: 74%;
+    margin: 10px auto;
+}
 .login_email{
     display: inline-block;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    margin: 20px;
+    margin: 16px;
     background-color: #ccc;
 }
 .login_email>a{
     height: 100%;
     width: 100%;
-}
-#login_id_save{
-    border: 1px red solid;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: relative;
-    top: 2px;
 }
 
 /* 회원가입 */
@@ -185,13 +185,13 @@ cursor: pointer;
     height: 1000px;
 }
 #sign_body *{
-    overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     margin-top: 3px;
 }
 #sign_title{
     font-size: 3.5em;
+    height: 200px;
 }
 #sign_section{
     width: 28%;
