@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="keywords" content="레시피, 혼밥, 요리">
+    <meta name="description" content="요리에 관한 모든 정보를 한 번에 보세요">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="집슐랭">
+    <meta property="og:description" content="요리에 관한 모든 정보를 한 번에 보세요">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- favicon-->
+    <link rel="shortcut icon" type="text/css" href="">
+    <link rel="icon"  type="text/css" href="">
+
+    <!-- google icon CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    
+    <!-- basic CSS -->
+    <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+
+    <!-- page CSS -->
+    <link rel="stylesheet" type="text/css" href="/front/css/mypage.css">
+
+    <!-- plugin CSS -->
+    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+
+    <!--[if IE 9]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
+
+    <title>집슐랭</title>
+</head>
+<body>
+    <header class="header">
+        <div class="headerContainer">
+            <img class="logo" src="/front/images/logo/logo.png" />
+            <div class="menu">
+                <a href="">레시피</a>
+                <a href="">가이드</a>
+                <a href="">커뮤니티</a>
+                <a href="">공지사항</a>
+            </div>
+            <div class="right_menu">
+                <!-- <img class="icon" src="images/icon2/search.png" /> -->
+                <a href="">
+                    <span class="material-symbols-outlined">search</span>
+                </a>
+                <a href="">로그인</a>
+                <a href="">회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="clearfix">
+         <!--마이페이지 left박스-->
+     <div class="mypage_leftBox">
+        <img class="profile_img" src="/front/images/icon/profile.jpg" alt="profile">
+        <h1>USER_ID</h1>
+        <input type="button" value="정보수정" class="edit_btn" onclick="loaction.href='#'"> 
+        <ul class="leftBox_icon">
+            <li class="myBox_count">
+                <span id="myBox_icon" class="material-symbols-outlined">favorite</span>
+                <p>찜 0개</p>
+            </li>
+            <li class="myBox_count">
+                <span id="myBox_icon" class="material-symbols-outlined">density_small</span>
+                <p>내 글 0개</p>
+            </li>
+            <li class="myBox_count">
+                <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
+                <p>내 댓글 0개</p>
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="edit_info">
+        <h4>개인정보 수정</h4>
+
+        <hr>
+        <img src="/front/images/icon/profile.jpg" alt="profile_img" class="profile_img_edit" onclick="loaction.href='#'">
+        <input type="button" value="사진선택" class="profile_editbtn" class="profile_editbtn1" onclick="loaction.href='#'">
+        <input type="button" value="기본이미지로변경" class="profile_editbtn" class="profile_editbtn2" onclick="loaction.href='#'">
+        <hr>
+
+        <div class="edit_info_id ">
+            <label for="id" class="edit_label">아이디</label>
+            <div class="edit_info_input">
+                <input type="text" id="id" class="edit_input" name="id" placeholder="USER_ID">
+            </div>
+
+            <label for="pwd" class="edit_label">새 비밀번호</label>
+            <div class="iedit_info_input">
+                <input type="password" id="pwd" class="edit_input" name="pwd" placeholder="비밀번호">
+                <span class="pwdToggle material-symbols-outlined">visibility_off</span>
+            </div>
+
+            <label for="new_pwd" class="edit_label">새 비밀번호 확인</label>
+            <div class="edit_info_input">
+                <input type="password" id="new_pwd" class="edit_input" name="new_pwd" placeholder="새 비밀번호">
+                <span class="pwdToggle material-symbols-outlined">visibility_off</span>
+            </div>
+
+            <label for="name" class="edit_label">이름</label>
+            <div class="edit_info_input">
+                <input type="text" id="name" class="edit_input" name="name" placeholder="이름">
+            </div>
+            
+            <div>
+                <label for="email" class="edit_label">이메일</label>
+                <div class="edit_info_input">
+                    <input type="text" id="email_1" class="edit_email_input"  placeholder="이메일">
+                    <span>@</span>
+                    <input type="text" id="email_2" class="edit_email_input" value="gmail.com" disabled>
+                    <select id="edit_email_input_choose">
+                        <option selected>직접입력</option>
+                        <option>naver.com</option>
+                        <option>kakao.com</option>
+                        <option>gmail.com</option>
+                    </select>
+                    <input type="hidden" id="email" name="email">
+                    <input type="button" value="인증" class="" class="" onclick="loaction.href='#'">
+                </div>
+            </div>
+
+            <label for="tel" class="edit_label">전화번호</label>
+            <div class="edit_info_input">
+                <input type="text" id="tel" class="edit_input" name="tel" placeholder="전화번호">
+                <input type="button" value="인증" class="" class="" onclick="loaction.href='#'">
+            </div>
+
+            <a href="#" class="edit_leave">회원탈퇴</a>
+
+            <hr>
+
+            <input type="button" value="수정완료" class="" class="" onclick="loaction.href='#'">
+        </div>
+
+    </div>
+    </main>
+
+    <!--<footer>
+        <div class="mypage_eidt_contain">
+            <div id="footerMenu">
+                <a href="/front/index.html" class="footerLogo">
+                    <img src="/front/images/logo/logo.png" alt="zipchelin">
+                </a>
+                    <ul class="fmenu">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">개인정보보호정책</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="#"><img src="/front/images/icon/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="/front/images/icon/instagram.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="/front/images/icon/youtube.png" alt="youtube"></a></li>
+                    </ul>  
+            </div>
+                <address>
+                    <span>회사명 : 주식회사 집슐랭 (서울시 종로구 종로78 (종로2가, 미려빌딩 3,5,6층))</span><br>
+                    <span> 전화 : 02-1111-1111</span>
+                    <span> 팩스 : 02-2222-2222 </span>
+                    <span> E-MAIL : zipcheiln@zipc.co.kr</span>
+                </address>
+                <p class="copyright">Copyright &copy; 집슐랭, All Rights Reserved.</p>  
+            </div>
+        </div>
+    </footer>-->
+    
+    <!-- js -->
+    <script src="/front/js/plugins/swiper-bundle.min.js"></script>
+</body>
+</html>
