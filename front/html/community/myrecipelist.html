@@ -44,90 +44,93 @@
     <![endif]-->
 
     <!-- myrecipelist CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/myrecipelist.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/community.css">
 
 <title>나만의 레시피 리스트</title>
 </head>
 <body>
-    <header></header>
+    <!--헤더 -->
+    <header class="header"></header>
+
     <main>
-        <section>
-            <h1 class="pageTitle">오늘의 인기글</h1>
+        <section class="best-section">
+            <h1 class="best-title">오늘의 인기글</h1>
             <div class="best-list">
                 <div class="best">
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                    
+                    <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     <ul class="accList">
-                        <span class="date">2023.10.26</span>
+                        <span class="postdate">2023.10.26</span>
                         <li class="accItem">
                             <span class="icon material-symbols-outlined">visibility</span>268
                         </li>
                         <li class="accItem">                        
-                            <span class="material-symbols-outlined">comment</span>12
+                            <span class="icon material-symbols-outlined">comment</span>12
                         </li>
                     </ul>
                     <h6 class="title">맛있는 음식을 봐라</h6>
+                    
                 </div>
                 <div class="best">
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                    
+                    <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     <ul class="accList">
-                        <span class="date">2023.10.26</span>
+                        <span class="postdate">2023.10.26</span>
                         <li class="accItem">
                             <span class="icon material-symbols-outlined">visibility</span>268
                         </li>
                         <li class="accItem">                        
-                            <span class="material-symbols-outlined">comment</span>12
+                            <span class="icon material-symbols-outlined">comment</span>12
                         </li>
                     </ul>
                     <h6 class="title">맛있는 음식을 봐라</h6>
+                    
                 </div>
                 <div class="best">
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                    
+                    <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     <ul class="accList">
-                        <span class="date">2023.10.26</span>
+                        <span class="postdate">2023.10.26</span>
                         <li class="accItem">
                             <span class="icon material-symbols-outlined">visibility</span>268
                         </li>
                         <li class="accItem">                        
-                            <span class="material-symbols-outlined">comment</span>12
+                            <span class="icon material-symbols-outlined">comment</span>12
                         </li>
                     </ul>
                     <h6 class="title">맛있는 음식을 봐라</h6>
+                    
                 </div>
                 <div class="best">
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                    
+                    <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     <ul class="accList">
-                        <span class="date">2023.10.26</span>
+                        <span class="postdate">2023.10.26</span>
                         <li class="accItem">
                             <span class="icon material-symbols-outlined">visibility</span>268
                         </li>
                         <li class="accItem">                        
-                            <span class="material-symbols-outlined">comment</span>12
+                            <span class="icon material-symbols-outlined">comment</span>12
                         </li>
                     </ul>
                     <h6 class="title">맛있는 음식을 봐라</h6>
+                    
                 </div>
             </div>
         </section>
 
-        <section>
-            <h1 class="pageTitle">나만의 레시피</h1>
-            <div class="btn_container">
-                <select name="" id="listBox">
+        <section class="myrecipe_section">
+            <h1 class="best-title">나만의 레시피</h1>
+            <div class="acc-container">
+                <select name="select-box" class="select-box">
                     <option value="#" selected>최신순</option>
                     <option value="#">오래된순</option>
+                    <span class="icon material-symbols-outlined">keyboard_arrow_down</span>
                 </select>
                 <button class="btn_write">작성하기</button>
             </div>
             
             <ul class="allwrite clearfix">
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
@@ -135,173 +138,182 @@
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
-                <li class="twoWrite">
-                    <div class="write_date">
-                        <div class="write_section">
-                            <span class="date">2023.10.26</span>
+                <li class="post-container">
+                    <div class="post">
+                        <div class="post-section">
+                            <span class="postdate">2023.10.26</span>
                             <h6 class="title">맛있는 음식을 봐라</h6>
                             <p>내가 만든 요리 중에 제일 맛있는 요리입니다...</p>
                             <ul class="accList">
+                                </a>
                                 <li class="accItem">
                                     <span class="icon material-symbols-outlined">visibility</span>268
                                 </li>
                                 <li class="accItem">                        
-                                    <span class="material-symbols-outlined">comment</span>12
+                                    <span class="icon material-symbols-outlined">comment</span>12
                                 </li>
                             </ul>
                         </div>
-                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <a href="#"><img src="/front/images/food/gan.jpg" alt="">
                     </div>
                 </li>
                 
@@ -311,6 +323,7 @@
         
 
             <div class="paging">
+                </a>
                 <ul>
                     <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
                     <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
@@ -325,5 +338,9 @@
         </section>
     </main>
     <footer></footer>
+
+    <!-- js -->
+    <script src="/front/js/community.js"></script>
+
 </body>
 </html>

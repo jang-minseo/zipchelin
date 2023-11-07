@@ -41,32 +41,125 @@
 
     <title>가이드 상세페이지</title>
     <style>
-        .guide_detail {border: 1px solid black; padding: 50px 0; height: 100%; }
-        .guide_first_container {border: 1px solid red; width: 800px; height: 100%; background-color: aqua;}
-        .guide_first_container .title_box {border: 1px solid black; height: 100%; background-color: beige;}
-        .guide_first_container .title {}
-        .guide_first_container .social_box {border: 1px solid black; width: 200px; height: 100%; background-color:forestgreen;}
-        .guide_first_container .view_count {}
-        .guide_first_container .heart_count {}
-        .guide_first_container .social_link {}
+        .guide_detail {
+            padding: 55px 0;
+            margin: auto; 
+            height: 100%;
+            width: 72%;
+        }
+        .guide_first_container .guide_container{
+            margin: auto;
+            clear: both;
 
-        .guide_first_container .heart_img {}
-        
-        .guide_container .guide_image {}
-        .guide_container .description_box {}
-        .guide_container .sub_title {}
-
-        .space_sep {}
-        
-        .guide_container
-        .guide_image
-        .description_box
-        .description
-        
-        /*
-        .recommend
-        .recommend .recom_box
+        }
+        .page_name_box {
+            padding: 18px 0;
+            border-bottom: 4px solid #a5c87d;
+        }
+        .page_name {
+            font-size: 2.9em;
+            color: #92c555; 
+            font-weight: bold;
+        }
+        /*구분 선
+        #8acc39
+        .sep_line {
+            position: relative;
+            right: 1000px;
+            width: 3000px;
+            overflow: hidden;
+            border-bottom: 3px solid #8acc39;
+        }
         */
+        
+        .title_box {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            
+        }
+        .g_title {
+            padding: 20px 0 0 10px;
+            font-size: 2.3em;
+            line-height: 1.7;
+            width: 83%;
+        }
+        .social_box {
+            position: relative;
+            display: flex;
+            float: right;    
+            width: 17%;
+            padding: 7px;
+            top: 8px;
+            color:  #999;
+        }
+        .common_box{
+            position: relative;
+            top: 5px;
+            padding: 0 15px;
+        }
+        .counts {
+            position: relative;
+            top: 5px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+        /*
+        .view_count {   
+        }
+        .heart_count {   
+        }
+        */
+        .share_box {
+            position: relative;
+            top: 10px;
+            font-weight: bold;
+        }
+        .g_sub_title {
+            font-size: 1.6em;
+            padding: 0 10px 20px 10px;
+            color: #999;
+        }
+
+        .guide_img {
+            margin: 30px auto 0;
+            object-fit: cover;
+            border-radius: 20px;
+            width: 100%;
+            height: 600px;
+            
+        }
+        .step {
+            font-weight: bold;
+            color:  #8acc39;
+        }
+        .description_box {
+            padding: 40px 0 25px 30px;
+            border-bottom: 3px solid #c1c1c1;
+            margin: 0 0 30px  ;
+            font-size: large;
+            line-height: 2;
+            color: #727272;    
+        }
+        
+        .guide_container>.last {
+            border: 0px solid #c1c1c1;
+            padding-bottom: 0 ;
+            margin: 0;
+        }
+
+        /*
+
+        .description {
+            
+        }
+        
+        */
+        .list_container {
+            border-top: 3px solid #c1c1c1;
+        }
+        
     </style>
 </head>
 <body>
@@ -93,33 +186,64 @@
     <!--메인--> 
     <main>
         <div id="main">
+            <!--가이드섹션시작-->
             <section class="guide_detail">
-                <div class="guide_first_container guide_container">
+                <div class="guide_first_container">
+                    <div class="page_name_box ">
+                        <p class="page_name">
+                            가이드.ZIP    
+                        </p>
+                    </div>
+                    <!--
+                        나눔선   
+                        <hr class="sep_line">
+                    -->
                     <div class="title_box">
-                        <h1 class="title"></h1>
+                        <div class="title g_title">
+                            연어 필레와 그린가니쉬
+                        </div>
                         <div class="social_box">
-                            <a href="" class="view_count"><img src="" alt=""></a>
-                            <a href="" class="heart_count"><img src="" alt=""></a>
-                            <a href="" class="social_link"><img src="" alt=""></a>
+                            <div class="view_box common_box">
+                                <span class="icon material-symbols-outlined">visibility</span>
+                                <p class="view_count counts">234</p>
+                            </div>
+                            <div class="heart_box common_box">
+                                <span class="icon material-symbols-outlined">Favorite</span>
+                                <p class="heart_count counts">56</p>
+                            </div>  
+                            <div class="share_box common_box">
+                                <span class="icon material-symbols-outlined">share</span>
+                            </div>
                         </div>
                     </div>
-                    <img src="" alt="" class="heart_img">
-                    <img src="" alt="" class="guide_image">
+                    <div class="g_sub_title">
+                        가나다라마바사아자차카타피오카파하아야어여오요우유
+                    </div>
+                    <img class="guide_img" src="../../images/food/sample.jpg" alt="" >
                     <div class="description_box">
-                        <p class="sub_title"></p>
+                        매일 먹는 밥 이왕이면 더 맛있게 먹는 게 좋겠죠?<br>
+                        절대 실패 없는 밥 맛있게 짓는 법 알려드릴게요! <br> 
+                        품질 좋은 쌀과 밥 맛있게 짓는 법만 안다면 매일매일 행복한 밥상을 차릴 수 있을 거예요.
+                    </div>
+                </div>
+                <!--반복 컨테이너-->
+                <div class="guide_container">
+                    <img class="guide_img" src="../../images/food/sample2.jpg" alt="" >
+                    <div class="description_box">
+                        <div class="step">step.1</div> 
+                        좋은 쌀과 밥 맛있게 짓는 법만 안다면 매일매일 행복한 밥상을 차릴 수 있을 거예요
                     </div>
                 </div>
 
-                    <hr class="space_sep">
-
                 <div class="guide_container">
-                    <img src="" alt="" class="guide_image">
-                    <div class="description_box">
-                        <p class="description"></p>
+                    <img class="guide_img" src="../../images/food/gan.jpg" alt="" >
+                    <div class="description_box last">
+                        <div class="step">step.2</div> 
+                        아무거나주쇼아무거나주쇼아무거나주쇼아무거나주쇼아무거나주쇼아무거나주쇼아무거나주쇼
                     </div>
                 </div>
             </section>        
-
+            <!--가이드섹션 끝--> 
             <section class="recommend">
                     <div class="list_container">
                         <ul class="list_ul">
