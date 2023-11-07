@@ -21,15 +21,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
     <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" href="/front/css/user.css">
+    <link rel="stylesheet" href="../../css/user.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
 
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -38,35 +38,6 @@
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
     <![endif]-->
     <title>로그인</title>
-    <script>
-        function login_form_submit(){
-            let user_id=$('#login_id').val();
-            let user_pwd=$('#login_password').val();
-            let login_check_count=0;
-            if(user_id==''){
-                $('#login_id_warning').css('display','block')
-            }else{
-                $('#login_id_warning').css('display','none')
-                login_check_count++;
-            }
-
-            if(user_pwd==''){
-                $('#login_pwd_warning').css('display','block')
-            }else{
-                $('#login_pwd_warning').css('display','none')
-                login_check_count++;
-            }
-            if(login_check_count==2){
-                $('#login_form').submit();
-            }else{
-                return false;
-            }
-        }
-
-        function login_fail_get_out(){
-            $('#login_fail').css('display','none');
-        }
-    </script>
 </head>
 <body>
     <header class="header"></header>
@@ -92,7 +63,7 @@
                         <label for="login_id_save" class="small">아이디 저장</label>
                     </div>
                     <div class="login_input_div">
-                        <a href="/front/html//user/find.html" class="login_find">아이디/비밀번호 찾기</a>
+                        <a href="../../html//user/find.html" class="login_find">아이디/비밀번호 찾기</a>
                     </div>
                 </div>
                 <div>
@@ -102,9 +73,9 @@
             <div class="login_sns">
                 <h2>소셜 로그인</h2>
                 <div>
-                    <div class="login_email"><a href="#"><img src="/front/images//icon/kakao_circle.png" alt="카카오 로그인"></a></div>
-                    <div class="login_email"><a href="#"><img src="/front/images/icon/naver_circle.png" alt="네이버 로그인"></a></div>
-                    <div class="login_email"><a href="#"><img src="/front/images/icon/apple_circle.png" alt="애플 로그인"> </a></div>
+                    <div class="login_email"><a href="#"><img src="../../images//icon/kakao_circle.png" alt="카카오 로그인"></a></div>
+                    <div class="login_email"><a href="#"><img src="../../images/icon/naver_circle.png" alt="네이버 로그인"></a></div>
+                    <div class="login_email"><a href="#"><img src="../../images/icon/apple_circle.png" alt="애플 로그인"> </a></div>
                 </div>
             </div>
         </section>
@@ -121,7 +92,7 @@
     
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/front/js/common.js"></script>
-    <script src="/front/js/user.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/user.js"></script>
 </body>
 </html>

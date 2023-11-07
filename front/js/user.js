@@ -154,3 +154,33 @@ function sign_form_submit() {
         $('#sign_up_form').attr('action', '#').submit();
     }
 }
+
+//로그인
+
+function login_form_submit(){
+    let user_id=$('#login_id').val();
+    let user_pwd=$('#login_password').val();
+    let login_check_count=0;
+    if(user_id==''){
+        $('#login_id_warning').css('display','block')
+    }else{
+        $('#login_id_warning').css('display','none')
+        login_check_count++;
+    }
+
+    if(user_pwd==''){
+        $('#login_pwd_warning').css('display','block')
+    }else{
+        $('#login_pwd_warning').css('display','none')
+        login_check_count++;
+    }
+    if(login_check_count==2){
+        $('#login_form').submit();
+    }else{
+        return false;
+    }
+}
+
+function login_fail_get_out(){
+    $('#login_fail').css('display','none');
+}
