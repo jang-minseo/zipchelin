@@ -17,6 +17,15 @@
     <link rel="shortcut icon" type="text/css" href="">
     <link rel="icon"  type="text/css" href="">
 
+
+    <!-- myrecipelist CSS -->
+    <link rel="stylesheet" type="text/css" href="/front/css/community.css">
+
+    <!-- 게시판 에디터 : Bootstrap JS의 소스 스크립트 추가-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- 위지윅 에디터 추가 -->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
     <!-- google icon CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
@@ -25,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="/front/css/base.css">
     <link rel="stylesheet" type="text/css" href="/front/css/common.css">
 
-    <!-- page CSS -->
     <link rel="stylesheet" type="text/css" href="/front/css/index.css">
 
     <!-- plugin CSS -->
@@ -43,15 +51,8 @@
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
     <![endif]-->
 
-    <!-- myrecipelist CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/myrecipe_form.css">
 
-    <!-- 게시판 에디터 : Bootstrap JS의 소스 스크립트 추가-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <!-- 위지윅 에디터 추가 -->
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-
-<title>나만의 레시피 리스트</title>
+<title>나만의 레시피 작성폼</title>
 <!-- TinyMCE init 스크립트 추가 -->
 <script>
     tinymce.init({
@@ -60,30 +61,42 @@
 </script>
 </head>
 <body>
-    <header></header>
+    <!-- 헤더 -->
+    <header class="header"></header>
+    
+    <!-- 메인 -->
     <main>
-        <section>
-            <h1 class="pageTitle">나만의 레시피</h1>
-            <div class="best-list">
+        <section class="form-list">
+            <h1 class="best-title">나만의 레시피</h1>
+            <div>
                 <div class="information">
-                    <h2 class="title">제목</h1>
-                    <p><input></p>
+                    <h2 class="form-title">제목</h2>
+                    <p><input class="formBox" id="formBox"></p>
                 </div>
                 <div class="information">
-                    <h2 class="content">내용</h1>
-                    <!-- TinyMCE 초기화 지점 추가 -->
+                    <h2 class="form-content">내용</h1>
+                    <!--TinyMCE 초기화 지점 추가-->
                     <div>
                         <textarea id="tiny">여기에 내용을 입력해주세요.</textarea>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <div class="btnGroup lg form" >
+                <button class="btnBgGray form" class="btn_cancel">취소</button>
+                <button class="btnBg" class="btn_upload">올리기</button>
+            </div>
 
-        <section>
-            <button class="btn_cancel">취소</button>
-            <button class="btn_upload">올리기</button>
         </section>
     </main>
-    <footer></footer>
+
+    <!-- 푸터 -->
+    <footer class="footer"></footer>
+
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/front/js/common.js"></script>
+    <script src="/front/js/community.js"></script>
+    
 </body>
 </html>

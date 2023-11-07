@@ -43,17 +43,17 @@ function find_form_submit() {//제출 메서드
 
     //이메일 공백 확인
     if (email_1 == '' || email_2 == '') {
-        $('#find_warning_email').css('display','block');
+        $('#find_warning_email').css('display', 'block');
     } else {
-        $('#find_warning_email').css('display','none');
+        $('#find_warning_email').css('display', 'none');
         find_check_count++;
     }
 
     //이름 공백 확인
     if (name == '') {
-        $('#find_warning_name').css('display','block');
+        $('#find_warning_name').css('display', 'block');
     } else {
-        $('#find_warning_name').css('display','none');
+        $('#find_warning_name').css('display', 'none');
         find_check_count++;
     }
 
@@ -72,7 +72,6 @@ function find_form_submit() {//제출 메서드
 
 
 /* 회원가입 */
-
 //이메일
 $(function () {
     $('#sign_email_input_choose').on('change', function () {

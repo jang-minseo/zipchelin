@@ -42,68 +42,129 @@
     <title>가이드 상세페이지</title>
     <style>
         .guide_detail {
-            padding: 90px 0; 
-            min-height: 1000px;
+            padding: 55px 0;
+            margin: auto; 
+            height: 100%;
+            width: 72%;
         }
-        .guide_first_container {
-            margin: 0 auto;
-            border: 1px solid black;
+        .guide_first_container{
+            position: relative;
         }
-        .title_box {
-            display: inline-block;
-            border: 1px solid black;
+        .guide_first_container .guide_container{
+            margin: auto;
+            clear: both;
         }
-        .g_title {
-            display: inline-block;
+        .guide_page_name_box {
+            padding: 18px 0;
+            border-bottom: 4px solid #a5c87d;
         }
-        .social_box {
-            width: 300px;
-            height: 60px;
-            border: 1px solid black ;
+        .guide_page_name {
+            font-size: 2.9em;
+            color: #92c555; 
+            font-weight: bold;
         }
-        .view_count {
-
-        }
-        .heart_count {
-
-        }
-        .social_link {
-
-        }
-
-        .heart_img {
-
-        }
-        
-        .guide_pic {
-            object-fit: cover; 
-            
-
-        }
-        .description_box {
-
-        }
-        .sub_title {
-
-        }
-        /*
-        .guide_container {
-            margin: 0 auto; 
-            width: 880px; 
-            height: 450PX;
-            background-color: teal;
+        /*구분 선
+        #8acc39
+        .sep_line {
+            position: relative;
+            right: 1000px;
+            width: 3000px;
+            overflow: hidden;
+            border-bottom: 3px solid #8acc39;
         }
         */
-        .guide_image {
-
+        
+        .guide_title_box {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            
         }
-        .description_box {
-
+        .guide_title {
+            padding: 20px 0 0 10px;
+            font-size: 2.3em;
+            line-height: 1.7;
+            width: 83%;
         }
-        .description {
+        .guide_social_box {
+            position: relative;
+            display: flex;
+            float: right;    
+            width: 17%;
+            padding: 7px;
+            top: 8px;
+            color:  #999;
+        }
+        .common_box{
+            position: relative;
+            top: 5px;
+            padding: 0 15px;
+        }
+        .counts {
+            position: relative;
+            top: 5px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+        /*
+        .view_count {   
+        }
+        .heart_count {   
+        }
+        */
+        .share_box {
+            position: relative;
+            top: 10px;
+            font-weight: bold;
+        }
+        .guide__sub_title {
+            font-size: 1.6em;
+            padding: 0 10px 20px 10px;
+            color: #999;
+        }
 
+        .guide_img {
+            position: relative;
+            display: flex;
+            margin: 40px auto 0;
+            object-fit: cover;
+            border-radius: 20px;
+            width: 83%;
+            height: 400px;
+            
+        }
+        .step {
+            font-weight: bold;
+            color:  #8acc39;
+        }
+        .guide_description_box {
+            padding: 40px 70px 25px 70px;
+            /*
+            border-bottom: 3px solid #c1c1c1;
+            */
+            margin: 0 0 30px  ;
+            font-size: large;
+            line-height: 2;
+            color: #727272;    
         }
         
+        .guide_container>.last {
+            border: 0px solid #c1c1c1;
+            padding-bottom: 0 ;
+            margin: 0;
+        }
+
+        /*
+
+        .description {
+            
+        }
+        
+        */
+        .list_container {
+            border-top: 3px solid #c1c1c1;
+        }
         
     </style>
 </head>
@@ -131,43 +192,84 @@
     <!--메인--> 
     <main>
         <div id="main">
+             <!-- 사이드바 -->
+             <div class="aside">
+                <div class="zim">
+                    <a href="#">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <p>찜한레시피</p>
+                    </a>
+                </div>
+                <div class="cur_recipe">
+                    <p>최근 본 레시피</p>
+                    <div class="aside_imgBox">
+                        <a href="#"><img src="../../images/food/sal.jpg" alt=""></a>
+                        <a href="#"><img src="../../images/food/gan.jpg" alt=""></a>
+                        <a href="#"><img src="../../images/food/soshige.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="top">
+                    <a href="index.html"><span class="material-symbols-outlined">stat_1</span></a>
+                </div>
+            </div>       
+            <!--가이드섹션시작-->
             <section class="guide_detail">
                 <div class="guide_first_container">
-                    <div class="title_box">
-                        <div class="title g_title">
-                            연어필레 볶음밥과 그린가니쉬
+                    <div class="guide_page_name_box ">
+                        <p class="guide_page_name">
+                            가이드.ZIP    
+                        </p>
+                    </div>
+                    <!--
+                        나눔선   
+                        <hr class="sep_line">
+                    -->
+                    <div class="guide_title_box">
+                        <div class="title guide_title">
+                            맛있는 연어 손질법
                         </div>
-                        <div class="social_box">
-                            <div class="view_box">
+                        <div class="guide_social_box">
+                            <div class="view_box common_box">
                                 <span class="icon material-symbols-outlined">visibility</span>
-                                <p class="view_count">234</p>
+                                <p class="view_count counts">234</p>
                             </div>
-                            <div class="heart_box">
+                            <div class="heart_box common_box">
                                 <span class="icon material-symbols-outlined">Favorite</span>
-                                <p class="heart_count">56</p>
+                                <p class="heart_count counts">56</p>
+                            </div>  
+                            <div class="share_box common_box">
+                                <span class="icon material-symbols-outlined">share</span>
                             </div>
-                            <a class="social_link" href="">
-                                <div class="social_box">
-                                    <span class="icon material-symbols-outlined">share</span>
-                                </div>
-                            </a>
                         </div>
                     </div>
-                    <img src="" alt="" class="heart_img">
-                    <img class="guide_pic" src="../../images/food/sample.jpg" alt="" >
-                    <div class="description_box">
-                        <p class="sub_title"></p>
+                    <div class="guide__sub_title">
+                        손질하기 까다로운 연어를 손쉽게~
+                    </div>
+                    <img class="guide_img" src="../../images/food/sample.jpg" alt="" >
+                    <div class="guide_description_box">
+                        한번 배워놓으면 영원히 써먹는 연어 손질법<br>
+                        절대 실패 없는 연어 손질 법 알려드릴게요! <br> 
+                        품질 좋은 연어와 맛있게 법만 안다면 매일매일 행복한 밥상을 차릴 수 있을 거예요.
                     </div>
                 </div>
                 <!--반복 컨테이너-->
                 <div class="guide_container">
-                    <img src="" alt="" class="guide_image">
-                    <div class="description_box">
-                        <p class="description"></p>
+                    <img class="guide_img" src="../../images/food/sample2.jpg" alt="" >
+                    <div class="guide_description_box">
+                        <div class="step">step.1</div> 
+                       연어랑 상관없는 사진이에요
+                    </div>
+                </div>
+
+                <div class="guide_container">
+                    <img class="guide_img" src="../../images/food/gan.jpg" alt="" >
+                    <div class="guide_description_box last">
+                        <div class="step">step.2</div> 
+                        연어를 패대기쳐서 마무리 해보세요!
                     </div>
                 </div>
             </section>        
-
+            <!--가이드섹션 끝--> 
             <section class="recommend">
                     <div class="list_container">
                         <ul class="list_ul">
@@ -256,6 +358,7 @@
 
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/front/js/notice.js"></script>
+    <script src="/front/js/plugins/swiper-bundle.min.js"></script>
+    <script src="/front/js/main.js"></script>
 </body>
 </html>
