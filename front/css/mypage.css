@@ -133,6 +133,15 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 }
 
 /*정보 수정*/
+.profile_section{
+    border-top: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+    height: 191px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
 .edit_info{
     float: left;
     position: relative;
@@ -140,6 +149,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 }
 .edit_info > h4{
     font-size: 18px;
+    margin: 10px;
 }
 
 .edit_info > hr{
@@ -157,32 +167,67 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     cursor: pointer;
 }
 
-.profile_editbtn{
+.profile_edit_btn{
+    position: relative;
+    display: table-caption;
+    left: 156px;
+    bottom: 125px;
+}
+
+.profile_edit_btn > input{
     border-radius: 5px;
     background-color: #4FA72F; color: #fff;
     font-size: 12px;
+    margin: 6px;
+}
+
+.edit_form_item{
+    padding: 15px;
 }
 
 .edit_label{
-    margin: 20px;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9em;
 }
 
-.edit_input {
-    width: 200px;
-    height: 25px;
-    margin: 10px 10px 30px 10px;
+.edit_input{
+    width: 100%;
 }
 
-.edit_email_input{
-    width: 200px;
-    height: 25px;
-    margin: 10px 10px 30px 10px;
+.edit_input2{
+    width: 40%;
+}
+
+.edit_pwdToggle{
+    position: relative;
+    right: 41px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.edit_sign_input_box{
+    display: flex;
+    align-items: center;
 }
 
 #edit_email_input_choose{
-    width: 200px;
-    height: 25px;
+    text-align: center;
+    width: 130px;
+    box-sizing: border-box;
+    appearance: auto;
 }
+
+.edit_confirm_btn{
+    width: 17%;
+    right: 0;
+    border-radius: 4px;
+    line-height: 1.2em;
+    padding: 2px;
+    align-items: center;
+    height: 44.72px;
+} 
+
 
 .edit_leave{
     position: relative;
