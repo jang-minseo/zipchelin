@@ -25,7 +25,6 @@
     <link rel="stylesheet" type="text/css" href="/front/css/base.css">
     <link rel="stylesheet" type="text/css" href="/front/css/common.css">
 
-    <!-- page CSS -->
     <link rel="stylesheet" type="text/css" href="/front/css/index.css">
 
     <!-- plugin CSS -->
@@ -46,12 +45,13 @@
     <!-- myrecipelist CSS -->
     <link rel="stylesheet" type="text/css" href="/front/css/community.css">
 
-<title>나만의 레시피 리스트</title>
+<title>나만의 레시피</title>
 </head>
 <body>
-    <!--헤더 -->
+    <!-- 헤더 -->
     <header class="header"></header>
-
+    
+    <!-- 메인 -->
     <main>
         <section class="best-section">
             <h1 class="best-title">오늘의 인기글</h1>
@@ -123,7 +123,7 @@
                     <option value="#">오래된순</option>
                     <span class="icon material-symbols-outlined">keyboard_arrow_down</span>
                 </select>
-                <button class="btn_write">작성하기</button>
+                <button class="btnBg btnSm" class="btn_write">작성하기</button>
             </div>
             
             <ul class="allwrite clearfix">
@@ -337,9 +337,12 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <!-- 푸터 -->
+    <footer class="footer"></footer>
 
     <!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/front/js/common.js"></script>
     <script src="/front/js/community.js"></script>
 
 </body>
