@@ -11,9 +11,10 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     margin: 50px;
     width: 250px;
     height: 350px;
-    border: 2px solid #656464;
+    border: 2px solid #d2d1d1;
     text-align: center;
     float: left;
+    border-radius: 10px;
 }
 
 .profile_img{
@@ -32,16 +33,15 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 }
 
 .edit_btn{
-    border: 1px solid #4FA72F; 
-    background-color: #fff; 
-    color: #4FA72F;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 65px;
     height: 25px;
     border-radius: 5px;
     position: relative;
-    bottom: 15px;
+    bottom: 25px;
+    background-color: #4FA72F; color: #fff;
+    font-size: 12px;
 }
 
 #myBox_icon{
@@ -52,7 +52,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 .myBox_count{
     position: relative;
-    bottom: 30px;
+    bottom: 45px;
 }
 
 .myBox_count > p{
@@ -121,9 +121,125 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     padding: 20px;
 }
 
+.myPage_comment_bottom{
+    margin-bottom: 70px;
+}
 
 
+/*찜 목록*/
+.heartlist{
+    float: left;
+    width: calc(100% - 350px);
+}
 
+/*정보 수정*/
+.profile_section{
+    border-top: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+    height: 191px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.edit_info{
+    float: left;
+    position: relative;
+    top: 50px;
+}
+.edit_info > h4{
+    font-size: 18px;
+    margin: 10px;
+}
+
+.edit_info > hr{
+    width: 900px;
+}
+
+.profile_img_edit{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.profile_edit_btn{
+    position: relative;
+    display: table-caption;
+    left: 156px;
+    bottom: 125px;
+}
+
+.profile_edit_btn > input{
+    border-radius: 5px;
+    background-color: #4FA72F; color: #fff;
+    font-size: 12px;
+    margin: 6px;
+}
+
+.edit_form_item{
+    padding: 15px;
+}
+
+.edit_label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.edit_input{
+    width: 100%;
+}
+
+.edit_input2{
+    width: 40%;
+}
+
+.edit_pwdToggle{
+    position: relative;
+    right: 41px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.edit_sign_input_box{
+    display: flex;
+    align-items: center;
+}
+
+#edit_email_input_choose{
+    text-align: center;
+    width: 130px;
+    box-sizing: border-box;
+    appearance: auto;
+}
+
+.edit_confirm_btn{
+    width: 17%;
+    right: 0;
+    border-radius: 4px;
+    line-height: 1.2em;
+    padding: 2px;
+    align-items: center;
+    height: 44.72px;
+} 
+
+
+.edit_leave{
+    position: relative;
+    left: 849px;
+    top: 6px;
+    font-size: 12px;
+}
+
+.mypage_edit_contain{
+    position: absolute;
+    float: left;
+}
 
 
 .pageTitle{padding: 80px 0 60px; font-size: 32px; text-align: center;}

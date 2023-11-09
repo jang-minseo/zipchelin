@@ -2,145 +2,213 @@
 
 $(function () {
     //아이디찾기/비밀번호찾기 클릭시 효과
-    $('#find_id_button').add('#find_pwd_button').on('click', function () {
+    $('#find_box_id').add('#find_box_pwd').on('click', function () {
         let act = $(this).html();
-        $('#target').html(act);
+        $('#find_target').html(act);
+    })
+    $('.find_id_label').css('font-weight', 'bold');
+    $('#find_box_id').addClass('selected_find_box');
 
+    $('#find_box_id').on('click', function () {
+        $('.find_id_label').css('font-weight', 'bold');
+        $('.find_pwd_label').css('font-weight', 'normal');
+        $('#find_box_id').addClass('selected_find_box');
+        $('#find_box_pwd').removeClass('selected_find_box');
     })
-    $('.id_label').css('font-weight', 'bold');
-    $('.id_label').on('click', function () {
-        $('.id_label').css('font-weight', 'bold');
-        $('.pwd_label').css('font-weight', 'normal');
+    $('#find_box_pwd').on('click', function () {
+        $('.find_pwd_label').css('font-weight', 'bold');
+        $('.find_id_label').css('font-weight', 'normal');
+        $('#find_box_pwd').addClass('selected_find_box');
+        $('#find_box_id').removeClass('selected_find_box');
     })
-    $('.pwd_label').on('click', function () {
-        $('.pwd_label').css('font-weight', 'bold');
-        $('.id_label').css('font-weight', 'normal');
-    })
-    $('#email_input_choose').click(function () {
+
+    $('#find_email_input_choose').click(function () {
         let email_sec = $(this).val();
         if (email_sec == '직접입력') {
-            $('#email_2').val('');
-            $('#email_2').attr('disabled', false);
+            $('#find_email_2').val('');
+            $('#find_email_2').attr('disabled', false);
         } else {
-            $('#email_2').attr('disabled', true);
-            $('#email_2').val(email_sec);
+            $('#find_email_2').attr('disabled', true);
+            $('#find_email_2').val(email_sec);
         }
     })
     $('input[name=find]').css('color', 'red')
 })
 
-function form_submit() {//제출 메서드
-    let email_1 = $('#email_1').val();
-    let email_2 = $('#email_2').val();
-    let name = $('#name').val();
+function find_form_submit() {//제출 메서드
+    let email_1 = $('#find_email_1').val();
+    let email_2 = $('#find_email_2').val();
+    let name = $('#find_name').val();
+    let find_check_count=0;
 
     //이메일 공백 확인
     if (email_1 == '' || email_2 == '') {
-        $('#warning_email').css('visibility', 'visible');
-        return false;
+        $('#find_warning_email').css('display', 'block');
     } else {
-        $('#warning_email').css('visibility', 'hidden');
+        $('#find_warning_email').css('display', 'none');
+        find_check_count++;
     }
 
     //이름 공백 확인
     if (name == '') {
-        $('#warning_name').css('visibility', 'visible');
-        return false;
+        $('#find_warning_name').css('display', 'block');
     } else {
-        $('#warning_name').css('visibility', 'hidden');
+        $('#find_warning_name').css('display', 'none');
+        find_check_count++;
     }
 
     //무엇을 찾는지 확인 후 action 설정 후 submit
-    $('#email').val(email_1 + '@' + email_2);
-    if ($("input[name='find']:checked").val() == 'finding_id') {
-        $('#sign_up_form').attr('action', 'finding_id');
-    } else if ($("input[name='find']:checked").val() == 'finding_pwd') {
-        $('#sign_up_form').attr('action', 'finding_pwd');
+    if(find_check_count==2){
+            $('#find_email').val(email_1 + '@' + email_2);
+        if ($("input[name='find']:checked").val() == 'finding_id') {
+            $('#find_sign_up_form').attr('action', 'finding_id');
+        } else if ($("input[name='find']:checked").val() == 'finding_pwd') {
+            $('#find_sign_up_form').attr('action', 'finding_pwd');
+        }
+        $('#find_sign_up_form').submit();
     }
-    $('#sign_up_form').submit();
 }
 
 
 
 /* 회원가입 */
-
 //이메일
 $(function () {
-    $('#email_input_choose').on('change', function () {
-        let value = $('#email_input_choose option:selected').text();
+    $('#sign_email_input_choose').on('change', function () {
+        let value = $('#sign_email_input_choose option:selected').text();
         if (value == '직접입력') {
-            $('#email_2').attr('disabled', false);
-            $('#email_2').val('');
+            $('#sign_email_2').attr('disabled', false);
+            $('#sign_email_2').val('');
         } else {
-            $('#email_2').attr('disabled', true);
-            $('#email_2').val(value);
+            $('#sign_email_2').attr('disabled', true);
+            $('#sign_email_2').val(value);
         }
     })
 })
-function form_submit() {
-    let check_count = 0;
+
+function sign_form_submit() {
+    let sign_check_count = 0;
     var id_rule = /^[A-Za-z0-9]{6,12}$/;
     //id 체크
-    if ($('#id').val() == '' || !id_rule.test($('#id').val())) {
-        $('#warning_id').css('visibility', 'visible');
+
+    if ($('#sign_id').val() == '') {
+        $('#sign_warning_id_rule').css('display', 'none');
+        $('#sign_warning_id').css('display', 'block');
     } else {
-        $('#warning_id').css('visibility', 'hidden');
-        check_count++;
+        $('#sign_warning_id').css('display', 'none');
+        if(!id_rule.test($('#sign_id').val())){
+            $('#sign_warning_id_rule').css('display', 'block');
+        }else{
+            sign_check_count++;
+        }
     }
 
     //id 중복확인 체크
-    check_count++;
+    sign_check_count++;
 
     //비밀번호 정규식
     var password_rule = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
     //비밀번호 체크
-    if ($('#pwd').val() == '' || !password_rule.test($('#pwd').val())) {
-        $('#warning_pwd').css('visibility', 'visible');
+    if ($('#sign_pwd').val() == '') {
+        $('#sign_warning_pwd').css('display', 'block');
     } else {
-        $('#warning_pwd').css('visibility', 'hidden');
-        check_count++;
+        $('#sign_warning_pwd').css('display', 'none');
+        if(!password_rule.test($('#sign_pwd').val())){
+            $('#sign_warning_pwd_rule').css('display', 'block');
+        }else{
+            $('#sign_warning_pwd_rule').css('display', 'none');
+            sign_check_count++;
+        }
     }
     //비밀번호확인 체크
-    if ($('#pwd2').val() != $('#pwd').val()) {
-        $('#warning_pwd2').css('visibility', 'visible');
+    if ($('#sign_pwd').val() == '') {
+        $('#sign_warning_pwd2').css('display', 'block');
     } else {
-        $('#warning_pwd2').css('visibility', 'hidden');
-        check_count++;
+        $('#sign_warning_pwd2').css('display', 'none');
+        if($('#sign_pwd2').val() != $('#sign_pwd').val()){
+            $('#sign_warning_pwd2_rule').css('display', 'block');
+        }else{
+            $('#sign_warning_pwd2_rule').css('display', 'none');
+            sign_check_count++;
+        }
     }
     //이름 체크
-    if ($('#name').val() == '') {
-        $('#warning_name').css('visibility', 'visible');
+    if ($('#sign_name').val() == '') {
+        $('#sign_warning_name').css('display', 'block');
     } else {
-        $('#warning_name').css('visibility', 'hidden');
-        check_count++;
+        $('#sign_warning_name').css('display', 'none');
+        sign_check_count++;
     }
     //이메일 체크
-    if ($('#email_1').val() == '' || $('#email_2').val() == '') {
-        $('#warning_email').css('visibility', 'visible');
+    if ($('#sign_email_1').val() == '' || $('#sign_email_2').val() == '') {
+        $('#sign_warning_email').css('display', 'block');
     } else {
-        $('#warning_email').css('visibility', 'hidden');
-        let email = $('#email_1').val() + '@' + $('#email_2').val();
-        $('#email').val(email);
-        check_count++;
+        $('#sign_warning_email').css('display', 'none');
+        let email = $('#sign_email_1').val() + '@' + $('#sign_email_2').val();
+        $('#sign_email').val(email);
+        sign_check_count++;
     }
     //전화번호 정규식
-    var tel_rule = /^\d{3}-\d{3,4}-\d{4}$/;
+    var tel_rule = /^\d{3}\d{3,4}\d{4}$/;
     //전화번호 체크
-    if ($('#tel').val() == '' || !tel_rule.test($('#tel').val())) {
-        $('#warning_tel').css('visibility', 'visible');
+    if ($('#sign_tel').val() == '') {
+        $('#sign_warning_tel').css('display', 'block');
+        $('#sign_warning_tel_minus').css('display', 'none');
+        $('#sign_warning_tel_rule').css('display', 'none');
     } else {
-        $('#warning_tel').css('visibility', 'hidden');
-        check_count++;
+        $('#sign_warning_tel').css('display', 'none');
+        if($('#sign_tel').val().match('-')){
+            $('#sign_warning_tel_rule').css('display', 'none');
+            $('#sign_warning_tel_minus').css('display', 'block');
+        }else{
+            $('#sign_warning_tel_minus').css('display', 'none');
+            if(!tel_rule.test($('#sign_tel').val())){
+                $('#sign_warning_tel_rule').css('display', 'block');
+            }else{
+                $('#sign_warning_tel_rule').css('display', 'none');
+                sign_check_count++;
+            }
+        }
     }
     //약관동의여부 체크
-    if ($('input[id=agree]').is(':checked')) {
-        $('#warning_agree').css('visibility', 'hidden');
-        check_count++;
+    if ($('input[id=sign_agree]').is(':checked')) {
+        $('#sign_warning_agree').css('display', 'none');
+        sign_check_count++;
     } else {
-        $('#warning_agree').css('visibility', 'visible');
+        $('#sign_warning_agree').css('display', 'block');
     }
     //모두 체크 되어있을 시 제출
-    if (check_count == 8) {
+    if (sign_check_count == 8) {
         $('#sign_up_form').attr('action', '#').submit();
     }
+}
+
+//로그인
+
+function login_form_submit(){
+    let user_id=$('#login_id').val();
+    let user_pwd=$('#login_password').val();
+    let login_check_count=0;
+    if(user_id==''){
+        $('#login_id_warning').css('display','block')
+    }else{
+        $('#login_id_warning').css('display','none')
+        login_check_count++;
+    }
+
+    if(user_pwd==''){
+        $('#login_pwd_warning').css('display','block')
+    }else{
+        $('#login_pwd_warning').css('display','none')
+        login_check_count++;
+    }
+    if(login_check_count==2){
+        $('#login_form').submit();
+    }else{
+        return false;
+    }
+}
+
+function login_fail_get_out(){
+    $('#login_fail').css('display','none');
 }

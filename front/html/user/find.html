@@ -21,15 +21,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
     <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" href="/front/css/user.css">
+    <link rel="stylesheet" href="../../css/user.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
 
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -40,49 +40,53 @@
  
 <title>아이디/비밀번호 찾기</title>
 </head>
-<body id="body">
-    <section id="section">
-    <h1 id="target">아이디찾기</h1>
-    <form id="sign_up_form">
-        <div id="find_box">
-            <label class="id_label" id="find_id_button" for="find_id">아이디찾기</label>
-            <input type="radio" id="find_id" name="find" value="finding_id" checked>
-            <label class="pwd_label" id="find_pwd_button" for="find_pwd">비밀번호찾기</label>
-            <input type="radio" id="find_pwd" value="finding_pwd" name="find">
+<body id="find_body">
+    <section id="find_section">
+    <h1 id="find_target">아이디찾기</h1>
+    <div id="find_box_box">
+        <div id="find_box_id" class="find_box">
+            <label class="find_id_label" id="find_id_button" for="find_id">아이디찾기</label>
         </div>
-        <hr>
-        <div id="input_area">
-            <div>
-                <label for="email" class="">이메일</label>
-                <div id="email_box">
-                    <input type="text" id="email_1" placeholder="이메일" required>
-                    <span>@</span>
-                    <input type="text" id="email_2" value="gmail.com" disabled>
-                    <input type="hidden" id="email" name="email">
-                    <select id="email_input_choose">
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="naver.com">naver.com</option>
-                        <option value="kakao.com">kakao.com</option>
-                        <option>직접입력</option>
-                    </select>
-                </div>
-                <p class="warning" id="warning_email">이메일은 필수입력사항 입니다.</p>
-            </div>
-            <div id="name_box">
-                <label for="name" >이름</label>
+        <div id="find_box_pwd" class="find_box">
+            <label class="find_pwd_label" id="find_pwd_button" for="find_pwd">비밀번호찾기</label>
+        </div>
+    </div>
+    <form id="find_sign_up_form">
+            <div id="find_input_area">
                 <div>
-                    <input type="text" id="name" name="name" placeholder="이름" required>
+                    <input type="radio" id="find_id" name="find" value="finding_id" checked>
+                    <input type="radio" id="find_pwd" name="find" value="finding_pwd">
+
+                    <label for="find_email" class="">이메일</label>
+                    <div id="find_email_box">
+                        <input type="text" id="find_email_1" placeholder="이메일" required>
+                        <span>@</span>
+                        <input type="text" id="find_email_2" value="gmail.com" disabled>
+                        <input type="hidden" id="find_email" name="email">
+                        <select id="find_email_input_choose">
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="kakao.com">kakao.com</option>
+                            <option>직접입력</option>
+                        </select>
+                    </div>
+                    <p class="find_warning" id="find_warning_email">이메일은 필수입력사항 입니다.</p>
                 </div>
-                <p class="warning" id="warning_name">이름은 필수입력사항 입니다.</p>
+                <div id="find_name_box">
+                    <label for="find_name" >이름</label>
+                    <div>
+                        <input type="text" id="find_name" name="name" placeholder="이름" required>
+                    </div>
+                    <p class="find_warning" id="find_warning_name">이름은 필수입력사항 입니다.</p>
+                </div>
+                <div>
+                    <input value="찾기" type="button" id="find_do_find" onclick="find_form_submit()"><!--구성 요소중 누락된 요소 있을 시 거절-->
+                </div>
             </div>
-            <div>
-                <input value="찾기" type="button" id="do_find" onclick="form_submit()"><!--구성 요소중 누락된 요소 있을 시 거절-->
-            </div>
-        </div>
     </form>
     </section>
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/front/js/user.js"></script>
+    <script src="../../js/user.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 @charset "utf-8";
-main{display: block; margin: auto; padding: 0 20px; width: 1320px;}
+main{display: block; margin: 0 auto; padding: 100px 20px 0; width: 1320px;}
 .pageTitle{padding: 60px 0; font-size: 32px; text-align: center;}
-header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee}
+/* header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee} */
 body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .w1080{padding: 0 100px;}
 
@@ -23,254 +23,314 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 /* 한비 */
 /* 아이디/비밀번호 찾기 */
-
-#body #section,#target,#find_id,#find_pwd,#find_box,#find_id_button,#find_pwd_button,#input_area,.id_label,.pwd_label,#email_box,#email_box>input,select,#email_box>span,#name,#name_box,.warning,#do_find{
-    box-sizing: border-box;
+#find_section *{
     white-space: nowrap;
 }
-#section{
-    margin: 200px auto 0;
-    width: 40%;
-    position: relative;
+#find_section{
+margin: 0 auto;
+width: 40%;
+position: relative;
 }
-#target{
-    text-align: center;
-    font-size: 3em;
+#find_target{
+text-align: center;
+font-size: 3em;
+padding: 10px;
+margin: 50px;
 }
 #find_id,#find_pwd{
-    display: none;
+display: none;
 }
-#find_box{
-    position: relative;
-    height: 10px;
-    margin-bottom: 20px;
+#find_box_id{
+    display: inline-block;
+}
+#find_box_pwd{
+    display: inline-block;
+}
+.find_box{
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    height: 40px;
+    border: 2px solid #E9E9E9;
+    color: #c1c1c1;
+    border-radius: 5px 5px 0 0;
+    background-color: white;
+}
+#find_box_box{
+    text-align: center;
+}
+.selected_find_box{
+    border: 2px solid #4FA72F;
+    border-bottom: none;
+    color: #4FA72F;
 }
 #find_id_button{
-    position: absolute;
-    left: 10px;
-    cursor: pointer;
+cursor: pointer;
 }
 #find_pwd_button{
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
+cursor: pointer;
 }
-#input_area{
-    width: 75%;
-    margin: 0 auto;
+#find_input_area{
+width: 100%;
+margin-top: -1px;
+padding: 20px;
+padding-top: 30px;
+border-top: 1px solid #E9E9E9;
 }
-.id_label,.pwd_label{
-    display: block;
-    margin-bottom: 6px;
+#find_email_box{
+width: 100%;
 }
-#email_box{
-    width: 100%;
+#find_email_box>input{
+width: 30%;
+height: 40px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin: 0 3px;
+text-align: center;
 }
-#email_box>input,select{
-    width: 30%;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 0 3px;
-    text-align: center;
+#find_email_box>span{
+margin: 0 3px;
 }
-#email_box>span{
-    margin: 0 3px;
+#find_name{
+width: 100%;
+height: 40px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 5px 20px;
 }
-#name{
-    width: 100%;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px 20px;
+#find_name_box{
+width: 74%;
+margin: 18px auto;
 }
-#name_box{
-    width: 74%;
-    margin: 0 auto;
-}
-.warning{
-    color: red;
-    font-size: 0.8em;
-    margin-top: 3px;
-    margin-left: 4px;
-    visibility: hidden;
+.find_warning{
+color: red;
+font-size: 0.8em;
+margin-top: 3px;
+margin-left: 4px;
+display: none;
 }
 
-#do_find{
-    text-align: center;
-    font-size: 0.7em;
-    width: 100%;
-    margin-top: 20px;
-    color: white;
-    font-size: 1em;
-    background-color: #8acc39;
-    border: 1px solid #80bb37;
-    border-radius: 5px;
-    height: 46px;
-    cursor: pointer;
+#find_do_find{
+text-align: center;
+font-size: 0.7em;
+width: 100%;
+margin-top: 20px;
+color: white;
+font-size: 1em;
+background-color: #8acc39;
+border: 1px solid #80bb37;
+border-radius: 5px;
+height: 46px;
+cursor: pointer;
 }
+
 
 /* 로그인 영역 */
-#body #section,#title,.input_left,.input_left>input,.input_right,.small,.find,.input_div,.login,.email{
-    overflow: hidden;
+/* #login_section *{
     white-space: nowrap;
-    box-sizing: border-box;
+} */
+#login_form .login_input_div{
+    margin-bottom: 12px;
 }
-#section{
-    width: 22%;
-    margin: 100px auto 0;
-    text-align: center;
+#login_section{
+    max-width: 340px;
+    margin: 0 auto;
 }
-#title{
-    font-size: 3.5em;
+.login_input_left>label{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -999px;
 }
-.input_left{
-    text-align: left;
-}
-.input_left>input{
+.login_input_left>input{
     box-sizing: border-box;
     display: block;
     width: 100%;
-    margin: 15px auto;
-    height: 40px;
-    padding: 8px;
-    font-size: 0.8em;
+    /* margin-bottom: 16px; */
     border-radius: 4px;
-    border:1px solid #ccc;
 }
-.input_right{
-    text-align: right;
+.login_acc{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
 }
-.small{
+.login_sns{
+    margin: 40px 0;
+    text-align: center;
+}
+.login_sns h2{
+    color: #c1c1c1;
+    font-weight: 400;
+}
+.login_small{
     font-size: 0.9em;
 }
-.find{
+.login_find{
     text-decoration: none;
     color: black;
 }
-.input_div{
-    font-size: 1.1em;
-}
-.login{
+.login_login{
     width: 100%;
     height: 48px;
-    background-color: #8acc39;
-    border: 1px solid #80bb37;
     border-radius: 4px;
     margin: 18px 0;
     color: white;
     font-size: 1.2em;
-    font-weight: bold;
     border: none;
 }
-.email{
+#login_email_box{
+    width: 74%;
+    margin: 10px auto;
+}
+.login_email{
     display: inline-block;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    margin: 20px;
+    margin: 16px;
     background-color: #ccc;
 }
+.login_email>a{
+    height: 100%;
+    width: 100%;
+}
+.login_email.circle_bd{
+    border: 1px solid #e9e9e9;
+}
+.login_warning{
+    display: none;
+    margin: 8px 0;
+    color: red;
+    font-size: 0.8em;
+}
+
+/* 모달 */
+#login_fail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 99;
+}
+#login_fail_box{
+    position: relative;
+    background-color: white;
+    margin: 200px auto;
+    width: 30%;
+    height: 20%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+#login_fail_out{
+    position: absolute;
+    bottom: 28px;
+    left: 42%;
+    background-color: #4FA72F;
+    color: white;
+    border-radius: 5px;
+    width: 16%;
+    height: 40px;
+}
+#login_fail_msg{
+    margin-top: 45px;
+}
+
 
 /* 회원가입 */
-
-body{
+#sign_body{
     height: 1000px;
 }
-body *{
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
+#sign_section{
+    max-width: 440px;
+    margin: 0 auto;
 }
-#title{
-    font-size: 3.5em;
+.form_item{
+    margin-bottom: 32px;
 }
-section{
-    width: 28%;
-    margin: 60px auto 0;
-    text-align: center;
+.form_item .sign_info_input.inputField:first-of-type{
+    margin-bottom: 8px;
 }
-.left_label{
+.sign_left_label{
     display: block;
-    text-align: left;
-    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-size: 0.9em;
 }
-.info_input{
+.sign_info_input{
     display: inline-block;
-    height: 40px;
-    width: 84%;
-    border-radius: 5px;
-    padding: 10px;
+    width: 100%;
     box-sizing: border-box;
-    border: 1px solid #ccc;
 }
-.email_input{
-    display: inline-block;
-    text-align: center;
-    height: 40px;
+.sign_info_input input{
+    width: 100%;
+}
+.sign_info_input2{
+    width: 76%;
+}
+
+.form_email .sign_input_box{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+#sign_pwd2{
+    display: block;
+}
+.sign_email_input{
     width: 130px;
-    border-radius: 5px;
-    padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
 }
-#email_input_choose{
-    display: inline-block;
+#sign_email_input_choose{
     text-align: center;
-    height: 40px;
     width: 130px;
-    border-radius: 5px;
-    padding: 10px;
-    margin-left: 5px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    appearance: auto;
 }
-.input_box{
-    text-align: left;
-    padding: 0px;
+.sign_input_box{
     position: relative;
 }
-.input_button{
-    width: 12%;
+.sign_input_button{
+    width: 22%;
     height: 100%;
     position: absolute;
-    right: 15px;
-    border: none;
-    border-radius: 5px;
+    right: 0;
+    border-radius: 4px;
     line-height: 1.2em;
     padding: 2px;
-    background-color: #444;
-    color: white;
 } 
-.warning{
+.sign_warning{
+    display: none;
     color: red;
     width: 100%;
-    margin-top: 0;
+    margin: 8px 0;
     text-align: left;
     font-size: 0.8em;
-    visibility: hidden;
 }
-.agreement{
-    text-decoration: none;
-    color: #5d7e34;
+.sign_agreement{
+    display: inline-block;
+    text-decoration: underline;
+    color: #4FA72F;
 }
-#warning_agree{
-    text-align: center;
+.sign_agreement:hover{
+    text-decoration: underline;
 }
-#submit_button{
+.sign_agreement:visited{
+    color: #1A5C2C;
+}
+#sign_submit_button{
     width: 100%;
-    height: 46px;
-    border: 1px solid #80bb37;
-    border-radius: 5px;
-    background-color: #8acc39;
+    height: 48px;
+    margin-bottom: 60px;
+    border-radius: 4px;
     color: white;
-    font-size: 0.95em;
+    font-size: 1.2em;
     text-align: center;
 }
-#id_warning_box{
+#sign_id_warning_box{
     position: relative;
-    height: 22px;
-}
-#id_warning_box p{
-    position: absolute;
 }
