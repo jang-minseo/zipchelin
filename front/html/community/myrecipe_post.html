@@ -25,7 +25,6 @@
     <link rel="stylesheet" type="text/css" href="/front/css/base.css">
     <link rel="stylesheet" type="text/css" href="/front/css/common.css">
 
-    <!-- page CSS -->
     <link rel="stylesheet" type="text/css" href="/front/css/index.css">
 
     <!-- plugin CSS -->
@@ -44,30 +43,33 @@
     <![endif]-->
 
     <!-- myrecipelist CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/myrecipe_bf_login.css">
+    <link rel="stylesheet" type="text/css" href="/front/css/community.css">
 
-<title>나만의 레시피 리스트</title>
+<title>나만의 레시피</title>
 </head>
 <body>
-    <header></header>
+    <!-- 헤더 -->
+    <header class="header"></header>
+    
+    <!-- 메인 -->
     <main>
-        <section>
-            <h1 class="title">맛있는 음식을 봐라</h1>
-            <div class="best-list">
-                <div class="information">
-                    <a class="id">아이디</a>
-                    <span class="date">2023.10.26 10:02</span>
+        <section class="post-section">
+            <article class="post-article">
+                <div class="post-top">
+                    <h1 class="post-title">맛있는 음식을 봐라</h1>
+                    <div class="post-info">
+                        <span class="id">jhj7801</span>
+                        <span class="date">2023.10.26 10:02</span>
+                    </div>
+                    <div class="fullcontent">
+                        <h6 class="content">내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다</h6><br>
+                        <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
+                        <h6 class="content">내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다</h6><br>
+                    </div>
+                        <button class="btn_list">목록</button>
                 </div>
-                <div class="fullcontent">
-                    <h6 class="content">내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다</h6><br>
-                    <a href="#"><img src="images/IMG_5017.jpg" alt=""></a>
-                    <h6 class="content">내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다내가 만든 요리 중에 제일 맛있는 요리입니다</h6><br>
-                </div>
-                    <button class="btn_list">목록</button>
-            </div>
-        </section>
+            </article>
 
-        <section>
             <div>
                 <p><input placeholder="로그인 후 댓글을 남겨보세요."></p>
             </div>
@@ -92,7 +94,7 @@
             
             <div class="paging">
                 <ul>
-                    <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
+                    <!-- li에 .disabled가 있으면 화살표에 클릭방지 생김 -->
                     <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
                     <li class="active"><a href="javascript:">1</a></li>
                     <li><a href="javascript:">2</a></li>
@@ -104,6 +106,13 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <!-- 푸터 -->
+    <footer class="footer"></footer>
+
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/front/js/common.js"></script>
+    <script src="/front/js/community.js"></script>
+
 </body>
 </html>
