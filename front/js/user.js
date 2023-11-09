@@ -90,11 +90,17 @@ function sign_form_submit() {
     let sign_check_count = 0;
     var id_rule = /^[A-Za-z0-9]{6,12}$/;
     //id 체크
-    if ($('#sign_id').val() == '' || !id_rule.test($('#sign_id').val())) {
+
+    if ($('#sign_id').val() == '') {
+        $('#sign_warning_id_rule').css('display', 'none');
         $('#sign_warning_id').css('display', 'block');
     } else {
-        $('#sign_warning_id').css('display', 'hidden');
-        sign_check_count++;
+        $('#sign_warning_id').css('display', 'none');
+        if(!id_rule.test($('#sign_id').val())){
+            $('#sign_warning_id_rule').css('display', 'block');
+        }else{
+            sign_check_count++;
+        }
     }
 
     //id 중복확인 체크
@@ -103,18 +109,28 @@ function sign_form_submit() {
     //비밀번호 정규식
     var password_rule = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
     //비밀번호 체크
-    if ($('#sign_pwd').val() == '' || !password_rule.test($('#sign_pwd').val())) {
+    if ($('#sign_pwd').val() == '') {
         $('#sign_warning_pwd').css('display', 'block');
     } else {
         $('#sign_warning_pwd').css('display', 'none');
-        sign_check_count++;
+        if(!password_rule.test($('#sign_pwd').val())){
+            $('#sign_warning_pwd_rule').css('display', 'block');
+        }else{
+            $('#sign_warning_pwd_rule').css('display', 'none');
+            sign_check_count++;
+        }
     }
     //비밀번호확인 체크
-    if ($('#sign_pwd2').val() != $('#sign_pwd').val()) {
+    if ($('#sign_pwd').val() == '') {
         $('#sign_warning_pwd2').css('display', 'block');
     } else {
         $('#sign_warning_pwd2').css('display', 'none');
-        sign_check_count++;
+        if($('#sign_pwd2').val() != $('#sign_pwd').val()){
+            $('#sign_warning_pwd2_rule').css('display', 'block');
+        }else{
+            $('#sign_warning_pwd2_rule').css('display', 'none');
+            sign_check_count++;
+        }
     }
     //이름 체크
     if ($('#sign_name').val() == '') {
@@ -133,13 +149,26 @@ function sign_form_submit() {
         sign_check_count++;
     }
     //전화번호 정규식
-    var tel_rule = /^\d{3}-\d{3,4}-\d{4}$/;
+    var tel_rule = /^\d{3}\d{3,4}\d{4}$/;
     //전화번호 체크
-    if ($('#sign_tel').val() == '' || !tel_rule.test($('#sign_tel').val())) {
+    if ($('#sign_tel').val() == '') {
         $('#sign_warning_tel').css('display', 'block');
+        $('#sign_warning_tel_minus').css('display', 'none');
+        $('#sign_warning_tel_rule').css('display', 'none');
     } else {
         $('#sign_warning_tel').css('display', 'none');
-        sign_check_count++;
+        if($('#sign_tel').val().match('-')){
+            $('#sign_warning_tel_rule').css('display', 'none');
+            $('#sign_warning_tel_minus').css('display', 'block');
+        }else{
+            $('#sign_warning_tel_minus').css('display', 'none');
+            if(!tel_rule.test($('#sign_tel').val())){
+                $('#sign_warning_tel_rule').css('display', 'block');
+            }else{
+                $('#sign_warning_tel_rule').css('display', 'none');
+                sign_check_count++;
+            }
+        }
     }
     //약관동의여부 체크
     if ($('input[id=sign_agree]').is(':checked')) {
