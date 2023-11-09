@@ -1,3 +1,4 @@
+/* 집슐랭 픽 */
 var swiper = new Swiper(".zipPick", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -18,11 +19,11 @@ var swiper = new Swiper(".zipPick", {
       }
   });
 
-
+/* 요리 저장소 */
 var swiper = new Swiper(".cookConsulSlide", {
     direction: "vertical",
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 5,
+    spaceBetween: 20,
     loop: true,
     autoplay: {
         delay: 2500,
