@@ -52,8 +52,8 @@ header { position: fixed; width: 100%; padding: 10px 0; background-color: #fff; 
 .plusRank .material-symbols-outlined{ vertical-align: text-bottom; }
 
 /* 집슐랭픽 배너 */
-.zipbanner {  width: 1280px; margin-bottom: 150px;height: 220px; }
-.slide_wrap { float: left; width: 620px;height: 220px;   overflow: hidden;}
+.zipbanner {  width: 1280px; margin-bottom: 150px; height: 220px; }
+.slide_wrap { float: left; width: 620px;height: 220px; border-radius: 10px; overflow: hidden;}
 .zipPick { margin-right: 40px;}
 .slide_box { width: 2480px; height: 100%;} 
 .slide_content { display: table; float: left; position: relative; width: 620px; height: 100%; border-radius: 10px; border: 1px solid #e9e9e9; background-color: #8acc39;}
@@ -84,10 +84,11 @@ header { position: fixed; width: 100%; padding: 10px 0; background-color: #fff; 
 .myRecipe .textBox .material-symbols-outlined { font-size: 20px;  padding: 20px 5px 0 0;}
 .myRecipe .imgBox { float: right; }
 .myRecipe .textBox .icon { color: #c1c1c1; }
+
+.cookConsulSlide { height: 424px;  }
 .cookConsulting { width: 600px; float: right; border-bottom: 1px solid #e9e9e9;}
 .cookConsulting .textBox { float: left;}
-.cookConsulting .textBox .title { padding-top: 25px;}
-.cookConsulting .textBox .question { color: #8acc39; }
-.cookConsulting li { margin-bottom: 85px; padding-top: 20px; border-top: 1px solid #e9e9e9; }
+.cookConsulting .textBox .question { color: #8acc39;  overflow: hidden; }
+.cookConsulting li { padding: 40px 0 42px 0; border-top: 1px solid #e9e9e9; }
 .cookConsulting .textBox .material-symbols-outlined { font-size: 20px; padding-bottom: 3px;}
 

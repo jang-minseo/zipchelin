@@ -17,3 +17,15 @@ var swiper = new Swiper(".zipPick", {
         disableOnInteraction: false,
       }
   });
+
+
+var swiper = new Swiper(".cookConsulSlide", {
+    direction: "vertical",
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    }
+});
