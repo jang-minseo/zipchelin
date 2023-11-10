@@ -63,25 +63,24 @@
 
     <main class="clearfix">
          <!--마이페이지 left박스-->
-     <div class="mypage_leftBox">
+     <div class="mypage_leftBox mypage_leftBox_edit">
         <img class="profile_img" src="/front/images/icon/profile.jpg" alt="profile">
         <h1>USER_ID</h1>
         <input type="button" value="정보수정" class="edit_btn" onclick="loaction.href='#'"> 
         <ul class="leftBox_icon">
             <li class="myBox_count">
                 <span id="myBox_icon" class="material-symbols-outlined">favorite</span>
-                <p>찜 0개</p>
+                <p><a href="#">찜 0개</a></p>
             </li>
             <li class="myBox_count">
                 <span id="myBox_icon" class="material-symbols-outlined">density_small</span>
-                <p>내 글 0개</p>
+                <p><a href="#">내 글 0개</a></p>
             </li>
             <li class="myBox_count">
                 <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
-                <p>내 댓글 0개</p>
+                <p><a href="#">내 댓글 0개</a></p>
             </li>
         </ul>
-        
     </div>
 
     <div class="edit_info">
@@ -126,12 +125,12 @@
             </div>
 
             <div class="form_item edit_form_email edit_form_item">
-                <label for="sign_email" class="sign_left_label">이메일</label>
+                <label for="sign_email" class="sign_left_label edit_label">이메일</label>
                 <div class="edit_sign_input_box">
-                    <input type="text" id="sign_email_1" class="sign_email_input" placeholder="이메일">
-                    <span>@</span>
-                    <input type="text" id="sign_email_2" class="sign_email_input" value="gmail.com" disabled>
-                    <select id="edit_email_input_choose">
+                    <input type="text" id="sign_email_1" class="sign_email_input edit_email_input" placeholder="이메일">
+                    <span class="edit_email_span">@</span>
+                    <input type="text" id="sign_email_2" class="sign_email_input edit_email_input2" value="gmail.com" disabled>
+                    <select class="edit_email_select" id="edit_email_input_choose">
                         <option selected>gmail.com</option>
                         <option>naver.com</option>
                         <option>kakao.com</option>
@@ -143,27 +142,28 @@
             </div>
 
             <div class="form_item edit_form_item">
-                <label for="sign_tel" class="sign_left_label">전화번호</label>
+                <label for="sign_tel" class="sign_left_label edit_label">전화번호</label>
                 <div>
-                    <div class="sign_input_box">
+                    <div class="sign_input_box edit_sign_input_box2">
                         <input type="text" id="sign_tel" class="sign_info_input2" name="tel" placeholder="전화번호(-)포함">
                         <button type="button" onclick="" class="sign_input_button btnBd edit_confirm_btn">본인인증</button>
                     </div>
                     <!--<p class="sign_warning" id="sign_warning_tel">전화번호는 필수입력사항이며, 숫자와 빼기기호(-)로 이루어 져야 합니다.</p>-->
                 </div>
+
+                <a href="#" class="edit_leave">회원탈퇴</a>
             </div>
 
-            <a href="#" class="edit_leave">회원탈퇴</a>
-
-            <hr>
-
-            <input type="button" value="수정완료" class="" class="" onclick="loaction.href='#'">
+            <div class="edit_can_fin_btn">
+                <input type="button" value="취소" class="edit_cancle_button" onclick="loaction.href='#'">
+                <input type="button" value="수정완료" class="edit_fin_button" onclick="loaction.href='#'">
+            </div>
         </div>
 
     </div>
     </main>
 
-    <!--<footer>
+    <footer>
         <div class="mypage_eidt_contain">
             <div id="footerMenu">
                 <a href="/front/index.html" class="footerLogo">
@@ -190,7 +190,7 @@
                 <p class="copyright">Copyright &copy; 집슐랭, All Rights Reserved.</p>  
             </div>
         </div>
-    </footer>-->
+    </footer>
     
     <!-- js -->
     <script src="/front/js/plugins/swiper-bundle.min.js"></script>
