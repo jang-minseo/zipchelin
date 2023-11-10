@@ -27,7 +27,7 @@
 
     <!-- page CSS -->
     <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../../css/list.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
 
     <!-- plugin CSS -->
     <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
@@ -40,195 +40,10 @@
     <![endif]-->
 
     <title>레시피 상세페이지</title>
-    <style>
-        .recipe_detail {
-            padding: 55px 0;
-            margin: auto; 
-            height: 100%;
-            width: 90%;
-        }
-        .recipe_first_container .recipe_container{
-            margin: auto;
-            clear: both;
-
-        }
-        .recipe_page_name_box {
-            padding: 18px 0;
-            border-bottom: 4px solid #a5c87d;
-        }
-        .recipe_page_name {
-            font-size: 2.9em;
-            color: #92c555; 
-            font-weight: bold;
-        }
-        /*구분 선
-        #8acc39
-        .sep_line {
-            position: relative;
-            right: 1000px;
-            width: 3000px;
-            overflow: hidden;
-            border-bottom: 3px solid #8acc39;
-        }
-        */
-        
-        .recipe_title_box {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            
-        }
-        .recipe_title {
-            padding: 20px 0 0 10px;
-            font-size: 2.3em;
-            line-height: 1.7;
-            width: 83%;
-        }
-        .recipe_social_box {
-            position: relative;
-            display: flex;
-            float: right;    
-            width: 17%;
-            padding: 7px;
-            top: 8px;
-            color:  #999;
-        }
-        .common_box{
-            position: relative;
-            top: 5px;
-            padding: 0 15px;
-        }
-        .counts {
-            position: relative;
-            top: 5px;
-            font-size: 0.8em;
-            text-align: center;
-        }
-        /*
-        .view_count {   
-        }
-        .heart_count {   
-        }
-        */
-        .share_box {
-            position: relative;
-            top: 10px;
-            font-weight: bold;
-        }
-        .recipe_sub_title {
-            font-size: 1.6em;
-            padding: 0 10px 20px 10px;
-            color: #999;
-        }
-/*******/
-        .recipe_box {
-            font-family: 'S-CoreDream';
-        }
-        .recipe_img {
-            margin: auto 0;
-            object-fit: cover;
-            border-radius: 20px;
-            width: 60%;
-            height: 600px;
-        }
-        .recipe_prepare {
-            position: relative;
-            float: right;
-            padding: 20px;
-            width: 34%;
-            height: 600px;
-            border-radius: 20px;
-        }
-        .recipe_mate {
-            position: relative;
-            top: -22px;
-            left: -22px;
-            width: 390px;
-        }
-        .recipe_mate:nth-child(1) {
-            padding: 15px 0;
-            font-weight: bold;
-            font-size: 2em;
-        }
-
-        .recipe_materials {}
-        .recipe_tools {}
-
-        .mate_name {
-            font-size: 1.5em;
-            font-weight: 600;
-            padding: 16px 0 10px 0px  ;
-            border-top: 3px solid #ccc;
-        }
-        
-        .mates {font-size: 1.3em; line-height: 120%; padding: 10px 0;}
-        .step {
-            font-weight: bold;
-            font-size: 1.4em;
-            color:  #8acc39;
-        }
-        .recipe_first_container .recipe_description_box {
-            padding: 40px 0 25px 30px;
-            border-bottom: 3px solid #c1c1c1;
-            margin: 0 0 30px  ;
-            font-size: large;
-            line-height: 2;
-            color: #727272;    
-            /*
-            text-align: center;
-            */
-        }
-        .recipe_container .recipe_description_box {
-            padding: 10px 10px 0 10px;
-            width: 34%;
-            height: 100%;
-            font-size: large;
-            line-height: 2;
-            color: #727272;    
-            position: relative;
-            float: right;
-        }
-        .recipe_container>.last {
-            border: 0px solid #c1c1c1;
-            padding-bottom: 0 ;
-            margin: 0;
-        }
-
-        /*
-
-        .description {
-            
-        }
-        
-        */
-        .list_container {
-            border-top: 3px solid #c1c1c1;
-        }
-        
-    </style>
 </head>
 <body>
-    <!--헤더--> 
-    <header class="header">
-        <div class="headerContainer">
-            <img class="logo" src="../../images/logo/logo.png" />
-            <div class="menu">
-                <a href="">레시피</a>
-                <a href="">가이드</a>
-                <a href="">커뮤니티</a>
-                <a href="">공지사항</a>
-            </div>
-            <div class="right_menu">
-                <!-- <img class="icon" src="../../images/icon2/search.png" /> -->
-                <a href="">
-                    <span class="material-symbols-outlined">search</span>
-                </a>
-                <a href="">로그인</a>
-                <a href="">회원가입</a>
-            </div>
-        </div>
-    </header>
+    <!--헤더-->   
+    <header class="header"></header>
     <!--메인--> 
     <main>
         <div id="main">
@@ -327,7 +142,7 @@
             </section>        
             <!--가이드섹션 끝--> 
             <section class="recommend">
-                    <div class="list_container">
+                    <div class="detailLast list_container">
                         <ul class="list_ul">
                             <li class="list_li">
                                 <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
@@ -381,40 +196,11 @@
             </section>        
         
         </div>
-    </main>
-<!--==============푸터================-->    
+    </main> 
     <!--푸터-->    
-    <footer id="footer">
-        <div class="contain">
-            <div id="footerMenu">
-                <a href="index.html" class="footerLogo">
-                    <img src="../../images/logo/logo.png" alt="zipchelin">
-                </a>
-                <ul class="fmenu">
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">개인정보보호정책</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">공지사항</a></li>
-                </ul>
-                <ul class="sns">
-                    <li><a href="#"><img src="../../images/icon/facebook.png" alt="facebook"></a></li>
-                    <li><a href="#"><img src="../../images/icon/instagram.png" alt="instagram"></a></li>
-                    <li><a href="#"><img src="../../images/icon/youtube.png" alt="youtube"></a></li>
-                </ul>
-                    <address>
-                        <span>회사명 : 주식회사 집슐랭 (서울시 종로구 종로78 (종로2가, 미려빌딩 3,5,6층))</span><br>
-                        <span> 전화 : 02-1111-1111</span>
-                        <span> 팩스 : 02-2222-2222 </span>
-                        <span> E-MAIL : zipcheiln@zipc.co.kr</span>
-                    </address>
-                <p class="copyright">Copyright &copy; 집슐랭, All Rights Reserved.a</p>  
-            </div>
-        </div>
-    </footer>
-
+    <footer id="footer"></footer>
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/front/js/plugins/swiper-bundle.min.js"></script>
-    <script src="/front/js/main.js"></script>
+    <script src="/front/js/common.js"></script>
 </body>
 </html>
