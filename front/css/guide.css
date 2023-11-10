@@ -1,0 +1,37 @@
+/*가이트 리스트*/
+.header {z-index: 15;}
+.category {margin: 0; border-radius: 20px;}
+.title_box{margin-top: 30px;}
+.list_title {font-size: 2.5em; text-align: center; line-height: 280%; color: black;}
+    /*.list_container {  }*/
+.list_container .list_ul {padding: 45px 0 0 0; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;}
+.list_container .list_li {display: block; position: relative;}
+.list_container .list_heart {z-index: 10; position: absolute; width: 30px; height: 30px; right: 10px; top: 8px;}
+    /*.list_container .recipe_link { }*/
+.list_container .pic_box {margin: 0 0 50px 0;}
+.list_container .recipe_pic {object-fit: cover; width: 270px; height: 200px; border-radius: 12px;}
+
+
+/*가이드 상세 상세페이지 DETAIL*/
+.guide_detail {padding: 55px 0; margin: auto; height: 100%; width: 72%;}
+.guide_first_container{position: relative;}
+.guide_first_container .guide_container{margin: auto; clear: both;}
+.guide_page_name_box {padding: 18px 0; border-bottom: 4px solid #8acc39;}
+.guide_page_name {font-size: 2.9em; color: #8acc39; font-weight: bold;}
+.guide_title_box {margin: 0; width: 100%; height: 100%; display: flex;}
+.guide_title { padding: 20px 0 0 10px; font-size: 2.3em; line-height: 1.7; width: 83%;}
+.guide_social_box {position: relative; display: flex; float: right; width: 17%; padding: 7px; top: 8px; color:  #999;}
+
+.guide__sub_title {font-size: 1.6em; padding: 0 10px 20px 10px; color: #999;}
+.guide_img {position: relative; display: flex; margin: 40px auto 0; object-fit: cover; border-radius: 20px; width: 83%; height: 400px;}
+.step {font-weight: bold; color:  #8acc39;}
+.guide_description_box {padding: 40px 70px 25px 70px; margin: 0 0 30px; font-size: large; line-height: 2; color: #727272;}
+.guide_container>.last {border: 0px solid #c1c1c1; padding-bottom: 0; margin: 0;}
+
+.common_box{ position: relative; top: 5px; padding: 0 15px;}
+.counts {position: relative; top: 5px; font-size: 0.8em; text-align: center;}
+    /*.view_count {}
+    .heart_count {}*/
+.share_box { position: relative; top: 10px; font-weight: bold;}
+.detailLast { border-top: 1px solid #e9e9e9;}
+
