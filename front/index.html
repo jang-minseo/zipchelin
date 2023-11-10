@@ -28,6 +28,8 @@
     <!-- page CSS -->
     <link rel="stylesheet" href="./css/index.css">
     
+    <!-- main banner -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- plugin CSS -->
     <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
@@ -66,10 +68,16 @@
     </header>
     <div id="main">
         <!-- 메인 배너 -->
-        <div class="main_banner swiper">
+        <div class="swiper main_banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img class="banner_img" src="images/food/main.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner_img" src="images/food/main2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner_img" src="images/food/main3.jpg" />
                 </div>
                 <div class="swiper-slide">
                     <img class="banner_img" src="images/food/main.jpg" />
@@ -100,18 +108,13 @@
                     <a href="#"><img src="images/food/sal.jpg" alt=""></a>
                 </div>
             </div>
-            <a href="#">
-                <div class="top">
-                    <span class="material-symbols-outlined">stat_1</span>
-                </div>
-            </a>
-        </div>
-
             <div class="top">
                 <a href="index.html"><span class="material-symbols-outlined">stat_1</span></a>
             </div>
         </div>
-    
+        <div class="top2">
+            <a href="index.html"><span class="material-symbols-outlined">stat_1</span></a>
+        </div>
 
         <!-- 최신 레시피 -->
         <div class="recipe_container">
@@ -187,7 +190,7 @@
             </div>
             <div class="rank_row">
                 <div class="rank_item">
-                    <h2>1</h2>
+                    <h2>7</h2>
                     <a href="#">
                     <img src="images/food/tang.jpg"/>
                     </a>
@@ -199,7 +202,7 @@
                     </div>
                 </div>
                 <div class="rank_item">
-                    <h2>2</h2>
+                    <h2>8</h2>
                     <a href="#">
                     <img src="images/food/sal.jpg"/>
                     </a>
@@ -261,6 +264,9 @@
                     </div>
                 </div>
             </div>
+
+           
+            
             <div class="plusRank">
                 <a href="#">
                     <!-- <img src="images/icon2/plus.png" alt="plus" class="plus"> -->
@@ -268,7 +274,86 @@
                     더보기
                 </a>
             </div>
-        </div>        
+        </div>  
+        
+        <input id="check-btn" type="checkbox"/>
+        
+        <div class="rank_row1">
+            <div class="rank_item">
+                <h2>7</h2>
+                <a href="#">
+                <img src="images/food/tang.jpg"/>
+                </a>
+                <div class="textBox">
+                    <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                    <a href="#">
+                    <p class="title">동태찌개</p>
+                    </a>
+                </div>
+            </div>
+            <div class="rank_item">
+                <h2>8</h2>
+                <a href="#">
+                <img src="images/food/sal.jpg"/>
+                </a>
+                <div class="textBox">
+                    <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                    <a href="#">
+                    <p class="title">동태찌개</p>
+                    </a>
+                </div>
+            </div>
+            <div class="rank_item">
+                <h2>9</h2>
+                <a href="#">
+                <img src="images/food/bae.jpg"/>
+                </a>
+                <div class="textBox">
+                    <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                    <a href="#">
+                    <p class="title">동태찌개</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rank_row">
+            <div class="rank_item">
+                <h2>10</h2>
+                <a href="#">
+                <img src="images/food/je.jpg"/>
+                </a>
+                <div class="textBox">
+                    <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                    <a href="#">
+                    <p class="title">동태찌개</p>
+                    </a>
+                </div>
+            </div>
+            <div class="rank_item">
+                <h2>11</h2>
+                <a href="#">
+                <img src="images/food/jo.jpg"/>
+                </a>
+                <div class="textBox">
+                    <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                    <a href="#">
+                    <p class="title">동태찌개</p>
+                    </a>
+                </div>
+            </div>
+            <div class="rank_item">
+                <h2>12</h2>
+                <a href="#">
+                <img src="images/food/mi.jpg"/>
+                </a>
+                <div class="textBox">
+                    <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                    <a href="#">
+                    <p class="title">동태찌개</p>
+                    </a>
+                </div>
+            </div>
+        </div>
         
         <div class="recipe_container">
             <div class="index_title">
