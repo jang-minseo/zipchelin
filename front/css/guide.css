@@ -16,8 +16,8 @@
 .guide_detail {padding: 55px 0; margin: auto; height: 100%; width: 72%;}
 .guide_first_container{position: relative;}
 .guide_first_container .guide_container{margin: auto; clear: both;}
-.guide_page_name_box {padding: 18px 0; border-bottom: 4px solid #a5c87d;}
-.guide_page_name {font-size: 2.9em; color: #92c555; font-weight: bold;}
+.guide_page_name_box {padding: 18px 0; border-bottom: 4px solid #8acc39;}
+.guide_page_name {font-size: 2.9em; color: #8acc39; font-weight: bold;}
 .guide_title_box {margin: 0; width: 100%; height: 100%; display: flex;}
 .guide_title { padding: 20px 0 0 10px; font-size: 2.3em; line-height: 1.7; width: 83%;}
 .guide_social_box {position: relative; display: flex; float: right; width: 17%; padding: 7px; top: 8px; color:  #999;}
