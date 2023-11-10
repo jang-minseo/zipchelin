@@ -1,6 +1,6 @@
 @charset "utf-8";
 main{display: block; margin: 0 auto; padding: 100px 20px 0; width: 1320px;}
-.pageTitle{padding: 60px 0; font-size: 32px; text-align: center;}
+/* .pageTitle{padding: 60px 0; font-size: 32px; text-align: center;} */
 /* header{height: 100px; background-color: #ffffff; border-bottom: 1px solid #eee} */
 body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .w1080{padding: 0 100px;}
@@ -31,21 +31,21 @@ margin: 0 auto;
 width: 40%;
 position: relative;
 }
-#find_target{
+/* #find_target{
 text-align: center;
 font-size: 3em;
 padding: 10px;
 margin: 50px;
-}
-#find_id,#find_pwd{
+} */
+/* #find_id,#find_pwd{
 display: none;
-}
-#find_box_id{
+} */
+/*#find_box_id{
     display: inline-block;
 }
-#find_box_pwd{
+ #find_box_pwd{
     display: inline-block;
-}
+} */
 .find_box{
     text-align: center;
     padding: 10px;
@@ -56,72 +56,85 @@ display: none;
     border-radius: 5px 5px 0 0;
     background-color: white;
 }
-#find_box_box{
+/* #find_box_box{
     text-align: center;
-}
+} 
 .selected_find_box{
     border: 2px solid #4FA72F;
     border-bottom: none;
     color: #4FA72F;
+}*/
+#find_section .tabGroup{
+    justify-content: center;
 }
-#find_id_button{
-cursor: pointer;
+#find_section .tabGroup>li{
+    width: 50%;
 }
-#find_pwd_button{
-cursor: pointer;
+#find_section .tabGroup .tab{
+    width: 100%;
+}
+#find_id_button, #find_pwd_button{
+    cursor: pointer;
 }
 #find_input_area{
-width: 100%;
-margin-top: -1px;
-padding: 20px;
-padding-top: 30px;
-border-top: 1px solid #E9E9E9;
+    padding: 30px 20px 20px;
+    border-top: 1px solid #E9E9E9;
 }
-#find_email_box{
-width: 100%;
+#find_input_area .sign_input_box{
+    gap: 8px;
 }
+#find_input_area .find_email_input{
+    width: 28%;
+    flex-grow: 2;
+}
+#find_input_area #find_email_input_choose{
+    width: 28%;
+    flex-grow: 1;
+}
+/* #find_email_box{
+    width: 100%;
+} *//* 
 #find_email_box>input{
-width: 30%;
-height: 40px;
-border: 1px solid #ccc;
-border-radius: 5px;
-margin: 0 3px;
-text-align: center;
+    width: 30%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 3px;
 }
 #find_email_box>span{
-margin: 0 3px;
-}
+    margin: 0 3px;
+} */
 #find_name{
-width: 100%;
-height: 40px;
-border: 1px solid #ccc;
-border-radius: 5px;
-padding: 5px 20px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 20px;
 }
-#find_name_box{
-width: 74%;
-margin: 18px auto;
-}
+/* #find_name_box{
+    width: 74%;
+    margin: 18px auto;
+} */
 .find_warning{
-color: red;
-font-size: 0.8em;
-margin-top: 3px;
-margin-left: 4px;
-display: none;
+    color: red;
+    font-size: 0.8em;
+    margin-top: 3px;
+    margin-left: 4px;
+    display: none;
 }
 
 #find_do_find{
-text-align: center;
-font-size: 0.7em;
-width: 100%;
-margin-top: 20px;
-color: white;
-font-size: 1em;
-background-color: #8acc39;
-border: 1px solid #80bb37;
-border-radius: 5px;
-height: 46px;
-cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    font-size: 1em;
+    background-color: #8acc39;
+    border: 1px solid #80bb37;
+    border-radius: 5px;
+    height: 46px;
+    cursor: pointer;
 }
 
 
@@ -208,7 +221,7 @@ cursor: pointer;
 
 /* 모달 */
 #login_fail{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -222,6 +235,7 @@ cursor: pointer;
     margin: 200px auto;
     width: 30%;
     height: 20%;
+    min-height: 180px;
     border-radius: 10px;
     text-align: center;
     padding: 20px;
@@ -272,7 +286,7 @@ cursor: pointer;
     width: 76%;
 }
 
-.form_email .sign_input_box{
+.form_email .sign_input_box, .form_email .find_input_box{
     display: flex ;
     justify-content: space-between;
     align-items: center;
@@ -281,20 +295,20 @@ cursor: pointer;
 #sign_pwd2{
     display: block;
 }
-.sign_email_input{
+.sign_email_input, .find_email_input{
     width: 130px;
     box-sizing: border-box;
 }
-#sign_email_input_choose{
+#sign_email_input_choose, #find_email_input_choose{
     text-align: center;
     width: 130px;
     box-sizing: border-box;
     appearance: auto;
 }
-.sign_input_box{
+.sign_input_box, .find_input_box{
     position: relative;
 }
-.sign_input_button{
+.sign_input_button, .find_input_button{
     width: 22%;
     height: 100%;
     position: absolute;
