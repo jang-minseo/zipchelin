@@ -62,36 +62,42 @@
     </header>
 
     <main class="clearfix">
+        <div class="myPage_text">
+            <h1>마이페이지</h1>
+        </div>
+
         <!--마이페이지 left박스-->
-       <div class="mypage_leftBox">
+        <div class="mypage_leftBox mypage_leftBox_edit">
             <img class="profile_img" src="/front/images/icon/profile.jpg" alt="profile">
             <h1>USER_ID</h1>
             <input type="button" value="정보수정" class="edit_btn" onclick="loaction.href='#'"> 
             <ul class="leftBox_icon">
                 <li class="myBox_count">
                     <span id="myBox_icon" class="material-symbols-outlined">favorite</span>
-                    <p>찜 0개</p>
+                    <p><a href="#">찜 0개</a></p>
                 </li>
                 <li class="myBox_count">
                     <span id="myBox_icon" class="material-symbols-outlined">density_small</span>
-                    <p>내 글 0개</p>
+                    <p><a href="#">내 글 0개</a></p>
                 </li>
                 <li class="myBox_count">
                     <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
-                    <p>내 댓글 0개</p>
+                    <p><a href="#">내 댓글 0개</a></p>
                 </li>
             </ul>
-       </div>
+        </div>
 
        <!--mypage main-->
        <div class="mypage_main">
 
             <!--찜-->
             <div class="heart">
-                <span id="main_icon" class="material-symbols-outlined">favorite</span>
-                <p id="left">찜</p>
-                <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
-                <hr>
+                <div class="mypage_heart">
+                    <span id="main_icon" class="material-symbols-outlined">favorite</span>
+                    <p id="left">찜</p>
+                    <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
+                </div>
+                
                 <ul>
                     <li class="haert_li">
                         <a class="heartLink" href="#">
@@ -126,40 +132,42 @@
 
             <!--내 글-->
             <div class="write">
-            <span id="main_icon" class="material-symbols-outlined">density_small</span>
-            <p id="left">내 글</p>
-            <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
-            <hr>
-            <ul>
-                <li class="write_li">
-                    <a class="writeLink" href="#">
-                        <img class="write_img" src="images/단호박스콘.png" alt="#">
-                        <p class="subtitle">부제목</p>
-                        <strong class="title">제목</strong>
-                    </a>
-                </li>
-                <li class="write_li">
-                    <a class="writeLink" href="#">
-                        <img class="write_img" src="images/단호박스콘.png" alt="#">
-                        <p class="subtitle">부제목</p>
-                        <strong class="title">제목</strong>
-                    </a>
-                </li>
-                <li class="write_li">
-                    <a class="writeLink" href="#">
-                        <img class="write_img" src="images/단호박스콘.png" alt="#">
-                        <p class="subtitle">부제목</p>
-                        <strong class="title">제목</strong>
-                    </a>
-                </li>
-                <li class="write_li">
-                    <a class="writeLink" href="#">
-                        <img class="write_img" src="images/단호박스콘.png" alt="#">
-                        <p class="subtitle">부제목</p>
-                        <strong class="title">제목</strong>
-                    </a>
-                </li>
-            </ul>
+                <div class="mypage_list">
+                    <span id="main_icon" class="material-symbols-outlined">density_small</span>
+                    <p id="left">내 글</p>
+                    <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
+                </div>
+                
+                <ul>
+                    <li class="write_li">
+                        <a class="writeLink" href="#">
+                            <img class="write_img" src="images/단호박스콘.png" alt="#">
+                            <p class="subtitle">부제목</p>
+                            <strong class="title">제목</strong>
+                        </a>
+                    </li>
+                    <li class="write_li">
+                        <a class="writeLink" href="#">
+                            <img class="write_img" src="images/단호박스콘.png" alt="#">
+                            <p class="subtitle">부제목</p>
+                            <strong class="title">제목</strong>
+                        </a>
+                    </li>
+                    <li class="write_li">
+                        <a class="writeLink" href="#">
+                            <img class="write_img" src="images/단호박스콘.png" alt="#">
+                            <p class="subtitle">부제목</p>
+                            <strong class="title">제목</strong>
+                        </a>
+                    </li>
+                    <li class="write_li">
+                        <a class="writeLink" href="#">
+                            <img class="write_img" src="images/단호박스콘.png" alt="#">
+                            <p class="subtitle">부제목</p>
+                            <strong class="title">제목</strong>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <!--댓글-->

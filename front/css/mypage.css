@@ -7,6 +7,13 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 /* 마이페이지 레프트 */
 .myMenu{float: left; width: 24%; /* padding-top: 40%;  */margin-right: 24px; /* background-color: #f7f7f7; */}
 
+.myPage_text > h1{
+    position: relative;
+    top: 85px;
+    left: 101px;
+    font-size: 22px;
+}
+
 .mypage_leftBox{
     margin: 50px;
     width: 250px;
@@ -15,6 +22,9 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     text-align: center;
     float: left;
     border-radius: 10px;
+    right: 25px;
+    top: 40px;
+    position: relative;
 }
 
 .profile_img{
@@ -29,7 +39,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 .mypage_leftBox > h1{
     position: relative;
-    bottom: 10px;
+    bottom: 12px;
 }
 
 .edit_btn{
@@ -42,6 +52,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     bottom: 25px;
     background-color: #4FA72F; color: #fff;
     font-size: 12px;
+    line-height: 5px;
 }
 
 #myBox_icon{
@@ -85,6 +96,11 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 }
 
 /*마이페이지-메인(찜 목록)*/
+.mypage_heart{
+    border-bottom: 1px solid #4a4a4a;
+    padding-bottom: 10px
+}
+
 .haert_li{
     float: left;
 }
@@ -106,6 +122,10 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 }
 
 /*마이페이지-메인(내 글 목록)*/
+.mypage_list{
+    border-bottom: 1px solid #4a4a4a;
+    padding-bottom: 10px
+}
 .write_li{
     float: left;
 }
@@ -116,20 +136,45 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     margin: 16px;
 }
 
+/*마이페이지-메인(내 댓글)*/
 #myPage_comment{
     border-bottom: 1px solid #bbb;
     padding: 20px;
 }
 
 .myPage_comment_bottom{
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 
 /*찜 목록*/
+.mypage_leftBox_heart{
+    position: relative;
+    top: 120px;
+}
+
+.tab_heart{
+    position: relative;
+    right: 16px;
+    margin-bottom: 3px
+}
+
 .heartlist{
     float: left;
     width: calc(100% - 350px);
+    position: relative;
+    right: 32px;
+}
+
+.edit_heart_paging{
+    position: relative;
+    top: 40px;
+    align-items: center;
+}
+
+.edit_contain{
+    position: relative;
+    top: 50px;
 }
 
 /*정보 수정*/
@@ -142,13 +187,26 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     padding-top: 15px;
 }
 
+.mypage_leftBox_edit{
+    margin: 50px;
+    width: 250px;
+    height: 350px;
+    border: 2px solid #d2d1d1;
+    text-align: center;
+    float: left;
+    border-radius: 10px;
+    right: 25px;
+    top: 50px;
+    position: relative;
+}
+
 .edit_info{
     float: left;
     position: relative;
     top: 50px;
 }
 .edit_info > h4{
-    font-size: 18px;
+    font-size: 22px;
     margin: 10px;
 }
 
@@ -211,11 +269,23 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     align-items: center;
 }
 
+.edit_email_input{
+    margin-right: 10px;
+}
+
+.edit_email_input2{
+    margin: 0 10px;
+}
+
 #edit_email_input_choose{
     text-align: center;
     width: 130px;
     box-sizing: border-box;
     appearance: auto;
+}
+.edit_sign_input_box2{
+    border-bottom: 1px solid #4a4a4a;
+    padding-bottom: 40px;
 }
 
 .edit_confirm_btn{
@@ -226,19 +296,42 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     padding: 2px;
     align-items: center;
     height: 44.72px;
+    margin-left: 10px;
 } 
 
 
 .edit_leave{
     position: relative;
-    left: 849px;
-    top: 6px;
+    left: 558px;
+    top: 18px;
     font-size: 12px;
 }
 
-.mypage_edit_contain{
-    position: absolute;
-    float: left;
+.edit_leave:hover{
+    color: rgb(210, 71, 71);
+}
+
+.edit_can_fin_btn{
+    margin: auto;
+    text-align: center;
+}
+
+.edit_fin_button{
+    width:100px;
+    border-radius: 5px;
+    background-color: #4FA72F;
+    color: #fff;
+}
+
+.edit_cancle_button{
+    width:100px;
+    border-radius: 5px;
+    background-color: #4FA72F;
+    color: #fff;
+}
+
+.mypage_eidt_contain{
+    margin-top: 150px;
 }
 
 
