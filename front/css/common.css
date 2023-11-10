@@ -110,7 +110,7 @@ input[type="radio"].chkRadio:checked+label:before{background-color: #ffffff; bor
 
 /* button */
 .btnGroup{display: flex;}
-.btnSm{flex: 0 0 120px; padding: 12px 0 8px; border-radius: 4px;}
+.btnSm{flex: 0 0 120px; padding: 12px 1px 8px 5px; border-radius: 4px;}
 .btnBd{border: 1px solid #4FA72F; background-color: #fff; color: #4FA72F;}
 .btnBd:hover{border-color: #248125; color: #248125 ;}
 .btnBdGray{border: 1px solid #c1c1c1; background-color: #fff; color: #999;}
