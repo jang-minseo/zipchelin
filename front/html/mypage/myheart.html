@@ -62,35 +62,37 @@
     </header>
 
     <main class="clearfix">
-    <h3 class="pageTitle">찜 목록</h3>
 
      <!--마이페이지 left박스-->
-     <div class="mypage_leftBox">
+     <div class="mypage_leftBox mypage_leftBox_edit">
         <img class="profile_img" src="/front/images/icon/profile.jpg" alt="profile">
         <h1>USER_ID</h1>
         <input type="button" value="정보수정" class="edit_btn" onclick="loaction.href='#'"> 
         <ul class="leftBox_icon">
             <li class="myBox_count">
                 <span id="myBox_icon" class="material-symbols-outlined">favorite</span>
-                <p>찜 0개</p>
+                <p><a href="#">찜 0개</a></p>
             </li>
             <li class="myBox_count">
                 <span id="myBox_icon" class="material-symbols-outlined">density_small</span>
-                <p>내 글 0개</p>
+                <p><a href="#">내 글 0개</a></p>
             </li>
             <li class="myBox_count">
                 <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
-                <p>내 댓글 0개</p>
+                <p><a href="#">내 댓글 0개</a></p>
             </li>
         </ul>
-   </div>
+    </div>
 
-    <div>
-        <ul class="tabGroup">
+    <div class="heart_main">
+        <h3 class="pageTitle">찜 목록</h3>
+        
+        <ul class="tabGroup tab_heart">
             <li><a href="#" class="tab active" data-tab="tabAll">레시피</a></li>
             <li><a href="#" class="tab" data-tab="tab01">가이드</a></li>
         </ul>
     </div>
+
     <div class="heartlist">
         <ul>
             <li class="haert_li">
@@ -206,24 +208,23 @@
                 </a>
             </li>
         </ul>
-    </div>
-
-    <div class="paging">
-        <ul>
-            <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
-            <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
-            <li class="active"><a href="javascript:">1</a></li>
-            <li><a href="javascript:">2</a></li>
-            <li><a href="javascript:">3</a></li>
-            <li><a href="javascript:">4</a></li>
-            <li><a href="javascript:">5</a></li>
-            <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
-        </ul>
+        <div class="paging edit_heart_paging">
+            <ul>
+                <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
+                <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
+                <li class="active"><a href="javascript:">1</a></li>
+                <li><a href="javascript:">2</a></li>
+                <li><a href="javascript:">3</a></li>
+                <li><a href="javascript:">4</a></li>
+                <li><a href="javascript:">5</a></li>
+                <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
+            </ul>
+        </div>
     </div>
     </main>
 
     <footer>
-        <div class="contain">
+        <div class="contain edit_contain">
             <div id="footerMenu">
                 <a href="/front/index.html" class="footerLogo">
                     <img src="/front/images/logo/logo.png" alt="zipchelin">

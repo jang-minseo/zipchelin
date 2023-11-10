@@ -21,20 +21,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
     <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" href="./css/index.css">
-    
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <link rel="stylesheet" href="../../css/community.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
 
     <!--[if IE 9]>
-    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
-    <![endif]-->
+        <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+        <![endif]-->
     <!--[if lte IE 8]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
     <![endif]-->
@@ -43,7 +45,6 @@
         .searchSection {
             display: flex;
             justify-content: center;
-            border: 1px solid black;
             margin: 0%;
             width: auto;
             height: 250px;
@@ -56,9 +57,10 @@
             border-radius:40px;
         }
         .recomBox {
-            position: absolute;
+            position: relative;
             width: 370px;
             top: 178px;
+            left: 10px;
             height: 33px;
             overflow: hidden;
         }
@@ -68,10 +70,10 @@
             padding: 9px 9px 7px 9px;
             margin: 1px 6px 1px 0px ;
             border-radius:40px;
-            background-color: #e8ffc9;
+            background-color: #e9e9e9;
         }
         .recomBut:hover {
-            background-color: #f9fff1;
+            background-color: #c2e16b;
         }
         .searchText {
             position: relative;
@@ -82,14 +84,29 @@
         }
         .searchButton {
             position: absolute;
-            width: 35px;
-            height: 35px;
-            top: 2px;
-            background: url("search.png") no-repeat ;
+            width: 25px;
+            height: 25px;
+            top: 7px;
+            right: 13px;
+            background: url("../../images/icon2/search.png") no-repeat ;
             background-size: cover;
             border: 0px;
+            
         }
-        */
+        
+        /* ????????????????????/외...메인css를 안받고?...  ㅜㅜㅜ
+        #main {
+            padding-top: 0px;
+        }*/
+    </style>
+    <style>
+        /*탭 부분*/
+        
+        .tab2, .tab3, .tab4 {
+            display: none;
+        }
+        
+
     </style>
     <style>      
        * {
@@ -144,42 +161,11 @@
         }
         
     </style>
-    <script>
-        
-        /*
-        1. 
-        window.innerheight > 브라우저 화면크기
-        document.body.offsetHeight > 실제 컨텐츠의 크기
-        window.scrollY > 스크롤 내리면 scrollY값 증가
-
-        2.( innerheight + 스크롤y ) > offsetHeight 일때 더이상 내려갈 곳이 없다
-        
-        3. 
-
-        window.onscroll = function() {
-            if((Window.innerHeight + Window.scrollY) >= Document.body.offsetHeight ) {
-                var infScroll = document.createElement("div");
-                infScroll.classList.add("innerWrap1")
-                document.querySelector('div').appendChild(infScroll);
-            }
-        }
-        
-        $(window).scroll(function () {
-            //console.log($(this).scrollTop);
-            let scrollHeight = $(this).scrollTop() + $(this).height(); // 스크롤창의 크기
-            let documentHeight = $(document).height(); //페이지의 높이        
-        });
-        
-        */
-
-    </script>
 </head>
 <body>
-<!--==============헤더================-->   
-    <header>
-
-    </header>
-<!--============== 검색 창 ================--> 
+    <!--헤더-->   
+    <header class="header"></header>
+<!-- 검색 창 --> 
     <div class="searchSection">
         <div class="searchBox">
             <input class="searchText" type="text" title="검색어 입력 창" placeholder="검색어를 입력해주세요" maxlength="50">
@@ -206,226 +192,394 @@
             </ul>
         </div>
     </div>   
-<!--==============레시피 서칭 결과================-->   
-    <main class="listMain">
-        <section>
-            <h1 class="mainTitle">집슐랭 레시피</h1>
-            <div class="wrap">
-                <div class="innerWrap1">
-                    <ul class="clearfix">
-                        <li class="recipeList">
-                            <input type="button" class="heart-button">
-                            <a class="recipeLink" href="#">
-                                <img class="recipePic" src="fakecog_test.png" alt="#">
-                                <p class="subTitle">소제목입니다 소제목과 같이</p>
-                                <strong class="Title">큰제목의 필요성</strong>
-                            </a>
-                        </li>
-                        <li class="recipeList">
-                            <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button">    
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button">    
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-<!--==============가이드 서칭 결과================-->   
-        <section>
-            <h1 class="mainTitle">가이드 레시피</h1>
-            <div class="wrap">
-                <div class="innerWrap1">
-                    <ul class="clearfix">
-                        <li class="recipeList">
-                            <input type="button" class="heart-button">
-                            <a class="recipeLink" href="#">
-                                <img class="recipePic" src="fakecog_test.png" alt="#">
-                                <p class="subTitle">소제목입니다 소제목과 같이</p>
-                                <strong class="Title">큰제목의 필요성</strong>
-                            </a>
-                        </li>
-                        <li class="recipeList">
-                            <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button">    
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <a class="recipeLink" href="#">
-                            <input type="button" class="heart-button">    
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                    <li class="recipeList">
-                        <input type="button" class="heart-button">
-                        <a class="recipeLink" href="#">
-                            <img class="recipePic" src="fakecog_test.png" alt="#">
-                            <p class="subTitle">소제목입니다 소제목과 같이</p>
-                            <strong class="Title">큰제목의 필요성</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>   
-
-    </main>
-<!--==============푸터================-->    
-    <footer>
+<!--서칭 페이지 메인-->   
+    <div id="main" class="schListMain">
+    <!--탭 그룹-->
+        <div>
+            <ul class="tabGroup">
+                <li><a href="#" class="tab active" data-tab="tabAll">레시피</a></li>
+                <li><a href="#" class="tab" data-tab="tab01">가이드</a></li>
+                <li><a href="#" class="tab" data-tab="tab02">나만의 레시피</a></li>
+                <li><a href="#" class="tab" data-tab="tab03">요리 상담소</a></li>
+            </ul>
+        </div>
         
-    </footer>
+        <!-- 사이드바 -->
+        <div class="aside">
+            <div class="zim">
+                <a href="#">
+                    <span class="material-symbols-outlined">favorite</span>
+                    <p>찜한레시피</p>
+                </a>
+            </div>
+            <div class="cur_recipe">
+                <p>최근 본 레시피</p>
+                <div class="aside_imgBox">
+                    <a href="#"><img src="../../images/food/sal.jpg" alt=""></a>
+                    <a href="#"><img src="../../images/food/gan.jpg" alt=""></a>
+                    <a href="#"><img src="../../images/food/soshige.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="top">
+                <a href="index.html"><span class="material-symbols-outlined">stat_1</span></a>
+            </div>
+        </div>
+<!--레시피 서칭 결과--> 
+        <div class="tabContainer tab1">
+            <div class="list_container">
+                <ul class="list_ul">
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                </ul>
+            </div>
+            
+            
+            <!--페이징 단락-->
+            <div class="paging">
+                <ul class="clearfix">
+                    <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
+                    <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
+                    <li class="active"><a href="javascript:">1</a></li>
+                    <li><a href="javascript:">2</a></li>
+                    <li><a href="javascript:">3</a></li>
+                    <li><a href="javascript:">4</a></li>
+                    <li><a href="javascript:">5</a></li>
+                    <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
+                </ul>
+            </div>
 
-<!-- js -->
+        </div>    
+    </div>
+<!--가이드 서칭 결과-->   
+        <div class="tabContainer tab2">
+            <div class="list_container">
+                <ul class="list_ul">
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\gan.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">남이 해줄 때 제일 맛있는</p>
+                                    <p class="title">비빔밥</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sample2.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">늘 먹어도 맛있어요</p>
+                                    <p class="title">햄버거</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\soshige.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">먹어도 아무 뒤탈 없는</p>
+                                    <p class="title">아주 큰 로또 당첨</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list_li">
+                        <img class="list_heart" src="..\..\images\icon2\heart.png" alt="#">                        
+                        <a class="recipe_link" href="#">
+                            <div class="pic_box">
+                                <img class="recipe_pic" src="..\..\images\food\sam.jpg" alt="#">
+                                <div class="textBox">
+                                    <p class="sub_title">생으로 먹어보세요!!</p>
+                                    <p class="title">생생삼겹살</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--4개-->
+                    
+                    
+                </ul>
+            </div>
+            
+            
+            <!--페이징 단락-->
+            <div class="paging">
+                <ul class="clearfix">
+                    <!--li에 .disabled가 있으면 화살표에 클릭방지 생김-->
+                    <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
+                    <li class="active"><a href="javascript:">1</a></li>
+                    <li><a href="javascript:">2</a></li>
+                    <li><a href="javascript:">3</a></li>
+                    <li><a href="javascript:">4</a></li>
+                    <li><a href="javascript:">5</a></li>
+                    <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
+                </ul>
+            </div>
+        </div>
+        </div>   
+<!--나만의 레시피-->
+        <div class="tabContainer tab3">
+            
+        </div>
+<!--요리 상담소-->
+        <div class="tabContainer tab4">
+
+        </div>
+    </div>
+    <!--푸터-->    
+    <footer id="footer"></footer>
+    <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/front/js/notice.js"></script>
+    <script src="/front/js/common.js"></script>
 </body>
 </html>
