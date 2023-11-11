@@ -5,7 +5,11 @@ $(function () {
     $('#find_box_id').add('#find_box_pwd').on('click', function () {
         let act = $(this).html();
         $('#find_target').html(act);
-    })
+        $('ul.tabGroup a').removeClass('active');
+        $(this).find('a').addClass('active');
+
+        return false;
+    });
     $('.find_id_label').css('font-weight', 'bold');
     $('#find_box_id').addClass('selected_find_box');
 

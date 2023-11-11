@@ -2,11 +2,11 @@ $(function(){
     //버튼 그룹 보기, 숨기기
     $('#showChk').click(function(){
         $(this).parent().addClass('hide').next().removeClass('hide');
-        $('.myItem .chkWrap').css('display','block');
+        $('.listItem .chkWrap').css('display','block');
     });
     $('#chkCancle').click(function(){
         $(this).parent().addClass('hide').prev().removeClass('hide');
-        $('.myItem .chkWrap').css('display','none');
+        $('.listItem .chkWrap').css('display','none');
     });
 
     //체크박스 전체 선택

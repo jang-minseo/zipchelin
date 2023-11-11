@@ -1,5 +1,5 @@
 @charset "UTF-8";
-main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; }
+main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line-height: 1.6; }
 
 /* 공통 */
 .best-title { padding: 80px 0 40px 0; font-size: 32px; text-align: center; }
@@ -14,7 +14,7 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; }
 .best-section{ margin: 0 100px; }
 .best-list { display: flex; padding-bottom: 40px; border-bottom: 1px solid #e9e9e9; justify-content: center; align-items: center; }
 .best{ margin: 20px 20px; }
-.postdate{ margin: 0 8px 0 0; /*display: block;*/ }
+.postdate{ margin: 0 8px 0 0; }
 .accList{ display: flex; align-items: center; margin-top: 3px; }
 .accItem{ margin-right: 8px; color: #c1c1c1;}
 .material-symbols-outlined{ margin-right: 4px; }
@@ -23,17 +23,30 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; }
 
 .myrecipe_section { margin: 0 100px 60px }
 .allwrite { display: flex; justify-content: space-around; flex-wrap: wrap; border-top: 2px solid #222222; }
-.post-container { float: left; width: calc(50%); padding-top: 12px; }
+.myrecipe-container { float: left; width: calc(50%); padding-top: 12px; }
+.myrecipe-section { margin-right: 60px; }
 .post { justify-content: space-between; justify-content: center; display: flex; padding-bottom: 12px; /*행 간격*/ align-items: center; border-bottom: 1px solid #e9e9e9; }
-.post-section { margin-right: 60px; }
 .post img { width: 130px; height: 130px; }
 
 /* 나만의 레시피 글(myrecipe_post) */
 .post-section { margin: 0 300px 60px; }
-.post-article {  }
-.post-top {  }
-.post-title { padding: 80px 0 40px 0; font-size: 32px; text-align: left; }
-.post-info {  }
+.post-top { border-bottom: 1px solid #999; }
+.post-title { padding: 80px 0 10px 0; font-size: 32px; text-align: left; }
+.post-info { display: flex; align-items: center; }
+.post-id { position: relative; margin-right: 8px; padding-right: 8px; }
+.post-id::after { content: " "; position: absolute; top: 5px; right: 0; height: 12px;  border-left: 1px solid #c1c1c1; }
+.post-content { margin-top: 20px; border-bottom: 1px solid #999; }
+.post-content>img{ display: block; margin: 20px auto; max-width: 100%; height: auto; border: 0; }
+.btnGroup.btn_list { justify-content: center; padding: 20px; border-bottom: 1px solid #999;}
+
+.comment-section { padding: 14px 0; border-bottom: 1px solid #999; }
+.comment-box { padding: 14px; border: 1px solid #222222; color: #999;}
+.login-link { display: inline-block;}
+.comment { margin-top: 0px; }
+.comment-img { position: relative; display: flex; width: 40px; height: 40px; border-radius: 100%; margin: 20px 20px 20px 0; }
+.comment-contentbox { position: relative; display: flex; flex-wrap: wrap; align-items: center; }
+.comment-content { width: 100%; word-break: keep-all; margin: 6px 0; }
+.comment-info { position: relative; display: flex; flex-wrap: wrap; align-items: center; }
 
 /* 요리 상담소(qna) */
 .qna-section{ margin: 0 100px 60px; }
