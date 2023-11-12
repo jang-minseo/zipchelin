@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="keywords" content="레시피, 혼밥, 요리">
-    <meta name="description" content="요리에 관한 모든 정보를 한 번에 보세요">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="집슐랭">
-    <meta property="og:description" content="요리에 관한 모든 정보를 한 번에 보세요">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-
-    <!-- favicon-->
-    <link rel="shortcut icon" type="text/css" href="">
-    <link rel="icon"  type="text/css" href="">
-
-    <!-- google icon CDN -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="keywords" content="레시피, 혼밥, 요리">
+        <meta name="description" content="요리에 관한 모든 정보를 한 번에 보세요">
     
-    <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="집슐랭">
+        <meta property="og:description" content="요리에 관한 모든 정보를 한 번에 보세요">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+    
+        <!-- favicon-->
+        <link rel="shortcut icon" type="text/css" href="">
+        <link rel="icon"  type="text/css" href="">
+    
+        <!-- google icon CDN -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- basic CSS -->
+        <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="/front/css/base.css">
+        <link rel="stylesheet" type="text/css" href="/front/css/common.css">
+    
+        <!-- page CSS -->
+        <link rel="stylesheet" type="text/css" href="/front/css/mypage.css">
+    
+        <!-- plugin CSS -->
+        <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+    
+        <!--[if IE 9]>
+        <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+        <![endif]-->
+        <!--[if lte IE 8]>
+        <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+        <![endif]-->
+    
+        <title>집슐랭</title>
+    </head>
 
-    <!-- page CSS -->
-    <link rel="stylesheet" type="text/css" href="/front/css/mypage.css">
-
-    <!-- plugin CSS -->
-    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
-
-    <!--[if IE 9]>
-    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
-    <![endif]-->
-    <!--[if lte IE 8]>
-    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
-    <![endif]-->
-
-    <title>집슐랭</title>
-</head>
-<body>
+    <body>
+    <!--header-->
     <header class="header">
         <div class="headerContainer">
             <img class="logo" src="/front/images/logo/logo.png" />
@@ -61,173 +64,263 @@
         </div>
     </header>
 
-    <main class="clearfix">
-        <div class="myPage_text">
-            <h1>마이페이지</h1>
-        </div>
+    <!--myPage-->
+    <main class="w1080 clearfix">
 
-        <!--마이페이지 left박스-->
-        <div class="mypage_leftBox mypage_leftBox_edit">
-            <img class="profile_img" src="/front/images/icon/profile.jpg" alt="profile">
-            <h1>USER_ID</h1>
-            <input type="button" value="정보수정" class="edit_btn" onclick="loaction.href='#'"> 
-            <ul class="leftBox_icon">
-                <li class="myBox_count">
-                    <span id="myBox_icon" class="material-symbols-outlined">favorite</span>
-                    <p><a href="#">찜 0개</a></p>
-                </li>
-                <li class="myBox_count">
+        <!--myPage_leftBox-->
+        <div class="myPage_leftBox">
+            
+            <!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼)-->
+            <div class="myBox_profile">
+                    <img src="/front/images/icon/profile.jpg" class="myProfile_img" alt="profile">
+                    <h3 class="userId_text">USER_ID</h3>
+                    <input type="button" value="정보수정" class="myPage_edit_btn" onclick="loaction.href='#'">
+            </div><!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼) 끝-->
+
+            <!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기)-->
+            <div class="myBox_count">
+                
+                <div class="myBox_countBox myBox_heart">
+                    <span id="myBox_icon" class="material-icons">favorite</span>
+                    <p>찜 10개</p>
+                </div>
+
+                <div class="myBox_countBox myBox_post">
                     <span id="myBox_icon" class="material-symbols-outlined">density_small</span>
-                    <p><a href="#">내 글 0개</a></p>
-                </li>
-                <li class="myBox_count">
+                    <p>내 글 10개</p>
+                </div>
+
+                <div class="myBox_countBox myBox_comment">
                     <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
-                    <p><a href="#">내 댓글 0개</a></p>
-                </li>
-            </ul>
+                    <p>내 댓글 10개</p>
+                </div>
+
+            </div><!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기) 끝-->
+
         </div>
 
-       <!--mypage main-->
-       <div class="mypage_main">
+        <!--myPage_Main-->
+        <div class="myPage_main">
 
-            <!--찜-->
-            <div class="heart">
-                <div class="mypage_heart">
-                    <span id="main_icon" class="material-symbols-outlined">favorite</span>
-                    <p id="left">찜</p>
-                    <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
+            <!--마이페이지 - 찜목록-->
+            <div class="myHeart">
+
+                <!--찜아이콘, 더보기버튼-->
+                <div class="my_icon_btn">
+                    <div class="my_icon">
+                        <span id="myPage_heart_icon" class="material-icons">favorite</span>
+                        <p>찜</p>
+                    </div>
+                    <div class="myHeart_btn">
+                        <input type="button" id="myPage_more_btn" value="더보기" onclick="loaction.href='#'">
+                    </div>
                 </div>
-                
-                <ul>
-                    <li class="haert_li">
-                        <a class="heartLink" href="#">
-                            <img class="heart_img" src="images/미라소세지.png" alt="#">
-                            <p class="subtitle">부제목</p>
-                            <strong class="title">제목</strong>
-                        </a>
-                    </li>
-                    <li class="haert_li">
-                        <a class="heartLink" href="#">
-                            <img class="heart_img" src="images/미라소세지.png" alt="#">
-                            <p class="subtitle">부제목</p>
-                            <strong class="title">제목</strong>
-                        </a>
-                    </li>
-                    <li class="haert_li">
-                        <a class="heartLink" href="#">
-                            <img class="heart_img" src="images/미라소세지.png" alt="#">
-                            <p class="subtitle">부제목</p>
-                            <strong class="title">제목</strong>
-                        </a>
-                    </li>
-                    <li class="haert_li"></li>
-                        <a class="heartLink" href="#">
-                            <img class="heart_img" src="images/미라소세지.png" alt="#">
-                            <p class="subtitle">부제목</p>
-                            <strong class="title">제목</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
 
-            <!--내 글-->
-            <div class="write">
-                <div class="mypage_list">
-                    <span id="main_icon" class="material-symbols-outlined">density_small</span>
-                    <p id="left">내 글</p>
-                    <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
-                </div>
-                
-                <ul>
-                    <li class="write_li">
-                        <a class="writeLink" href="#">
-                            <img class="write_img" src="images/단호박스콘.png" alt="#">
-                            <p class="subtitle">부제목</p>
-                            <strong class="title">제목</strong>
-                        </a>
-                    </li>
-                    <li class="write_li">
-                        <a class="writeLink" href="#">
-                            <img class="write_img" src="images/단호박스콘.png" alt="#">
-                            <p class="subtitle">부제목</p>
-                            <strong class="title">제목</strong>
-                        </a>
-                    </li>
-                    <li class="write_li">
-                        <a class="writeLink" href="#">
-                            <img class="write_img" src="images/단호박스콘.png" alt="#">
-                            <p class="subtitle">부제목</p>
-                            <strong class="title">제목</strong>
-                        </a>
-                    </li>
-                    <li class="write_li">
-                        <a class="writeLink" href="#">
-                            <img class="write_img" src="images/단호박스콘.png" alt="#">
-                            <p class="subtitle">부제목</p>
-                            <strong class="title">제목</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!--댓글-->
-            <div class="comment">
-                <span id="main_icon" class="material-symbols-outlined">stylus</span>
-                <p id="left">내 댓글</p>
-                <input type="button" value="더보기" class="more_btn" id="more" onclick="loaction.href='#'">
-                <hr>  
-                <ul>
-                    <li class="myItem myreplyItem" id="myPage_comment">
-                         <div class="chkWrap">
-                            <input type="checkbox" class="chkBox" name="chkItem" id="listChk01">
-                            <label for="listChk01"></label>
-                        </div>
-                        <div class="myCont contBox">
-                            <a href="#">
-                                <span class="postDate">2023.10.17 00:00</span>
-                                <h6>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원?? 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원</h6>
-                                <div class="replyPage">
-                                    <strong class="category">요리 상담소</strong><p class="linkTitle">모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃</p><span class="material-symbols-outlined">chevron_right</span>
-                                 </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="myItem myreplyItem" id="myPage_comment">
-                        <div class="chkWrap">
-                           <input type="checkbox" class="chkBox" name="chkItem" id="listChk01">
-                           <label for="listChk01"></label>
-                       </div>
-                       <div class="myCont contBox">
-                           <a href="#">
-                               <span class="postDate">2023.10.17 00:00</span>
-                               <h6>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원?? 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원</h6>
-                               <div class="replyPage">
-                                   <strong class="category">요리 상담소</strong><p class="linkTitle">모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃</p><span class="material-symbols-outlined">chevron_right</span>
-                                </div>
-                           </a>
-                       </div>
-                   </li>
-                   <li class="myItem myreplyItem myPage_comment_bottom" id="myPage_comment">
-                    <div class="chkWrap">
-                       <input type="checkbox" class="chkBox" name="chkItem" id="listChk01">
-                       <label for="listChk01"></label>
-                   </div>
-                   <div class="myCont contBox">
-                       <a href="#">
-                           <span class="postDate">2023.10.17 00:00</span>
-                           <h6>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원?? 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원</h6>
-                           <div class="replyPage">
-                               <strong class="category">요리 상담소</strong><p class="linkTitle">모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃 모래뿐일 것이다 이상의 꽃</p><span class="material-symbols-outlined">chevron_right</span>
+                <!--찜 리스트 전체-->
+                <div class="myPage_list">
+                    <ul class="myPage_content">
+                        <li>
+                            <!--찜 레시피 사진-->
+                            <div>
+                                <a class="myPage_heart_img_link" href="#">
+                                    <img class="myPage_img" src="images/미라소세지.png" alt="미라소세지">
+                                </a>
                             </div>
-                       </a>
-                   </div>
-                    </li>
-                </ul>
-            </div>
+                            <!--찜 레시피 제목, 부제목-->
+                            <div class="myPage_text">
+                                <a class="myPage_heart_link" href="#">
+                                    <p class="myPage_heart_subtitle">여기는 부제목을 적어주세요.</p>
+                                    <h3 class="myPage_heart_title">여기는 제목을 적어주세요.</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="myPage_heart_img_link" href="#">
+                                    <img class="myPage_img" src="images/미라소세지.png" alt="미라소세지">
+                                </a>
+                            </div>
+                            <div class="myPage_text">
+                                <a class="myPage_heart_link" href="#">
+                                    <p class="myPage_heart_subtitle">여기는 부제목을 적어주세요.</p>
+                                    <h3 class="myPage_heart_title">여기는 제목을 적어주세요.</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="myPage_heart_img_link" href="#">
+                                    <img class="myPage_img" src="images/미라소세지.png" alt="미라소세지">
+                                </a>
+                            </div>
+                            <div class="myPage_text">
+                                <a class="myPage_heart_link" href="#">
+                                    <p class="myPage_heart_subtitle">여기는 부제목을 적어주세요.</p>
+                                    <h3 class="myPage_heart_title">여기는 제목을 적어주세요.</h3>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--찜 리스트 전체 끝-->
+
+            </div> <!--마이페이지 - 찜목록 끝-->
+
+            <!--마이페이지 - 내글목록-->
+            <div class="myPost">
+
+                <!--내글아이콘, 더보기버튼-->
+                <div class="my_icon_btn">
+                    <div class="my_icon">
+                        <span id="myPage_post_icon" class="material-symbols-outlined">density_small</span>
+                        <p>내 글</p>
+                    </div>
+                    <div class="myHeart_btn">
+                        <input type="button" id="myPage_more_btn" value="더보기" onclick="loaction.href='#'">
+                    </div>
+                </div>
+
+                <!--내글 리스트 전체-->
+                <div class="myPage_list ">
+                    <ul class="myPage_content">
+                        <li>
+                            <!--내글 레시피 사진-->
+                            <div>
+                                <a class="myPage_post_img_link" href="#">
+                                    <img class="myPage_img" src="images/단호박스콘.png" alt="단호박스콘">
+                                </a>
+                            </div>
+                            <!--내글 레시피 제목, 부제목-->
+                            <div class="myPage_text">
+                                <a class="myPage_post_link" href="#">
+                                    <p class="myPage_post_subtitle">여기는 부제목을 적어주세요.</p>
+                                    <h3 class="myPage_post_title">여기는 제목을 적어주세요.</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="myPage_post_img_link" href="#">
+                                    <img class="myPage_img" src="images/단호박스콘.png" alt="단호박스콘">
+                                </a>
+                            </div>
+                            <div class="myPage_text">
+                                <a class="myPage_post_link" href="#">
+                                    <p class="myPage_post_subtitle">여기는 부제목을 적어주세요.</p>
+                                    <h3 class="myPage_post_title">여기는 제목을 적어주세요.</h3>
+                                </a>  
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a class="myPage_post_img_link" href="#">
+                                    <img class="myPage_img" src="images/단호박스콘.png" alt="단호박스콘">
+                                </a>
+                            </div>
+                            <div class="myPage_text">
+                                <a class="myPage_post_link" href="#">
+                                    <p class="myPage_post_subtitle">여기는 부제목을 적어주세요.</p>
+                                    <h3 class="myPage_post_title">여기는 제목을 적어주세요.</h3>
+                                </a>  
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--내글 리스트 전체 끝-->
+
+            </div><!--마이페이지 - 내글목록 끝-->
+            
+            <!--마이페이지 - 내댓글목록-->
+            <div class="myComment">
+
+                <!--내댓글아이콘, 더보기버튼-->
+                <div class="my_icon_btn">
+                    <div class="my_icon">
+                        <span id="myPage_comment_icon" class="material-symbols-outlined">stylus</span>
+                        <p>내 댓글</p>
+                    </div>
+                    <div class="myComment_btn">
+                        <input type="button" id="myPage_more_btn" value="더보기" onclick="loaction.href='#'">
+                    </div>
+                </div>
+
+                <!--마이페이지 - 내댓글 리스트 전체-->
+                <div class="mypage_comment_lisg">
+                    <ul class="myLists mypostList">
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk01">
+                                <label for="listChk01"></label>
+                            </div>
+                            <div class="contBox">
+                                <a href="#">
+                                    <span class="postDate">2023.10.17 00:00</span>
+                                    <h6>생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는</h6>
+                                    <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을 영락과 부패 뿐이다 영락과 부패 뿐이다 </p>
+                                    <ul class="accList">
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">visibility</span>268
+                                        </li>
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">thumb_up</span>80
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk01">
+                                <label for="listChk01"></label>
+                            </div>
+                            <div class="contBox">
+                                <a href="#">
+                                    <span class="postDate">2023.10.17 00:00</span>
+                                    <h6>생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는</h6>
+                                    <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을 영락과 부패 뿐이다 영락과 부패 뿐이다 </p>
+                                    <ul class="accList">
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">visibility</span>268
+                                        </li>
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">thumb_up</span>80
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample.jpg" alt="샘플 이미지"></div>
+                        </li>
+                        <li class="myItem mypostItem">
+                            <div class="chkWrap">
+                                <input type="checkbox" class="chkBox" name="chkItem" id="listChk01">
+                                <label for="listChk01"></label>
+                            </div>
+                            <div class="contBox">
+                                <a href="#">
+                                    <span class="postDate">2023.10.17 00:00</span>
+                                    <h6>생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는 생명을 불어 넣는</h6>
+                                    <p>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을 영락과 부패 뿐이다 영락과 부패 뿐이다 </p>
+                                    <ul class="accList">
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">visibility</span>268
+                                        </li>
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">thumb_up</span>80
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="imgBox"><img src="/front/images/food/sample.jpg" alt="샘플 이미지"></div>
+                        </li>
+                    </ul>
+                </div><!--마이페이지 - 내댓글 리스트 전체 끝-->
+
+            </div><!--마이페이지 - 내댓글목록 끝-->
+
         </div>
     </main>
 
-    <footer>
+    <!--footer-->
+    <footer class="edit_footer">
         <div class="contain">
             <div id="footerMenu">
                 <a href="/front/index.html" class="footerLogo">
@@ -258,5 +351,5 @@
     
     <!-- js -->
     <script src="/front/js/plugins/swiper-bundle.min.js"></script>
-</body>
+    </body>
 </html>
