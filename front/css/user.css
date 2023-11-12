@@ -23,15 +23,17 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 /* 한비 */
 /* 아이디/비밀번호 찾기 */
-#find_section *{
+/* #find_section *{
     white-space: nowrap;
-}
+}*/
 #find_section{
 margin: 0 auto;
-width: 40%;
+padding-left: 360px;
+padding-right: 360px;
+/* width: 40%; */
 position: relative;
 }
-/* #find_target{
+/*#find_target{
 text-align: center;
 font-size: 3em;
 padding: 10px;
@@ -77,7 +79,8 @@ display: none;
     cursor: pointer;
 }
 #find_input_area{
-    padding: 30px 20px 20px;
+    padding: 40px 32px;
+    /* padding: 30px 20px 20px; */
     border-top: 1px solid #E9E9E9;
 }
 #find_input_area .sign_input_box{
