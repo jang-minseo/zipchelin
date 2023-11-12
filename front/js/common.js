@@ -1,5 +1,13 @@
 $(function(){
-    $("header").load("/front/html/layout/header.html");
+
+    // /front/html/user/login.html 해당 페이지에서 '로그인' 텍스트 '로그아웃'으로 변경
+    $("header").load("/front/html/layout/header.html", function() {
+        if (window.location.href.endsWith('login.html')) {
+            $('body > header > div > div.right_menu > a:nth-child(2)').text('');
+        }
+    });
+    // 
+    
     $("footer").load("/front/html/layout/footer.html");   
 
     //비밀번호 보기/숨기기
