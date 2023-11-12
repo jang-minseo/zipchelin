@@ -351,3 +351,81 @@ display: none;
 #sign_id_warning_box{
     position: relative;
 }
+
+/*아이디 비밀번호 표시*/
+
+#finding_img{
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+}
+#finding_box{
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 230px;
+}
+.finding_msg{
+    margin-top: 34px;
+    font-size: 1.2em;
+}
+#finding_found_id{
+    font-weight: bold;
+}
+#finding_go_login{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #4FA72F;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 34px;
+}
+#finding_msg_request{
+    color: #8acc39;
+}
+
+/*인증번호확인창*/
+
+#auth_img{
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+}
+#auth_box{
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 230px;
+}
+#auth_found_id{
+    font-weight: bold;
+}
+#auth_go_login{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #4FA72F;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 34px;
+    color: white;
+}
+#auth_msg_request{
+    color: #8acc39;
+    margin-top: 34px;
+    font-size: 1.2em;
+}
+#auth_input{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.auth_warning{
+    font-size: 0.8em;
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
