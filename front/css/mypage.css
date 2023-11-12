@@ -20,6 +20,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     margin-right: 24px;
     /* background-color: #f7f7f7; */
     background-color: #fff;
+    margin-top: 100px;
 }
 .myProfile_img{
     border-radius: 50%;
@@ -82,8 +83,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     float: right;
     width: calc(76% - 24px)
 }
-
-/*마이페이지 - 찜목록*/
 .my_icon_btn{
     width: 93%;
     margin: 20px auto;
@@ -125,28 +124,129 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     width: 30%
 }
 .myPage_img{
-    width: 270px; 
-    height: 200px; 
+    width: 270px;
+    height: 200px;
     border-radius: 12px;
-    margin-right: 45px;
-    left: 20px;
+    margin: 0 10px;
+    left: 37px;
     position: relative;
 }
 .myPage_text{
-    margin-right: 50px;
-    left: 20px;
+    left: 50px;
     position: relative;
     margin: 10px 0;
 }
+.myPage_heart_subtitle{
+    padding-bottom: 5px;
+}
+.myPage_post_subtitle{
+    padding-bottom: 5px;
+}
+/*마이페이지 _ 댓글목록*/
+.post-section .title {
+    width: 100%;
+    margin: 16px 0 8px;
+    font-size: 18px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.post-section p {
+    width: 100%;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.postdate{
+    display: block;
+    color: #999;
+    font-size: 12px;
+    font-weight: 300;
+}
+.accList .icon {
+    display: inline-block;
+    margin-right: 4px;
+    color: #c1c1c1;
+    font-size: 18px;
+}
+.accList .accItem:first-child {
+    margin-right: 8px;
+}
+.accList .accItem {
+    display: flex;
+    align-items: center;
+}
+.accList {
+    display: flex;
+    color: #999;
+    font-size: 11px;
+}
+.post-section {
+    width: 70%;
+}
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.edit_post_container {
+    padding: 24px 24px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+.edit_post_container .imgwrap {
+    justify-content: space-around;
+    display: flex;
+    padding-bottom: 24px;
+    align-items: center;
+    border-bottom: 1px solid #e9e9e9;
+}
+.edit_post_container_last{
+    margin-bottom: 45px;
+}
 
+/*찜, 가이드 페이지*/
+.myPage_componentWrap{
+    margin-top: 50px;
+}
+.myHeart{
+    float: right;
+    width: calc(76% - 24px)
+}
+.heart_list_contents{
+    width: 310px;
+    float: left;
+    padding: 20px 0;
+}
+#heart_list_link_text{
+    left: 10px;
+    position: relative;
+}
+.heart_list_img{
+    width: 270px;
+    height: 200px;
+    border-radius: 12px;
+    margin: 0 10px;
+}
 /*정보 수정*/
 .profile_section{
     border-top: 1px solid #cfcccc;
     border-bottom: 1px solid #cfcccc;
     height: 191px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
     padding-top: 15px;
+}
+.title{
+    width: 100%;
+    margin: 16px 0 8px;
+    font-size: 18px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .mypage_leftBox_edit{
@@ -167,10 +267,11 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     position: relative;
     top: 50px;
     width: 900px;
+    margin-left: 15px;
 }
-.edit_info > h4{
+.edit_info > h3{
     font-size: 22px;
-    margin: 10px;
+    margin-left: 15px; 
 }
 
 .edit_info > hr{
@@ -274,8 +375,8 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .edit_leave{
     position: relative;
     float: right;
-    bottom: 19px;
-    right: 4px;
+    bottom: 31px;
+    right: 16px;
     font-size: 12px;
 }
 
@@ -286,7 +387,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .edit_can_fin_btn{
     margin: auto;
     text-align: center;
-    top: 17px;
     position: relative;
 }
 

@@ -67,31 +67,33 @@
     <main class="clearfix">
         
         <!--myPage_leftBox-->
-        <div class="myPage_leftBox">
+        <div class="mypage myPage_leftBox">
             
             <!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼)-->
             <div class="myBox_profile">
-                    <img src="/front/images/icon/profile.jpg" class="myProfile_img" alt="profile">
-                    <h3 class="userId_text">USER_ID</h3>
-                    <input type="button" value="정보수정" class="myPage_edit_btn" onclick="loaction.href='#'">
+                <img src="/front/images/icon/profile.jpg" class="myProfile_img" alt="profile">
+                <h3 class="userId_text">USER_ID</h3>
+                <input type="button" value="정보수정" class="myPage_edit_btn" onclick="loaction.href='#'">
             </div><!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼) 끝-->
 
             <!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기)-->
             <div class="myBox_count">
                 
-                <div class="myBox_heart">
-                    <span id="myBox_heart_icon" class="material-icons">favorite</span>
-                    <p>찜 10개</p>
+                <div class="myBox_countBox myBox_heart">
+                    <span id="myBox_icon" class="material-icons">favorite</span>
+                    <p>찜 <a href="#">10</a></p>
                 </div>
 
-                <div class="myBox_post">
-                    <span id="myBox_post_icon" class="material-symbols-outlined">density_small</span>
-                    <p>내 글 10개</p>
+                <div class="myBox_countBox myBox_post">
+                    <!-- <span id="myBox_icon" class="material-symbols-outlined">density_small</span> -->
+                    <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
+                    <p>내 글 <a href="#">10</a></p>
                 </div>
 
-                <div class="myBox_comment">
-                    <span id="myBox_comment_icon" class="material-symbols-outlined">stylus</span>
-                    <p>내 댓글 10개</p>
+                <div class="myBox_countBox myBox_comment">
+                    <!-- <span id="myBox_icon" class="material-symbols-outlined">stylus</span> -->
+                    <span id="myBox_icon" class="material-symbols-outlined">chat</span>
+                    <p>내 댓글 <a href="#">10</a></p>
                 </div>
 
             </div><!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기) 끝-->
