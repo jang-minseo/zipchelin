@@ -23,15 +23,17 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 /* 한비 */
 /* 아이디/비밀번호 찾기 */
-#find_section *{
+/* #find_section *{
     white-space: nowrap;
-}
+}*/
 #find_section{
 margin: 0 auto;
-width: 40%;
+padding-left: 360px;
+padding-right: 360px;
+/* width: 40%; */
 position: relative;
 }
-/* #find_target{
+/*#find_target{
 text-align: center;
 font-size: 3em;
 padding: 10px;
@@ -77,8 +79,12 @@ display: none;
     cursor: pointer;
 }
 #find_input_area{
-    padding: 30px 20px 20px;
+    padding: 40px 32px;
+    /* padding: 30px 20px 20px; */
     border-top: 1px solid #E9E9E9;
+}
+#find_input_area .form_email{
+    margin-bottom: 24px;
 }
 #find_input_area .sign_input_box{
     gap: 8px;
@@ -106,10 +112,10 @@ display: none;
 } */
 #find_name{
     width: 100%;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px 20px;
+    /* height: 40px; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    /* padding: 5px 20px; */
 }
 /* #find_name_box{
     width: 74%;
@@ -118,22 +124,22 @@ display: none;
 .find_warning{
     color: red;
     font-size: 0.8em;
-    margin-top: 3px;
+    margin-top: 8px;
     margin-left: 4px;
     display: none;
 }
 
 #find_do_find{
     text-align: center;
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
     width: 100%;
     margin-top: 20px;
-    color: white;
+    /* color: white;
     font-size: 1em;
     background-color: #8acc39;
-    border: 1px solid #80bb37;
-    border-radius: 5px;
-    height: 46px;
+    border: 1px solid #80bb37; */
+    /* border-radius: 5px; */
+    height: 45px;
     cursor: pointer;
 }
 
@@ -190,7 +196,7 @@ display: none;
     border-radius: 4px;
     margin: 18px 0;
     color: white;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     border: none;
 }
 #login_email_box{
@@ -300,7 +306,7 @@ display: none;
     box-sizing: border-box;
 }
 #sign_email_input_choose, #find_email_input_choose{
-    text-align: center;
+    /* text-align: center; */
     width: 130px;
     box-sizing: border-box;
     appearance: auto;
@@ -342,9 +348,87 @@ display: none;
     margin-bottom: 60px;
     border-radius: 4px;
     color: white;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     text-align: center;
 }
 #sign_id_warning_box{
     position: relative;
+}
+
+/*아이디 비밀번호 표시*/
+
+#finding_img{
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+}
+#finding_box{
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 230px;
+}
+.finding_msg{
+    margin-top: 34px;
+    font-size: 1.2em;
+}
+#finding_found_id{
+    font-weight: bold;
+}
+#finding_go_login{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #4FA72F;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 34px;
+}
+#finding_msg_request{
+    color: #8acc39;
+}
+
+/*인증번호확인창*/
+
+#auth_img{
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+}
+#auth_box{
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 230px;
+}
+#auth_found_id{
+    font-weight: bold;
+}
+#auth_go_login{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #4FA72F;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 34px;
+    color: white;
+}
+#auth_msg_request{
+    color: #8acc39;
+    margin-top: 34px;
+    font-size: 1.2em;
+}
+#auth_input{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.auth_warning{
+    font-size: 0.8em;
+    color: red;
+    display: none;
+    margin-top: 10px;
 }
