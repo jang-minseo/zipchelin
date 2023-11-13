@@ -125,4 +125,4 @@ header { position: fixed; width: 100%; padding: 10px 0; background-color: #fff; 
 
 /* 하트 아이콘 */
 .fa-regular.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px;}
-.fa-solid.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px;color: #D7443E;}
+.fa-solid.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px;color: #8acc39;}
