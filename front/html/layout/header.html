@@ -1,15 +1,27 @@
 <!-- 헤더 -->
 <div class="headerContainer">
-    <img class="logo" src="/front/images/logo/logo.png" />
+    <a href="/front/index.html">
+        <img class="logo" src="/front/images/logo/logo.png" />
+    </a>
     <div class="menu">
-        <a href="">레시피</a>
-        <a href="">가이드</a>
-        <a href="">커뮤니티</a>
+        <a href="/front/html/recipe/recipe_list.html">레시피</a>
+        <a href="/front/html/guide/guide_list.html">가이드</a>
+        <div class="sub-menu">
+            <a href="">커뮤니티</a>
+            <div class="sub-menu__wrap">
+                <div class="sub-menu__content">
+                    <a href="/front/html/community/myrecipe.html">나만의레시피</a>
+                </div>
+                <div class="sub-menu__content">
+                    <a href="/front/html/community/qna.html">요리상담소</a>
+                </div>
+            </div>
+        </div>
         <a href="/front/html/notice/notice_list.html">공지사항</a>
     </div>
     <div class="right_menu">
         <!-- <img class="icon" src="images/icon2/search.png" /> -->
-        <a href="">
+        <a href="/front/html/search/searching_list.html">
             <span class="material-symbols-outlined">search</span>
         </a>
         <a href="/front/html/user/login.html">로그인</a>
