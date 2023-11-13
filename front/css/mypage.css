@@ -328,8 +328,21 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     top: 9px;
     left: 3px;
     color: #FF0000;
+    display: none;
 }
 .edit_warning2{
+    position: relative;
+    top: 9px;
+    left: 3px;
+    color: #FF0000;
+}
+.edit_tel_warning{
+    position: relative;
+    top: 9px;
+    left: 3px;
+    color: #FF0000;
+}
+.edit_tel_warning2{
     position: relative;
     top: 9px;
     left: 3px;
@@ -467,3 +480,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 #modal .modalCont h6{margin-bottom: 16px; font-size: 18px;}
 #modal .modalCont p{margin-bottom: 32px; color: #999; font-size: 15px; font-weight: 400;}
 #modal .btnGroup{justify-content: center;}
+
+/*임시 탭*/
+.tabContainer.on {display: block;}
+.tabContainer {display: none;}
