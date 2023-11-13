@@ -9,23 +9,6 @@
 .material-symbols-outlined { vertical-align: text-bottom; }
 .material-symbols-outlined1 { vertical-align: text-bottom; }
 
-/* 헤더 */
-header { position: fixed; width: 100%; padding: 10px 0; background-color: #fff;  z-index: 1; border-bottom: 1px solid #eee; z-index: 999;}
-.headerContainer { display: flex; justify-content: space-between; width: 1280px; margin: auto; }
-.logo { width: 70px; }
-.menu { display: flex; gap: 120px; align-items: center;}
-.menu a { font-size: 20px; }
-.right_menu { display: flex; align-items: center; gap: 20px; right: 10%; font-size: 14px; }
-.right_menu1 { display: flex; display: none; align-items: center; gap: 20px; right: 10%; font-size: 14px; }
-
-/* 서브메뉴 추가 */
-.sub-menu{position: relative; height: 50px; line-height: 50px;}
-.sub-menu>a{text-align: center;}
-.sub-menu__wrap{width: 150px; height: 0; overflow: hidden; position: absolute;top: 44px;left: -36px;background-color: rgba(255,255,255,0.9);box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;transition: all 0.3s ease-in-out;border-radius: 4px;}
-.sub-menu__content{text-align: center; height: 50px; line-height: 50px;}
-.sub-menu__content a{font-size: 14px;}
-.sub-menu:hover .sub-menu__wrap{height: 100px;}
-
 /* 메인배너 */
 .main_banner{display: block; height: 425px; margin: 30px auto 150px;}
 .banner_img{width: 100%; height: 100%;}
