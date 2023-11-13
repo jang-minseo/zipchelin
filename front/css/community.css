@@ -40,7 +40,14 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 .btnGroup.btn_list { justify-content: center; padding: 20px; border-bottom: 1px solid #999;}
 
 .comment-section { padding: 14px 0; }
+.post_comment { flex-direction: row; }
 .commentwrite-box { padding: 14px; border: 1px solid #222222; color: #999; }
+.replybox { padding: 20px 0; border-top: 1px solid #c1c1c1; }
+.comment_replybox { padding-left: 40px; }
+.aft_lgn { width: 85%; border-radius: 0%; height: 53px; }
+.aft_lgn_reply { width: 80%; border-radius: 0%; height: 53px; }
+.comment_post_btn { width: 12%; margin-left: 15px; border-radius: 0%; height: 53px;}
+.post_button { flex: 0 0 120px; padding: 12px 0 8px; border-radius: 4px; }
 .login-link { display: inline-block;}
 .comment { margin-top: 0px; }
 .commentbox.bestcomment { background-color: #fcf9e0; }
@@ -54,10 +61,14 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 .comment_date::after { content: "•"; top: 5px; right: 0; color: #c1c1c1; }
 .comment_logo::after { content: "•"; top: 5px; right: 0; color: #c1c1c1; }
 .comment_reply::after { content: "•"; top: 5px; right: 0; color: #c1c1c1; }
-.comment_logo, .comment_reply, .comment_declaration { background-color: transparent; }
+.comment_update::after { content: "•"; top: 5px; right: 0; color: #222222; }
+.comment_logo, .comment_reply, .comment_declaration, .comment_update, .comment_delete  { background-color: transparent; }
+.comment_update, .comment_delete { color: #222222; }
+.comment_writeracc { margin-left: auto; }
 .comment_logo { align-items: center; }
 .comment_acc { color: #c1c1c1; }
 .post_writer { border-radius: 10px; width: 48px; height: 22px; font-size: 12px; color: #8acc39; border: 1px solid #8acc39; display : flex; justify-content : center; align-items : center; margin-left: 12px;}
+
 
 /* 요리 상담소(qna) */
 .qna-section{ margin: 0 100px 60px; }
@@ -73,6 +84,9 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 .qna-date { flex-basis: 14%;}
 .question { color: #8acc39; }
 .textbox .icon .material-symbols-outlined { font-size: 18px; /*padding: 15px 5px 0 0;*/ }
+
+/* 요리 상담소 글(qna_post) */
+.title_q { color: #4FA72F; }
 
 /* 작성폼(myrecipe_form, qna_form) */
 .form-list{ margin: 0 260px 60px; }

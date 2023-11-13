@@ -4,5 +4,11 @@
         selector: 'textarea#tiny'
     });
 
-    //TinyMCE init 스타일 변경
-    
+/* 레시피 글 */
+    //답글 달기 클릭 시 댓글 창 보이기
+    $(document).ready(function() {
+        $("#btn_reply").click(function() {
+            $("#replybox").toggle();
+        });
+    });
+
