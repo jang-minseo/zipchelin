@@ -364,8 +364,7 @@ display: none;
 }
 #finding_box{
     width: 360px;
-    margin: 0 auto;
-    margin-top: 230px;
+    margin: 180px auto 120px;
 }
 .finding_msg{
     margin-top: 34px;
