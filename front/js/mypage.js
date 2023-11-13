@@ -46,5 +46,48 @@ $(function(){
 
         return false;
     });
+
+    /*마이페이지 - 정보수정페이지*/
+    //이메일
+    
+        $('#edit_email_input_choose').on('change', function () {
+            let value = $('#edit_email_input_choose option:selected').text();
+            if (value == '직접입력') {
+                $('#edit_email_2').attr('disabled', false);
+                $('#edit_email_2').val('');
+            } else {
+                $('#edit_email_2').attr('disabled', true);
+                $('#edit_email_2').val(value);
+            }
+        })
 });
+
+//비밀번호
+    //중복확인 체크
+    //비밀번호 정규식
+    var password_rule = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+    //비밀번호 체크
+    function edit_complete_btn(){
+        if ($('#edit_pwd').val() == '') {
+            $('#edit_warning_pwd').css('display', 'block');
+            $('#edit_pwd').css('border-color','red');
+        } else {
+            $('#edit_warning_pwd').css('display', 'none');
+            if(!password_rule.test($('#edit_pwd').val())){
+                $('#edit_warning_pwd_rule').css('display', 'block');
+                $('#edit_pwd').css('border-color','red');
+            }else{
+                $('#edit_warning_pwd_rule').css('display', 'none');
+                $('#edit_pwd').css('border-color','black');
+            }
+        }
+        //비밀번호확인 체크
+        if(!($('#check_pwd').val()==$('#edit_pwd').val())){
+            $('#edit_warning_pwd_check').css('display','block')
+            $('#check_pwd').css('border-color','red');
+        }else{
+            $('#edit_warning_pwd_check').css('display','none')
+            $('#check_pwd').css('border-color','black');
+        }
+    }
 
