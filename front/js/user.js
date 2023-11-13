@@ -2,18 +2,18 @@
 
 $(function () {
     //아이디찾기/비밀번호찾기 클릭시 효과
-    $('#find_box_id').add('#find_box_pwd').on('click', function () {
+    $('#find_id_button').add('#find_pwd_button').on('click', function () {
         let act = $(this).html();
         $('#find_target').html(act);
-        $('ul.tabGroup a').removeClass('active');
-        $(this).find('a').addClass('active');
+        /* $('ul.tabGroup a').removeClass('active');
+        $(this).find('a').addClass('active'); */
 
         return false;
     });
     $('.find_id_label').css('font-weight', 'bold');
     $('#find_box_id').addClass('selected_find_box');
 
-    $('#find_box_id').on('click', function () {
+    /* $('#find_box_id').on('click', function () {
         $('.find_id_label').css('font-weight', 'bold');
         $('.find_pwd_label').css('font-weight', 'normal');
         $('#find_box_id').addClass('selected_find_box');
@@ -24,7 +24,7 @@ $(function () {
         $('.find_id_label').css('font-weight', 'normal');
         $('#find_box_pwd').addClass('selected_find_box');
         $('#find_box_id').removeClass('selected_find_box');
-    })
+    }) */
 
     $('#find_email_input_choose').click(function () {
         let email_sec = $(this).val();
