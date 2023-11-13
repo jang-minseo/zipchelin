@@ -7,6 +7,10 @@ var swiper = new Swiper(".main_banner", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
   loop: true,
   autoplay: {
@@ -50,12 +54,26 @@ var swiper = new Swiper(".cookConsulSlide", {
 });
 
 
-/* 더보기 버튼 */
+/* 더보기 토글 버튼 */
 function viewBtn() {
-  document.getElementsByClassName('rank_btn')[0].style.display = "none";
-  document.getElementsByClassName('rank_row1')[0].style.display = "flex";
-  document.getElementsByClassName('rank_row1')[1].style.display = "flex";
+  let rankBtn = document.getElementsByClassName('rank_btn')[0];
+  // 클릭할 때 마다, on 클래스 토글
+  toggleClass(rankBtn, 'on');
+
+  // 클래스에 on이 추가되어 있다면 컨텐츠 보이기
+  if(rankBtn.className == 'rank_btn on') {
+    document.getElementsByClassName('rank_row1')[0].style.display = "flex";
+    document.getElementsByClassName('rank_row1')[1].style.display = "flex";
+    rankBtn.textContent = '닫기';
+  } else {
+    // 클래스에 on이 없다면 컨텐츠 숨기기
+    document.getElementsByClassName('rank_row1')[0].style.display = "none";
+    document.getElementsByClassName('rank_row1')[1].style.display = "none";
+    rankBtn.textContent = '더보기';
+  }
 }
+
+
 
 
 /* 하트 토글 버튼 */
@@ -66,4 +84,29 @@ document.querySelectorAll('.fa-regular.fa-heart').forEach(function (icon) {
   });
 });
 
+// 토글 함수 추가
+function toggleClass(element, className) {
+  if(element.classList.contains(className)){
+    element.classList.remove(className);
+  }else{
+    element.classList.add(className);
+  };
+}
 
+function setInnerHTML() {
+  const element = document.getElementById('rank_row1');
+  element.innerHTML 
+    = '<div style="color:blue">InnerHTML<div>';
+} 
+
+function setInnerText() {
+  const element = document.getElementById('rank_row1');
+  element.innerText 
+    = '<div style="color:blue">InnerText<div>';
+} 
+
+function setTextContent() {
+  const element = document.getElementById('rank_row1');
+  element.textContent 
+    = '<div style="color:blue">TextContent<div>';
+} 
