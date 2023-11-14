@@ -99,3 +99,5 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 .formBox { width: 100%; height: 50px; border: 2px solid #e9e9e9; border-radius: 7px; }
 .form-content { font-size: 20px; padding: 40px 0 10px 0; }
 .btnGroup.lg.form { padding-top: 80px; justify-content: space-evenly; }
+
+.replyCancle{display: none;}
