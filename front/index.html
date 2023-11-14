@@ -15,11 +15,11 @@
 
     <!-- favicon-->
     <link rel="shortcut icon" type="text/css" href="">
-    <link rel="icon"  type="text/css" href="">
+    <link rel="icon" type="text/css" href="">
 
     <!-- google icon CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-    
+
     <!-- basic CSS -->
     <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/front/css/base.css">
@@ -27,10 +27,17 @@
 
     <!-- page CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    
+
+    <!-- main banner -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- plugin CSS -->
     <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -38,8 +45,9 @@
     <!--[if lte IE 8]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
     <![endif]-->
- 
-<title>집슐랭</title>
+
+    <title>집슐랭</title>
+    
 </head>
 <body>
     <!-- 헤더 -->
@@ -47,13 +55,29 @@
 
     <div id="main">
         <!-- 메인 배너 -->
-        <div class="main_banner">
-            <!-- 베너 이미지 -->
-            <img class="banner_img" src="images/food/main.jpg" />
+        <div class="swiper main_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="banner_img" src="images/food/main.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner_img" src="images/food/main.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner_img" src="images/food/main.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner_img" src="images/food/main.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner_img" src="images/food/main.jpg" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
 
         <!-- 사이드바 -->
-        <div class="aside">
+         <div class="aside">
             <div class="zim">
                 <a href="">
                     <span class="material-symbols-outlined">favorite</span>
@@ -68,447 +92,584 @@
                     <a href="#"><img src="images/food/sal.jpg" alt=""></a>
                 </div>
             </div>
-            <a href="#">
-                <div class="top">
-                    <span class="material-symbols-outlined">stat_1</span>
-                </div>
-            </a>
+            <div class="top">
+                <a href="index.html"><span class="material-symbols-outlined">stat_1</span></a>
+            </div>
         </div>
-
 
         <!-- 최신 레시피 -->
         <div class="recipe_container">
             <div class="index_title">
                 <h2>최신 레시피</h2>
-                <a href="" class="more_recipe">더보기<span class="material-symbols-outlined">chevron_right</span></a>
+                <a href="/front/html/recipe/recipe_list.html" class="more_recipe">더보기<span class="material-symbols-outlined">chevron_right</span></a>
             </div>
-            <div class="recipe_item_container">
+            <div class="recipe_item_container" onclick="location.href='/front/html/recipe/recipe_detail.html'">
                 <div class="recipe_item">
                     <div class="img_list">
-                        <img class="recipe_heart" src="images/icon2/heart.png" />
-                        <img class="recipe_img" src="images/food/sun.png" />
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img class="recipe_img" src="images/food/sun.png" />
+                        </a>
+                            <i class="fa-regular fa-heart"></i>                       
                     </div>
                     <div class="textBox">
+
                         <p class="sub_title">입 안에 들어가면 사르르 녹는</p>
-                        <p class="title">순두부 찌개</p>
+                        <a href="#">
+                            <p class="title">순두부 찌개</p>
+                        </a>
                     </div>
                 </div>
-                <div class="recipe_item">
+                <div class="recipe_item" onclick="location.href='/front/html/recipe/recipe_detail.html'">
                     <div class="img_list">
-                        <img class="recipe_heart" src="images/icon2/heart.png" />
-                        <img class="recipe_img" src="images/food/mi.jpg" />
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img class="recipe_img" src="images/food/mi.jpg" />
+                        </a>
+                            <i class="fa-regular fa-heart"></i>                      
                     </div>
                     <div class="textBox">
                         <p class="sub_title">생일 날 즐겨먹는</p>
-                        <p class="title">미역국</p>
+                        <a href="#">
+                            <p class="title">미역국</p>
+                        </a>
                     </div>
                 </div>
-                <div class="recipe_item">
+                <div class="recipe_item" onclick="location.href='/front/html/recipe/recipe_detail.html'">
                     <div class="img_list">
-                        <img class="recipe_heart" src="images/icon2/heart.png" />
-                        <img class="recipe_img" src="images/food/sam.jpg" />
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img class="recipe_img" src="images/food/sam.jpg" />
+                        </a>
+                            <i class="fa-regular fa-heart"></i>                      
                     </div>
                     <div class="textBox">
                         <p class="sub_title">한국인의 근본 그 자체</p>
-                        <p class="title">삼겹살</p>
+                        <a href="#">
+                            <p class="title">삼겹살</p>
+                        </a>
                     </div>
                 </div>
-                <div class="recipe_item">
+                <div class="recipe_item" onclick="location.href='/front/html/recipe/recipe_detail.html'">
                     <div class="img_list">
-                        <img class="recipe_heart" src="images/icon2/heart.png" />
-                        <img class="recipe_img" src="images/food/je.jpg" />
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img class="recipe_img" src="images/food/je.jpg" />
+                        </a>
+                            <i class="fa-regular fa-heart"></i> 
                     </div>
                     <div class="textBox">
                         <p class="sub_title">남녀노소 호불호 없는 그 음식</p>
-                        <p class="title">제육볶음</p>
+                        <a href="#">
+                            <p class="title">제육볶음</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="rank">
+        <!-- 랭킹 -->
+        <div class="rank1">
             <div class="index_title">
                 <h2>랭킹</h2>
             </div>
             <div class="rank_row">
                 <div class="rank_item">
                     <h2>1</h2>
-                    <img src="images/food/tang.jpg" />
+                    <a href="/front/html/recipe/recipe_detail.html">
+                        <img src="images/food/tang.jpg" />
+                    </a>
                     <div class="textBox">
                         <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
-                        <p class="title">동태찌개</p>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <p class="title">동태찌개</p>
+                        </a>
                     </div>
                 </div>
                 <div class="rank_item">
                     <h2>2</h2>
-                    <img src="images/food/sal.jpg" />
+                    <a href="/front/html/recipe/recipe_detail.html">
+                        <img src="images/food/sal.jpg" />
+                    </a>
                     <div class="textBox">
                         <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
-                        <p class="title">동태찌개</p>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <p class="title">동태찌개</p>
+                        </a>
                     </div>
                 </div>
                 <div class="rank_item">
                     <h2>3</h2>
-                    <img src="images/food/bae.jpg" />
+                    <a href="/front/html/recipe/recipe_detail.html">
+                        <img src="images/food/bae.jpg" />
+                    </a>
                     <div class="textBox">
                         <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
-                        <p class="title">동태찌개</p>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <p class="title">동태찌개</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="rank_row">
                 <div class="rank_item">
                     <h2>4</h2>
-                    <img src="images/food/je.jpg" />
+                    <a href="/front/html/recipe/recipe_detail.html">
+                        <img src="images/food/je.jpg" />
+                    </a>
                     <div class="textBox">
                         <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
-                        <p class="title">동태찌개</p>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <p class="title">동태찌개</p>
+                        </a>
                     </div>
                 </div>
                 <div class="rank_item">
                     <h2>5</h2>
-                    <img src="images/food/jo.jpg" />
+                    <a href="/front/html/recipe/recipe_detail.html">
+                        <img src="images/food/jo.jpg" />
+                    </a>
                     <div class="textBox">
                         <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
-                        <p class="title">동태찌개</p>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <p class="title">동태찌개</p>
+                        </a>
                     </div>
                 </div>
                 <div class="rank_item">
                     <h2>6</h2>
-                    <img src="images/food/mi.jpg" />
+                    <a href="/front/html/recipe/recipe_detail.html">
+                        <img src="images/food/mi.jpg" />
+                    </a>
                     <div class="textBox">
                         <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
-                        <p class="title">동태찌개</p>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <p class="title">동태찌개</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="plusRank">
-                <a href="#">
-                    <span class="material-symbols-outlined">add</span>
-                    더보기
-                </a>
+                <div class="rank_row1">
+                    <div class="rank_item">
+                        <h2>7</h2>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img src="images/food/tang.jpg" />
+                        </a>
+                        <div class="textBox">
+                            <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                            <a href="/front/html/recipe/recipe_detail.html">
+                                <p class="title">동태찌개</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rank_item1">
+                        <h2>8</h2>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img src="images/food/sal.jpg" />
+                        </a>
+                        <div class="textBox">
+                            <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                            <a href="/front/html/recipe/recipe_detail.html">
+                                <p class="title">동태찌개</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rank_item1">
+                        <h2>9</h2>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img src="images/food/bae.jpg" />
+                        </a>
+                        <div class="textBox">
+                            <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                            <a href="/front/html/recipe/recipe_detail.html">
+                                <p class="title">동태찌개</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rank_row1">
+                    <div class="rank_item">
+                        <h2>10</h2>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img src="images/food/je.jpg" />
+                        </a>
+                        <div class="textBox">
+                            <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                            <a href="/front/html/recipe/recipe_detail.html">
+                                <p class="title">동태찌개</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rank_item1">
+                        <h2>11</h2>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img src="images/food/jo.jpg" />
+                        </a>
+                        <div class="textBox">
+                            <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                            <a href="/front/html/recipe/recipe_detail.html">
+                                <p class="title">동태찌개</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rank_item1">
+                        <h2>12</h2>
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img src="images/food/mi.jpg" />
+                        </a>
+                        <div class="textBox">
+                            <p class="sub_title">신경 좀 쓴 오늘의 찌개</p>
+                            <a href="/front/html/recipe/recipe_detail.html">
+                                <p class="title">동태찌개</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 더보기 버튼 -->
+                <button class="rank_btn" onclick="viewBtn()">더보기</button>
             </div>
-        </div>        
-        
-        <div class="recipe_container">
+        </div>
+        <!-- 10분 요리 -->
+        <div class="recipe_container1" onclick="location.href='/front/html/recipe/recipe_detail.html'">
             <div class="index_title">
                 <h2>10분 요리</h2>
-                <a href="#" class="more_recipe">더보기<span class="material-symbols-outlined">chevron_right</span></a>
+                    <a href="/front/html/recipe/recipe_list.html" class="more_recipe">
+                        더보기
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
             </div>
-            <div class="recipe_item_container">
+            <div class="recipe_item_container" onclick="location.href='/front/html/recipe/recipe_detail.html'">
                 <div class="recipe_item">
                     <div class="img_list">
-                        <img class="recipe_heart" src="images/icon2/heart.png" />
-                        <img class="recipe_img" src="images/food/sun.png" />
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img class="recipe_img" src="images/food/sun.png" />
+                        </a>
+                        <i class="fa-regular fa-heart"></i>    
                     </div>
                     <div class="textBox">
                         <p class="sub_title">입 안에 들어가면 사르르 녹는</p>
-                        <p class="title">순두부 찌개</p>
+                        <a href="#"><p class="title">순두부 찌개</p></a>
                     </div>
                 </div>
-                <div class="recipe_item">
+                <div class="recipe_item" onclick="location.href='/front/html/recipe/recipe_detail.html'">
                     <div class="img_list">
-                        <img class="recipe_heart" src="images/icon2/heart.png" />
-                        <img class="recipe_img" src="images/food/mi.jpg" />
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img class="recipe_img" src="images/food/sun.png" />
+                        </a>
+                        <i class="fa-regular fa-heart"></i>    
                     </div>
                     <div class="textBox">
-                        <p class="sub_title">생일 날 즐겨먹는</p>
-                        <p class="title">미역국</p>
+                        <p class="sub_title">입 안에 들어가면 사르르 녹는</p>
+                        <a href="#"><p class="title">순두부 찌개</p></a>
                     </div>
                 </div>
-                <div class="recipe_item">
+                <div class="recipe_item" onclick="location.href='/front/html/recipe/recipe_detail.html'">
                     <div class="img_list">
-                        <img class="recipe_heart" src="images/icon2/heart.png" />
-                        <img class="recipe_img" src="images/food/sam.jpg" />
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img class="recipe_img" src="images/food/sun.png" />
+                        </a>
+                        <i class="fa-regular fa-heart"></i>    
                     </div>
                     <div class="textBox">
-                        <p class="sub_title">한국인의 근본 그 자체</p>
-                        <p class="title">삼겹살</p>
+                        <p class="sub_title">입 안에 들어가면 사르르 녹는</p>
+                        <a href="/front/html/recipe/recipe_detail.html"><p class="title">순두부 찌개</p></a>
                     </div>
                 </div>
-                <div class="recipe_item">
+                <div class="recipe_item" onclick="location.href='/front/html/recipe/recipe_detail.html'">
                     <div class="img_list">
-                        <img class="recipe_heart" src="images/icon2/heart.png" />
-                        <img class="recipe_img" src="images/food/je.jpg" />
+                        <a href="/front/html/recipe/recipe_detail.html">
+                            <img class="recipe_img" src="images/food/sun.png" />
+                        </a>
+                        <i class="fa-regular fa-heart"></i>    
                     </div>
                     <div class="textBox">
-                        <p class="sub_title">남녀노소 호불호 없는 그 음식</p>
-                        <p class="title">제육볶음</p>
+                        <p class="sub_title">입 안에 들어가면 사르르 녹는</p>
+                        <a href="#"><p class="title">순두부 찌개</p></a>
                     </div>
                 </div>
             </div>
         </div>
 
-    <!-- 집슐랭픽 -->
-    <div class="zipbanner">
-        <div class="slide_wrap Swiper zipPick">
-            <div class="slide_box swiper-wrapper">
-                <div class="slide_content swiper-slide Left" style="background-color: #EBF1A3;">
-                    <div class="zipText1">너무 맛있는</div>
-                    <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
-                    <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
-                </div>
-                <div class="slide_content swiper-slide Left">
-                    <div class="zipText1">너무 맛있는</div>
-                    <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
-                    <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
-                </div>
-                <div class="slide_content swiper-slide Left" style="background-color: #EBF1A3;">
-                    <div class="zipText1">너무 맛있는</div>
-                    <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
-                    <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
-                </div>
-                <div class="slide_content swiper-slide Left">
-                    <div class="zipText1">너무 맛있는</div>
-                    <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
-                    <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
-                </div>
-            </div>
-        </div>
-        <div class="slide_wrap Swiper zipPick2">
-            <div class="slide_box swiper-wrapper">
-                <div class="slide_content swiper-slide Left" style="background-color: #EBF1A3;">
-                    <div class="zipText1">너무 맛있는</div>
-                    <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
-                    <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
-                </div>
-                <div class="slide_content swiper-slide Left">
-                    <div class="zipText1">너무 맛있는</div>
-                    <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
-                    <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
-                </div>
-                <a href="#">
+        <!-- 집슐랭픽 -->
+        <div class="zipbanner">
+            <div class="slide_wrap Swiper zipPick">
+                <div class="slide_box swiper-wrapper">
                     <div class="slide_content swiper-slide Left" style="background-color: #EBF1A3;">
                         <div class="zipText1">너무 맛있는</div>
                         <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
                         <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
                     </div>
-                </a>
-                <div class="slide_content swiper-slide Left">
-                    <div class="zipText1">너무 맛있는</div>
-                    <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
-                    <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
+                    <div class="slide_content swiper-slide Left">
+                        <div class="zipText1">너무 맛있는</div>
+                        <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
+                        <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
+                    </div>
+                    <div class="slide_content swiper-slide Left" style="background-color: #EBF1A3;">
+                        <div class="zipText1">너무 맛있는</div>
+                        <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
+                        <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
+                    </div>
+                    <div class="slide_content swiper-slide Left">
+                        <div class="zipText1">너무 맛있는</div>
+                        <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
+                        <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_wrap Swiper zipPick2">
+                <div class="slide_box swiper-wrapper">
+                    <div class="slide_content swiper-slide Left" style="background-color: #EBF1A3;">
+                        <div class="zipText1">너무 맛있는</div>
+                        <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
+                        <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
+                    </div>
+                    <div class="slide_content swiper-slide Left">
+                        <div class="zipText1">너무 맛있는</div>
+                        <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
+                        <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
+                    </div>
+                    <a href="#">
+                        <div class="slide_content swiper-slide Left" style="background-color: #EBF1A3;">
+                            <div class="zipText1">너무 맛있는</div>
+                            <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
+                            <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
+                        </div>
+                    </a>
+                    <div class="slide_content swiper-slide Left">
+                        <div class="zipText1">너무 맛있는</div>
+                        <div class="zipText2">KG모빌리티가 친환경 미래차 시장에 대응하기 위해 글로벌 전기</div>
+                        <div class="zipImg"><img src="images/food/tang.jpg" alt=""></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- 카테고리 -->
-    <div class="category">
-        <ul class="categoryName clearfix">
-            <li>
-                <a href="#" class="categoryBox">
-                    <img class="cm_menu" src="/front/images/icon/cm_menu.png" alt="menu">
-                    <p>전체보기</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_rice.png" alt="rice">
-                    <p>밥요리</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_soup.png" alt="soup">
-                    <p>국&탕</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_chan.png" alt="chan">
-                    <p>밑반찬</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_boiled.png" alt="boiled">
-                    <p>찜&조림</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_salad.png" alt="salad">
-                    <p>샐러드</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_box.png" alt="box">
-                    <p>도시락</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_fried.png" alt="fried">
-                    <p>튀김</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_dessert.png" alt="dessert">
-                    <p>간식&분식</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_dessert2.png" alt="dessert2">
-                    <p>디저트</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="categoryBox">
-                    <img src="/front/images/icon/cm_etc.png" alt="etc">
-                    <p>기타요리</p>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- 커뮤니티 -->
-    <div class="contentList">
-        <div class="myRecipe">
-            <div class="cont_title">
-                <h2>나만의 레시피</h2>
-                <a href="html/community/myrecipelist.html" class="more">더보기<span class="material-symbols-outlined">chevron_right</span></a>
-            </div>
-            <ul>
+        <!-- 카테고리 -->
+        <div class="category">
+            <ul class="categoryName clearfix">
                 <li>
-                    <div class="textBox">
-                        <a href="">
-                            <p class="title">있음으로써 용감하고 굳세게</p>
-                            <p class="content">가나다라마바사아자차카타파하가나다라마바사아자차카타하가나다라마바사아자차카</p>
-                        </a>                            
-                        <p class="icon">
-                            <span class="material-symbols-outlined">visibility</span>321
-                            <span class="material-symbols-outlined">comment</span>20
-                        </p>
-                    </div>
-                    <a href="#"><div class="imgBox"><img src="images/food/sample.jpg" alt=""></div></a>
+                    <a href="#" class="categoryBox">
+                        <img class="cm_menu" src="/front/images/icon/cm_menu.png" alt="menu">
+                        <p>전체보기</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="textBox">
-                        <a href="">
-                            <p class="title">있음으로써 용감하고 굳세게</p>
-                            <p class="content">가나다라마바사아자차카타파하가나다라마바사아자차카타하가나다라마바사아자차카</p>
-                        </a>                            
-                        <p class="icon">
-                            <span class="material-symbols-outlined">visibility</span>321
-                            <span class="material-symbols-outlined">comment</span>20
-                        </p>
-                    </div>
-                    <a href="#"><div class="imgBox"><img src="images/food/sample.jpg" alt=""></div></a>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_rice.png" alt="rice">
+                        <p>밥요리</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="textBox">
-                        <a href="">
-                            <p class="title">있음으로써 용감하고 굳세게</p>
-                            <p class="content">가나다라마바사아자차카타파하가나다라마바사아자차카타하가나다라마바사아자차카</p>
-                        </a>                            
-                        <p class="icon">
-                            <span class="material-symbols-outlined">visibility</span>321
-                            <span class="material-symbols-outlined">comment</span>20
-                        </p>
-                    </div>
-                    <a href="#"><div class="imgBox"><img src="images/food/sample.jpg" alt=""></div></a>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_soup.png" alt="soup">
+                        <p>국&탕</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_chan.png" alt="chan">
+                        <p>밑반찬</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_boiled.png" alt="boiled">
+                        <p>찜&조림</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_salad.png" alt="salad">
+                        <p>샐러드</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_box.png" alt="box">
+                        <p>도시락</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_fried.png" alt="fried">
+                        <p>튀김</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_dessert.png" alt="dessert">
+                        <p>간식&분식</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_dessert2.png" alt="dessert2">
+                        <p>디저트</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="categoryBox">
+                        <img src="/front/images/icon/cm_etc.png" alt="etc">
+                        <p>기타요리</p>
+                    </a>
                 </li>
             </ul>
         </div>
 
-        <div class="cookConsulting">
-            <div class="cont_title">
-                <h2>요리 상담소</h2>
-                <a href="html/community/qnalist.html" class="more">더보기<span class="material-symbols-outlined">chevron_right</span></a>
-            </div>
-            <div class="swiper cookConsulSlide">
-                <ul class="swiper-wrapper cookconsulInner">
-                    <li class="swiper-slide">
-                        <div class="textBox ">
-                            <p class="title">
-                                <a href="#">
-                                    <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
-                                </a>
-                                <span class="material-symbols-outlined">imagesmode</span>
+        <!-- 커뮤니티 -->
+        <div class="contentList">
+            <div class="myRecipe">
+                <div class="cont_title">
+                    <h2>나만의 레시피</h2>
+                    <a href="/front/html/community/myrecipe.html" class="more">더보기<span
+                            class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+                <ul>
+                    <li>
+                        <div class="textBox">
+                            <a href="">
+                                <p class="title">있음으로써 용감하고 굳세게</p>
+                                <p class="content">가나다라마바사아자차카타파하가나다라마바사아자차카타하가나다라마바사아자차카</p>
+                            </a>
+                            <p class="icon">
+                                <span class="material-symbols-outlined">visibility</span>321
+                                <span class="material-symbols-outlined">comment</span>20
                             </p>
                         </div>
+                        <a href="#">
+                            <div class="imgBox"><img src="images/food/sample.jpg" alt=""></div>
+                        </a>
                     </li>
-                    <li class="swiper-slide">
-                        <div class="textBox ">
-                            <p class="title">
-                                <a href="#">
-                                    <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
-                                </a>
-                                <span class="material-symbols-outlined">imagesmode</span>
+                    <li>
+                        <div class="textBox">
+                            <a href="">
+                                <p class="title">있음으로써 용감하고 굳세게</p>
+                                <p class="content">가나다라마바사아자차카타파하가나다라마바사아자차카타하가나다라마바사아자차카</p>
+                            </a>
+                            <p class="icon">
+                                <span class="material-symbols-outlined">visibility</span>321
+                                <span class="material-symbols-outlined">comment</span>20
                             </p>
                         </div>
-                    </li><li class="swiper-slide">
-                        <div class="textBox ">
-                            <p class="title">
-                                <a href="#">
-                                    <span class="question">Q. </span>있음으로써 용감하고 굳세게
-                                </a>
-                                <span class="material-symbols-outlined">imagesmode</span>
+                        <a href="#">
+                            <div class="imgBox"><img src="images/food/sample.jpg" alt=""></div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="textBox">
+                            <a href="">
+                                <p class="title">있음으로써 용감하고 굳세게</p>
+                                <p class="content">가나다라마바사아자차카타파하가나다라마바사아자차카타하가나다라마바사아자차카</p>
+                            </a>
+                            <p class="icon">
+                                <span class="material-symbols-outlined">visibility</span>321
+                                <span class="material-symbols-outlined">comment</span>20
                             </p>
                         </div>
-                    </li><li class="swiper-slide">
-                        <div class="textBox ">
-                            <p class="title">
-                                <a href="#">
-                                    <span class="question">Q. </span>있음으로써 용감하고 굳세게 <span class="material-symbols-outlined">imagesmode</span>
-                                </a>
-                                
-                            </p>
-                        </div>
-                    </li><li class="swiper-slide">
-                        <div class="textBox ">
-                            <p class="title">
-                                <a href="#">
-                                    <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
-                                </a>
-                                <span class="material-symbols-outlined">imagesmode</span>
-                            </p>
-                        </div>
-                    </li><li class="swiper-slide">
-                        <div class="textBox ">
-                            <p class="title">
-                                <a href="#">
-                                    <span class="question">Q. </span>ㅆ쓌 용감하고 굳세게
-                                </a>
-                                <span class="material-symbols-outlined">imagesmode</span>
-                            </p>
-                        </div>
-                    </li><li class="swiper-slide">
-                        <div class="textBox ">
-                            <p class="title">
-                                <a href="#">
-                                    <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
-                                </a>
-                                <span class="material-symbols-outlined">imagesmode</span>
-                            </p>
-                        </div>
-                    </li><li class="swiper-slide">
-                        <div class="textBox ">
-                            <p class="title">
-                                <a href="#">
-                                    <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
-                                </a>
-                                <span class="material-symbols-outlined">imagesmode</span>
-                            </p>
-                        </div>
+                        <a href="#">
+                            <div class="imgBox"><img src="images/food/sample.jpg" alt=""></div>
+                        </a>
                     </li>
                 </ul>
             </div>
+            <div class="cookConsulting">
+                <div class="cont_title">
+                    <h2>요리 상담소</h2>
+                    <a href="html/community/qna.html" class="more">더보기<span
+                            class="material-symbols-outlined">chevron_right</span></a>
+                </div>
+                <div class="swiper cookConsulSlide">
+                    <ul class="swiper-wrapper cookconsulInner">
+                        <li class="swiper-slide">
+                            <div class="textBox ">
+                                <p class="title">
+                                    <a href="#">
+                                        <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
+                                    </a>
+                                    <span class="material-symbols-outlined">imagesmode</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="textBox ">
+                                <p class="title">
+                                    <a href="#">
+                                        <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
+                                    </a>
+                                    <span class="material-symbols-outlined">imagesmode</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="textBox ">
+                                <p class="title">
+                                    <a href="#">
+                                        <span class="question">Q. </span>있음으로써 용감하고 굳세게
+                                    </a>
+                                    <span class="material-symbols-outlined">imagesmode</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="textBox ">
+                                <p class="title">
+                                    <a href="#">
+                                        <span class="question">Q. </span>있음으로써 용감하고 굳세게 <span
+                                            class="material-symbols-outlined">imagesmode</span>
+                                    </a>
+
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="textBox ">
+                                <p class="title">
+                                    <a href="#">
+                                        <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
+                                    </a>
+                                    <span class="material-symbols-outlined">imagesmode</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="textBox ">
+                                <p class="title">
+                                    <a href="#">
+                                        <span class="question">Q. </span>ㅆ쓌 용감하고 굳세게
+                                    </a>
+                                    <span class="material-symbols-outlined">imagesmode</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="textBox ">
+                                <p class="title">
+                                    <a href="#">
+                                        <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
+                                    </a>
+                                    <span class="material-symbols-outlined">imagesmode</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="textBox ">
+                                <p class="title">
+                                    <a href="#">
+                                        <span class="question">Q. </span>있음으로써 용감하고 굳세게asdasdsadsadsadsadasds
+                                    </a>
+                                    <span class="material-symbols-outlined">imagesmode</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
     </div>
-</div>
-
-<!-- footer -->
-<footer id="footer"></footer> 
-
+    <!-- footer -->
+    <footer id="footer"></footer>   
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="/front/js/plugins/swiper-bundle.min.js"></script>
+    <script src="/front/js/common.js"></script>
     <script src="/front/js/main.js"></script>
     <script src="/front/js/common.js"></script>
 </body>
