@@ -1,14 +1,15 @@
-/* 작성폼 */
-    //TinyMCE init 스크립트 추가 
-    tinymce.init({
-        selector: 'textarea#tiny'
-    });
 
-/* 레시피 글 */
-    //답글 달기 클릭 시 댓글 창 보이기
-    $(document).ready(function() {
-        $("#btn_reply").click(function() {
-            $("#replybox").toggle();
+/* 레시피 글, 요리 상담소 */
+    //답글 달기 클릭 시 효과
+    $(function(){
+        $(".comment_reply").click(function() {
+            $(this).parents('.replyWrap').next().find(".replybox").css('background-color','red');
         });
     });
+    
+    //추천 클릭 시 효과
+
+    //좋아요 가장
+
+    
 
