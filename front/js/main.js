@@ -1,7 +1,8 @@
 /* 메인 베너 */
 var swiper = new Swiper(".main_banner", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 10,
+  speed: 850,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -11,10 +12,8 @@ var swiper = new Swiper(".main_banner", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 3500,
     disableOnInteraction: false,
   }
 });

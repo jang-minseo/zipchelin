@@ -10,15 +10,15 @@
 .material-symbols-outlined1 { vertical-align: text-bottom; }
 
 /* 메인배너 */
-.main_banner{display: block; height: 425px; margin: 30px auto 150px;}
-.banner_img{width: 100%; height: 100%;}
+.main_banner{display: block; height: 425px; margin: 30px auto 150px; border-radius: 6px;}
+.banner_img{width: 100%; height: 100%; border-radius: 6px}
 .swiper-button-prev,
 .swiper-button-next {background-color: #fff; opacity: 0.5; padding: 15px 5px; border-radius: 20px; color: black !important;}
 .swiper-button-prev:after,
 .swiper-button-next:after {font-size: 1.1rem !important; font-weight: 600 !important;}
-.swiper .swiper-pagination { position: absolute;}
-.swiper .swiper-pagination-bullet {background-color: #8acc39; margin: 0 10px !important; width: 15px; height: 15px;}
-
+.swiper .swiper-pagination { position: absolute; bottom: 16px !important;}
+.swiper .swiper-pagination-bullet {background-color: #ccc; margin: 0 4px !important; width: 10px; height: 10px;}
+.swiper .swiper-pagination-bullet-active{background-color: #8acc39;}
 
 /* 사이드바 */
 .aside { position: fixed; right: 100px; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff; z-index: 999; }
@@ -28,7 +28,7 @@
 .zim p { padding-left: 28px; padding-top: 4px; font-size: 16px;}
 .cur_recipe { margin-top: 15px; text-align: center; font-size: 16px;}
 .aside_imgBox { display: block; margin-top: 5px; }
-.aside_imgBox img { width: 90px; height: 90px; padding: 5px 0; }
+.aside_imgBox img { width: 90px; height: 90px; padding: 5px 0;}
 .top { padding-top: 5px; text-align: center; border-top: 1px solid #e9e9e9; border-radius: 0 0 20px 20px; background-color: #000; }
 .top span { font-size: 28px; color: #ccc; background-color: #000; scroll-behavior: smooth; }
 .material-icons{color: #8acc39;}
