@@ -70,6 +70,31 @@ $(function(){
                 $('#' + actTab).addClass('on');
             })
         });
+
+        /* 하트 토글 버튼 */
+        document.querySelectorAll('.fa-regular.fa-heart').forEach(function (icon) {
+            icon.addEventListener('click', function () {
+            this.classList.toggle('fa-regular');
+            this.classList.toggle('fa-solid');
+            });
+        });
+
+        //사진 확대
+        var swiper = new Swiper("heart_list_img", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            }
+          });
+
+        //수정페이지 - 취소버튼 클릭 시 페이지 새로고침
+        $('#edit_can_btn').click(function() {
+            alert('아');
+            location.reload();
+            });
 });
 
 //비밀번호
