@@ -160,7 +160,7 @@ $(function(){
                 $('#edit_tel').css('border-color','red');
             }else{
                 $('#edit_warning_tel_minus').css('display','none');
-                if(!tel_rule.test($('#text').val())){
+                if(!tel_rule.test($('#edit_tel').val())){
                     $('#edit_warning_tel').css('display', 'block');
                     $('#edit_tel').css('border-color','red');
                 }else{
