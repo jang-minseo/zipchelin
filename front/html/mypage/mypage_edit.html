@@ -73,7 +73,7 @@
             <div class="myBox_profile">
                 <img src="/front/images/icon/profile.jpg" class="myProfile_img" alt="profile">
                 <h3 class="userId_text">USER_ID</h3>
-                <input type="button" value="정보수정" class="myPage_edit_btn" onclick="loaction.href='mypage_edit.html'">
+                <button class="myPage_edit_btn" onclick="location.href='mypage_edit.html'">정보수정</button>
             </div><!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼) 끝-->
 
             <!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기)-->
@@ -198,7 +198,10 @@
 
                 <!--취소, 수정완료 버튼-->
                 <div class="edit_can_fin_btn">
-                        <input type="button" value="취소" class="edit_cancle_button">
+                    <!--<button type="reset" class="edit_cancle_button" onclick="edit_can_btn">취소</button>
+                    <button type="submit"class="edit_fin_button" id="edit_fin_btn" onclick="edit_complete_btn()">수정완료</button>-->
+                    
+                       <input type="button"  value="취소" class="edit_cancle_button" id="edit_can_btn">
                         <input type="button" value="수정완료" class="edit_fin_button" onclick="edit_complete_btn()">
                 </div>
 
@@ -237,6 +240,7 @@
     </footer>
 
     <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="/front/js/common.js"></script>
     <script src="/front/js/mypage.js"></script>
