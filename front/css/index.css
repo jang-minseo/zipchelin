@@ -31,8 +31,7 @@
 .aside_imgBox img { width: 90px; height: 90px; padding: 5px 0; }
 .top { padding-top: 5px; text-align: center; border-top: 1px solid #e9e9e9; border-radius: 0 0 20px 20px; background-color: #000; }
 .top span { font-size: 28px; color: #ccc; background-color: #000; scroll-behavior: smooth; }
-
-
+.material-icons{color: #8acc39;}
 
 /* 최신 레시피 , 10분 요리 */
 .recipe_container { margin-bottom: 150px;  }
@@ -108,7 +107,7 @@
 
 /* 하트 아이콘 */
 .fa-regular.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px;}
-.fa-solid.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px; color: #8acc39;}
+.fa-solid.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px;color: #8acc39;}
 
 
 
