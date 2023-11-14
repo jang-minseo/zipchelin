@@ -24,7 +24,7 @@
     <!-- 게시판 에디터 : Bootstrap JS의 소스 스크립트 추가-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <!-- 위지윅 에디터 추가 -->
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/79h9a55ljkwod4nfq366hk4lx8mznhg2gqt99z1xbe6t6fl6/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
     <!-- google icon CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -53,12 +53,6 @@
 
 
 <title>요리 상담소 작성폼</title>
-<!-- TinyMCE init 스크립트 추가 -->
-<script>
-    tinymce.init({
-      selector: 'textarea#tiny'
-    });
-</script>
 </head>
 <body>
     <!-- 헤더 -->
@@ -83,15 +77,15 @@
             </div>
             
             <div class="btnGroup lg form" >
-                <button class="btnBgGray form" class="btn_cancel">취소</button>
-                <button class="btnBg" class="btn_upload">올리기</button>
+                <button onclick="location.href='qna.html'" class="btnBgGray form" class="btn_cancel">취소</button>
+                <button onclick="location.href='qna.html'" class="btnBg" class="btn_upload">올리기</button>
             </div>
 
         </section>
     </main>
 
     <!-- 푸터 -->
-    <footer class="footer"></footer>
+    <footer id="footer"></footer>
 
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
