@@ -1,3 +1,30 @@
+/* 공통 */
+#main{width: 1280px; margin: 0 auto; padding-top: 80px;}
+.index_title{ position: relative; margin: 30px 0; text-align: center; color: #000; }
+.index_title h2{ font-size: 30px; }
+.sub_title { color: #999999;}
+.title { font-size: 20px; overflow: h;}
+.textBox p { line-height: 22px; }
+.material-symbols-outlined { vertical-align: text-bottom; }
+.material-symbols-outlined1 { vertical-align: text-bottom; }
+
+
+
+/* 사이드바 */
+.aside { position: fixed; right: 100px; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff; z-index: 999; }
+.aside { position: fixed; z-index: 999; right: 0; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff; }
+.zim { padding: 10px 20px; border-bottom: 1px solid #e9e9e9; }
+.zim span { float: left; font-size: 22px; }
+.zim p { padding-left: 28px; padding-top: 4px; font-size: 16px;}
+.cur_recipe { margin-top: 15px; text-align: center; font-size: 16px;}
+.aside_imgBox { display: block; margin-top: 5px; }
+.aside_imgBox img { width: 90px; height: 90px; padding: 5px 0; }
+.top { padding-top: 5px; text-align: center; border-top: 1px solid #e9e9e9; border-radius: 0 0 20px 20px; background-color: #000; }
+.top span { font-size: 28px; color: #ccc; background-color: #000; scroll-behavior: smooth; }
+.material-icons{color: #8acc39;}
+
+
+
 /*가이트 리스트*/
 .header {z-index: 15;}
 .category {margin: 0; border-radius: 20px;}
@@ -30,11 +57,11 @@
 .guide_title_box {margin: 0; width: 100%; height: 100%; display: flex;}
 .guide_title { padding: 20px 0 0 10px; font-size: 2.3em; line-height: 1.7; width: 83%;}
 .guide_social_box {position: relative; display: flex; float: right; width: 17%; padding: 7px; top: 8px; color:  #999;}
-
 .guide__sub_title {font-size: 1.6em; padding: 0 10px 20px 10px; color: #999;}
 .guide_img {position: relative; display: flex; margin: 40px auto 0; object-fit: cover; border-radius: 20px; width: 83%; height: 400px;}
 .step {font-weight: bold; color:  #8acc39;}
 .guide_description_box {padding: 40px 70px 25px 70px; margin: 0 0 30px; font-size: large; line-height: 2; color: #727272;}
+
 .guide_container>.last {border: 0px solid #c1c1c1; padding-bottom: 0; margin: 0;}
 
 .common_box{ position: relative; top: 5px; padding: 0 15px;}
@@ -44,3 +71,19 @@
 .share_box { position: relative; top: 10px; font-weight: bold;}
 .detailLast { border-top: 1px solid #e9e9e9;}
 
+/* 카테고리 */
+.g_category { width:400px; padding: 20px 0; margin: auto; margin-bottom: 30px; }
+.g_categoryName li{ float: left; padding-left: 60px; }
+.g_categoryName p { font-size: 12px; margin-top: 5px; text-align: center;}
+.g_categoryName img { width: 50px; height: 50px; overflow: hidden; opacity: 0.3;}
+.g_categoryBox:hover img {opacity: 1;}
+
+/*하트 위로*/
+i{z-index: 1; color: #8acc39;}
+
+/* 하트 아이콘 추천 */
+.fa-regular.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px;} 
+.fa-solid.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px; color: #8acc39;}
+
+.fa-regular.fa-heart.social{position: relative; width: 100%; height: 100%; font-size: 23px; bottom: 4px; top: -3px; right: 0px;} 
+.fa-solid.fa-heart.social{position: relative; width: 100%; height: 100%; font-size: 23px; bottom: 4px; top: -3px;  right: 0px; color: #8acc39;}
