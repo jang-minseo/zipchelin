@@ -93,3 +93,6 @@ main {display: block;margin: auto;padding: 100px 20px 60px;width: 1320px;}
 .qna-date {color: #999; font-size: 12px; font-weight: 300;}
 .question {color: #8acc39; font-size: 22px; font-weight: 600;}
 .textbox .icon .material-symbols-outlined { font-size: 18px;}
+
+/*하트 위로*/
+i{z-index: 1;}

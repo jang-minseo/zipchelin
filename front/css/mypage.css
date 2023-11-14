@@ -47,6 +47,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     font-size: 14px;
     /* margin: 15px 33%; */
     margin: 0 auto;
+    padding: 10px;
 }
 .myBox_count{
     width: 100%;
@@ -97,8 +98,10 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     align-items: center;
     width: 30%;
 }
-#myPage_more_btn{
-    margin-bottom: 6px;
+.myPage_more_btn{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
 }
 /* .my_icon > span{
     top: 8px;
@@ -210,6 +213,13 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .myPage_componentWrap{
     margin-top: 50px;
 }
+#heart_btn_icon{
+    font-size: 25px;
+    position: relative;
+    left: 240px;
+    top: 38px;
+    color: #4FA72F;
+}
 .myHeart_list{
     float: right;
     width: calc(76% - 24px)
@@ -219,7 +229,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     float: left;
     padding: 20px 0;
 }
-#heart_list_link_text{
+.heart_list_text{
     left: 10px;
     position: relative;
 }

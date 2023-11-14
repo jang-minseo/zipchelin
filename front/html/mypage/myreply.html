@@ -19,6 +19,7 @@
 
     <!-- google icon CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- basic CSS -->
     <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
@@ -44,28 +45,38 @@
     <header class="header"></header>
     
     <main class="w1080 clearfix">
-        <aside class="myMenu">
-            <!--마이페이지 (left)박스-->
-            <div class="myBox">
-                <img src="/front/images/profile.jpg" alt="profile">
-                <h1>USER_ID</h1>
-                <input type="button" value="정보수정" class="btn" onclick="loaction.href='#'"> 
-                <ul>
-                    <li class="myBox_count">
-                        <span class="material-symbols-outlined">favorite</span>
-                        <p>찜 0개</p>
-                    </li>
-                    <li class="myBox_count">
-                        <span class="material-symbols-outlined">density_small</span>
-                        <p>내 글 0개</p>
-                    </li>
-                    <li class="myBox_count">
-                        <span class="material-symbols-outlined">stylus</span>
-                        <p>내 댓글 0개</p>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+        <!--myPage_leftBox-->
+        <div class="mypage myPage_leftBox">
+            <!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼)-->
+            <div class="myBox_profile">
+                <img src="/front/images/icon/profile.jpg" class="myProfile_img" alt="profile">
+                <h3 class="userId_text">USER_ID</h3>
+                <input type="button" value="정보수정" class="myPage_edit_btn" onclick="loaction.href='#'">
+            </div><!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼) 끝-->
+
+            <!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기)-->
+            <div class="myBox_count">
+                
+                <div class="myBox_countBox myBox_heart">
+                    <span id="myBox_icon" class="material-icons">favorite</span>
+                    <p>찜 <a href="/front/html/community/qna_post.html">10</a></p>
+                </div>
+
+                <div class="myBox_countBox myBox_post">
+                    <!-- <span id="myBox_icon" class="material-symbols-outlined">density_small</span> -->
+                    <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
+                    <p>내 글 <a href="/front/html/community/qna_post.html">10</a></p>
+                </div>
+
+                <div class="myBox_countBox myBox_comment">
+                    <!-- <span id="myBox_icon" class="material-symbols-outlined">stylus</span> -->
+                    <span id="myBox_icon" class="material-symbols-outlined">chat</span>
+                    <p>내 댓글 <a href="/front/html/community/qna_post.html">10</a></p>
+                </div>
+
+            </div><!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기) 끝-->
+        </div>
+        
         <section class="AllList">
             <h3 class="pageTitle">내가 쓴 댓글</h3>
             <div class="componentWrap">
@@ -89,7 +100,7 @@
                                 <label for="listChk01"></label>
                             </div>
                             <div class="myCont contBox">
-                                <a href="#">
+                                <a href="/front/html/community/qna_post.html">
                                     <span class="postDate">2023.10.17 00:00</span>
                                     <h6>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원?? 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원</h6>
                                     <div class="replyPage">
@@ -104,7 +115,7 @@
                                 <label for="listChk02"></label>
                             </div>
                             <div class="contBox">
-                                <a href="#">
+                                <a href="/front/html/community/qna_post.html">
                                     <span class="postDate">2023.10.17 00:00</span>
                                     <h6>생명을 불어 넣는</h6>
                                     <div class="replyPage">
@@ -119,7 +130,7 @@
                                 <label for="listChk03"></label>
                             </div>
                             <div class="contBox">
-                                <a href="#">
+                                <a href="/front/html/community/qna_post.html">
                                     <span class="postDate">2023.10.17 00:00</span>
                                     <h6>모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원??</h6>
                                     <div class="replyPage">
@@ -134,7 +145,7 @@
                                 <label for="listChk04"></label>
                             </div>
                             <div class="contBox">
-                                <a href="#">
+                                <a href="/front/html/community/qna_post.html">
                                     <span class="postDate">2023.10.17 00:00</span>
                                     <h6>생명을 불어 넣는</h6>
                                     <div class="replyPage">
@@ -149,7 +160,7 @@
                                 <label for="listChk05"></label>
                             </div>
                             <div class="contBox">
-                                <a href="#">
+                                <a href="/front/html/community/qna_post.html">
                                     <span class="postDate">2023.10.17 00:00</span>
                                     <h6>생명을 불어 넣는</h6>
                                     <div class="replyPage">
@@ -164,7 +175,7 @@
                                 <label for="listChk06"></label>
                             </div>
                             <div class="contBox">
-                                <a href="#">
+                                <a href="/front/html/community/qna_post.html">
                                     <span class="postDate">2023.10.17 00:00</span>
                                     <h6>생명을 불어 넣는</h6>
                                     <div class="replyPage">
