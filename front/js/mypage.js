@@ -28,11 +28,6 @@ $(function(){
         }     
 	});
 
-    //삭제 버튼 - 모달
-    $('#listDel').click(function(){
-        $('#modal').css('display','block');
-    });
-
 
     //내가 쓴글 - 탭
     $('ul.tabGroup li').click(function(){

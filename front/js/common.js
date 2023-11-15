@@ -37,6 +37,11 @@ $(function(){
     });
 });
 
+//모달 창
+$('#listDel, #modalAlert').click(function(){
+    $('#modal').css('display','block');
+});
+
 //리스트 삭제 확인 modal
 function modalHide(){
     $('#modal').hide();
