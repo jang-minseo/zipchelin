@@ -1,13 +1,15 @@
 @charset "utf-8";
 /* 공통 */
-#main{width: 1280px; margin: 0 auto; padding-top: 80px;}
-.index_title{ position: relative; margin: 30px 0; text-align: center; color: #000; }
-.index_title h2{ font-size: 30px; }
-.sub_title { color: #999999;}
-.title { font-size: 20px; overflow: h;}
-.textBox p { line-height: 22px; }
-.material-symbols-outlined { vertical-align: text-bottom; }
-.material-symbols-outlined1 { vertical-align: text-bottom; }
+/* #main{width: 1280px; margin: 0 auto; padding-top: 80px;} */
+.index_title{position: relative; margin: 30px 0; text-align: center; color: #000;}
+.index_title h2{font-size: 30px;}
+.sub_title {width: auto; max-width: 94%; padding-bottom: 6px; color: #999999; line-height: 18px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.title{width: auto; max-width: 94%; font-size: 20px; line-height: 24px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+a.more_recipe{padding-top: 4px; color: #999;}
+.textBox{padding-top: 16px;}
+.textBox p {padding-bottom: 6px;}
+.material-symbols-outlined{vertical-align: text-bottom;}
+.material-symbols-outlined1{vertical-align: text-bottom;}
 
 /* 메인배너 */
 .main_banner{display: block; height: 425px; margin: 30px auto 150px; border-radius: 6px;}
@@ -16,100 +18,102 @@
 .swiper-button-next {background-color: #fff; opacity: 0.5; padding: 15px 5px; border-radius: 20px; color: black !important;}
 .swiper-button-prev:after,
 .swiper-button-next:after {font-size: 1.1rem !important; font-weight: 600 !important;}
-.swiper .swiper-pagination { position: absolute; bottom: 16px !important;}
+.swiper .swiper-pagination{position: absolute; bottom: 16px !important;}
 .swiper .swiper-pagination-bullet {background-color: #ccc; margin: 0 4px !important; width: 10px; height: 10px;}
 .swiper .swiper-pagination-bullet-active{background-color: #8acc39;}
 
 /* 사이드바 */
-.aside { position: fixed; right: 100px; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff; z-index: 999; }
-.aside { position: fixed; z-index: 999; right: 0; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff; }
-.zim { padding: 10px 20px; border-bottom: 1px solid #e9e9e9; }
-.zim span { float: left; font-size: 22px; }
-.zim p { padding-left: 28px; padding-top: 4px; font-size: 16px;}
-.cur_recipe { margin-top: 15px; text-align: center; font-size: 16px;}
-.aside_imgBox { display: block; margin-top: 5px; }
-.aside_imgBox img { width: 90px; height: 90px; padding: 5px 0;}
-.top { padding-top: 5px; text-align: center; border-top: 1px solid #e9e9e9; border-radius: 0 0 20px 20px; background-color: #000; }
-.top span { font-size: 28px; color: #ccc; background-color: #000; scroll-behavior: smooth; }
+.aside{position: fixed; right: 100px; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff; z-index: 999;}
+.aside{position: fixed; z-index: 999; right: 0; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff;}
+.zim{padding: 10px 20px; border-bottom: 1px solid #e9e9e9;}
+.zim span{float: left; font-size: 22px;}
+.zim p{padding-left: 28px; padding-top: 4px; font-size: 16px;}
+.cur_recipe{margin-top: 15px; text-align: center; font-size: 16px;}
+.aside_imgBox{display: block; margin-top: 5px;}
+.aside_imgBox img{width: 90px; height: 90px; padding: 5px 0;}
+.top{padding-top: 5px; text-align: center; border-top: 1px solid #e9e9e9; border-radius: 0 0 20px 20px; background-color: #000;}
+.top span{font-size: 28px; color: #ccc; background-color: #000; scroll-behavior: smooth;}
 .material-icons{color: #8acc39;}
 
 /* 최신 레시피 , 10분 요리 */
-.recipe_container { margin-bottom: 150px;  }
-.recipe_container1 { margin-bottom: 150px; margin-top: 150px; }
-.more_recipe { position: absolute; font-size: 18px; font-weight: normal; right: 0; top: 0; }
-.recipe_item_container { display: flex; justify-content: space-between; }
-.recipe_item { position: relative; }
-.img_list .recipe_img { width: 270px; height: 200px; border-radius: 6px; }
-.img_list .recipe_heart { position: absolute; width: 30px; height: 30px; right: 10px; top: 8px;}
+.recipe_container{margin-bottom: 150px; }
+.recipe_container1{margin-bottom: 150px; margin-top: 150px;}
+.more_recipe{position: absolute; font-size: 18px; font-weight: normal; right: 0; top: 0;}
+.recipe_item_container {display: flex; gap: 24px; justify-content: space-between;}
+.recipe_item {position: relative; width: calc(100% - 24px); max-width: 300px;}
+.img_list a{/* width: 270px; */ height: 200px; border-radius: 6px;  overflow: hidden;}
+.img_list .recipe_img {width: 100%; height: 100%; object-fit: cover;}
+.img_list .recipe_img:hover {transform: scale(1.1); transition-duration: 0.5s;}
+.img_list .recipe_heart{position: absolute; width: 30px; height: 30px; right: 10px; top: 8px;}
 .fa-regular{color: #8acc39;}
 
 
 /* 랭킹 */
 /* .rank1 .index_title{margin-bottom: 20px;} */
-.rank { display: flex; flex-direction: column; align-items: center; }
-.rank_row {  display: flex;  width: 100%; padding: 30px 0; justify-content: space-between; border-bottom: 1px solid #e9e9e9; }
+.rank{display: flex; flex-direction: column; align-items: center;}
+.rank_row{display: flex; width: 100%; padding: 30px 0; justify-content: space-between; border-bottom: 1px solid #e9e9e9;}
 .rank_row:nth-child(2){border-top: 1px solid #e9e9e9;}
-.rank_row1 { display: flex ; width: 100%; padding: 30px 0; display: none; justify-content: space-between; border-bottom: 1px solid #e9e9e9; }
-.rank_row2 { display: flex; width: 100%; padding: 30px 0; display: none; justify-content: space-between; border-bottom: 1px solid #e9e9e9; }
-.rank_item { display: flex; gap: 20px; align-items: center; }
-.rank_item1 { display: flex; gap: 20px; align-items: center; }
-.rank_item h2 { font-size: 18px; }
-.rank_item img { width: 100px; height: 100px; border-radius: 4px; }
-.rank_item1 h2 { font-size: 18px; }
-.rank_item1 img { width: 100px; height: 100px; border-radius: 4px; }
-.plusRank { width: 100%; margin-bottom: 100px; border-bottom: 1px solid #e9e9e9; }
-.plusRank button { display:block; margin: 25px auto; color:#333; border: 1px solid #ccc;  background-color: #fff; width: 220px; height: 50px;}
-.plusRank .material-symbols-outlined{ vertical-align: text-bottom; }
+.rank_row1, .rank_row2{display: flex; width: 100%; padding: 30px 0; display: none; justify-content: space-between; border-bottom: 1px solid #e9e9e9;}
+.rank_right{display: flex; flex: 1 0 0; gap: 16px; width: 60%; align-items: center;}
+.rank_right .textBox{flex-grow: 1; width: 60%; padding-top: 0;}
+.rank_item, .rank_item1{display: flex; flex: 0 0 auto; width: calc(33% - 16px); gap: 20px; align-items: center;}
+.rank_item h2, .rank_item1 h2{flex: 0 0 auto; width: 24px; font-size: 18px;}
+.rank_item img, .rank_item1 img{width: 100px; height: 100px; border-radius: 4px;}
+.plusRank{width: 100%; border-bottom: 1px solid #e9e9e9;}
+.plusRank button{display:block; margin: 25px auto; color:#333; border: 1px solid #ccc;  background-color: #fff; width: 220px; height: 50px; border-radius: 4px;}
+.plusRank .material-symbols-outlined{vertical-align: text-bottom;}
 
 
 /* 집슐랭픽 배너 */
-.zipbanner {  width: 1280px; margin-bottom: 150px; height: 220px; }
-.slide_wrap { float: left; width: 620px;height: 220px; border-radius: 10px; overflow: hidden;}
-.zipPick { margin-right: 40px;}
-.slide_box { width: 2480px; height: 100%;} 
-.slide_content { display: table; float: left; position: relative; width: 620px; height: 100%; border-radius: 10px; border: 1px solid #e9e9e9; background-color: #8acc39;}
-.zipText1 { position: absolute; top: 50px; left: 40px; font-size: 35px; }
-.zipText2 { position: absolute; top: 120px; left: 40px; width: 350px; font-size: 24px;}
-.slide_content img { position: absolute; top: 35px; left: 420px; width: 150px; height: 150px; border-radius: 100px;}
+.zipbanner{width: 100%; margin-bottom: 150px; height: 200px;}
+.slide_wrap{float: left; width: 620px;height: 220px; border-radius: 6px; overflow: hidden;}
+.zipPick{margin-right: 40px;}
+.slide_box{width: 2480px; height: 100%;} 
+.slide_content{border-radius: 6px; background-color: #FCC8D1;}
+.slide_content a{width: 100%; height: 100%; padding: 48px 0 48px 40px ;}
+.zipText1{width: 60%; margin-bottom: 18px; font-size: 32px; font-weight: 600;}
+.zipText2{width: 60%; font-size: 16px; line-height: 24px; word-break: keep-all; opacity: 0.75;}
+.slide_content img{position: absolute; top: 50%; right: -50px; transform: translateY(-50%); width: 260px; height: 260px; border-radius: 50% 0 0 50%;}
+.zipPick2 .slide_content{background-color: #bfe3cb;}
 
 
 
 /* 카테고리 */
-.category { width: 100%; padding: 20px 0; margin-bottom: 150px; background-color: #e9e9e9;}
-.categoryName li{ float: left; padding-left: 60px;}
-.categoryName p { font-size: 12px; margin-top: 5px; text-align: center;}
-.categoryName img { width: 50px; height: 50px; overflow: hidden; opacity: 0.3;}
+.category{width: 100%; padding: 20px 0; margin-bottom: 150px; border: 2px solid #e9e9e9; border-radius: 6px; /* background-color: #e9e9e9; */}
+.categoryName li{float: left; padding-left: 60px;}
+.categoryName p{font-size: 12px; margin-top: 5px; text-align: center;}
+.categoryName img{width: 50px; height: 50px; overflow: hidden; opacity: 0.3;}
 .categoryBox:hover img {opacity: 1;}
 
 
 /* 커뮤니티 */
-.contentList { height: 400px; margin-bottom: 150px; }
-.cont_title { position: relative; margin: 15px 0; color: #000;}
-.cont_title h2 { font-size: 26px; }
-.cont_title .more { position: absolute; right: 0; top: 0; font-size: 18px;}
-.contentList img { width: 100px; height: 100px; border-radius: 4px;}
-.myRecipe { width: 600px; float: left; border-bottom: 1px solid #e9e9e9;}
-.myRecipe li { margin-bottom: 120px; padding-top: 20px; border-top: 1px solid #e9e9e9; }
-.myRecipe .textBox { float: left; padding-top: 10px; }
-.myRecipe .textBox .content { width: 400px; padding: 5px 0; color: #c1c1c1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.myRecipe .textBox .icon { padding-top: 5px; }
-.myRecipe .textBox .material-symbols-outlined { font-size: 20px;  padding: 20px 5px 0 0;}
-.myRecipe .imgBox { float: right; }
-.myRecipe .textBox .icon { color: #c1c1c1; }
+.contentList{height: 400px; margin-bottom: 150px;}
+.cont_title{position: relative; margin: 15px 0; color: #000;}
+.cont_title h2{font-size: 26px;}
+.cont_title .more{position: absolute; right: 0; top: 0; font-size: 18px;}
+.contentList img{width: 100px; height: 100px; border-radius: 4px;}
+.myRecipe{width: 600px; float: left; border-bottom: 1px solid #e9e9e9;}
+.myRecipe li{margin-bottom: 120px; padding-top: 20px; border-top: 1px solid #e9e9e9;}
+.myRecipe .textBox{float: left; padding-top: 10px;}
+.myRecipe .textBox .content{width: 400px; padding: 5px 0; color: #c1c1c1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.myRecipe .textBox .icon{padding-top: 5px;}
+.myRecipe .textBox .material-symbols-outlined{font-size: 20px;  padding: 20px 5px 0 0;}
+.myRecipe .imgBox{float: right;}
+.myRecipe .textBox .icon{color: #c1c1c1;}
 
-.cookConsulSlide { height: 424px;}
-.cookConsulting { position: relative; width: 600px; float: right;}
-.cookConsulting .textBox .question { color: #8acc39; }
-.cookConsulting .textBox a { float: left; width: 400px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-.cookConsulting li { display: flex; align-items: center; padding: 16px 0 16px 10px; border: 1px solid #e9e9e9; border-radius: 6px;}
-.cookConsulting .textBox .material-symbols-outlined { font-size: 20px; padding: 0 0 3px 5px;}
+.cookConsulSlide{height: 424px;}
+.cookConsulting{position: relative; width: 600px; float: right;}
+.cookConsulting .textBox .question{color: #8acc39;}
+.cookConsulting .textBox a{float: left; width: 400px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.cookConsulting li{display: flex; align-items: center; padding: 16px 0 16px 10px; border: 1px solid #e9e9e9; border-radius: 6px;}
+.cookConsulting .textBox .material-symbols-outlined{font-size: 20px; padding: 0 0 3px 5px;}
 
 
 
 
 /* 하트 아이콘 */
-.fa-regular.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px;}
-.fa-solid.fa-heart{position: absolute; width: 70px; height: 70px; right: -32px; top: 8px; font-size: 26px;color: #8acc39;}
+.recipe_item .fa-regular.fa-heart{position: absolute; right: 12px; top: 12px; font-size: 26px; cursor: pointer;}
+.recipe_item .fa-solid.fa-heart{position: absolute; right: 12px; top: 12px; font-size: 26px;color: #8acc39; cursor: pointer;}
 
 
 

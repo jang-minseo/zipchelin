@@ -23,9 +23,10 @@ var swiper = new Swiper(".main_banner", {
 var swiper = new Swiper(".zipPick", {
   slidesPerView: 1,
   spaceBetween: 30,
+  speed: 600,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   }
 });
@@ -33,9 +34,10 @@ var swiper = new Swiper(".zipPick", {
 var swiper = new Swiper(".zipPick2", {
   slidesPerView: 1,
   spaceBetween: 30,
+  speed: 600,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 4600,
     disableOnInteraction: false,
   }
 });
