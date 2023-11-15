@@ -11,7 +11,7 @@ $(function(){
 
     //비밀번호 보기/숨기기
     $('.pwdToggle').on('click',function(){
-        let input=$(this).prev('#pwdCheck, #sign_pwd, #sign_pwd2, #login_password');
+        let input=$(this).prev('#pwdCheck, #sign_pwd, #sign_pwd2, #login_password, #edit_pwd, #check_pwd');
         if($(input).attr("type") == "password"){
             $(input).attr("type", "text");
             $(this).html('visibility');
@@ -35,6 +35,11 @@ $(function(){
 
         return false;
     });
+});
+
+//모달 창
+$('#listDel, #modalAlert').click(function(){
+    $('#modal').css('display','block');
 });
 
 //리스트 삭제 확인 modal

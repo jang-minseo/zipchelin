@@ -28,11 +28,6 @@ $(function(){
         }     
 	});
 
-    //삭제 버튼 - 모달
-    $('#listDel').click(function(){
-        $('#modal').css('display','block');
-    });
-
 
     //내가 쓴글 - 탭
     $('ul.tabGroup li').click(function(){
@@ -160,7 +155,7 @@ $(function(){
                 $('#edit_tel').css('border-color','red');
             }else{
                 $('#edit_warning_tel_minus').css('display','none');
-                if(!tel_rule.test($('#text').val())){
+                if(!tel_rule.test($('#edit_tel').val())){
                     $('#edit_warning_tel').css('display', 'block');
                     $('#edit_tel').css('border-color','red');
                 }else{

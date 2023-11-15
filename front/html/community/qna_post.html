@@ -19,13 +19,12 @@
 
     <!-- google icon CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- basic CSS -->
     <link rel="stylesheet" type="text/css" href="/front/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/front/css/base.css">
     <link rel="stylesheet" type="text/css" href="/front/css/common.css">
-
-    <link rel="stylesheet" type="text/css" href="/front/css/index.css">
 
     <!-- plugin CSS -->
     <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
@@ -107,16 +106,31 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>11</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
                             </button>
-                            <button class="comment_declaration comment_acc">
+                            <button class="comment_reply comment_acc replyCancle">
+                                <span>답글 취소</span>
+                            </button>
+                            <button class="comment_declaration comment_acc" id="modalAlert">
                                 <span>신고</span>
                             </button>
                         </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="comment replyWrap">
+                <li class="replybox">
+                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                    <div class="comment_replybox">
+                        <form class="comment-section post_comment">
+                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                            <input type="submit" class="comment_post_btn" value="등록"/>
+                        </form>
                     </div>
                 </li>
             </ul>
@@ -133,16 +147,31 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>0</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
+                            </button>
+                            <button class="comment_reply comment_acc replyCancle">
+                                <span>답글 취소</span>
                             </button>
                             <button class="comment_declaration comment_acc">
                                 <span>신고</span>
                             </button>
                         </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="comment replyWrap">
+                <li class="replybox">
+                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                    <div class="comment_replybox">
+                        <form class="comment-section post_comment">
+                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                            <input type="submit" class="comment_post_btn" value="등록"/>
+                        </form>
                     </div>
                 </li>
             </ul>
@@ -157,11 +186,15 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>2</span>
                             </button>
-                            <button class="comment_reply comment_acc" id="btn_reply">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
+                            </button>
+                            <button class="comment_reply comment_acc replyCancle">
+                                <span>답글 취소</span>
                             </button>
                             <button class="comment_declaration comment_acc">
                                 <span>신고</span>
@@ -170,11 +203,11 @@
                     </div>
                 </li>
             </ul>
-            <ul class="comment" id="replybox">
+            <ul class="comment replyWrap">
                 <li class="replybox">
                     <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
                     <div class="comment_replybox">
-                        <form class="comment-section post_comment" id="aftLogin_comment">
+                        <form class="comment-section post_comment">
                             <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
                             <input type="submit" class="comment_post_btn" value="등록"/>
                         </form>
@@ -192,16 +225,31 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>6</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
+                            </button>
+                            <button class="comment_reply comment_acc replyCancle">
+                                <span>답글 취소</span>
                             </button>
                             <button class="comment_declaration comment_acc">
                                 <span>신고</span>
                             </button>
                         </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="comment replyWrap">
+                <li class="replybox">
+                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                    <div class="comment_replybox">
+                        <form class="comment-section post_comment">
+                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                            <input type="submit" class="comment_post_btn" value="등록"/>
+                        </form>
                     </div>
                 </li>
             </ul>
@@ -216,11 +264,15 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>5</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
+                            </button>
+                            <button class="comment_reply comment_acc replyCancle">
+                                <span>답글 취소</span>
                             </button>
                             <button class="comment_declaration comment_acc">
                                 <span>신고</span>
@@ -229,7 +281,17 @@
                     </div>
                 </li>
             </ul>
-            
+            <ul class="comment replyWrap">
+                <li class="replybox">
+                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                    <div class="comment_replybox">
+                        <form class="comment-section post_comment">
+                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                            <input type="submit" class="comment_post_btn" value="등록"/>
+                        </form>
+                    </div>
+                </li>
+            </ul>
             <div class="paging">
                 <ul>
                     <!-- li에 .disabled가 있으면 화살표에 클릭방지 생김 -->
@@ -247,8 +309,22 @@
     <!-- 푸터 -->
     <footer id="footer"></footer>
 
+    <div id="modal">
+        <div class="modalBox">
+            <div class="modalCont">
+                <h6>정말로 삭제하시겠습니까?</h6>
+                <p>한번 삭제 시 복구할 수 없습니다.</p>
+            </div>
+            <div class="btnGroup">
+                <button type="button" class="btnBd" onclick="modalHide()">취소</button>
+                <button type="button" class="btnBg" onclick="location.href=''">삭제</button>
+            </div>
+        </div>
+    </div>
+
     <!-- js -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="/front/js/common.js"></script>
     <script src="/front/js/community.js"></script>
 
