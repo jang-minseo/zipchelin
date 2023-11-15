@@ -82,10 +82,11 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 /*mypage_main*/
 .myPage_main{
     float: right;
-    width: calc(76% - 24px)
+    width: calc(76% - 24px);
+    padding: 0 32px;
 }
 .my_icon_btn{
-    width: 93%;
+    /* width: 93%; */
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -123,20 +124,25 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 }
 .myPage_content{
     display: flex;
+    justify-content: space-between;
     flex: 1;
-    width: 30%
+    gap: 12px;
 }
-.myPage_img{
+ul.myPage_content .imgwrap .imgBox.vertical{
+    height: 150px;
+}
+/* .myPage_img{
     width: 270px;
     height: 200px;
     border-radius: 12px;
     margin: 0 10px;
     left: 37px;
     position: relative;
+} */
+#mypage_imgs{
+    height: 150px;
 }
 .myPage_text{
-    left: 50px;
-    position: relative;
     margin: 10px 0;
 }
 .myPage_heart_subtitle{
@@ -211,34 +217,51 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 
 /*찜, 가이드 페이지*/
 .myPage_componentWrap{
-    margin-top: 50px;
+    margin: 46px 0 5px 0;
+    border-bottom: 1px solid #e9e9e9;
 }
+.myPage_content li{
+    position: relative;
+    flex-basis: calc(25% - 16px);
+}
+.heart_list_zone{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.heart_list_zone > li{
+    position: relative;
+}
+
 #heart_btn_icon{
     font-size: 25px;
-    position: relative;
-    left: 240px;
-    top: 38px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
     color: #4FA72F;
+    z-index: 2;
 }
 .myHeart_list{
-    float: right;
-    width: calc(76% - 24px)
+
+}
+#heart_imgBox > img{
+    width: 205px;
+    height: 150px;
 }
 .heart_list_contents{
-    width: 310px;
     float: left;
-    padding: 20px 0;
+}
+ul.heart_list_zone .imgwrap .imgBox.vertical {
+    height: fit-content;
 }
 .heart_list_text{
-    left: 10px;
-    position: relative;
+    margin: 10px 0;
 }
 .heart_list_img{
-    width: 270px;
-    height: 200px;
-    border-radius: 12px;
-    margin: 0 10px;
+    width: 205px;
+    height: 150px;
 }
+
 /*정보 수정*/
 .profile_section{
     border-top: 1px solid #cfcccc;
@@ -359,10 +382,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
     color: #FF0000;
 }
 .edit_pwdToggle{
-    position: relative;
-    right: 41px;
-    top: 10px;
-    cursor: pointer;
+    left: 310px;
 }
 
 .edit_sign_input_box{
