@@ -68,8 +68,9 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 .comment_writeracc { margin-left: auto; }
 .comment_logo { align-items: center; }
 .comment_acc { color: #c1c1c1; }
-.material-icons { margin-right: 4px; font-size: 18px; }
+.comment_logo .material-icons { margin-right: 4px; font-size: 18px; color: #8acc39;}
 .comment_acc span { vertical-align: middle; }
+/*.material-icons{ display: none; }*/
 .post_writer { border-radius: 10px; width: 48px; height: 22px; font-size: 12px; color: #8acc39; border: 1px solid #8acc39; display : flex; justify-content : center; align-items : center; margin-left: 12px;}
 
 

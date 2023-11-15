@@ -107,24 +107,24 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
-                                <span class="material-icons">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>11</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyCancle">
                                 <span>답글 취소</span>
                             </button>
-                            <button class="comment_declaration comment_acc">
+                            <button class="comment_declaration comment_acc" id="modalAlert">
                                 <span>신고</span>
                             </button>
                         </div>
                     </div>
                 </li>
             </ul>
-            <ul class="comment" id="replybox">
+            <ul class="comment replyWrap">
                 <li class="replybox">
                     <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
                     <div class="comment_replybox">
@@ -148,14 +148,14 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
-                                <span class="material-icons">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>0</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyCancle">
                                 <span>답글 취소</span>
                             </button>
                             <button class="comment_declaration comment_acc">
@@ -165,7 +165,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="comment" id="replybox">
+            <ul class="comment replyWrap">
                 <li class="replybox">
                     <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
                     <div class="comment_replybox">
@@ -187,12 +187,15 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
-                                <span class="material-icons">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>2</span>
                             </button>
-                            <button class="comment_reply comment_acc" id="btn_reply">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
+                            </button>
+                            <button class="comment_reply comment_acc replyCancle">
+                                <span>답글 취소</span>
                             </button>
                             <button class="comment_declaration comment_acc">
                                 <span>신고</span>
@@ -201,7 +204,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="comment" id="replybox">
+            <ul class="comment replyWrap">
                 <li class="replybox">
                     <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
                     <div class="comment_replybox">
@@ -223,14 +226,14 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
-                                <span class="material-icons">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>6</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyCancle">
                                 <span>답글 취소</span>
                             </button>
                             <button class="comment_declaration comment_acc">
@@ -240,7 +243,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="comment" id="replybox">
+            <ul class="comment replyWrap">
                 <li class="replybox">
                     <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
                     <div class="comment_replybox">
@@ -262,14 +265,14 @@
                         <div class="comment-info">
                             <span class="comment_date">2023.10.26 10:02</span>
                             <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined">thumb_up</span>
-                                <span class="material-icons">thumb_up</span>
+                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                <!--<span class="material-icons">thumb_up</span>-->
                                 <span>5</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyWrite">
                                 <span>답글 달기</span>
                             </button>
-                            <button class="comment_reply comment_acc">
+                            <button class="comment_reply comment_acc replyCancle">
                                 <span>답글 취소</span>
                             </button>
                             <button class="comment_declaration comment_acc">
@@ -279,7 +282,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="comment" id="replybox">
+            <ul class="comment replyWrap">
                 <li class="replybox">
                     <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
                     <div class="comment_replybox">
@@ -290,7 +293,6 @@
                     </div>
                 </li>
             </ul>
-            
             <div class="paging">
                 <ul>
                     <!-- li에 .disabled가 있으면 화살표에 클릭방지 생김 -->
@@ -307,6 +309,20 @@
     </main>
     <!-- 푸터 -->
     <footer id="footer"></footer>
+
+    <div id="modal">
+        <div class="modalBox">
+            <div class="modalCont">
+                <h6>댓글 신고</h6>
+                <p>신고 시 관리자 확인 후<br> 적절한 조치가 이루어집니다.</p>
+            </div>
+            <div class="btnGroup">
+                <button type="button" class="btnBd" onclick="modalHide()">취소</button>
+                <button type="button" class="btnBg" onclick="location.href=''">신고</button>
+            </div>
+        </div>
+    </div>
+
 
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>

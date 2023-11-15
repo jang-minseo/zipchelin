@@ -12,7 +12,16 @@ $(function(){
     });
 });
     //추천 클릭 시 효과
-
+    $(function(){
+        
+    });
+    function goodAction(e){
+        if($(e).hasClass('material-symbols-outlined')){
+            $(e).attr('class','material-icons');
+        }else{
+            $(e).attr('class','material-symbols-outlined');
+        }
+    }
     //좋아요 가장
 
     
