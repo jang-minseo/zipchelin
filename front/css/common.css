@@ -152,6 +152,8 @@ header { position: fixed; top: 0; left: 0; width: 100%; padding: 10px 0; backgro
 .menu a { font-size: 20px; }
 .right_menu { display: flex;  align-items: center; gap: 20px; right: 10%; font-size: 14px; }
 .right_menu1 { display: flex; display: none; align-items: center; gap: 20px; right: 10%; font-size: 14px; }
+.iconBox:hover .material-symbols-outlined{position: relative;}
+.iconBox:hover .material-symbols-outlined::after{padding: 20px; content: ''; position: absolute; left: -8px; top: -8px; background-color: #c1c1c1; border-radius: 50%; opacity: 0.2;}
 
 /* 서브메뉴 추가 */
 .sub-menu{position: relative; height: 50px; line-height: 50px;}
@@ -190,8 +192,8 @@ address > span {padding: 4px 0; margin-right: 10px; display: inline-block;}
 .zim span{float: left; font-size: 20px;}
 .zim p{float: left; padding-left: 4px; padding-top: 5px; font-size: 14px;}
 .zim .material-symbols-outlined{padding-top: 1px;}
-.cur_recipe{padding: 22px 0 16px; text-align: center; font-size: 14px;}
-.aside_imgBox{display: block; margin-top: 8px;}
+.cur_recipe{padding: 22px 0 16px; color: #999; text-align: center; font-size: 14px;}
+.aside_imgBox{display: block; margin-top: 16px;}
 .aside_imgBox img{display: block; margin: 6px auto; width: 84px; height: 84px; border-radius: 4px; object-fit: cover;}
 .top{padding-top: 5px; text-align: center; border-top: 1px solid #e9e9e9; border-radius: 0 0 20px 20px; background-color: #000;}
 .top span{font-size: 28px; color: #ccc; background-color: #000; scroll-behavior: smooth;}
