@@ -42,11 +42,11 @@ var swiper = new Swiper(".zipPick2", {
   }
 });
 
-/* 요리 저장소 */
+/* 요리 상담소 */
 var swiper = new Swiper(".cookConsulSlide", {
   direction: "vertical",
   slidesPerView: 5,
-  spaceBetween: 20,
+  spaceBetween: 8,
   loop: true,
   autoplay: {
     delay: 2500,

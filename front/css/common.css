@@ -185,7 +185,7 @@ address > span {padding: 4px 0; margin-right: 10px; display: inline-block;}
 
 /* 좋아요, 댓글 개수 표시 */
 .accList{display: flex; color: #999; font-size: 11px;}
-.accList .accItem{display: flex; align-items: center;}
+.accList .accItem{display: flex; align-items: center; color: #c1c1c1;}
 .accList .accItem:first-child{margin-right: 8px;}
 .accList .icon{display: inline-block; margin-right: 4px; color: #c1c1c1; font-size: 18px;}
 
