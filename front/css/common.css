@@ -182,6 +182,21 @@ address > span {padding: 4px 0; margin-right: 10px; display: inline-block;}
 .sns li {float: left;}
 .sns img {width: 40px; padding-left: 15px;}
 
+/* 사이드바 */
+.aside{position: fixed; right: 100px; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff; z-index: 999;}
+.aside{position: fixed; z-index: 999; right: 0; top: 200px; width: 150px; height: 395px; border: 1px solid #e9e9e9; border-radius: 20px; background-color: #fff;}
+.zim{padding: 12px 10px 10px; border-bottom: 1px solid #e9e9e9; text-align: center;}
+.zim .clearfix{display: inline-block;}
+.zim span{float: left; font-size: 20px;}
+.zim p{float: left; padding-left: 4px; padding-top: 5px; font-size: 14px;}
+.zim .material-symbols-outlined{padding-top: 1px;}
+.cur_recipe{padding: 22px 0 16px; text-align: center; font-size: 14px;}
+.aside_imgBox{display: block; margin-top: 8px;}
+.aside_imgBox img{display: block; margin: 6px auto; width: 84px; height: 84px; border-radius: 4px; object-fit: cover;}
+.top{padding-top: 5px; text-align: center; border-top: 1px solid #e9e9e9; border-radius: 0 0 20px 20px; background-color: #000;}
+.top span{font-size: 28px; color: #ccc; background-color: #000; scroll-behavior: smooth;}
+.material-icons{color: #8acc39;}
+
 
 /* 좋아요, 댓글 개수 표시 */
 .accList{display: flex; color: #999; font-size: 11px;}
