@@ -74,9 +74,6 @@ function viewBtn() {
   }
 }
 
-
-
-
 /* 하트 토글 버튼 */
 document.querySelectorAll('.fa-regular.fa-heart').forEach(function (icon) {
   icon.addEventListener('click', function () {
