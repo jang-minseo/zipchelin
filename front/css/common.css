@@ -115,9 +115,10 @@ input[type="radio"].chkRadio:checked+label:before{background-color: #ffffff; bor
 .btnBd{border: 1px solid #4FA72F; background-color: #fff; color: #4FA72F;}
 .btnBd:hover{border-color: #248125; color: #248125 ;}
 .btnBdGray{border: 1px solid #c1c1c1; background-color: #fff; color: #999;}
+.btnBdGray:hover{border-color: #999; color: #727272;}
 .btnBg{background-color: #4FA72F; color: #fff;}
 .btnBg:hover{background-color: #248125;}
-.btnBgGray{background-color: #f0f0f0; color: #999;}
+.btnBgGray{background-color: #f0f0f0; color: #727272;}
 .btnBgGray:hover{background-color: #e9e9e9;}
 .btnGroup button{flex: 0 0 120px; padding: 12px 0 8px; border-radius: 4px;}
 .btnGroup button:first-child{margin-right: 8px;}
@@ -191,12 +192,12 @@ address > span {padding: 4px 0; margin-right: 10px; display: inline-block;}
 .zim span{float: left; font-size: 20px;}
 .zim p{float: left; padding-left: 4px; padding-top: 5px; font-size: 14px;}
 .zim .material-symbols-outlined{padding-top: 1px;}
+.zim .material-icons{color: #8acc39;}
 .cur_recipe{padding: 22px 0 16px; color: #999; text-align: center; font-size: 14px;}
 .aside_imgBox{display: block; margin-top: 16px;}
 .aside_imgBox img{display: block; margin: 6px auto; width: 84px; height: 84px; border-radius: 4px; object-fit: cover;}
 .top{padding: 4px 0; text-align: center; border-top: 1px solid #e9e9e9; border-radius: 0 0 12px 12px; background-color: #000;}
 .top span{font-size: 26px; color: #ccc; background-color: #000; scroll-behavior: smooth;}
-.material-icons{color: #8acc39;}
 
 
 /* 좋아요, 댓글 개수 표시 */

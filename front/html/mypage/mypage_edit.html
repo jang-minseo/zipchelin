@@ -108,105 +108,104 @@
             <form id="edit_form" action="" method="">
 
                 <!--프로필사진 수정-->
-                <div class="profile_section">
+                <div class="profile_section clearfix">
                     <img src="/front/images/icon/profile.jpg" alt="profile_img" class="profile_img_edit" onclick="loaction.href='#'">
                     <div class="profile_edit_btn">
-                        <input type="button" value="사진선택" class="profile_select_btn" class="profile_editbtn1" onclick="loaction.href='#'">
-                        <input type="button" value="기본이미지로변경" class="profile_change_btn" class="profile_editbtn2" onclick="loaction.href='#'">
+                        <input type="button" value="사진선택" class="profile_select_btn profile_editbtn1 btnBd" onclick="loaction.href='#'">
+                        <input type="button" value="기본 이미지로 변경" class="profile_change_btn profile_editbtn2 btnBdGray" onclick="loaction.href='#'">
                     </div>
                 </div>
 
-                <!--아이디-->
-                <div class="edit_info_id ">
+                <div class="edit_wrap">
+                    <!--아이디-->
+                    <div class="edit_info_id ">
+                        <div class="edit_form_item">
+                            <label for="id" class="edit_label">아이디</label>
+                            <div class="edit_info_input">
+                                <input type="text" id="id" class="edit_input edit_input2" name="id" placeholder="USER_ID" disabled>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--새 비밀번호 설정-->
                     <div class="edit_form_item">
-                        <label for="id" class="edit_label">아이디</label>
+                        <label for="edit_pwd" class="edit_label">새 비밀번호</label>
+                        <div class="inputField edit_info_input">
+                            <input type="password" id="edit_pwd" class="edit_input edit_input2" name="pwd" placeholder="특수문자/영문자/숫자 포함 8~15자">
+                            <span class="edit_pwdToggle pwdToggle material-symbols-outlined">visibility_off</span>
+                                <p class="edit_warning" id="edit_warning_pwd">비밀번호를 입력해주세요.</p>
+                                <p class="edit_warning" id="edit_warning_pwd_rule">비밀번호는 특수문자/영문자/숫자 포함 8~15자 여야 합니다</p>
+                        </div>
+                    </div>
+
+                    <!--새 비밀번호 확인-->
+                    <div class="edit_form_item">
+                        <label for="pwd" class="edit_label">새 비밀번호 확인</label>
+                        <div class="inputField edit_info_input">
+                            <input type="password" id="check_pwd" class="edit_input edit_input2" name="pwd" placeholder="특수문자/영문자/숫자 포함 8~15자">
+                            <span class="edit_pwdToggle pwdToggle material-symbols-outlined">visibility_off</span>
+                                <p class="edit_warning" id="edit_warning_pwd_check">비밀번호가 일치하지 않습니다.</p>
+                        </div>
+                    </div>
+                    
+                    <!--이름 수정-->
+                    <div class="edit_form_item">
+                        <label for="name" class="edit_label">이름</label>
                         <div class="edit_info_input">
-                            <input type="text" id="id" class="edit_input edit_input2" name="id" placeholder="USER_ID" disabled>
+                            <input type="text" id="name_input" class="edit_input edit_input2" name="name" placeholder="이름">
+                            <p class="edit_warning" id="edit_warning_pwd_check2">이름을 입력해주세요.</p>
                         </div>
                     </div>
-                </div>
 
-                <!--새 비밀번호 설정-->
-                <div class="edit_form_item">
-                    <label for="edit_pwd" class="edit_label">새 비밀번호</label>
-                    <div class="inputField edit_info_input">
-                        <input type="password" id="edit_pwd" class="edit_input edit_input2" name="pwd" placeholder="특수문자/영문자/숫자 포함 8~15자">
-                        <span class="edit_pwdToggle pwdToggle material-symbols-outlined">visibility_off</span>
-                            <p class="edit_warning" id="edit_warning_pwd">비밀번호를 입력해주세요.</p>
-                            <p class="edit_warning" id="edit_warning_pwd_rule">비밀번호는 특수문자/영문자/숫자 포함 8~15자 여야 합니다</p>
-                    </div>
-                </div>
-
-                <!--새 비밀번호 확인-->
-                <div class="edit_form_item">
-                    <label for="pwd" class="edit_label">새 비밀번호 확인</label>
-                    <div class="inputField edit_info_input">
-                        <input type="password" id="check_pwd" class="edit_input edit_input2" name="pwd" placeholder="특수문자/영문자/숫자 포함 8~15자">
-                        <span class="edit_pwdToggle pwdToggle material-symbols-outlined">visibility_off</span>
-                            <p class="edit_warning" id="edit_warning_pwd_check">비밀번호가 일치하지 않습니다.</p>
-                    </div>
-                </div>
-                
-                <!--이름 수정-->
-                <div class="edit_form_item">
-                    <label for="name" class="edit_label">이름</label>
-                    <div class="edit_info_input">
-                        <input type="text" id="name_input" class="edit_input edit_input2" name="name" placeholder="이름">
-                        <p class="edit_warning" id="edit_warning_pwd_check2">이름을 입력해주세요.</p>
-                    </div>
-                </div>
-
-                <!--이메일 수정-->
-                <div class="form_item edit_form_email edit_form_item">
-                    <label for="edit_email" class="edit_left_label edit_label">이메일</label>
-                    <div class="edit_sign_input_box">
-                        <input type="text" id="edit_email_1" class="edit_email_input" placeholder="이메일">
-                        <span class="edit_email_span">@</span>
-                        <input type="text" id="edit_email_2" class="edit_email_input edit_email_input2" value="gmail.com" disabled>
-                        <select class="edit_email_select" id="edit_email_input_choose">
-                            <option selected>gmail.com</option>
-                            <option>naver.com</option>
-                            <option>kakao.com</option>
-                            <option>직접입력</option>
-                        </select>
-                        <input type="hidden" id="edit_email" name="email">
-                    </div>
-                    <p class="edit_warning" id="edit_warning_email">이메일을 입력해주세요.</p>
-                    </div>
-                </div>
-
-                <!--전화번호 수정-->
-                <div class="form_item edit_form_item">
-                    <label for="edit_tel" class="edit_label">전화번호</label>
-                    <div class="edit_num">
-                        <div class="edit_input_box">
-                            <input type="text" id="edit_tel" class="edit_tel_info_input" name="tel" placeholder="전화번호(-)제외">
-                            <button type="button" onclick="" class="edit_tel_input_button btnBd edit_confirm_btn">본인인증</button>
+                    <!--이메일 수정-->
+                    <div class="form_item edit_form_email edit_form_item">
+                        <label for="edit_email" class="edit_left_label edit_label">이메일</label>
+                        <div class="edit_sign_input_box">
+                            <input type="text" id="edit_email_1" class="edit_email_input" placeholder="이메일">
+                            <span class="edit_email_span">@</span>
+                            <input type="text" id="edit_email_2" class="edit_email_input edit_email_input2" value="gmail.com" disabled>
+                            <select class="edit_email_select" id="edit_email_input_choose">
+                                <option selected>gmail.com</option>
+                                <option>naver.com</option>
+                                <option>kakao.com</option>
+                                <option>직접입력</option>
+                            </select>
+                            <input type="hidden" id="edit_email" name="email">
                         </div>
+                        <p class="edit_warning" id="edit_warning_email">이메일을 입력해주세요.</p>
+                    </div>
+
+                    <!--전화번호 수정-->
+                    <div class="form_item edit_form_item">
+                        <label for="edit_tel" class="edit_label">전화번호</label>
+                        <div class="edit_num">
+                            <div class="edit_input_box">
+                                <input type="text" id="edit_tel" class="edit_tel_info_input" name="tel" placeholder="전화번호(-)제외">
+                                <button type="button" onclick="" class="edit_tel_input_button btnBd edit_confirm_btn">본인인증</button>
+                            </div>
                             <p class="edit_warning" id="edit_warning_tel_none">전화번호를 작성해주세요.</p>
                             <p class="edit_warning" id="edit_warning_tel_minus">전화번호에 (-)가 포함되어선 안됩니다.</p>
                             <p class="edit_warning" id="edit_warning_tel">전화번호가 잘못되었습니다.</p>
+                        </div>
                     </div>
-                </div>
-
-                <!--회원탈퇴-->
-                <div class="unregister">
-                    <a href="/front/html/user/leave_check.html" class="edit_leave">회원탈퇴</a>
-                </div>
-
+                    <!--회원탈퇴-->
+                    <div class="unregister">
+                        <a href="/front/html/user/leave_check.html" class="edit_leave">회원탈퇴</a>
+                    </div>
+                </div>            
             </form>
 
-                <!--취소, 수정완료 버튼-->
-                <div class="edit_can_fin_btn">
-                    <!--<button type="reset" class="edit_cancle_button" onclick="edit_can_btn">취소</button>
-                    <button type="submit"class="edit_fin_button" id="edit_fin_btn" onclick="edit_complete_btn()">수정완료</button>-->
-                    
-                       <input type="button"  value="취소" class="edit_cancle_button" id="edit_can_btn">
-                        <input type="button" value="수정완료" class="edit_fin_button" onclick="edit_complete_btn()">
-                </div>
-
+            <!--취소, 수정완료 버튼-->
+            <div class="btnGroup lg">
+                <button type="button" class="btnBd" onclick="location.href='/front/html/mypage/mypage.html'">취소</button>
+                <button type="button" class="btnBg" onclick="edit_complete_btn()">수정완료</button>
+            </div>
+            <!-- <div class="edit_can_fin_btn">
+                
+                    <input type="button"  value="취소" class="edit_cancle_button" id="edit_can_btn">
+                    <input type="button" value="수정완료" class="edit_fin_button" onclick="edit_complete_btn()">
+            </div> -->
         </section>
-        
     </main>
 
 

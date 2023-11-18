@@ -74,34 +74,7 @@
 
         <!--myPage_leftBox-->
         <div class="mypage myPage_leftBox">
-            <!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼)-->
-            <div class="myBox_profile">
-                <img src="/front/images/icon/profile.jpg" class="myProfile_img" alt="profile">
-                <h3 class="userId_text">USER_ID</h3>
-                <button class="myPage_edit_btn" onclick="location.href='mypage_edit.html'">정보수정</button>
-            </div><!--마이페이지 레프트박스 (프로필이미지, 아이디, 정보수정버튼) 끝-->
-
-            <!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기)-->
-            <div class="myBox_count">
-                
-                <div class="myBox_countBox myBox_heart">
-                    <span id="myBox_icon" class="material-icons">favorite</span>
-                    <p>찜 <a href="/front/html/mypage/myheart.html">10</a></p>
-                </div>
-
-                <div class="myBox_countBox myBox_post">
-                    <!-- <span id="myBox_icon" class="material-symbols-outlined">density_small</span> -->
-                    <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
-                    <p>내 글 <a href="/front/html/mypage/mypost.html">10</a></p>
-                </div>
-
-                <div class="myBox_countBox myBox_comment">
-                    <!-- <span id="myBox_icon" class="material-symbols-outlined">stylus</span> -->
-                    <span id="myBox_icon" class="material-symbols-outlined">chat</span>
-                    <p>내 댓글 <a href="/front/html/mypage/myreply.html">10</a></p>
-                </div>
-
-            </div><!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기) 끝-->
+            
         </div>
 
         <!--myPage_Main-->
@@ -116,8 +89,8 @@
                         <span id="myPage_heart_icon" class="material-icons">favorite</span>
                         <p>찜</p>
                     </div>
-                    <div class="myHeart_btn">
-                        <button class="myPage_more_btn" onclick="location.href='myheart.html'">더보기</button>
+                    <div class="more_btn_box">
+                        <button class="myPage_more_btn btnBgGray" onclick="location.href='myheart.html'">더보기</button>
                     </div>
                 </div>
 
@@ -133,8 +106,8 @@
                                 </div>
                                 <!--찜 레시피 제목, 부제목-->
                                 <div class="myPage_text">
-                                        <p class="myPage_heart_subtitle">여기는 부제목을 적어주세요.</p>
-                                        <h3 class="myPage_heart_title">여기는 제목을 적어주세요.</h3>
+                                        <p class="mypage_list_subtitle">여기는 부제목을 적어주세요. 여기는 부제목을 적어주세요.</p>
+                                        <h3 class="mypage_list_title">여기는 제목을 적어주세요.</h3>
                                 </div>
                                 </a>
                             </li>
@@ -147,8 +120,8 @@
                                 </div>
                                 <!--찜 레시피 제목, 부제목-->
                                 <div class="myPage_text">
-                                        <p class="myPage_heart_subtitle">여기는 부제목을 적어주세요.</p>
-                                        <h3 class="myPage_heart_title">여기는 제목을 적어주세요.</h3>
+                                        <p class="mypage_list_subtitle">여기는 부제목을 적어주세요.</p>
+                                        <h3 class="mypage_list_title">여기는 제목을 적어주세요.</h3>
                                 </div>
                                 </a>
                             </li>
@@ -161,8 +134,8 @@
                                    </div>
                                    <!--찜 레시피 제목, 부제목-->
                                    <div class="myPage_text">
-                                           <p class="myPage_heart_subtitle">여기는 부제목을 적어주세요.</p>
-                                           <h3 class="myPage_heart_title">여기는 제목을 적어주세요.</h3>
+                                           <p class="mypage_list_subtitle">여기는 부제목을 적어주세요.</p>
+                                           <h3 class="mypage_list_title">여기는 제목을 적어주세요.</h3>
                                    </div>
                                 </a>
                            </li>
@@ -175,8 +148,8 @@
                                </div>
                                <!--찜 레시피 제목, 부제목-->
                                <div class="myPage_text">
-                                       <p class="myPage_heart_subtitle">여기는 부제목을 적어주세요.</p>
-                                       <h3 class="myPage_heart_title">여기는 제목을 적어주세요.</h3>
+                                       <p class="mypage_list_subtitle">여기는 부제목을 적어주세요.</p>
+                                       <h3 class="mypage_list_title">여기는 제목을 적어주세요.</h3>
                                </div>
                             </a>
                        </li>
@@ -195,8 +168,8 @@
                         <span id="myBox_icon" class="material-symbols-outlined">stylus</span>
                         <p>내 글</p>
                     </div>
-                    <div class="myHeart_btn">
-                        <button class="myPage_more_btn" onclick="location.href='/front/html/mypage/mypost.html'">더보기</button>
+                    <div class="more_btn_box">
+                        <button class="myPage_more_btn btnBgGray" onclick="location.href='/front/html/mypage/mypost.html'">더보기</button>
                     </div>
                 </div>
 
@@ -210,8 +183,8 @@
                                             <img class="myPage_img" id="mypage_imgs" src="images/단호박스콘.png" alt="단호박스콘">
                                     </div>
                                     <div class="myPage_text">
-                                            <p class="myPage_post_subtitle">여기는 부제목을 적어주세요.</p>
-                                            <h3 class="myPage_post_title">여기는 제목을 적어주세요.</h3> 
+                                            <p class="mypage_list_subtitle">여기는 부제목을 적어주세요.</p>
+                                            <h3 class="mypage_list_title">여기는 제목을 적어주세요.</h3> 
                                     </div>
                                 </a>
                             </li>
@@ -222,8 +195,8 @@
                                             <img class="myPage_img" id="mypage_imgs" src="images/단호박스콘.png" alt="단호박스콘">
                                     </div>
                                     <div class="myPage_text">
-                                            <p class="myPage_post_subtitle">여기는 부제목을 적어주세요.</p>
-                                            <h3 class="myPage_post_title">여기는 제목을 적어주세요.</h3> 
+                                            <p class="mypage_list_subtitle">여기는 부제목을 적어주세요.</p>
+                                            <h3 class="mypage_list_title">여기는 제목을 적어주세요.</h3> 
                                     </div>
                                 </a>
                             </li>
@@ -234,8 +207,8 @@
                                             <img class="myPage_img" id="mypage_imgs" src="images/단호박스콘.png" alt="단호박스콘">
                                     </div>
                                     <div class="myPage_text">
-                                            <p class="myPage_post_subtitle">여기는 부제목을 적어주세요.</p>
-                                            <h3 class="myPage_post_title">여기는 제목을 적어주세요.</h3> 
+                                            <p class="mypage_list_subtitle">여기는 부제목을 적어주세요.</p>
+                                            <h3 class="mypage_list_title">여기는 제목을 적어주세요.</h3> 
                                     </div>
                                 </a>
                             </li>
@@ -246,8 +219,8 @@
                                             <img class="myPage_img" id="mypage_imgs" src="images/단호박스콘.png" alt="단호박스콘">
                                     </div>
                                     <div class="myPage_text">
-                                            <p class="myPage_post_subtitle">여기는 부제목을 적어주세요.</p>
-                                            <h3 class="myPage_post_title">여기는 제목을 적어주세요.</h3> 
+                                            <p class="mypage_list_subtitle">여기는 부제목을 적어주세요.</p>
+                                            <h3 class="mypage_list_title">여기는 제목을 적어주세요.</h3> 
                                     </div>
                                 </a>
                             </li>
@@ -265,8 +238,8 @@
                         <span id="myBox_icon" class="material-symbols-outlined">chat</span>
                         <p>내 댓글</p>
                     </div>
-                    <div class="myComment_btn">
-                        <button class="myPage_more_btn" onclick="location.href='/front/html/mypage/myreply.html'">더보기</button>
+                    <div class="more_btn_box">
+                        <button class="myPage_more_btn btnBgGray" onclick="location.href='/front/html/mypage/myreply.html'">더보기</button>
                     </div>
                 </div>
 
@@ -277,16 +250,16 @@
                             <a href="/front/html/community/myrecipe_post.html" class="imgwrap">
                                 <div class="post-section">
                                     <span class="postdate">2023.10.26 00:00</span>
-                                        <h6 class="title">맛있는 음식을 봐라 이것들아 이것이 음식이다 빠라라라라라라라람 어쩌구 저쩌구 이것저것</h6>
-                                        <p>내가 만든 요리 중에 제일 맛있는 요리입니다 자랑 좀 합시다...</p>
-                                        <ul class="accList">
-                                            <li class="accItem">
-                                                <span class="icon material-symbols-outlined">visibility</span>268
-                                            </li>
-                                            <li class="accItem">                        
-                                                <span class="icon material-symbols-outlined">comment</span>12
-                                            </li>
-                                        </ul>
+                                    <h6 class="title">맛있는 음식을 봐라 이것들아 이것이 음식이다 빠라라라라라라라람 어쩌구 저쩌구 이것저것</h6>
+                                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다 자랑 좀 합시다...내가 만든 요리 중에 제일 맛있는 요리입니다 자랑 좀 합시다...</p>
+                                    <ul class="accList">
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">visibility</span>268
+                                        </li>
+                                        <li class="accItem">                        
+                                            <span class="icon material-symbols-outlined">comment</span>12
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="imgBox align">
                                     <img src="/front/images/food/gan.jpg" alt="">
@@ -297,16 +270,16 @@
                             <a href="/front/html/community/myrecipe_post.html" class="imgwrap">
                                 <div class="post-section">
                                     <span class="postdate">2023.10.26 00:00</span>
-                                        <h6 class="title">맛있는 음식을 봐라 이것들아 이것이 음식이다 빠라라라라라라라람 어쩌구 저쩌구 이것저것</h6>
-                                        <p>내가 만든 요리 중에 제일 맛있는 요리입니다 자랑 좀 합시다...</p>
-                                        <ul class="accList">
-                                            <li class="accItem">
-                                                <span class="icon material-symbols-outlined">visibility</span>268
-                                            </li>
-                                            <li class="accItem">                        
-                                                <span class="icon material-symbols-outlined">comment</span>12
-                                            </li>
-                                        </ul>
+                                    <h6 class="title">맛있는 음식을 봐라 이것들아 이것이 음식이다 빠라라라라라라라람 어쩌구 저쩌구 이것저것</h6>
+                                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다 자랑 좀 합시다...</p>
+                                    <ul class="accList">
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">visibility</span>268
+                                        </li>
+                                        <li class="accItem">                        
+                                            <span class="icon material-symbols-outlined">comment</span>12
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="imgBox align">
                                     <img src="/front/images/food/gan.jpg" alt="">
@@ -314,19 +287,19 @@
                             </a>
                         </li>
                         <li class="edit_post_container edit_post_container_last">
-                            <a href="/front/html/community/myrecipe_post.html" class="imgwrap">
+                            <a href="/front/html/community/myrecipe_post.html"  class="imgwrap">
                                 <div class="post-section">
                                     <span class="postdate">2023.10.26 00:00</span>
-                                        <h6 class="title">맛있는 음식을 봐라 이것들아 이것이 음식이다 빠라라라라라라라람 어쩌구 저쩌구 이것저것</h6>
-                                        <p>내가 만든 요리 중에 제일 맛있는 요리입니다 자랑 좀 합시다...</p>
-                                        <ul class="accList">
-                                            <li class="accItem">
-                                                <span class="icon material-symbols-outlined">visibility</span>268
-                                            </li>
-                                            <li class="accItem">                        
-                                                <span class="icon material-symbols-outlined">comment</span>12
-                                            </li>
-                                        </ul>
+                                    <h6 class="title">맛있는 음식을 봐라 이것들아 이것이 음식이다 빠라라라라라라라람 어쩌구 저쩌구 이것저것</h6>
+                                    <p>내가 만든 요리 중에 제일 맛있는 요리입니다 자랑 좀 합시다...</p>
+                                    <ul class="accList">
+                                        <li class="accItem">
+                                            <span class="icon material-symbols-outlined">visibility</span>268
+                                        </li>
+                                        <li class="accItem">                        
+                                            <span class="icon material-symbols-outlined">comment</span>12
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="imgBox align">
                                     <img src="/front/images/food/gan.jpg" alt="">
@@ -343,34 +316,7 @@
     </main>
 
     <!--footer-->
-    <footer class="edit_footer">
-        <div class="contain">
-            <div id="footerMenu">
-                <a href="/front/index.html" class="footerLogo">
-                    <img src="/front/images/logo/logo.png" alt="zipchelin">
-                </a>
-                    <ul class="fmenu">
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">개인정보보호정책</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">공지사항</a></li>
-                    </ul>
-                    <ul class="sns">
-                        <li><a href="#"><img src="/front/images/icon/facebook.png" alt="facebook"></a></li>
-                        <li><a href="#"><img src="/front/images/icon/instagram.png" alt="instagram"></a></li>
-                        <li><a href="#"><img src="/front/images/icon/youtube.png" alt="youtube"></a></li>
-                    </ul>  
-            </div>
-                <address>
-                    <span>회사명 : 주식회사 집슐랭 (서울시 종로구 종로78 (종로2가, 미려빌딩 3,5,6층))</span><br>
-                    <span> 전화 : 02-1111-1111</span>
-                    <span> 팩스 : 02-2222-2222 </span>
-                    <span> E-MAIL : zipcheiln@zipc.co.kr</span>
-                </address>
-                <p class="copyright">Copyright &copy; 집슐랭, All Rights Reserved.</p>  
-            </div>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
     
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

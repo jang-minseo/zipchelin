@@ -36,22 +36,23 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 .post-id { position: relative; margin-right: 8px; padding-right: 8px; }
 .post-id::after { content: " "; position: absolute; top: 5px; right: 0; height: 12px;  border-left: 1px solid #c1c1c1; }
 .post-date{color: #999; font-size: 12px; font-weight: 300; font-family: 'S-CoreDream',sans-serif;}
-.post-content {padding: 24px 32px; margin-top: 20px; border-bottom: 1px solid #999; font-size: 16px; line-height: 32px; font-weight: 500; font-family: 'S-CoreDream' ,sans-serif;}
+.post-content {padding: 24px 32px; margin-top: 20px; border-bottom: 1px solid #e9e9e9; font-size: 16px; line-height: 32px; font-weight: 500; font-family: 'S-CoreDream' ,sans-serif;}
 .post-content>img{ display: block; margin: 20px auto; max-width: 100%; height: auto; border: 0; }
-.btnGroup.btn_list { justify-content: center; padding: 20px; border-bottom: 1px solid #999;}
+.btnGroup.btn_list { justify-content: center; padding: 20px; border-bottom: 1px solid #e9e9e9;}
 
 .comment-section { padding: 14px 0; }
 .post_comment { flex-direction: row; }
-.commentwrite-box { padding: 14px; border: 1px solid #222222; color: #999; cursor: pointer;}
+.commentwrite-box { padding: 14px; border: 1px solid #c1c1c1; border-radius: 4px; color: #999; cursor: pointer;}
+.commentwrite-box.disabled{border-color: #333; text-align: center;}
 .replybox { padding: 20px 0; border-top: 1px solid #c1c1c1; }
 .comment_replybox { padding-left: 20px; display: inline-block; width: 92%; }
-.aft_lgn { width: 85%; border-radius: 0%; height: 53px; }
-.aft_lgn_reply { width: 80%; border-radius: 0%; height: 53px; }
-.comment_post_btn { width: 12%; margin-left: 15px; border-radius: 0%; height: 53px;}
+.aft_lgn { width: 85%; height: 53px; }
+.aft_lgn_reply { width: 80%; height: 53px; }
+.comment_post_btn { width: 12%; margin-left: 15px; height: 53px; border-radius: 4px;}
 .post_button { flex: 0 0 120px; padding: 12px 0 8px; border-radius: 4px; }
 .login-link { display: inline-block;}
-.comment { margin-top: 0px;}
-.comment:last-of-type { border-bottom: 1px solid #c1c1c1; }
+.commentWrap{ border-bottom: 1px solid #c1c1c1; }
+.comment {margin-top: 0px;}
 .commentbox.bestcomment { background-color: #fcf9e0; }
 .comment_re { color: #c1c1c1; margin-left: 28px; vertical-align: top;}
 .commentbox { display: flex; padding: 20px 0; border-top: 1px solid #c1c1c1;}
@@ -62,14 +63,15 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 .comment-info {position: relative; display: flex; flex-wrap: wrap; align-items: center; color: #999; }
 .comment_date, .comment_logo, .comment_reply {position: relative; padding-right: 16px; font-size: 12px; font-family: 'S-CoreDream', sans-serif;}
 .comment_declaration {font-size: 12px; font-family: 'S-CoreDream', sans-serif;}
-.comment_date:after, .comment_logo:after, .comment_reply:after{content: "•"; display: block; position: absolute; top: 2px; right: 2px; color: #c1c1c1;}
-.comment_date:after{top: 0;}
+.comment_date:after, .comment_logo:after, .comment_reply:after{content: "•"; display: block; position: absolute; top: 0; right: 2px; color: #c1c1c1;}
+.comment_logo:after{top: 2px;}
 /* .comment_date::after { content: "•"; top: 5px; right: 0; color: #c1c1c1; }
 .comment_logo::after { content: "•"; top: 5px; right: 0; color: #c1c1c1; }
 .comment_reply::after { content: "•"; top: 5px; right: 0; color: #c1c1c1; } */
 .comment_update::after { content: "│"; top: 5px; right: 0; color: #222222; }
 .comment_logo, .comment_reply, .comment_declaration, .comment_update, .comment_delete  { background-color: transparent; }
 .comment_update, .comment_delete { color: #222222; }
+.comment_update:hover, .comment_delete:hover{color: #4FA72F;}
 .comment_writeracc { margin-left: auto; }
 .comment_logo { align-items: center; }
 .comment_logo .material-icons { margin-right: 4px; font-size: 18px; color: #8acc39;}
@@ -103,9 +105,11 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 
 /* 작성폼(myrecipe_form, qna_form) */
 .form-list{ margin: 0 180px 60px; }
-.form-title { font-size: 20px; padding: 40px 0 10px 0; border-top: 2px solid #222222; }
-.formBox { width: 100%; height: 50px; border: 2px solid #e9e9e9; border-radius: 7px; }
-.form-content { font-size: 20px; padding: 40px 0 10px 0; }
-.btnGroup.lg.form { padding-top: 80px; justify-content: space-evenly; }
+.informationBox{border-top: 2px solid #222222; }
+.form-title{font-family: 'S-CoreDream',sans-serif; font-size: 16px; padding: 40px 0 10px 0;}
+.formBox { width: 100%; height: 50px; border: 1px solid #e9e9e9; border-radius: 4px; }
+input.formBox{padding: 16px;}
+.form-content { width: 100%; min-height: 340px; padding: 16px; border: 1px solid #e9e9e9; border-radius: 4px;}
+.btnGroup.lg.form { padding-top: 32px; justify-content: center; }
 
 .replyCancle{display: none;}

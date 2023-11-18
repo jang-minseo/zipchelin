@@ -5,8 +5,8 @@ $(function(){
             $('body > header > div > div.right_menu > a:nth-child(2)').text('로그인');
         }
     });
-    
-    $("footer").load("/front/html/layout/footer.html");   
+    $("footer").load("/front/html/layout/footer.html");
+    $(".myPage_leftBox").load("/front/html/layout/mymenu.html");
 
 
     //비밀번호 보기/숨기기

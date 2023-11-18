@@ -112,7 +112,7 @@ $(function(){
             }
         }
         //비밀번호확인 체크
-        if(!($('#check_pwd').val()==$('#edit_pwd').val())){
+        if(!($('#check_pwd').val()==$('#edit_pwd').val()) || $('#check_pwd').val() == ''){
             $('#edit_warning_pwd_check').css('display','block')
             $('#check_pwd').css('border-color','red');
         }else{

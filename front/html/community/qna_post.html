@@ -95,203 +95,205 @@
                 <input type="submit" class="comment_post_btn" value="등록"/>
                 </form>
             -->
-            <ul class="comment">
-                <li class="commentbox bestcomment">
+            <div class="commentWrap">
+                <ul class="comment">
+                    <li class="commentbox bestcomment">
+                            <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
+                        <div>
+                            <div class="comment-contentbox">
+                                <strong class="comment-id">해징어</strong>
+                                <p class="comment-content">진짜 맛있어 보이는 음식이네요! 금손 인정! 대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!</p>
+                            </div>
+                            <div class="comment-info">
+                                <span class="comment_date">2023.10.26 10:02</span>
+                                <button class="comment_logo comment_acc">
+                                    <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                    <!--<span class="material-icons">thumb_up</span>-->
+                                    <span>11</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyWrite">
+                                    <span>답글 달기</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyCancle">
+                                    <span>답글 취소</span>
+                                </button>
+                                <button class="comment_declaration comment_acc" id="modalAlert">
+                                    <span>신고</span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="comment replyWrap">
+                    <li class="replybox">
+                        <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                        <div class="comment_replybox">
+                            <form class="comment-section post_comment">
+                                <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                                <input type="submit" class="comment_post_btn" value="등록"/>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="comment">
+                    <li class="commentbox">
+                        <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
                         <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
-                    <div>
-                        <div class="comment-contentbox">
-                            <strong class="comment-id">해징어</strong>
-                            <p class="comment-content">진짜 맛있어 보이는 음식이네요! 금손 인정! 대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!</p>
+                        <div>
+                            <div class="comment-contentbox">
+                                <strong class="comment-id">해징어</strong>
+                                <div class="post_writer">작성자</div>
+                                <p class="comment-content">의외로 쉬운 요리입니다요 따라해 보시던가요</p>
+                            </div>
+                            <div class="comment-info">
+                                <span class="comment_date">2023.10.26 10:02</span>
+                                <button class="comment_logo comment_acc">
+                                    <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                    <!--<span class="material-icons">thumb_up</span>-->
+                                    <span>0</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyWrite">
+                                    <span>답글 달기</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyCancle">
+                                    <span>답글 취소</span>
+                                </button>
+                                <button class="comment_declaration comment_acc">
+                                    <span>신고</span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="comment-info">
-                            <span class="comment_date">2023.10.26 10:02</span>
-                            <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
-                                <!--<span class="material-icons">thumb_up</span>-->
-                                <span>11</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyWrite">
-                                <span>답글 달기</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyCancle">
-                                <span>답글 취소</span>
-                            </button>
-                            <button class="comment_declaration comment_acc" id="modalAlert">
-                                <span>신고</span>
-                            </button>
+                    </li>
+                </ul>
+                <ul class="comment replyWrap">
+                    <li class="replybox">
+                        <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                        <div class="comment_replybox">
+                            <form class="comment-section post_comment">
+                                <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                                <input type="submit" class="comment_post_btn" value="등록"/>
+                            </form>
                         </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment replyWrap">
-                <li class="replybox">
-                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
-                    <div class="comment_replybox">
-                        <form class="comment-section post_comment">
-                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
-                            <input type="submit" class="comment_post_btn" value="등록"/>
-                        </form>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment">
-                <li class="commentbox">
-                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
-                    <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
-                    <div>
-                        <div class="comment-contentbox">
-                            <strong class="comment-id">해징어</strong>
-                            <div class="post_writer">작성자</div>
-                            <p class="comment-content">의외로 쉬운 요리입니다요 따라해 보시던가요</p>
+                    </li>
+                </ul>
+                <ul class="comment">
+                    <li class="commentbox">
+                            <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
+                        <div>
+                            <div class="comment-contentbox">
+                                <strong class="comment-id">해징어</strong>
+                                <p class="comment-content">진짜 맛있어 보이는 음식이네요! 금손 인정! 대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!</p>
+                            </div>
+                            <div class="comment-info">
+                                <span class="comment_date">2023.10.26 10:02</span>
+                                <button class="comment_logo comment_acc">
+                                    <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                    <!--<span class="material-icons">thumb_up</span>-->
+                                    <span>2</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyWrite">
+                                    <span>답글 달기</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyCancle">
+                                    <span>답글 취소</span>
+                                </button>
+                                <button class="comment_declaration comment_acc">
+                                    <span>신고</span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="comment-info">
-                            <span class="comment_date">2023.10.26 10:02</span>
-                            <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
-                                <!--<span class="material-icons">thumb_up</span>-->
-                                <span>0</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyWrite">
-                                <span>답글 달기</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyCancle">
-                                <span>답글 취소</span>
-                            </button>
-                            <button class="comment_declaration comment_acc">
-                                <span>신고</span>
-                            </button>
+                    </li>
+                </ul>
+                <ul class="comment replyWrap">
+                    <li class="replybox">
+                        <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                        <div class="comment_replybox">
+                            <form class="comment-section post_comment">
+                                <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                                <input type="submit" class="comment_post_btn" value="등록"/>
+                            </form>
                         </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment replyWrap">
-                <li class="replybox">
-                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
-                    <div class="comment_replybox">
-                        <form class="comment-section post_comment">
-                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
-                            <input type="submit" class="comment_post_btn" value="등록"/>
-                        </form>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment">
-                <li class="commentbox">
-                        <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
-                    <div>
-                        <div class="comment-contentbox">
-                            <strong class="comment-id">해징어</strong>
-                            <p class="comment-content">진짜 맛있어 보이는 음식이네요! 금손 인정! 대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!</p>
+                    </li>
+                </ul>
+                <ul class="comment">
+                    <li class="commentbox">
+                            <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
+                        <div>
+                            <div class="comment-contentbox">
+                                <strong class="comment-id">해징어</strong>
+                                <p class="comment-content">금손 인정!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!</p>
+                            </div>
+                            <div class="comment-info">
+                                <span class="comment_date">2023.10.26 10:02</span>
+                                <button class="comment_logo comment_acc">
+                                    <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                    <!--<span class="material-icons">thumb_up</span>-->
+                                    <span>6</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyWrite">
+                                    <span>답글 달기</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyCancle">
+                                    <span>답글 취소</span>
+                                </button>
+                                <button class="comment_declaration comment_acc">
+                                    <span>신고</span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="comment-info">
-                            <span class="comment_date">2023.10.26 10:02</span>
-                            <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
-                                <!--<span class="material-icons">thumb_up</span>-->
-                                <span>2</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyWrite">
-                                <span>답글 달기</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyCancle">
-                                <span>답글 취소</span>
-                            </button>
-                            <button class="comment_declaration comment_acc">
-                                <span>신고</span>
-                            </button>
+                    </li>
+                </ul>
+                <ul class="comment replyWrap">
+                    <li class="replybox">
+                        <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                        <div class="comment_replybox">
+                            <form class="comment-section post_comment">
+                                <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                                <input type="submit" class="comment_post_btn" value="등록"/>
+                            </form>
                         </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment replyWrap">
-                <li class="replybox">
-                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
-                    <div class="comment_replybox">
-                        <form class="comment-section post_comment">
-                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
-                            <input type="submit" class="comment_post_btn" value="등록"/>
-                        </form>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment">
-                <li class="commentbox">
-                        <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
-                    <div>
-                        <div class="comment-contentbox">
-                            <strong class="comment-id">해징어</strong>
-                            <p class="comment-content">금손 인정!대박 도라방스 부럽다!대박 도라방스 부럽다!대박 도라방스 부럽다!</p>
+                    </li>
+                </ul>
+                <ul class="comment">
+                    <li class="commentbox">
+                            <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
+                        <div>
+                            <div class="comment-contentbox">
+                                <strong class="comment-id">해징어</strong>
+                                <p class="comment-content">진짜 맛있어 보이는 음식이네요!</p>
+                            </div>
+                            <div class="comment-info">
+                                <span class="comment_date">2023.10.26 10:02</span>
+                                <button class="comment_logo comment_acc">
+                                    <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
+                                    <!--<span class="material-icons">thumb_up</span>-->
+                                    <span>5</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyWrite">
+                                    <span>답글 달기</span>
+                                </button>
+                                <button class="comment_reply comment_acc replyCancle">
+                                    <span>답글 취소</span>
+                                </button>
+                                <button class="comment_declaration comment_acc">
+                                    <span>신고</span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="comment-info">
-                            <span class="comment_date">2023.10.26 10:02</span>
-                            <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
-                                <!--<span class="material-icons">thumb_up</span>-->
-                                <span>6</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyWrite">
-                                <span>답글 달기</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyCancle">
-                                <span>답글 취소</span>
-                            </button>
-                            <button class="comment_declaration comment_acc">
-                                <span>신고</span>
-                            </button>
+                    </li>
+                </ul>
+                <ul class="comment replyWrap">
+                    <li class="replybox">
+                        <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
+                        <div class="comment_replybox">
+                            <form class="comment-section post_comment">
+                                <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
+                                <input type="submit" class="comment_post_btn" value="등록"/>
+                            </form>
                         </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment replyWrap">
-                <li class="replybox">
-                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
-                    <div class="comment_replybox">
-                        <form class="comment-section post_comment">
-                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
-                            <input type="submit" class="comment_post_btn" value="등록"/>
-                        </form>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment">
-                <li class="commentbox">
-                        <img class="comment-img" src="/front/images/icon/profile.jpg" alt="">
-                    <div>
-                        <div class="comment-contentbox">
-                            <strong class="comment-id">해징어</strong>
-                            <p class="comment-content">진짜 맛있어 보이는 음식이네요!</p>
-                        </div>
-                        <div class="comment-info">
-                            <span class="comment_date">2023.10.26 10:02</span>
-                            <button class="comment_logo comment_acc">
-                                <span class="material-symbols-outlined" onclick="goodAction(this)">thumb_up</span>
-                                <!--<span class="material-icons">thumb_up</span>-->
-                                <span>5</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyWrite">
-                                <span>답글 달기</span>
-                            </button>
-                            <button class="comment_reply comment_acc replyCancle">
-                                <span>답글 취소</span>
-                            </button>
-                            <button class="comment_declaration comment_acc">
-                                <span>신고</span>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="comment replyWrap">
-                <li class="replybox">
-                    <span class="material-symbols-outlined comment_re">subdirectory_arrow_right</span>
-                    <div class="comment_replybox">
-                        <form class="comment-section post_comment">
-                            <input type="text" class="commentwrite-box aft_lgn_reply" placeholder="주제에 무관한 댓글이나 악플은 삭제될 수 있습니다."></input>
-                            <input type="submit" class="comment_post_btn" value="등록"/>
-                        </form>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
             <div class="paging">
                 <ul>
                     <!-- li에 .disabled가 있으면 화살표에 클릭방지 생김 -->
