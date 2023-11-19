@@ -1,14 +1,9 @@
 @charset "utf-8";
-
-/* main{display: block; margin: auto; padding: 90px 20px 0; width: 1320px;}
-.pageTitle{padding: 60px 0; font-size: 32px; text-align: center;}
-body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
-
 .mypage{margin-top: 60px;}
 
 /**마이페이지 - 메인**/
 /*leftBox*/
-.myMenu{float: left; width: 24%; /* padding-top: 40%;  */margin-right: 24px; /* background-color: #f7f7f7; */}
+.myMenu{float: left; width: 24%; margin-right: 24px;}
 .myPage_leftBox{
     border: 1px solid #e9e9e9;
     border-radius: 10px;
@@ -22,16 +17,12 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
 .myProfile_img{
     border-radius: 50%;
     display: block;
-    /* margin: 20px 18%; */
     margin: 0  auto;
-    /* width: 200px;
-    height: 200px; */
     width: 80px;
     height: 80px;
 }
 .userId_text{
     margin: 16px 0;
-    /* font-size: 20px; */
     font-size: 16px;
     text-align: center;
 }
@@ -42,7 +33,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
     background-color: #4FA72F;
     color: #fff;
     font-size: 14px;
-    /* margin: 15px 33%; */
     margin: 0 auto;
     padding: 10px;
 }
@@ -69,7 +59,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
     color: #4FA72F;
 }
 
-/*mypage_main*/
 .myPage_main{
     float: right;
     width: calc(76% - 24px);
@@ -84,7 +73,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
 }
 .my_icon{
     display: flex;
-    /* flex: 1; */
     gap: 6px;
     align-items: center;
     width: 30%;
@@ -140,12 +128,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
     white-space: nowrap; 
     text-overflow: ellipsis;
 }
-/* .myPage_heart_subtitle{
-    padding-bottom: 5px;
-}
-.myPage_post_subtitle{
-    padding-bottom: 5px;
-} */
 
 /*마이페이지 _ 댓글목록*/
 .post-section .title {
@@ -208,7 +190,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
     align-items: center;
     padding-bottom: 24px;
     font-family: 'S-CoreDream', sans-serif;
-    /* border-bottom: 1px solid #e9e9e9; */
 }
 .edit_post_container_last{
     margin-bottom: 45px;
@@ -242,23 +223,9 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
     z-index: 2;
 }
 
-/* #heart_imgBox > img{
-    width: 205px;
-    height: 150px;
-} */
-/* .heart_list_contents{
-    float: left;
-} */
 .heart_list_zone .imgwrap .imgBox.vertical {
     height: 160px;
 }
-/* .heart_list_text{
-    margin: 10px 0;
-} */
-/* .heart_list_img{
-    width: 205px;
-    height: 150px;
-} */
 
 /*정보 수정*/
 .profile_section{
@@ -293,16 +260,12 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
 
 .edit_info{
     float: left;
-    /* position: relative;
-    top: 60px; */
     width: calc(76% - 24px);
     padding-left: 32px;
     margin-top: 60px;
-    /* margin-left: 15px; */
 }
 .edit_info > h3{
     font-size: 22px;
-    /* margin-left: 15px;  */
 }
 
 .edit_info .btnGroup{
@@ -310,14 +273,10 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
 }
 
 .profile_img_edit{
-    /* margin-top: 20px;
-    margin-bottom: 10px; */
     float: left;
     border-radius: 50%;
     width: 130px;
     height: 130px;
-    /* position: relative;
-    bottom: 10px; */
     cursor: pointer;
 }
 .profile_edit_btn{
@@ -325,17 +284,9 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
     margin: 18px 24px;
 }
 
-/* .profile_edit_btn{
-    position: relative;
-    display: table-caption;
-    left: 156px;
-    bottom: 125px;
-} */
-
 .profile_edit_btn .profile_btn{
     display: block;
     border-radius: 5px;
-    /* background-color: #4FA72F; color: #fff; */
     font-size: 12px;
     margin: 4px 6px;
 }
@@ -437,10 +388,7 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
     box-sizing: border-box;
     appearance: auto;
 }
-/* .edit_num{
-    border-bottom: 1px solid #cfcccc;
-    padding-bottom: 40px;
-} */
+
 
 .edit_confirm_btn{
     width: 14%;
@@ -452,18 +400,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
     height: 44.72px;
     margin-left: 10px;
 } 
-
-/* .edit_leave{
-    position: relative;
-    float: right;
-    bottom: 31px;
-    right: 16px;
-    font-size: 12px;
-} */
-/* 
-.edit_leave:hover{
-    color: rgb(210, 71, 71);
-} */
 
 .edit_can_fin_btn{
     margin: auto;
@@ -490,13 +426,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
 }
 
 
-/* .pageTitle{padding: 80px 0 60px; font-size: 32px; text-align: center;} */
-/* body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
-
-/* 마이페이지 레프트 */
-/* .myMenu{float: left; width: 24%; padding-top: 40%; margin-right: 24px; background-color: #f7f7f7;} */
-
-
 /* *** 비밀번호 확인 페이지 *** */
 .pwdConfirmWrap{position: relative; float: right; padding: 60px; width: calc(76% - 24px); min-height: 540px; text-align: center;}
 #confirmForm{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
@@ -512,7 +441,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;} */
 .componentWrap{display: flex; justify-content: space-between; border-bottom: 1px solid #e9e9e9;}
 .componentWrap .btnGroup{flex: 1 0 auto; justify-content: flex-end; margin-bottom: 6px; min-height: 40px;}
 .btnGroup.hide{display: none;}
-/* .bdBtnGroup .btn:not(:last-child){display: none;} */
 .bdBtnGroup button{margin-right: 6px;}
 .bdBtnGroup button:last-child{ margin-right: 0;}
 .bdBtnGroup .btn{position: relative;}
