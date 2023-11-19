@@ -27,11 +27,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/common.css">
 
     <!-- page CSS -->
-    <!-- <link rel="stylesheet" href="../../css/index.css"> -->
     <link rel="stylesheet" href="../../css/guide.css">
-    <!-- <link rel="stylesheet" href="../../css/recipe.css"> -->
-    <!-- <link rel="stylesheet" href="../../css/community.css"> -->
-    <!-- <link rel="stylesheet" href="../../css/qna_temp.css"> -->
     <link rel="stylesheet" href="../../css/search.css">
     
     <!-- plugin CSS -->
@@ -54,15 +50,15 @@
 <body>
     <!--헤더-->   
     <header class="header"></header>
-<!-- 검색 창 --> 
+    <!-- 검색 창 --> 
     <main>
         <div class="searchSection">
             <div class="searchBox">
                 <input class="searchText" type="text" title="검색어 입력 창" placeholder="검색어를 입력해주세요" maxlength="50">
                 <span class="searchButton material-symbols-outlined">search</span>
         </div>
-        <div class="recomBox clearfix">
-            <ul>
+        <div class="recomBox">
+            <ul class="clearfix">
                 <li class="recomList">
                     <button class="recomBut" type="button">제철 과일</button>
                 </li>
@@ -92,27 +88,6 @@
                 <li class="tab" data-tab="tab4">요리 상담소</li>
             </ul>
         </div>
-        
-        <!-- 사이드바 -->
-        <div class="aside">
-            <div class="zim">
-                <a href="/front/html/recipe/recipe_detail.html">
-                    <span class="material-icons">favorite</span>
-                    <p>찜한레시피</p>
-                </a>
-            </div>
-            <div class="cur_recipe">
-                <p>최근 본 레시피</p>
-                <div class="aside_imgBox">
-                    <a href="/front/html/recipe/recipe_detail.html"><img src="../../images/food/sal.jpg" alt=""></a>
-                    <a href="/front/html/recipe/recipe_detail.html"><img src="../../images/food/sal.jpg" alt=""></a>
-                    <a href="/front/html/recipe/recipe_detail.html"><img src="../../images/food/sal.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="top">
-                <a href="index.html"><span class="material-symbols-outlined">stat_1</span></a>
-            </div>
-        </div>  
 
         <!--레시피 서칭 결과--> 
         <div id="tab1" class="tabContainer on">
@@ -973,7 +948,6 @@
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="/front/js/common.js"></script>
-    <script src="/front/js/main.js"></script>
     <script src="/front/js/search.js"></script>
 </body>
 </html>

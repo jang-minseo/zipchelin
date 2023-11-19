@@ -7,7 +7,7 @@ $(function(){
     });
     $("footer").load("/front/html/layout/footer.html");
     $(".myPage_leftBox").load("/front/html/layout/mymenu.html");
-
+    $(".aside").load("/front/html/layout/sideBar.html");
 
     //비밀번호 보기/숨기기
     $('.pwdToggle').on('click',function(){
@@ -19,8 +19,7 @@ $(function(){
             $(input).attr("type", "password");
             $(this).html('visibility_off');
         }
-    });
-    
+    });    
 
 
     //내가 쓴글 - 탭

@@ -1,8 +1,8 @@
 /* 공통 */
 .sub_title {width: auto; max-width: 94%; padding-bottom: 6px; color: #999999; line-height: 18px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .title{width: auto; max-width: 94%; font-size: 20px; line-height: 24px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-.textBox{padding-top: 16px;}
-.textBox p {padding-bottom: 6px;}
+.textBox{padding-top: 12px;}
+.textBox p {padding-bottom: 4px;}
 .recipePage .category{margin-bottom: 24px; border: 0;}
 
 /*레시피/가이드 리스트 LIST css*/

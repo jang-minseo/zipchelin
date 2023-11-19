@@ -111,8 +111,11 @@
                 <div class="profile_section clearfix">
                     <img src="/front/images/icon/profile.jpg" alt="profile_img" class="profile_img_edit" onclick="loaction.href='#'">
                     <div class="profile_edit_btn">
-                        <input type="button" value="사진선택" class="profile_select_btn profile_editbtn1 btnBd" onclick="loaction.href='#'">
-                        <input type="button" value="기본 이미지로 변경" class="profile_change_btn profile_editbtn2 btnBdGray" onclick="loaction.href='#'">
+                        <label for="profile_edit" class="profile_btn btnBd">
+                            <span>사진선택</span>
+                        </label>
+                        <input type="file" value="사진선택" id="profile_edit" class="profile_select_btn">
+                        <input type="button" value="기본 이미지로 변경" class="profile_change_btn profile_btn btnBdGray" onclick="loaction.href='#'">
                     </div>
                 </div>
 
