@@ -40,7 +40,6 @@
     <title>로그인</title>
 </head>
 <body>
-    <c:import url="./header.jsp"/>
 
     <main>
         <section id="login_section">
@@ -63,7 +62,7 @@
                         <label for="login_id_save" class="small">아이디 저장</label>
                     </div>
                     <div class="login_input_div">
-                        <a href="../../html/user/find.html" class="login_find">아이디/비밀번호 찾기</a>
+                        <a href="${contextPath}/test/user/find" class="login_find">아이디/비밀번호 찾기</a>
                     </div>
                 </div>
                 <div>
@@ -73,16 +72,15 @@
             <div class="login_sns">
                 <h2>소셜 로그인</h2>
                 <div>
-                    <div class="login_email"><a href="#"><img src="../../images//icon/kakao_circle.png" alt="카카오 로그인"></a></div>
-                    <div class="login_email"><a href="#"><img src="../../images/icon/naver_circle.png" alt="네이버 로그인"></a></div>
-                    <div class="login_email circle_bd"><a href="#"><img src="../../images/icon/google_circle.png" alt="구글 로그인"> </a></div>
+                    <div class="login_email"><a href="#"><img src="<c:url value="/resource/image/icon/kakao_circle.png" />" alt="카카오 로그인"></a></div>
+                    <div class="login_email"><a href="#"><img src="<c:url value="/resource/image/icon/naver_circle.png" />" alt="네이버 로그인"></a></div>
+                    <div class="login_email circle_bd"><a href="#"><img src="<c:url value="/resource/image/icon/google_circle.png" />" alt="구글 로그인"> </a></div>
                 </div>
             </div>
         </section>
     </main>
     
     <!-- 푸터 -->
-    <c:import url="./footer.jsp"/>
     
     <div id="login_fail">
         <div id="login_fail_box">
@@ -93,7 +91,6 @@
     
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="<c:url value="/resource/js/user.js" />"></script>
     <script src="<c:url value="/resource/js/user.js" />"></script>
 </body>
 </html>
