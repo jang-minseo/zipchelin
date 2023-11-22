@@ -5,7 +5,7 @@
 
 <div class="headerContainer">
     <a class="logo" href="/front/index.html">
-        <img src="/front/images/logo/logo.png" />
+        <img src="${contextPath}/resource/images/logo/logo.png" />
     </a>
     <div class="menu">
         <a class="menu_list" href="/front/html/recipe/recipe_list.html">레시피</a>
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <a class="menu_list" href="/front/html/notice/notice_list.html">공지사항</a>
+        <a class="menu_list" href="${contextPath}/WEB-INF/views/main/notice.jsp">공지사항</a>
     </div>
     <div class="right_menu">
         <a class="iconBox" href="/front/html/search/searching_list.html">

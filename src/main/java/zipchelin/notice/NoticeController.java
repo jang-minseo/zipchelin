@@ -30,12 +30,18 @@ public class NoticeController extends HttpServlet{
 	}
 	
 	private void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*
-		 * String view="/WEB-INF/content/notice.jsp";
-		 * request.getRequestDispatcher(view);
-		 */
-		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/content/notice.jsp");
+		String nextPage="";
+		request.setCharacterEncoding("utf-8");
+		response.setContentType("text/html;charset=utf-8");
+		String action=request.getPathInfo();	//요청명을 가져옴
+		try {
+			nextPage="/WEB-INF/views/main/content/notice.jsp";
+			
+		}catch (Exception e) {
+			System.out.println("요청 처리 중 에러!!");
+			e.printStackTrace();
+		}
+		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
 		dispatcher.forward(request, response);
 	}
 	

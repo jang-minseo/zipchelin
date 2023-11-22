@@ -1,11 +1,11 @@
 $(function(){
     // /front/html/user/login.html 해당 페이지에서 '로그인' 텍스트 '로그아웃'으로 변경
-    $("header").load("/front/html/layout/header.html", function() {
+    $("header").load("/zipchelin/WEB-INF/views/main/header.jsp", function() {
         if (window.location.href.endsWith('login.html')) {
             $('body > header > div > div.right_menu > a:nth-child(2)').text('로그인');
         }
     });
-    $("footer").load("/front/html/layout/footer.html");
+    $("footer").load("/zipchelin/WEB-INF/views/main/footer.jsp");
     $(".myPage_leftBox").load("/front/html/layout/mymenu.html");
     $(".aside").load("/front/html/layout/sideBar.html");
 

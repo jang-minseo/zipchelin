@@ -1,9 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
 <div class="contain">
     <div id="footerMenu" class="clearfix">
-        <a href="/front/index.html" class="footerLogo">
-            <img src="/front/images/logo/logo.png" alt="zipchelin">
+        <a href="${contextPath}/index.html" class="footerLogo">
+            <img src="${contextPath}/resource/images/logo/logo.png" alt="zipchelin">
         </a>
         <ul class="fmenu">
             <li><a href="#">회사소개</a></li>
@@ -12,11 +15,11 @@
             <li><a href="/front/html/notice/notice_list.html">공지사항</a></li>
         </ul>
         <ul class="sns">
-            <li><a href="https://www.facebook.com/"><img src="/front/images/icon/facebook.png"
+            <li><a href="https://www.facebook.com/"><img src="${contextPath}/resource/images/icon/facebook.png"
                         alt="facebook"></a></li>
-            <li><a href="https://www.instagram.com/"><img src="/front/images/icon/instagram.png"
+            <li><a href="https://www.instagram.com/"><img src="${contextPath}/resource/images/icon/instagram.png"
                         alt="instagram"></a></li>
-            <li><a href="https://www.youtube.com/"><img src="/front/images/icon/youtube.png" alt="youtube"></a>
+            <li><a href="https://www.youtube.com/"><img src="${contextPath}/resource/images/icon/youtube.png" alt="youtube"></a>
             </li>
         </ul>
         <address>
