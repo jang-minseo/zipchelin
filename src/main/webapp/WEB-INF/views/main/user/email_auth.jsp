@@ -58,6 +58,6 @@
         </form>
     </div>
 </body>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/resource/js/user.js"></script>
 </html>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="/resource/js/user.js"></script>

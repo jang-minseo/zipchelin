@@ -34,8 +34,8 @@
     <link rel="stylesheet" type="text/css" href="/resource/css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" href="/resource/css/user.css">
-
+	<link rel="stylesheet" type="text/css"  href="<c:url value="/resource/css/user.css" />">
+	
     <!-- plugin CSS -->
     <link rel="stylesheet" href="/resource/css/swiper-bundle.min.css">
 
