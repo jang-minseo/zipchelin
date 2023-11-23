@@ -12,7 +12,7 @@
             <li><a href="#">회사소개</a></li>
             <li><a href="#">개인정보보호정책</a></li>
             <li><a href="#">이용약관</a></li>
-            <li><a href="/front/html/notice/notice_list.html">공지사항</a></li>
+            <li><a href="${contextPath}/notice.do">공지사항</a></li>
         </ul>
         <ul class="sns">
             <li><a href="https://www.facebook.com/"><img src="${contextPath}/resource/images/icon/facebook.png"

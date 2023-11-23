@@ -39,7 +39,7 @@
 
 <!-- plugin CSS -->
 <link rel="stylesheet" href="${contextPaht}/resource/css/swiper-bundle.min.css">
-<title>공지사항</title>
+<title>집슐랭</title>
 </head>
 <body>
 	<!--헤더 -->

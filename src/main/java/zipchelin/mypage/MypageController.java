@@ -29,8 +29,10 @@ public class MypageController extends HttpServlet{
 		try {
 			if(action==null || action.equals("/mypage.do")) {				
 				nextPage="/WEB-INF/index.jsp";
-			}else if(action.equals("/mypage_pwdConfirm.do")) {
+			}else if(action.equals("/pwdConfirm.do")) {
 				nextPage="/WEB-INF/views/main/mypage/mypwdConfirm.jsp";			
+			}else if(action.equals("/mypost.do")) {
+				nextPage="/WEB-INF/views/main/mypage/mypost.jsp";			
 			}
 			
 		}catch (Exception e) {
