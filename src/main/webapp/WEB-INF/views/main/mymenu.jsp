@@ -22,7 +22,7 @@
 	<div class="myBox_count">
 	    <div class="myBox_countBox myBox_heart">
 	        <span id="myBox_icon" class="material-icons">favorite</span>
-	        <p>찜 <a href="/front/html/mypage/myheart.html">10</a></p>
+	        <p>찜 <a href="${contextPath}/mypage/myheart.do">10</a></p>
 	    </div>
 	
 	    <div class="myBox_countBox myBox_post">
@@ -32,7 +32,7 @@
 	
 	    <div class="myBox_countBox myBox_comment">
 	        <span id="myBox_icon" class="material-symbols-outlined">chat</span>
-	        <p>내 댓글 <a href="/front/html/mypage/myreply.html">10</a></p>
+	        <p>내 댓글 <a href="${contextPath}/mypage/myreply.do">10</a></p>
 	    </div>
 	</div><!--마이페이지 레프트박스 (찜, 내글, 내댓글 갯수 & 바로가기) 끝-->
 		

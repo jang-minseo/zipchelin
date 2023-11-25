@@ -33,6 +33,8 @@ public class MypageController extends HttpServlet{
 				nextPage="/WEB-INF/views/main/mypage/mypwdConfirm.jsp";			
 			}else if(action.equals("/mypost.do")) {
 				nextPage="/WEB-INF/views/main/mypage/mypost.jsp";			
+			}else if(action.equals("/myreply.do")) {
+				nextPage="/WEB-INF/views/main/mypage/myreply.jsp";			
 			}
 			
 		}catch (Exception e) {
