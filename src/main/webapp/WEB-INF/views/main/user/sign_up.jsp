@@ -29,15 +29,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
     <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/resource/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/resource/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/resource/css/common.css">
-
+ 
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/base.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/common.css">
+ 
     <!-- page CSS -->
-    <link rel="stylesheet" href="/resource/css/user.css">
+    <link rel="stylesheet" type="text/css"  href="${contextPath}/resource/css/user.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="/resource/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="${contextPath}/resource/css/swiper-bundle.min.css">
 
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -135,7 +136,7 @@
 
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/resource/js/common.js"></script>
-    <script src="/resource/js/user.js"></script>
+    <script src="${contextPath}/resource/js/common.js"></script>
+    <script src="${contextPath}/resource/js/user.js"></script>
 </body>
 </html>
