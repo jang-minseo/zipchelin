@@ -1,7 +1,6 @@
-package zipchelin.notice;
+package zipchelin.user;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,13 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import zipchelin.notice.NoticeDAO;
 
-@WebServlet("/notice.do")
-public class NoticeController extends HttpServlet{
+@WebServlet("/user/*")
+public class UserController extends HttpServlet{
 	NoticeDAO dao;
 	
-	public NoticeController() {
-		dao=new NoticeDAO();
+	public UserController() {
+		/* dao=new NoticeDAO(); */
 	}
 	
 	@Override
@@ -35,7 +35,23 @@ public class NoticeController extends HttpServlet{
 		response.setContentType("text/html;charset=utf-8");
 		String action=request.getPathInfo();	//요청명을 가져옴
 		try {
-			nextPage="/WEB-INF/views/main/content/notice.jsp";
+			if(action==null || action.equals("/index.do")) {				
+				nextPage="/WEB-INF/index.jsp";
+			}else if(action.equals("/leave_check.do")) {
+				nextPage="/WEB-INF/views/main/user/leave_check.jsp";				
+			}else if(action.equals("/leave_done.do")) {
+				nextPage="/WEB-INF/views/main/user/leave_done.jsp";				
+			}else if(action.equals("/email_auth.do")) {
+				nextPage="/WEB-INF/views/main/user/email_auth.jsp";	
+			}else if(action.equals("/find.do")) {
+				nextPage="/WEB-INF/views/main/user/find.jsp";	
+			}else if(action.equals("/finding.do")) {
+				nextPage="/WEB-INF/views/main/user/finding.jsp";	
+			}else if(action.equals("/login.do")) {
+				nextPage="/WEB-INF/views/main/user/login.jsp";	
+			}else if(action.equals("/sign_up.do")) {
+				nextPage="/WEB-INF/views/main/user/sign_up.jsp";	
+			}
 			
 		}catch (Exception e) {
 			System.out.println("요청 처리 중 에러!!");
@@ -44,5 +60,4 @@ public class NoticeController extends HttpServlet{
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
 		dispatcher.forward(request, response);
 	}
-	
 }

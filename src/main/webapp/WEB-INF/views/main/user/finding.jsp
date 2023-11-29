@@ -29,15 +29,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
     <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/resource/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/resource/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/base.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" href="/resource/css/user.css">
+    <link rel="stylesheet" href="${contextPath}/resource/css/user.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="/resource/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="${contextPath}/resource/css/swiper-bundle.min.css">
 
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -51,10 +51,10 @@
     <header class="header"></header>
     
     <div id="finding_box">
-        <img id="finding_img" src="/resource/images/icon/finding.png" alt="">
+        <img id="finding_img" src="${contextPath}/resource/images/icon/finding.png" alt="">
         <p class="finding_msg" id="finding_msg_request">요청하신 아이디찾기 결과 입니다.</p>
         <p class="finding_msg">아이디는 <span id="finding_found_id">(user_id or pwd)</span> 입니다.</p>
-        <a id="finding_go_login" href="login.html" style="color: white;">확인</a>
+        <a id="finding_go_login" href="${contextPath}/user/login.do" style="color: white;">확인</a>
     </div>
 
     <!-- 푸터 -->
@@ -62,6 +62,6 @@
 
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/resource/js/common.js"></script>
+    <script src="${contextPath}/resource/js/common.js"></script>
 </body>
 </html>

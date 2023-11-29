@@ -29,27 +29,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
     <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/resource/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/resource/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/base.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" type="text/css" href="/resource/css/user.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/user.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
-
-    <!--[if IE 9]>
-    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
-    <![endif]-->
-    <!--[if lte IE 8]>
-    <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
-    <![endif]-->
+    <link rel="stylesheet" href="${contextPath}/front/css/swiper-bundle.min.css">
 
     <title>집슐랭</title>
 </head>
 <body>
-    <header class="header"></header>
+    <!--헤더 -->
+    <header class="header">
+    	<jsp:include page="/WEB-INF/views/main/header.jsp"/>
+    </header>
     
     <main class="w1080">
         <h3 class="pageTitle">회원탈퇴</h3>
@@ -110,18 +106,20 @@
                 </ul>
             </section>
             <div class="btnGroup lg">
-                <button type="button" class="btnBd" onclick="location.href='/front/index.html'">취소</button>
-                <button type="button" class="btnBg" onclick="location.href='/front/html/user/leave_done.html'">탈퇴</button>
+                <button type="button" class="btnBd" onclick="location.href='${contextPath}/user/index.do'">취소</button>
+                <button type="button" class="btnBg" onclick="location.href='${contextPath}/user/leave_done.do'">탈퇴</button>
             </div>
         </div>
     </main>
 
     <!-- 푸터 -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+    	<jsp:include page="/WEB-INF/views/main/footer.jsp"/>
+    </footer> 
     
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/resource/js/common.js"></script>
-    <script src="/resource/js/notice.js"></script>
+    <script src="${contextPath}/resource/js/common.js"></script>
+    <script src="${contextPath}/resource/js/notice.js"></script>
 </body>
 </html>

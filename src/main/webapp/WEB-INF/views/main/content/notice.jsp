@@ -30,20 +30,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
 <!-- basic CSS -->
-<link rel="stylesheet" type="text/css" href="${contextPaht}/css/reset.css">
-<link rel="stylesheet" type="text/css" href="${contextPaht}/css/base.css">
-<link rel="stylesheet" type="text/css" href="${contextPaht}/css/common.css">
+<link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/reset.css">
+<link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/base.css">
+<link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/common.css">
 
 <!-- page CSS -->
-<link rel="stylesheet" type="text/css" href="${contextPaht}/css/notice.css">
+<link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/notice.css">
 
 <!-- plugin CSS -->
-<link rel="stylesheet" href="${contextPaht}/css/swiper-bundle.min.css">
-<title>공지사항</title>
+<link rel="stylesheet" href="${contextPaht}/resource/css/swiper-bundle.min.css">
+<title>집슐랭</title>
 </head>
 <body>
 	<!--헤더 -->
-    <header class="header"></header>
+    <header class="header">
+    	<jsp:include page="/WEB-INF/views/main/header.jsp"/>
+    </header>
 
     <main>
         <h3 class="pageTitle">공지사항</h3>
@@ -176,11 +178,13 @@
     </main>
 
     <!-- 푸터 -->
-    <footer id="footer"></footer> 
+    <footer id="footer">
+    	<jsp:include page="/WEB-INF/views/main/footer.jsp"/>
+    </footer> 
     
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="${contextPaht}/js/common.js"></script>
-    <script src="${contextPaht}/js/notice.js"></script>
+    <script src="${contextPath}/resource/js/common.js"></script>
+    <script src="${contextPath}/resource/js/notice.js"></script>
 </body>
 </html>
