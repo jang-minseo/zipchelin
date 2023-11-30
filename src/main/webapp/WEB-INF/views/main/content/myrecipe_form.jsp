@@ -40,6 +40,9 @@
     <!-- plugin CSS -->
     <link rel="stylesheet" href="/front/css/swiper-bundle.min.css">
 
+	<!-- 게시판 에디터 -->
+	<script type="text/javascript" src="../resources/static/smarteditor/js/HuskyEZCreator.js" charset="utf-8"></script>
+	
     <!--[if lt IE 9]>
     <script type="text/javascript" src="/assets/front/js/html5shiv.js"></script>
     <script type="text/javascript" src="/assets/front/js/respond.min.js"></script>
@@ -87,8 +90,8 @@
 
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/front/js/common.js"></script>
-    <script src="/front/js/community.js"></script>
+    <script src="${contextPath}/resource/js/common.js"></script>
+    <script src="${contextPath}/resource/js/community.js"></script>
     
 </body>
 </html>
