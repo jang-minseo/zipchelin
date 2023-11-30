@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class noticeService {
+public class NoticeService {
 	NoticeDAO noticeDAO;
 
-	public noticeService() {
+	public NoticeService() {
 		noticeDAO = new NoticeDAO();
 	}
 	
@@ -20,11 +20,6 @@ public class noticeService {
 		noticeMap.put("totNotices", totNotices);
 		
 		return noticeMap;		
-	}
-	
-	public List<NoticeVO> listNotices(){
-		List<NoticeVO> noticeList=noticeDAO.selectAllNotices();
-		return noticeList;
 	}
 	
 }
