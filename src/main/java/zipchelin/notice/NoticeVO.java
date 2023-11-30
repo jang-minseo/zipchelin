@@ -3,68 +3,62 @@ package zipchelin.notice;
 import java.sql.Date;
 
 public class NoticeVO {
-	private int noticeNum;
-	private String noticeTitle;
-	private String noticeCont;
-	private Date noticeDate;
-	private String adminId;
+	private int notice_num;
+	private String notice_title;
+	private String notice_cont;
+	private Date notice_date;
+	private String admin_id;
 	
 	public NoticeVO() {
 		
 	}
 
-	public NoticeVO(int noticeNum, String noticeTitle, String noticeCont) {
-		this.noticeNum = noticeNum;
-		this.noticeTitle = noticeTitle;
-		this.noticeCont = noticeCont;
+	public NoticeVO(int notice_num, String notice_title, String notice_cont, Date notice_date, String admin_id) {
+		this.notice_num = notice_num;
+		this.notice_title = notice_title;
+		this.notice_cont = notice_cont;
+		this.notice_date = notice_date;
+		this.admin_id = admin_id;
 	}
 
-	public NoticeVO(int noticeNum, String noticeTitle, String noticeCont, Date noticeDate, String adminId) {
-		this.noticeNum = noticeNum;
-		this.noticeTitle = noticeTitle;
-		this.noticeCont = noticeCont;
-		this.noticeDate = noticeDate;
-		this.adminId = adminId;
+	public int getNotice_num() {
+		return notice_num;
 	}
 
-	public int getNoticeNum() {
-		return noticeNum;
+	public void setNotice_num(int notice_num) {
+		this.notice_num = notice_num;
 	}
 
-	public void setNoticeNum(int noticeNum) {
-		this.noticeNum = noticeNum;
+	public String getNotice_title() {
+		return notice_title;
 	}
 
-	public String getNoticeTitle() {
-		return noticeTitle;
+	public void setNotice_title(String notice_title) {
+		this.notice_title = notice_title;
 	}
 
-	public void setNoticeTitle(String noticeTitle) {
-		this.noticeTitle = noticeTitle;
+	public String getNotice_cont() {
+		return notice_cont;
 	}
 
-	public String getNoticeCont() {
-		return noticeCont;
+	public void setNotice_cont(String notice_cont) {
+		this.notice_cont = notice_cont;
 	}
 
-	public void setNoticeCont(String noticeCont) {
-		this.noticeCont = noticeCont;
+	public Date getNotice_date() {
+		return notice_date;
 	}
 
-	public Date getNoticeDate() {
-		return noticeDate;
+	public void setNotice_date(Date notice_date) {
+		this.notice_date = notice_date;
 	}
 
-	public void setNoticeDate(Date noticeDate) {
-		this.noticeDate = noticeDate;
+	public String getAdmin_id() {
+		return admin_id;
 	}
 
-	public String getAdminId() {
-		return adminId;
-	}
-
-	public void setAdminId(String adminId) {
-		this.adminId = adminId;
+	public void setAdmin_id(String admin_id) {
+		this.admin_id = admin_id;
 	}
 	
 	
