@@ -71,47 +71,71 @@
 	        		<c:forEach var="notice" items="${noticeList}" varStatus="noticeNum">
 	        			<li class="noticeItem">
 			                <div class="titleBox">
-			                    <span class="num">${noticeNum.count}</span>
+			                    <span class="num">${notice.notice_num}</span>
 			                    <h6 class="title">${notice.notice_title}</h6>
 			                    <span class="date">${notice.notice_date}</span>
 			                    <span class="icon material-symbols-outlined">keyboard_arrow_down</span>
 			                </div>
 			                <div class="contentBox">
-			                    ${notice.notice_cont}
+				                <p>
+				                    ${notice.notice_cont}
+				                </p>
 			                </div>
 			            </li>
 	        		</c:forEach>
 	        	</c:when>
 	        </c:choose>
         </ul>
-        <!-- <ul class="noticeList">
-            <li class="noticeItem">
-                <div class="titleBox">
-                    <span class="num">8</span>
-                    <h6 class="title">사람은 크고 작고 간에 이상이 있음으로써 용감하고 굳세게 살 수 있는 것이다</h6>
-                    <span class="date">2023.10.15</span>
-                    <span class="icon material-symbols-outlined">keyboard_arrow_down</span>
-                </div>
-                <div class="contentBox">
-                    <p>얼마나 쓸쓸하랴? 얼음에 싸인 만물은 얼음이 있을 뿐이다 그들에게 생명을 불어 넣는 것은 따뜻한 봄바람이다 풀밭에</p>
-                    <p>광야에서 방황하였으며 공자는 무엇을 위하여 천하를 철환하였는가? 밥을 위하여서 옷을 위하여서 미인을 구하기 위하여서 그리하였는가?</p>
-                    <p> 아니다 그들은 커다란 이상 곧 만천하의 대중을 품에 안고 그들에게 밝은 길을 찾아 주며 그들을 행복스럽고 평화스러운 곳으로 인도하겠다는 커다란 이상을 품었기 때문이다</p>
-                    <p> 그러므로 그들은 길지 아니한 과실이 어디 있으랴? 이상! 우리의 청춘이 가장 많이 품고 있는 이상! 이것이야말로 무한한 가치를 가진 것이다 사람은 크고 작고 간에 이상이 있음으로써 용감하고 굳세게 살 수 있는 것이다</p>
-                </div>
-            </li>
-        </ul>
-        <div class="paging">
+
+        <div class="paging">        
             <ul>
-                li에 .disabled가 있으면 화살표에 클릭방지 생김
-                <li class="arrow prev disabled"><button disabled><span class="material-symbols-outlined">navigate_before</span></button></li>
-                <li class="active"><a href="javascript:">1</a></li>
-                <li><a href="javascript:">2</a></li>
-                <li><a href="javascript:">3</a></li>
-                <li><a href="javascript:">4</a></li>
-                <li><a href="javascript:">5</a></li>
-                <li class="arrow next"><button><span class="material-symbols-outlined">navigate_next</span></button></li>
-            </ul>
-        </div> -->
+	        	<c:if test="${totNotices != 0}">
+	        		<c:choose>
+	        			<c:when test="${totNotices > 100}">
+	        				<c:forEach var="page" begin="1" end="${endValue}" step="1">
+	        					<c:if test="${section > 1 && page ==1}">
+					                <li class="arrow prev disabled">
+					                	<button onclick="${contextPath}/notice.do?section=${section-1}&pageNum=${(section-1)*10+1}}">
+					                		<span class="material-symbols-outlined">navigate_before</span>
+					                	</button>
+					                </li>
+	        					</c:if>
+	        					<c:choose>
+	        						<c:when test="${page == pageNum}">
+						                <li class="active"><a href="${contextPath}/notice.do?section=${section}&pageNum=${page}">${(section-1)*10+page}</a></li>
+	        						</c:when>
+	        						<c:otherwise>
+						                <li><a href="${contextPath}/notice.do?section=${section}&pageNum=${page}">${(section-1)*10+page}</a></li>
+	        						</c:otherwise>
+	        					</c:choose>
+	        					<c:if test="${page == 10}">
+					                <li>
+					                	<button onclick="${contextPath}/notice.do?section=${section+1}&pageNum=${section*10+1}">
+					                		<span class="material-symbols-outlined">navigate_next</span>
+					                	</button>
+					                </li>
+	        					</c:if>
+	        				</c:forEach>
+			            </c:when>
+			            <c:when test="${totNotices <= 100}">
+			            	<c:if test="${(totNotices mod 10) == 0}">
+			            		<c:set var="totNotices" value="${totNotices -1}"></c:set>
+			            	</c:if>
+			            	<c:forEach var="page" begin="1" end="${totNotices/10+1}" step="1">
+			            		<c:choose>
+			            			<c:when test="${page == pageNum}">
+			            				<li class="active"><a href="${contextPath}/notice.do?section=${section}&pageNum=${page}">${page}</a></li>
+			            			</c:when>
+			            			<c:otherwise>
+			            				<li><a href="${contextPath}/notice.do?section=${section}&pageNum=${page}">${page}</a></li>
+			            			</c:otherwise>
+			            		</c:choose>
+			            	</c:forEach>
+			            </c:when>
+		            </c:choose>
+	            </c:if>
+			</ul>
+        </div>
     </main>
 
     <!-- 푸터 -->

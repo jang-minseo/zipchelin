@@ -32,12 +32,11 @@ public class NoticeDAO {
 		List<NoticeVO> noticeList=new ArrayList<NoticeVO>();
 		int section=pagingMap.get("section");
 		int pageNum=pagingMap.get("pageNum");
-		
 		try {
 			conn=dataFactory.getConnection();
 			String query="SELECT * FROM (SELECT ROWNUM AS recNum, notice_num, notice_title, notice_cont, notice_date"+
-			" FROM notcie_tbl ORDER BY notice_num DESC)"+
-			" WHERE recNum BETWEEN (?-1)*100+(?-1)*10+1 AND (?-1)*100+?*10";
+					" FROM (SELECT * FROM notice_tbl ORDER BY notice_date DESC))"+
+					" WHERE recNum BETWEEN (?-1)*100+(?-1)*10+1 AND (?-1)*100+?*10";
 			pstmt=conn.prepareStatement(query);
 			pstmt.setInt(1, section);	//section :페이징 1~10번 한 묶음
 			pstmt.setInt(2, pageNum);	//pageNum : 페이징 번호
@@ -86,36 +85,5 @@ public class NoticeDAO {
 			e.printStackTrace();
 		}
 		return totCount;
-	}
-	
-	//글 목록 조회 메서드
-	public List<NoticeVO> selectAllNotices(){
-		List<NoticeVO> noticeList=new ArrayList<NoticeVO>();
-		try {
-			conn=dataFactory.getConnection();
-			//LEVEL : 깊이를 나태는 것. 오라클에서 제공해주는 컬럼 //START WITH parentNo=0 : 부모글 부터 시작해서 계층형 구조를 만들라는 명령어 //ORDER SIBLINGS BY articleNo DESC: 같은 형제로 내림차순 정렬(최신순)
-			String query="select notice_num, notice_title, notice_cont, notice_date from notice_tbl ORDER BY DESC";
-			pstmt=conn.prepareStatement(query);
-			ResultSet rs=pstmt.executeQuery();	//SQL문 실행
-			while(rs.next()) {
-				int noticeNo=rs.getInt("notice_num");
-				String title=rs.getString("notice_title");
-				String content=rs.getString("notice_cont");
-				Date writeDate=rs.getDate("notice_date");
-				NoticeVO noticeVO=new NoticeVO();
-				noticeVO.setNotice_num(noticeNo);
-				noticeVO.setNotice_title(title);
-				noticeVO.setNotice_cont(content);
-				noticeVO.setNotice_date(writeDate);
-				noticeList.add(noticeVO);
-			}
-			rs.close();
-			pstmt.close();
-			conn.close();
-		} catch (Exception e) {
-			System.out.println("글 목록 조회 중 에러!!");
-			e.printStackTrace();
-		}
-		return noticeList;
 	}
 }
