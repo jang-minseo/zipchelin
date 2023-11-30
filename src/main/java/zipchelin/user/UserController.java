@@ -41,7 +41,16 @@ public class UserController extends HttpServlet{
 				nextPage="/WEB-INF/views/main/user/leave_check.jsp";				
 			}else if(action.equals("/leave_done.do")) {
 				nextPage="/WEB-INF/views/main/user/leave_done.jsp";				
-				
+			}else if(action.equals("/email_auth.do")) {
+				nextPage="/WEB-INF/views/main/user/email_auth.jsp";	
+			}else if(action.equals("/find.do")) {
+				nextPage="/WEB-INF/views/main/user/find.jsp";	
+			}else if(action.equals("/finding.do")) {
+				nextPage="/WEB-INF/views/main/user/finding.jsp";	
+			}else if(action.equals("/login.do")) {
+				nextPage="/WEB-INF/views/main/user/login.jsp";	
+			}else if(action.equals("/sign_up.do")) {
+				nextPage="/WEB-INF/views/main/user/sign_up.jsp";	
 			}
 			
 		}catch (Exception e) {

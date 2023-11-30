@@ -276,8 +276,8 @@
 
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="/front/js/common.js"></script>
-    <script src="/front/js/community.js"></script>
+    <script src="${contextPath}/resource/js/common.js"></script>
+    <script src="${contextPath}/resource/js/community.js"></script>
 
 </body>
 </html>

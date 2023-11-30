@@ -22,7 +22,7 @@ $(function(){
             $(e).attr('class','material-symbols-outlined');
         }
     }
-    //좋아요 가장
+    
 
     
 

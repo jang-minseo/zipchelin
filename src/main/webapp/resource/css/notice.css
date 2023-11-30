@@ -11,5 +11,6 @@ body,h1,h2,h3,h4,h5,input,select,textarea,button{font-size: 15px;}
 .noticeList .date{flex-basis: 100px; color: #999; font-size: 13px;}
 .noticeList .icon{flex-basis: 36px; font-size: 36px;}
 .noticeList .contentBox{display: none; padding: 32px; background-color: #F7F8F6;}
-/* .noticeList .noticeItem:first-child .contentBox{display: block;} */
 .noticeList .contentBox p{line-height: 28px; word-break: break-all;}
+.noticeItem.noList{min-height: 360px; padding: 20%; text-align: center; background-color: #F7F8F6;}
+.noticeItem.noList h6{font-size: 22px; font-weight: 400;}
