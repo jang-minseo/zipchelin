@@ -4,8 +4,8 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
 <div class="headerContainer">
-    <a class="logo" href="/front/index.html">
-        <img src="/front/images/logo/logo.png" />
+    <a class="logo" href="${contextPath}/common/index.do">
+        <img src="${contextPath}/resource/images/logo/logo.png" />
     </a>
     <div class="menu">
         <a class="menu_list" href="/front/html/recipe/recipe_list.html">레시피</a>
@@ -21,13 +21,13 @@
                 </div>
             </div>
         </div>
-        <a class="menu_list" href="/front/html/notice/notice_list.html">공지사항</a>
+        <a class="menu_list" href="${contextPath}/notice.do">공지사항</a>
     </div>
     <div class="right_menu">
         <a class="iconBox" href="/front/html/search/searching_list.html">
             <span class="material-symbols-outlined">search</span>
         </a>
-        <a href="/front/html/user/login.html">로그인</a>
-        <a href="/front/html/user/sign_up.html">회원가입</a>
+        <a href="${contextPath}/common/login.do">로그인</a>
+        <a href="${contextPath}/common/join.do">회원가입</a>
     </div>
 </div>

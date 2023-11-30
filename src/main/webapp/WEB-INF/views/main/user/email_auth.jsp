@@ -29,15 +29,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     
     <!-- basic CSS -->
-    <link rel="stylesheet" type="text/css" href="/resource/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/resource/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/resource/css/common.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/base.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/common.css">
 
     <!-- page CSS -->
-    <link rel="stylesheet" href="/resource/css/user.css">
+    <link rel="stylesheet" href="${contextPath}/resource/css/user.css">
 
     <!-- plugin CSS -->
-    <link rel="stylesheet" href="/resource/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="${contextPath}/resource/css/swiper-bundle.min.css">
 
     <!--[if IE 9]>
     <link type="text/css" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -49,9 +49,9 @@
 </head>
 <body>
     <div id="auth_box">
-        <img id="auth_img" src="/resource/images/icon/finding.png" alt="">
+        <img id="auth_img" src="${contextPath}/resource/images/icon/finding.png" alt="">
         <p id="auth_msg_request">이메일로 도착한 인증번호를 입력하세요</p>
-        <form id="auth_form" action="finding.html">
+        <form id="auth_form" action="${contextPath}/user/finding.do">
             <input id="auth_input" name="auth_number" type="text" placeholder="인증번호는 대소문자를 구분합니다.">
             <p class="auth_warning">인증번호를 입력해주세요</p>
             <button id="auth_go_login" onclick="email_auth_check()" type="button">확인</button>
@@ -59,5 +59,5 @@
     </div>
 </body>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="/resource/js/user.js"></script>
+	<script src="${contextPath}/resource/js/user.js"></script>
 </html>

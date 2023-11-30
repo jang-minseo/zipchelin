@@ -30,12 +30,15 @@
     
     <!-- basic CSS -->
  
-    <link rel="stylesheet" type="text/css" href="<c:url value="/resource/css/reset.css" />">
-    <link rel="stylesheet" type="text/css" href="<c:url value="/resource/css/base.css" />">
-    <link rel="stylesheet" type="text/css" href="<c:url value="/resource/css/common.css" />">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/base.css">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resource/css/common.css">
  
     <!-- page CSS -->
-    <link rel="stylesheet" type="text/css"  href="<c:url value="/resource/css/user.css" />">
+    <link rel="stylesheet" type="text/css"  href="${contextPath}/resource/css/user.css">
+    
+    <!-- plugin CSS -->
+    <link rel="stylesheet" href="${contextPath}/resource/css/swiper-bundle.min.css">
 
     <title>로그인</title>
 </head>
@@ -72,9 +75,9 @@
             <div class="login_sns">
                 <h2>소셜 로그인</h2>
                 <div>
-                    <div class="login_email"><a href="#"><img src="<c:url value="/resource/image/icon/kakao_circle.png" />" alt="카카오 로그인"></a></div>
-                    <div class="login_email"><a href="#"><img src="<c:url value="/resource/image/icon/naver_circle.png" />" alt="네이버 로그인"></a></div>
-                    <div class="login_email circle_bd"><a href="#"><img src="<c:url value="/resource/image/icon/google_circle.png" />" alt="구글 로그인"> </a></div>
+                    <div class="login_email"><a href="#"><img src="${contextPath}/resource/images/icon/kakao_circle.png" alt="카카오 로그인"></a></div>
+                    <div class="login_email"><a href="#"><img src="${contextPath}/resource/images/icon/naver_circle.png" alt="네이버 로그인"></a></div>
+                    <div class="login_email circle_bd"><a href="#"><img src="${contextPath}/resource/images/icon/google_circle.png" alt="구글 로그인"> </a></div>
                 </div>
             </div>
         </section>
@@ -91,6 +94,7 @@
     
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="<c:url value="/resource/js/user.js" />"></script>
+    <script src="${contextPath}/resource/js/common.js"></script>
+    <script src="${contextPath}/resource/js/user.js"></script>
 </body>
 </html>
