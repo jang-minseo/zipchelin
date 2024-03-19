@@ -1,5 +1,4 @@
 @charset "UTF-8";
-main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line-height: 1.6; }
 
 /* 공통 */
 .select-box{ border-color: #4FA72F; color: #000; flex-basis: 120px; padding: 12px; border-radius: 4px;
@@ -36,9 +35,8 @@ main{display: block; margin: auto; padding: 100px 20px 60px; width: 1320px; line
 .post-id { position: relative; margin-right: 8px; padding-right: 8px; }
 .post-id::after { content: " "; position: absolute; top: 5px; right: 0; height: 12px;  border-left: 1px solid #c1c1c1; }
 .post-date{color: #999; font-size: 12px; font-weight: 300; font-family: 'S-CoreDream',sans-serif;}
-.post-content {padding: 24px 32px; margin-top: 20px; border-bottom: 1px solid #e9e9e9; font-size: 16px; line-height: 32px; font-weight: 500; font-family: 'S-CoreDream' ,sans-serif;}
+.post-content {padding: 24px 32px; margin-top: 20px;/*  border-bottom: 1px solid #e9e9e9; */ font-size: 16px; line-height: 32px; font-weight: 500; font-family: 'S-CoreDream' ,sans-serif;}
 .post-content>img{ display: block; margin: 20px auto; max-width: 100%; height: auto; border: 0; }
-.btnGroup.btn_list { justify-content: center; padding: 20px; border-bottom: 1px solid #e9e9e9;}
 
 .comment-section { padding: 14px 0; }
 .post_comment { flex-direction: row; }

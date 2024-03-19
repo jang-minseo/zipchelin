@@ -25,10 +25,10 @@ $(function(){
     //내가 쓴글 - 탭
     $('ul.tabGroup a').click(function(){
         var tab_id = $(this).attr('data-tab');
-     
+    
         $('ul.tabGroup a').removeClass('active');
         $('.tabCont').removeClass('show');
-     
+    
         $(this).addClass('active');
         $("#"+tab_id).addClass('show');
 
